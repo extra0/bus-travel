@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="images/vnd.microsoft.icon" href="/favicon.ico">
+    <link href="/css/styles.css" rel="stylesheet" media="all">
+    <meta description="Автобус Донецк - Санкт-Петербург, пассажирские перевозки. Расписание автобусов Донецк - Санкт-Петербург. Заказ и бронирование билетов на автобус Донецк - Санкт-Петербург онлайн">
+    <meta keywords="пассажирские перевозки Донецк - Санкт-Петербург, автобус Донецк - Санкт-Петербург, цена билета на автобус Донецк - Санкт-Петербург, билеты на автобус Донецк - Санкт-Петербург, Расписание автобусов Донецк - Санкт-Петербург">
+    <title>Автобус Донецк - Санкт-Петербург, пассажирские перевозки. Расписание автобусов Донецк - Санкт-Петербург. Купить билеты на автобус Донецк - Санкт-Петербург.</title>
+  </head>
+  <body>
+    <div class="toTop"><i class="fa fa-chevron-up"></i></div>
+    <div id="callback" class="modal">
+      <form action="#" class="form__form">
+        <p class="modal__title">Заказ звонка</p>
+        <div class="form__control"><i class="fa fa-lg fa-user"></i>
+          <input type="text" placeholder="ФИО" name="name" required class="form__input">
+        </div>
+        <div class="form__control"><i class="fa fa-lg fa-phone"></i>
+          <input type="tel" only-numbers placeholder="Ваш телефон" name="phone" required class="form__input">
+        </div>
+        <div class="form__control">
+          <div class="text-center">
+            <button class="form__submit btn modal__submit callback">Перезвонить</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="order" class="modal">
+      <form action="#" class="form__form">
+        <p class="modal__title">Забронировать место</p>
+        <div class="form__control">
+          <p place-from class="modal__text"></p>
+          <p place-to class="modal__text"></p>
+        </div>
+        <div class="form__control"><i class="fa fa-lg fa-building"></i>
+          <input type="text" required placeholder="Из какого города Вас забрать ?" name="city-arive" class="form__input">
+        </div>
+        <div class="form__control"><i class="fa fa-lg fa-calendar"></i>
+          <input type="text" datepicker required placeholder="Дата отправления" name="date" class="form__input">
+        </div>
+        <div class="form__control"><i class="fa fa-lg fa-users"></i>
+          <select name="places" class="form__select">
+            <option value="1 место">1 место</option>
+            <option value="2 места">2 места</option>
+            <option value="3 места">3 места</option>
+            <option value="4 места">4 места</option>
+            <option value="5 мест">5 мест</option>
+            <option value="6 мест">6 мест</option>
+            <option value="7 мест">7 мест</option>
+            <option value="8 мест">8 мест</option>
+            <option value="9 мест">9 мест</option>
+            <option value="10 мест">10 мест		</option>
+          </select>
+        </div>
+        <div class="form__control"><i class="fa fa-lg fa-user"></i>
+          <input type="text" placeholder="ФИО" name="name" required class="form__input">
+        </div>
+        <div class="form__control"><i class="fa fa-lg fa-phone"></i>
+          <input type="tel" only-numbers placeholder="Ваш телефон" name="phone" required class="form__input">
+        </div>
+        <div class="form__control">
+          <div class="text-center">
+            <button class="form__submit btn modal__submit order__submit">Забронировать</button>
+            <input type="hidden" name="citys">
+            <input type="hidden" name="place-from" place-from>
+            <input type="hidden" name="place-to" place-to>
+            <input type="hidden" name="price" price>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="thanks" class="modal">
+      <p class="modal__title">Спасибо!<br>Ваша заявка принята.<br>В ближайшее время с Вами свяжется наш менеджер</p>
+    </div>
+    <div class="main-wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-xs-6"><a href="/" class="header__logo"><img src="/img/logo.png" alt="Site Logo"></a></div>
+            <div class="col-sm-4 hidden-xs">
+              <div class="text-center"><a href="#callback" fancybox class="btn header__btn">Обратный звонок</a></div>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+              <div class="text-right"><a href="tel:+380954027977" class="header__phone _headphones"> <span class="header__phone-prefix">+38 (095)</span>402 79 77</a><br><a href="tel:+79788061936" class="header__phone _viber"> <span class="header__phone-prefix">+7 (978) </span>806 19 36</a></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main _piter-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-xs-12">
+              <h1 class="main__title no-margin">Купить билет на автобус Донецк - Санкт-Петербург <span>от 3 400<span class="rubl">a</span></span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-xs-12">
+            <h2 class="schedule__main-title"><i class="fa fa-table"></i>Расписание автобусов <span citys>Донецк (через Макеевка, Харцызск, Зугрес, Торез) - Санкт-Петербург</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="schedule">
+        <div class="container">
+          <div class="schedule__section">
+            <div class="row hidden-xs">
+              <div class="col-sm-4">
+                <p class="schedule__title">Отправление</p>
+              </div>
+              <div class="col-sm-4">
+                <p class="schedule__title">Прибытие</p>
+              </div>
+              <div class="col-sm-2">
+                <p class="schedule__title">В пути</p>
+              </div>
+              <div class="col-sm-2">
+                <p class="schedule__title">Стоимость</p>
+              </div>
+            </div>
+            <div place-parent class="row">
+              <div class="col-xs-12 col-sm-4">
+                <div class="row">
+                  <div class="col-xs-4 visible-xs">
+                    <p class="schedule__title">Отправление</p>
+                  </div>
+                  <div class="col-xs-8 col-sm-12">
+                    <p place-from class="schedule__text"><span class="schedule__time">07:00</span>Донецк, АВ Южный</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <div class="row">
+                  <div class="col-xs-4 visible-xs">
+                    <p class="schedule__title">Прибытие</p>
+                  </div>
+                  <div class="col-xs-8 col-sm-12">
+                    <p place-to class="schedule__text"><span class="schedule__time">13:00 </span>Санкт-Петербург, ТРК "Континент"</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-2">
+                <div class="row">
+                  <div class="col-xs-4 visible-xs">
+                    <p class="schedule__title">В пути</p>
+                  </div>
+                  <div class="col-xs-8 col-sm-12">
+                    <p class="schedule__text">Ежедневно<br>~ 30 часов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-2">
+                <div class="row">
+                  <div class="col-xs-4 visible-xs">
+                    <p class="schedule__title">Стоимость</p>
+                  </div>
+                  <div class="col-xs-8 col-sm-12">
+                    <p price class="schedule__price"><strong>3 400</strong><span class="rubl">a</span></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12 text-center">
+                    <p class="schedule__text"><a href="#order" fancybox class="btn schedule__btn">Выбрать</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="text-right"><a href="/international/autobus-sankt-peterburg-donetsk" class="back__link">Посмотреть обратный маршрут</a><i class="fa fa-refresh fa-lg"></i></div>
+        </div>
+      </div>
+      <div class="share">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-xs-12"><i class="fa fa-bullhorn fa-2x"></i><span class="share__text">Рассказать друзьям:</span><div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,nocounter,theme=06" data-services="vkontakte,odnoklassniki,facebook,twitter,google"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="advantages">
+        <div class="container">
+          <h3 class="title advantages__main-title">Преимущества для наших пассажиров</h3>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="advantages__block"><i class="fa fa-suitcase"></i>
+                <p class="advantages__title">Багаж бесплатно</p>
+                <p class="advantages__text">Специально для вашего удобства и экономии в стоимость билета включено <strong>2-а багажных места</strong>. Путешествуйте с комфортом.</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="advantages__block"><i class="fa fa-percent"></i>
+                <p class="advantages__title">Скидки самым маленьким</p>
+                <p class="advantages__text">Уникальная дисконтная программа позволяет снизить стоимость для детей <strong>до 12 лет</strong> (подробности уточняйте у менеджера)</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="advantages__block"><i class="fa fa-shield"></i>
+                <p class="advantages__title">безопасно и Комфортно</p>
+                <p class="advantages__text">Мы заботимся о каждом своем пассажире, поэтому предоставляем технически исправный и комфортабельный транспорт</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="advantages__block"><i class="fa fa-wifi"></i>
+                <p class="advantages__title">Wi-Fi в дороге</p>
+                <p class="advantages__text">В наших автобусах предусмотрены точки доступа Wi-Fi, благодаря которым Вы всегда сможете оставаться в сети.</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="advantages__block"><i class="fa fa-tv"></i>
+                <p class="advantages__title">ТВ в каждом автобусе</p>
+                <p class="advantages__text">Интересные передачи и фильмы не дадут Вам заскучать в пути. Желаем приятного просмотра.</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="advantages__block"><i class="fa fa-tree"></i>
+                <p class="advantages__title">Кондиционер</p>
+                <p class="advantages__text">Даже в самую <strong>знойную погоду</strong> Вы будете перемещаться с комфортом благодаря работающему кондиционеру.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="description hidden-xs">
+        <div class="container">
+          <div class="col-sm-12">
+            <h2 class="description__title"> <strong>Автобус Донецк – Санкт-Петербург, пассажирские перевозки</strong></h2>
+            <p class="description__text">Транспортная компания «VSEPUTI» осуществляет <b>автобусные пассажирские перевозки по направлению Донецк - Санкт-Петербург</b>. Сейчас это одно из самых популярных направлений, поэтому зачастую <b>купить билет на автобус Донецк - Санкт-Петербург</b> достаточно проблематично. Однако, воспользовавшись услугами нашей компании, вы всегда сможете заранее <b>забронировать билет на автобус по направлению Донецк - Санкт-Петербург</b> без труда, обеспечив себе место в комфортабельном автобусе на необходимое вам число и время. Еще одним преимуществом является то, что осуществлять посадку на автобус по маршруту Донецк -Санкт-Петербург можно не только в начальном пункте отправки (Донецк), но и в городах через которые проложен маршрут Донецк-Москва, а именно: Горловка, Енакиево, Макеевка, Харцызск, Шахтерск, Зугрес). Для этого в заявке на <b>бронирование билетов на автобус Донецк- Санкт-Петербург</b> укажите желаемое место посадки, так вы будете уверены в том, что в не зависимости от города посадки на маршрут Донецк -Санкт-Петербург за вами будет закреплено нужное количество мест. <b>Автобус Донецк - Санкт-Петербург</b>, это комфортабельные, безопасные перевозки в кротчайшие сроки. <b>Время в пути автобуса Донецк - Санкт-Петербург</b> подсчитать достаточно сложно ведь это зависит от множества факторов, одним из которых является пересечение Российской границы. Однако стоит отметить, что купив <b>билеты на автобус Донецк - Санкт-Петербург</b>, вы можете быть абсолютно спокойны, и уверены в том, что автобус в максимально короткое время пройдет таможню и продолжит следовать по указанному маршруту. Это обусловлено наличием полного пакета документов у водителей автобусов нашей компании. Для вашего удобства, покупая билет из Донецка в Санкт-Петербург, вы можете предварительно заказать билет в обратном направлении (<b>Санкт-Петербург</b> <b>- Донецк</b>), на необходимую дату и удобное для вас время, вы можете это сделать как из Донецка, так и из Санкт-Петербурга позвонив по российскому номеру телефона указанному на сайте. Автобус Донецк -Санкт-Петербург, следует согласно графику, и <b>цены на</b> <strong>билеты на автобус Донецк - </strong><b>Санкт-Петербург</b> вы можете найти на нашем сайте или уточнить у менеджеров по телефонам. Вы можете так же воспользоваться услугой «Обратный звонок», после чего в максимально короткое время с вами свяжутся наши высококвалифицированные менеджеры, у которых вы можете уточнить все волнующие вас вопросы и аспекты, связанные с маршрутом Донецк -Санкт-Петербург и заказом билетов в обе стороны. <b>Расписание автобусов Донецк - Санкт-Петербург</b> насчитывает несколько маршрутов, с формированием автобусов из Донецка и из Горловки, так вы можете выбрать необходимое место посадки без дополнительных затрат на дорогу до места формирования автобуса по направлению Донецк-Санкт-Петербург. <b>Купить билет на автобус Донецк – Санкт-Петербург: Санкт-Петербург</b> <b>– Донецк</b> вы можете, не выходя из дома заполнив форму на сайте или позвонив по указанным на сайте номерам телефонов. Более того покупая <b>билет на автобус Донецк – Санкт-Петербург</b> вы можете быть уверены, что в любых ситуациях вы можете обращаться за помощью к нашим менеджерам, которые помогут не только скоординировать вас по месту формирования автобуса, но и смогут разрешить форс мажорные ситуации.</p>
+          </div>
+        </div>
+      </div>
+      <div class="buffer"></div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 hidden-xs">
+            <p class="footer__copyright">&copy; 2016 Vseputi. Все права защищены</p>
+          </div>
+          <div class="col-sm-3 col-md-2">
+            <div class="footer__social"><span class="footer__social-text">Мы в соц.сетях:</span>
+              <noindex><a href="https://vk.com/vseputi_don" rel="nofollow" class="footer__social-link"><i class="fa fa-vk fa-lg"></i></a><a href="http://ok.ru/vseputi" rel="nofollow" class="footer__social-link"><i class="fa fa-odnoklassniki fa-lg"></i></a></noindex>
+            </div>
+          </div>
+          <div class="col-sm-2 col-md-3 col-lg-4 text-center"><a href="/partnership" class="footer__link">Сотрудничество</a></div>
+          <div class="col-sm-3 col-lg-2">
+            <div class="footer__phone-block"><a href="tel:+380954027977" class="footer__phone">+38 (095) 402-79-77</a><a href="tel:+79788061936" class="footer__phone">+7 (978) 806-19-36</a></div>
+          </div>
+          <div class="col-xs-12 visible-xs"> 
+            <div class="text-center"><a href="#callback" fancybox class="btn header__btn">Обратный звонок</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/script.js"></script>
+    <!-- Yandex.Metrika counter-->
+    <script>
+      (function (d, w, c) {
+          (w[c] = w[c] || []).push(function() {
+              try {
+                  w.yaCounter36626610 = new Ya.Metrika({id:36626610,
+                          webvisor:true,
+                          clickmap:true,
+                          trackLinks:true,
+                          accurateTrackBounce:true});
+              } catch(e) { }
+          });
+      
+          var n = d.getElementsByTagName("script")[0],
+              s = d.createElement("script"),
+              f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+      
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="//mc.yandex.ru/watch/36626610" style="position:absolute; left:-9999px;display: none;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter-->
+  </body>
+</html>

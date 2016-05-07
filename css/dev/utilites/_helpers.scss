@@ -1,0 +1,48 @@
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+
+.no-margin {
+	margin: 0!important;
+}
+.margin-bottom-50 {
+	margin-bottom: 50px;
+}
+
+.rubl {
+	display: inline-block;
+	font-family: 'Rubl';
+	margin-left: 5px;
+}
+
+.btn {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: $radius;
+	padding: 7px 22px;
+	background: $green;
+	position: relative;
+	border: none;
+	border-bottom: 3px solid #075813;
+	font-family: PT Sans;
+	font-size: 16px;
+	top: 0;
+	@include transition(all 0.4s ease-in-out);
+	&:active,
+	&:focus,
+	&:hover {
+		color: #fff;
+		text-decoration: none;
+		background: lighten($green, 5%);
+	}
+	&:active {
+		@include transition(all 0.1s ease-in-out);
+		border-bottom: 3px solid transparent;
+		top: 3px;
+	}
+}

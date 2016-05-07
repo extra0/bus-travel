@@ -1,0 +1,156 @@
+@media (max-width: 767px) {
+	.main {
+		padding: 80px 0;
+		background-size: cover!important;
+		&__form {
+			padding: 15px 20px;
+			margin: 0 20px;
+		}
+		&__title {
+			font-size: 28px;
+		}
+	}
+	.ways {
+		&__block {
+			display: block;
+			max-width: 500px;
+			margin: 0 auto 30px auto;
+			&:hover {
+				.ways__img {
+					@include transform(scale(1) rotate(0deg));	
+				}
+			}
+		}
+		&__title {
+			font-size: 38px;
+		}
+		&__price {
+			font-size: 28px;
+			font-weight: bold;
+		}
+	}
+	.footer {
+		&__copyright,
+		&__social,
+		&__phone-block {
+			text-align: center;
+		}
+		&__social {
+			margin-bottom: 20px;
+		}
+		&__phone {
+			margin: 0 0 10px;
+			display: block;
+			&-block {
+				margin: 0;
+			}
+		}
+	}
+	.advantages  {
+		&__block {
+			max-width: 400px;
+			margin: 0 auto 40px auto;
+		}
+		.fa {
+			font-size: 5em;
+		}
+	}
+	.schedule {
+		&__main-title {
+			font-size: 18px;
+		}
+	}
+	.form {
+		&__input,
+		&__select {
+			box-shadow: none;
+		}
+		&__result {
+			padding: 20px 10px 0 10px;
+		}
+	}
+	.popular {
+		&__price,
+		&__name {
+			font-size: 14px;
+			border-bottom: 1px solid;
+		}
+		&__price {
+			margin: 0 0 0 7px;
+		}
+		&__link {
+			&:hover {
+				.popular__price,
+				.popular__name {
+					border-bottom: 1px solid transparent;
+				}	
+			}
+		}
+	}
+}
+@media (max-width: 500px) {
+	.header {
+		&__phone {
+			font-size: 16px;
+			margin-left: -30px;
+			&:before {
+				display: none;
+			}
+			&-prefix {
+				font-size: 14px;
+				margin: 0 5px 0 0;
+			}
+		}
+	}
+	.main {
+		&__form {
+			margin: 0;
+		}
+		&__title {
+			font-size: 24px;
+		}
+	}
+	.title {
+		font-size: 24px;
+		margin: 40px 0 20px;
+	}
+	.modal {
+		width: 280px;
+		padding: 5px 10px;
+	}
+	.form {
+		&__result {
+			text-align: center;
+		}
+	}
+	.advantages  {
+		margin: 0 0 20px 0;
+		&__main-title {
+			margin: 20px 0;
+		}
+	}
+	.share {
+		margin: 20px 0;
+	}
+	.popular {
+		&__price {
+			display: none;
+		}
+	}
+	.ways {
+		&__title {
+			font-size: 28px;
+		}
+		&__price {
+			font-size: 19px;
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.main {
+		padding: 120px 0;
+		&__title {
+			font-size: 32px;
+		}
+	}
+}

@@ -1,0 +1,41 @@
+extends _layout
+block append head
+	meta(description="Сотрудничество с диспетчесткой службой VSEPUTI для автоперевозчиков и агентов.")
+	meta(keywords="сотрудничество с диспетческой службой")
+	title Сотрудничество с диспетчесткой службой VSEPUTI
+block content
+	.container
+		.row
+			.col-sm-12.col-xs-12
+				h1.title Сотрудничество с нами
+				h2.subtitle Приглашаем автотранспортные кампании и агентов к плодотворному и взаимовыгодному сотрудничеству.
+			.col-sm-8.col-sm-offset-2.col-xs-12
+				form.form__form(action="#")
+					.form__control
+						label.form__label Представьтесь:
+					.form__control
+						i.fa.fa-user
+						input.form__input(type="text" name="name" placeholder="Кампания или ФИО" required)
+					.form__control
+						label.form__label Тип сотрудничества:
+					.form__control
+						i.fa.fa-users
+						select.form__select(name="category")
+							option(value="Перевозчик") Перевозчик
+							option(value="Агент") Агент
+					.form__control
+						label.form__label Ваш телефон для связи:
+					.form__control
+						i.fa.fa-phone
+						input.form__input(type="tel" only-numbers required name="phone")
+					.form__control
+						label.form__label Напишите сообщение (при желании)
+					.form__control
+						textarea.form__textarea(rows="4" name="message")
+					.form__control
+						button.form__submit.form__submit-partner.btn(type="submit") Отправить 
+							i.fa.fa-paper-plane-o
+				br
+				br
+				br
+				br
