@@ -67,18 +67,6 @@
 		}
 		&__result {
 			padding: 20px 10px 0 10px;
-			.popular__price,
-			.popular__name {
-				border-bottom: 1px solid;
-			}
-			.popular__link {
-				&:hover {
-					.popular__price,
-					.popular__name {
-						border-bottom: 1px solid transparent;
-					}
-				}
-			}
 		}
 	}
 	.popular {

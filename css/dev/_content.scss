@@ -152,11 +152,21 @@
 			color: #fff;
 			margin-left: 10px;
 			font-size: 20px;
+			border-bottom: 1px solid;
 		}
 		.popular__price {
 			font-size: 20px;
 			margin: 0;
 			color: #fff;
+			border-bottom: 1px solid;
+		}
+		.popular__link {
+			&:hover {
+				.popular__price,
+				.popular__name {
+					border-bottom: 1px solid transparent;
+				}
+			}
 		}
 	}
 }
