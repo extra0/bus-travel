@@ -130,7 +130,7 @@
 		position: relative;
 		margin-bottom: 15px;
 		& > .fa {
-			color: #aaa;
+			color: #444;
 			@include position(absolute, 10px null null 8px);
 		}
 	}
