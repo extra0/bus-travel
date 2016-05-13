@@ -5,16 +5,36 @@
 			| Все наши направления:
 		.row
 			.col-md-5.col-sm-6.margin-bottom-50
-				h3.subtitle в Россию
-				block Russia
-					.toggle-block
-						include ../modules/_russian-ways
+				h3.subtitle 
+					img.subtitle__img(src="/img/rus.png", alt="flag")
+					| в Россию
+				.toggle-block
+					include ../modules/_to-russia
 				.text-center
 					a.toggle-link(href="javascript:void(0);") Еще маршруты
 			.col-md-5.col-md-offset-2.col-sm-6.margin-bottom-50
-				h3.subtitle по Украине
-				block Ukraine
-					.toggle-block
-						include ../modules/_ukrainian-ways
+				h3.subtitle 
+					img.subtitle__img(src="/img/ukr.png", alt="flag")
+					| в Украину
+				.toggle-block
+					include ../modules/_to-ukraine
+				.text-center
+					a.toggle-link(href="javascript:void(0);") Еще маршруты
+		hr
+		.row
+			.col-md-5.col-sm-6.margin-bottom-50
+				h3.subtitle 
+					img.subtitle__img(src="/img/rus.png", alt="flag")
+					| из России
+				.toggle-block
+					include ../modules/_from-russia
+				.text-center
+					a.toggle-link(href="javascript:void(0);") Еще маршруты
+			.col-md-5.col-md-offset-2.col-sm-6.margin-bottom-50
+				h3.subtitle 
+					img.subtitle__img(src="/img/ukr.png", alt="flag")
+					| из Украины
+				.toggle-block
+					include ../modules/_from-ukraine
 				.text-center
 					a.toggle-link(href="javascript:void(0);") Еще маршруты

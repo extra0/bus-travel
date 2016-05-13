@@ -85,7 +85,7 @@
               <div class="text-center"><a href="#callback" fancybox class="btn header__btn">Обратный звонок</a></div>
             </div>
             <div class="col-sm-4 col-xs-6">
-              <div class="text-right"><a href="tel:+380954027977" class="header__phone _headphones"> <span class="header__phone-prefix">+38 (095)</span>402 79 77</a><br><a href="tel:+79788061936" class="header__phone _viber"> <span class="header__phone-prefix">+7 (978) </span>806 19 36</a></div>
+              <div class="text-right"><a href="tel:+380954027977" class="header__phone _headphones"> <span class="header__phone-prefix">+38 (095) </span>402 79 77</a><br><a href="tel:+79788061936" class="header__phone _viber"> <span class="header__phone-prefix">+7 (978) </span>806 19 36</a></div>
             </div>
           </div>
         </div>
@@ -101,21 +101,23 @@
             <div class="col-sm-12 col-xs-12">
               <div class="main__form">
                 <div class="form__block">
-                  <div class="row">
-                    <div class="col-md-5 col-sm-4">
-                      <div class="form__control"><i class="fa fa-lg fa-map"></i>
-                        <input type="text" required placeholder="Откуда" cityFrom class="form__input">
+                  <form action="javascript:void(0);">
+                    <div class="row">
+                      <div class="col-md-5 col-sm-4">
+                        <div class="form__control"><i class="fa fa-lg fa-map"></i>
+                          <input type="text" required placeholder="Откуда" cityFrom class="form__input">
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-sm-4">
+                        <div class="form__control"><i class="fa fa-lg fa-map-o"></i>
+                          <input type="text" required placeholder="Куда" cityTo class="form__input">
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-sm-4">
+                        <button type="submit" class="form__submit btn search"> <i class="fa fa-search"></i> Найти</button>
                       </div>
                     </div>
-                    <div class="col-md-5 col-sm-4">
-                      <div class="form__control"><i class="fa fa-lg fa-map-o"></i>
-                        <input type="text" required placeholder="Куда" cityTo class="form__input">
-                      </div>
-                    </div>
-                    <div class="col-md-2 col-sm-4">
-                      <button type="submit" class="form__submit btn search"> <i class="fa fa-search"></i> Найти</button>
-                    </div>
-                  </div>
+                  </form>
                 </div>
                 <div class="form__result"></div>
               </div>
@@ -179,11 +181,11 @@
                     </p>
                   </div>
                 </div></a></div>
-            <div class="col-md-4 col-sm-6 col-xs-12"><a href="/international/autobus-donetsk-yalta" class="ways__link">
+            <div class="col-md-4 col-sm-6 col-xs-12"><a href="/international/autobus-donetsk-kursk" class="ways__link">
                 <div class="ways__block">
-                  <h2 class="ways__title">Донецк - Ялта</h2><img src="img/city/yalta.jpg" alt="Автобус Донецк - Ялта" class="ways__img">
+                  <h2 class="ways__title">Донецк - Курск</h2><img src="img/city/kursk.jpg" alt="Автобус Донецк - Курск" class="ways__img">
                   <div class="ways__price-wrapper">
-                    <p class="ways__price">от 2 000<span class="rubl">a</span></p>
+                    <p class="ways__price">от 1 800<span class="rubl">a</span></p>
                   </div>
                 </div></a></div>
             <div class="col-md-4 col-sm-6 col-xs-12"><a href="/international/autobus-donetsk-tula" class="ways__link">
@@ -215,7 +217,7 @@
           <h2 class="title"> <i class="fa fa-road"></i>Все наши направления:</h2>
           <div class="row">
             <div class="col-md-5 col-sm-6 margin-bottom-50">
-              <h3 class="subtitle">в Россию</h3>
+              <h3 class="subtitle"> <img src="/img/rus.png" alt="flag" class="subtitle__img">в Россию</h3>
               <div class="toggle-block">
                 <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-donetsk-alushta" class="popular__link">
                     <p class="popular__price">от 1 900<span class="rubl">a</span></p>
@@ -319,92 +321,11 @@
                        грн
                     </p>
                     <p class="popular__name"> <span cityFrom>Киев</span> - <span cityTo>Алушта</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-alushta-kiev" class="popular__link">
-                    <p class="popular__price">от 2 300<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Алушта</span> - <span cityTo>Киев</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-sevastopol-kiev" class="popular__link">
-                    <p class="popular__price">от 2 300<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Севастополь</span> - <span cityTo>Киев</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-simferopol-kiev" class="popular__link">
-                    <p class="popular__price">от 2 300<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Симферополь</span> - <span cityTo>Киев</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-yalta-kiev" class="popular__link">
-                    <p class="popular__price">от 2 300<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Ялта</span> - <span cityTo>Киев</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-sankt-peterburg-donetsk" class="popular__link">
-                    <p class="popular__price">от 3 500<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Санкт-Петербург</span> - <span cityTo>Донецк</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-tula-donetsk" class="popular__link">
-                    <p class="popular__price">от 1 500<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Тула</span> - <span cityTo>Донецк</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-sevastopol-donetsk" class="popular__link">
-                    <p class="popular__price">от 2 000<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Севастополь</span> - <span cityTo>Донецк</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-alushta-donetsk" class="popular__link">
-                    <p class="popular__price">от 2 000<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Алушта</span> - <span cityTo>Донецк</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-belgorod-donetsk" class="popular__link">
-                    <p class="popular__price">от 1 700<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Белгород</span> - <span cityTo>Донецк</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-feodosiya-donetsk" class="popular__link">
-                    <p class="popular__price">от 1 800<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Феодосия</span> - <span cityTo>Донецк</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-yalta-donetsk" class="popular__link">
-                    <p class="popular__price">от 2 000<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Ялта</span> - <span cityTo>Донецк</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-kerch-donetsk" class="popular__link">
-                    <p class="popular__price">от 1 800<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Керчь</span> - <span cityTo>Донецк</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-krasnodar-donetsk" class="popular__link">
-                    <p class="popular__price">от 1 400<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Краснодар</span> - <span cityTo>Донецк</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-pavlovsk-donetsk" class="popular__link">
-                    <p class="popular__price">от 1 500<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Павловск</span> - <span cityTo>Донецк</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-rostov-donetsk" class="popular__link">
-                    <p class="popular__price">от 700<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Ростов</span> - <span cityTo>Донецк</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-simferopol-donetsk" class="popular__link">
-                    <p class="popular__price">от 2 000<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Симферополь</span> - <span cityTo>Донецк</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-slavyansk-na-kubani-donetsk" class="popular__link">
-                    <p class="popular__price">от 1 600<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Славянск на Кубани</span> - <span cityTo>Донецк</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-alushta-gorlovka" class="popular__link">
-                    <p class="popular__price">от 2 100<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Алушта</span> - <span cityTo>Горловка</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-yalta-gorlovka" class="popular__link">
-                    <p class="popular__price">от 2 100<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Ялта</span> - <span cityTo>Горловка</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-feodosiya-gorlovka" class="popular__link">
-                    <p class="popular__price">от 2 200<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Феодосия</span> - <span cityTo>Горловка</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-kerch-gorlovka" class="popular__link">
-                    <p class="popular__price">от 2 200<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Керчь</span> - <span cityTo>Горловка</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-rostov-gorlovka" class="popular__link">
-                    <p class="popular__price">от 800<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Ростов</span> - <span cityTo>Горловка</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-sevastopol-gorlovka" class="popular__link">
-                    <p class="popular__price">от 2 200<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Севастополь</span> - <span cityTo>Горловка</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-simferopol-gorlovka" class="popular__link">
-                    <p class="popular__price">от 2 200<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Симферополь</span> - <span cityTo>Горловка</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-slavyansk-na-kubani-gorlovka" class="popular__link">
-                    <p class="popular__price">от 1 700<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Славянск на Кубани</span> - <span cityTo>Горловка</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-orel-donetsk" class="popular__link">
-                    <p class="popular__price">от 2 200<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Орел</span> - <span cityTo>Донецк</span></p></a></div>
-                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-kursk-donetsk" class="popular__link">
-                    <p class="popular__price">от 2 200<span class="rubl">a</span></p>
-                    <p class="popular__name"> <span cityFrom>Курск</span> - <span cityTo>Донецк</span></p></a></div>
               </div>
               <div class="text-center"><a href="javascript:void(0);" class="toggle-link">Еще маршруты</a></div>
             </div>
             <div class="col-md-5 col-md-offset-2 col-sm-6 margin-bottom-50">
-              <h3 class="subtitle">по Украине</h3>
+              <h3 class="subtitle"> <img src="/img/ukr.png" alt="flag" class="subtitle__img">в Украину</h3>
               <div class="toggle-block">
                 <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/intercity/autobus-donetsk-borispol" class="popular__link">
                     <p class="popular__price">от 1 800<span class="rubl">a</span></p>
@@ -502,6 +423,102 @@
                        грн
                     </p>
                     <p class="popular__name"> <span cityFrom>Донецк</span> - <span cityTo>Волноваха</span></p></a></div>
+              </div>
+              <div class="text-center"><a href="javascript:void(0);" class="toggle-link">Еще маршруты</a></div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-5 col-sm-6 margin-bottom-50">
+              <h3 class="subtitle"> <img src="/img/rus.png" alt="flag" class="subtitle__img">из России</h3>
+              <div class="toggle-block">
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-alushta-kiev" class="popular__link">
+                    <p class="popular__price">от 2 300<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Алушта</span> - <span cityTo>Киев</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-sevastopol-kiev" class="popular__link">
+                    <p class="popular__price">от 2 300<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Севастополь</span> - <span cityTo>Киев</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-simferopol-kiev" class="popular__link">
+                    <p class="popular__price">от 2 300<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Симферополь</span> - <span cityTo>Киев</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-yalta-kiev" class="popular__link">
+                    <p class="popular__price">от 2 300<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Ялта</span> - <span cityTo>Киев</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-sankt-peterburg-donetsk" class="popular__link">
+                    <p class="popular__price">от 3 500<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Санкт-Петербург</span> - <span cityTo>Донецк</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-tula-donetsk" class="popular__link">
+                    <p class="popular__price">от 1 500<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Тула</span> - <span cityTo>Донецк</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-sevastopol-donetsk" class="popular__link">
+                    <p class="popular__price">от 2 000<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Севастополь</span> - <span cityTo>Донецк</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-alushta-donetsk" class="popular__link">
+                    <p class="popular__price">от 2 000<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Алушта</span> - <span cityTo>Донецк</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-belgorod-donetsk" class="popular__link">
+                    <p class="popular__price">от 1 700<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Белгород</span> - <span cityTo>Донецк</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-feodosiya-donetsk" class="popular__link">
+                    <p class="popular__price">от 1 800<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Феодосия</span> - <span cityTo>Донецк</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-yalta-donetsk" class="popular__link">
+                    <p class="popular__price">от 2 000<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Ялта</span> - <span cityTo>Донецк</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-kerch-donetsk" class="popular__link">
+                    <p class="popular__price">от 1 800<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Керчь</span> - <span cityTo>Донецк</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-krasnodar-donetsk" class="popular__link">
+                    <p class="popular__price">от 1 400<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Краснодар</span> - <span cityTo>Донецк</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-pavlovsk-donetsk" class="popular__link">
+                    <p class="popular__price">от 1 500<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Павловск</span> - <span cityTo>Донецк</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-rostov-donetsk" class="popular__link">
+                    <p class="popular__price">от 700<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Ростов</span> - <span cityTo>Донецк</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-simferopol-donetsk" class="popular__link">
+                    <p class="popular__price">от 2 000<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Симферополь</span> - <span cityTo>Донецк</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-slavyansk-na-kubani-donetsk" class="popular__link">
+                    <p class="popular__price">от 1 600<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Славянск на Кубани</span> - <span cityTo>Донецк</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-alushta-gorlovka" class="popular__link">
+                    <p class="popular__price">от 2 100<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Алушта</span> - <span cityTo>Горловка</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-yalta-gorlovka" class="popular__link">
+                    <p class="popular__price">от 2 100<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Ялта</span> - <span cityTo>Горловка</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-feodosiya-gorlovka" class="popular__link">
+                    <p class="popular__price">от 2 200<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Феодосия</span> - <span cityTo>Горловка</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-kerch-gorlovka" class="popular__link">
+                    <p class="popular__price">от 2 200<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Керчь</span> - <span cityTo>Горловка</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-rostov-gorlovka" class="popular__link">
+                    <p class="popular__price">от 800<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Ростов</span> - <span cityTo>Горловка</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-sevastopol-gorlovka" class="popular__link">
+                    <p class="popular__price">от 2 200<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Севастополь</span> - <span cityTo>Горловка</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-simferopol-gorlovka" class="popular__link">
+                    <p class="popular__price">от 2 200<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Симферополь</span> - <span cityTo>Горловка</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-slavyansk-na-kubani-gorlovka" class="popular__link">
+                    <p class="popular__price">от 1 700<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Славянск на Кубани</span> - <span cityTo>Горловка</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-orel-donetsk" class="popular__link">
+                    <p class="popular__price">от 2 200<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Орел</span> - <span cityTo>Донецк</span></p></a></div>
+                <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/international/autobus-kursk-donetsk" class="popular__link">
+                    <p class="popular__price">от 2 200<span class="rubl">a</span></p>
+                    <p class="popular__name"> <span cityFrom>Курск</span> - <span cityTo>Донецк</span></p></a></div>
+              </div>
+              <div class="text-center"><a href="javascript:void(0);" class="toggle-link">Еще маршруты</a></div>
+            </div>
+            <div class="col-md-5 col-md-offset-2 col-sm-6 margin-bottom-50">
+              <h3 class="subtitle"> <img src="/img/ukr.png" alt="flag" class="subtitle__img">из Украины</h3>
+              <div class="toggle-block">
                 <div class="popular__block"><i class="fa fa-lg fa-map-signs"></i><a href="/intercity/autobus-kiev-donetsk" class="popular__link">
                     <p class="popular__price">от 1 800<span class="rubl">a</span></p>
                     <p class="popular__name"> <span cityFrom>Киев</span> - <span cityTo>Донецк</span></p></a></div>

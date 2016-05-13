@@ -13,19 +13,20 @@ block content
 				.col-sm-12.col-xs-12
 					.main__form
 						.form__block
-							.row
-								.col-md-5.col-sm-4
-									.form__control
-										i.fa.fa-lg.fa-map
-										input.form__input(type="text" required placeholder="Откуда" cityFrom)
-								.col-md-5.col-sm-4
-									.form__control
-										i.fa.fa-lg.fa-map-o
-										input.form__input(type="text" required placeholder="Куда" cityTo)
-								.col-md-2.col-sm-4
-									button.form__submit.btn.search(type="submit") 
-										i.fa.fa-search
-										|  Найти
+							form(action="javascript:void(0);")
+								.row
+									.col-md-5.col-sm-4
+										.form__control
+											i.fa.fa-lg.fa-map
+											input.form__input(type="text" required placeholder="Откуда" cityFrom)
+									.col-md-5.col-sm-4
+										.form__control
+											i.fa.fa-lg.fa-map-o
+											input.form__input(type="text" required placeholder="Куда" cityTo)
+									.col-md-2.col-sm-4
+										button.form__submit.btn.search(type="submit") 
+											i.fa.fa-search
+											|  Найти
 						.form__result
 	include includes/index/_ways
 	include includes/index/_popular-ways
