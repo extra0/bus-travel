@@ -121,6 +121,9 @@
 	.form {
 		&__result {
 			text-align: center;
+			.popular__price {
+				display: none;
+			}
 		}
 	}
 	.advantages  {
@@ -132,11 +135,7 @@
 	.share {
 		margin: 20px 0;
 	}
-	.popular {
-		&__price {
-			display: none;
-		}
-	}
+	
 	.ways {
 		&__title {
 			font-size: 28px;
