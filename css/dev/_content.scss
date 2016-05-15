@@ -125,10 +125,13 @@
 	}
 	&__submit {
 		width: 100%;
+		font-size: 18px;
 		padding: 5px 22px;
 		&-partner {
-			display: inline-block;
-			width: 40%;
+			width: auto;
+		}
+		&-search {
+			padding: 4px 22px;
 		}
 	}
 	&__control {
@@ -487,7 +490,7 @@
 	&__link {
 		color: $green;
 		border-bottom: 1px solid;
-		font-size: 16px;
+		font-size: 18px;
 		&:focus,
 		&:active,
 		&:hover {
