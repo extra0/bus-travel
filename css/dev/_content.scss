@@ -299,17 +299,21 @@
 		&._best-price {
 			&:before {
 				content: '';
-				position: absolute;
 				background: url(../img/best-price.png) 0 0 no-repeat;
-				@include position(absolute, -30px null null -30px);
-				width: 129px;
-				height: 125px;
+				@include position(absolute, -20px null null -20px);
+				width: 150px;
+				height: 145px;
 				z-index: 10;
 			}
 		}
-		&._wom {
+		&._best-way {
 			&:before {
-
+				content: '';
+				background: url(../img/best-way.png) 0 0 no-repeat;
+				@include position(absolute, -20px null null -20px);
+				width: 110px;
+				height: 110px;
+				z-index: 10;
 			}
 		}
 	}
