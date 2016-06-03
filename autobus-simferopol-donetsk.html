@@ -379,11 +379,13 @@
       </div>
       <div class="buffer"></div>
     </div>
-    <footer class="footer">
+    <footer itemscope itemtype="http://schema.org/Organization" class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-sm-4 hidden-xs">
-            <p class="footer__copyright">&copy; 2016 Vseputi. Все права защищены</p>
+          <div class="col-sm-4">
+            <p class="footer__copyright">&copy; 2016 Все права защищены.</p>
+            <p class="footer__micro"><span itemprop="name">Диспетчерская служба "VSEPUTI"</span></p>
+            <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="footer__micro dib"><span itemprop="addressLocality">г. Донецк</span></p>
           </div>
           <div class="col-sm-3 col-md-2">
             <div class="footer__social"><span class="footer__social-text">Мы в соц.сетях:</span>
@@ -392,9 +394,9 @@
           </div>
           <div class="col-sm-2 col-md-3 col-lg-4 text-center"><a href="/partnership" class="footer__link">Сотрудничество</a></div>
           <div class="col-sm-3 col-lg-2">
-            <div class="footer__phone-block"><a href="tel:+380954027977" class="footer__phone">+38 (095) 402-79-77</a><a href="tel:+79788061936" class="footer__phone">+7 (978) 806-19-36</a></div>
+            <div class="footer__phone-block"><a href="tel:+380954027977" class="footer__phone"> <span itemprop="telephone">+38 (095) 402-79-77</span></a><a href="tel:+79788061936" class="footer__phone"> <span itemprop="telephone">+7 (978) 806-19-36</span></a></div>
           </div>
-          <div class="col-xs-12 visible-xs"> 
+          <div class="col-xs-12 visible-xs">
             <div class="text-center"><a href="#callback" fancybox class="btn header__btn">Обратный звонок</a></div>
           </div>
         </div>

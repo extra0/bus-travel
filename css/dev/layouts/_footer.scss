@@ -47,4 +47,11 @@
 			border-bottom: 1px solid transparent;
 		}
 	}
+	&__micro {
+		font-size: 12px;
+		margin: 0;
+		&.dib {
+			display: inline-block;
+		}
+	}
 }

@@ -1,8 +1,12 @@
-footer.footer
+footer.footer(itemscope itemtype="http://schema.org/Organization")
 	.container
 		.row
-			.col-sm-4.hidden-xs
-				p.footer__copyright &copy; 2016 Vseputi. Все права защищены
+			.col-sm-4
+				p.footer__copyright &copy; 2016 Все права защищены.
+				p.footer__micro
+					span(itemprop="name") Диспетчерская служба "VSEPUTI"
+				p.footer__micro.dib(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
+					span(itemprop="addressLocality") г. Донецк
 			.col-sm-3.col-md-2
 				.footer__social
 					span.footer__social-text Мы в соц.сетях:
@@ -15,9 +19,11 @@ footer.footer
 				a.footer__link(href="/partnership") Сотрудничество
 			.col-sm-3.col-lg-2
 				.footer__phone-block
-					a.footer__phone(href="tel:+380954027977") +38 (095) 402-79-77
-					a.footer__phone(href="tel:+79788061936") +7 (978) 806-19-36
-			.col-xs-12.visible-xs 
+					a.footer__phone(href="tel:+380954027977") 
+						span(itemprop="telephone") +38 (095) 402-79-77
+					a.footer__phone(href="tel:+79788061936") 
+						span(itemprop="telephone") +7 (978) 806-19-36
+			.col-xs-12.visible-xs
 				.text-center
 					a.btn.header__btn(href="#callback" fancybox) Обратный звонок
 include _script

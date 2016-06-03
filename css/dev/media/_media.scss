@@ -30,13 +30,19 @@
 		}
 	}
 	.footer {
+		&__micro,
 		&__copyright,
 		&__social,
 		&__phone-block {
 			text-align: center;
 		}
+		&__micro {
+			&.dib {
+				display: block;
+			}
+		}
 		&__social {
-			margin-bottom: 20px;
+			margin: 20px 0;
 		}
 		&__phone {
 			margin: 0 0 10px;
