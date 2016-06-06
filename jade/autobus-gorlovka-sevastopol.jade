@@ -8,7 +8,7 @@ block content
 			.row
 				.col-sm-12.col-xs-12
 					h1.main__title.no-margin Купить билет на автобус Горловка - Севастополь 
-						span от #{sevastopolPrice}
+						span от #{gorSevastopolPrice}
 							span.rubl a
 	.container
 		.row
@@ -52,14 +52,49 @@ block content
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Пн, Ср, Чт, Пт, Сб, Вс<br>~ 26 часов
+									p.schedule__text Ежедневно<br>~ 26 часов
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Стоимость
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
-										strong #{sevastopolPrice}
+										strong 2 200
+										span.rubl a
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Выбрать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 08:00
+										| Горловка, Автовокзал
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 10:30 
+										| Автовокзал
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Ср, Сб<br>~ 26 часов
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong #{gorSevastopolPrice}
 										span.rubl a
 							.row
 								.col-xs-12.col-sm-12.text-center

@@ -16,7 +16,7 @@ block content
 				h2.schedule__main-title
 					i.fa.fa-table
 					| Расписание автобусов 
-					span(citys) Донецк (через Макеевка, Харцызск) - Феодосия
+					span(citys) Донецк (через Макеевка, Харцызск, Шахтерск, Торез) - Феодосия
 	block moskow-way
 		.schedule
 			.container
@@ -37,57 +37,22 @@ block content
 									p.schedule__title Отправление
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
-										span.schedule__time 09:00
-										| Донецк, Мотель
+										span.schedule__time 06:00
+										| Донецк, Цирк (Фонтан)
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Прибытие
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
-										span.schedule__time 00:00 
-										| Нефтебаза
+										span.schedule__time 21:00 
+										| Автовокзал
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Пн, Ср, Чт, Пт, Сб, Вс<br>~ 15 часов
-						.col-xs-12.col-sm-2
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title Стоимость
-								.col-xs-8.col-sm-12
-									p.schedule__price(price)
-										strong 2 000
-										span.rubl a
-							.row
-								.col-xs-12.col-sm-12.text-center
-									p.schedule__text
-										a.btn.schedule__btn(href="#order" fancybox) Выбрать
-					.row(place-parent)
-						.col-xs-12.col-sm-4
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title Отправление
-								.col-xs-8.col-sm-12
-									p.schedule__text(place-from)
-										span.schedule__time 09:00
-										| Донецк, Мотель
-						.col-xs-12.col-sm-4
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title Прибытие
-								.col-xs-8.col-sm-12
-									p.schedule__text(place-to)
-										span.schedule__time 00:00 
-										| Нефтебаза
-						.col-xs-12.col-sm-2
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title В пути
-								.col-xs-8.col-sm-12
-									p.schedule__text Вт, Сб<br>~ 15 часов
+									p.schedule__text Чт<br>~ 15 часов
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
@@ -107,29 +72,29 @@ block content
 									p.schedule__title Отправление
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
-										span.schedule__time 13:00
-										| Донецк, Цирк (Фонтан)
+										span.schedule__time 09:00
+										| Донецк, Мотель
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Прибытие
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
-										span.schedule__time 04:00 
-										| Нефтебаза
+										span.schedule__time 00:00 
+										| Автовокзал
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Чт<br>~ 15 часов
+									p.schedule__text Вт, Сб<br>~ 15 часов
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Стоимость
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
-										strong 1 800
+										strong 2 000
 										span.rubl a
 							.row
 								.col-xs-12.col-sm-12.text-center
@@ -142,22 +107,57 @@ block content
 									p.schedule__title Отправление
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
-										span.schedule__time 13:00
-										| Донецк, Цирк (Фонтан)
+										span.schedule__time 10:30
+										| Донецк, Мотель
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Прибытие
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
-										span.schedule__time 04:00 
-										| Нефтебаза
+										span.schedule__time 01:30 
+										| Автовокзал
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Пн, Чт<br>~ 15 часов
+									p.schedule__text Ежедневно<br>~ 15 часов
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong 2 000
+										span.rubl a
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Выбрать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 12:30
+										| Донецк, Кр. рынок
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 03:30 
+										| Автовокзал
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Пн, Ср, Пт<br>~ 15 часов
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
@@ -186,48 +186,13 @@ block content
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
 										span.schedule__time 04:20 
-										| Нефтебаза
+										| Автовокзал
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Пн, Пт<br>~ 15 часов
-						.col-xs-12.col-sm-2
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title Стоимость
-								.col-xs-8.col-sm-12
-									p.schedule__price(price)
-										strong 2 100
-										span.rubl a
-							.row
-								.col-xs-12.col-sm-12.text-center
-									p.schedule__text
-										a.btn.schedule__btn(href="#order" fancybox) Выбрать
-					.row(place-parent)
-						.col-xs-12.col-sm-4
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title Отправление
-								.col-xs-8.col-sm-12
-									p.schedule__text(place-from)
-										span.schedule__time 15:00
-										| Донецк, Мотель
-						.col-xs-12.col-sm-4
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title Прибытие
-								.col-xs-8.col-sm-12
-									p.schedule__text(place-to)
-										span.schedule__time 05:00 
-										| Нефтебаза
-						.col-xs-12.col-sm-2
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title В пути
-								.col-xs-8.col-sm-12
-									p.schedule__text Пт<br>~ 15 часов
+									p.schedule__text Пн, Пт, Вт, Сб<br>~ 15 часов
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
@@ -247,7 +212,7 @@ block content
 									p.schedule__title Отправление
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
-										span.schedule__time 15:30
+										span.schedule__time 14:30
 										| АВ "Южный", Кафе "Пингвин"
 						.col-xs-12.col-sm-4
 							.row
@@ -256,7 +221,7 @@ block content
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
 										span.schedule__time 05:30 
-										| Нефтебаза
+										| Автовокзал
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
@@ -269,7 +234,42 @@ block content
 									p.schedule__title Стоимость
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
-										strong #{feodosiyaPrice}
+										strong 2 100
+										span.rubl a
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Выбрать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 16:00
+										| Донецк, Мотель
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 07:00 
+										| Автовокзал
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Чт, Сб<br>~ 15 часов
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong 2 000
 										span.rubl a
 							.row
 								.col-xs-12.col-sm-12.text-center
@@ -285,8 +285,8 @@ block content
 		.container
 			.col-sm-12
 				h2.description__title 
-					strong Автобус Донецк – Феодосия (пассажирские автобусные перевозки в оба конца)
-				p.description__text В связи с непростой обстановкой на Донбассе, очень сложно <strong>добраться из Донецка в Феодосию</strong>. Наша транспортная компания «VSEPUTI» предоставляет комфортабельные <strong>пассажирские автобусные перевозки Донецк – Феодосия через Россию</strong>,маршрут таких перевозок осуществляется опытными и осведомленными водителями по максимально безопасному маршруту. <strong>Купить билет на автобус Донецк – Феодосия </strong>или забронировать место на определенную дату и время вы можете, заполнив форму на сайте или позвонив по номерам указанным на сайте. Если у вас нет желания или возможности лично выехать из Донецка по направлению <strong>Донецк - Феодосия - Донецк</strong>, вы можете <strong>передать багаж</strong> нашим рейсом, цену на данную услугу вы можете узнать непосредственно у водителя автобуса, и она будет зависеть от размеров багажа.
+					strong Автобус #{city} (пассажирские автобусные перевозки в оба конца)
+				p.description__text В связи с непростой обстановкой на Донбассе, очень сложно <strong>добраться из Донецка в Феодосию</strong>. Наша транспортная компания «VSEPUTI» предоставляет комфортабельные <strong>пассажирские автобусные перевозки #{city} через Россию</strong>,маршрут таких перевозок осуществляется опытными и осведомленными водителями по максимально безопасному маршруту. <strong>Купить билет на автобус #{city} </strong>или забронировать место на определенную дату и время вы можете, заполнив форму на сайте или позвонив по номерам указанным на сайте. Если у вас нет желания или возможности лично выехать из Донецка по направлению <strong>Донецк - Феодосия - Донецк</strong>, вы можете <strong>передать багаж</strong> нашим рейсом, цену на данную услугу вы можете узнать непосредственно у водителя автобуса, и она будет зависеть от размеров багажа.
 				h2.description__title 
-					strong Расписание автобусов Донецк – Феодосия
-				p.description__text <strong>Расписание автобусов по направлению Донецк – Феодосия </strong>выстроено с наиболее удобным временем отправления и прибытия маршрутов, учитывая так же нюансы пропускного времени через границу. На ваш выбор предоставляется <strong>автобусы Донецк – Феодосия </strong>в нескольких вариантах 46 местные и 8 местные (без пересадок), более подробную информацию вы можете узнать у менеджеров нашей диспетчерской службы по телефонам указанным на сайте.
+					strong Расписание автобусов #{city}
+				p.description__text <strong>Расписание автобусов по направлению #{city} </strong>выстроено с наиболее удобным временем отправления и прибытия маршрутов, учитывая так же нюансы пропускного времени через границу. На ваш выбор предоставляется <strong>автобусы #{city} </strong>в нескольких вариантах 46 местные и 8 местные (без пересадок), более подробную информацию вы можете узнать у менеджеров нашей диспетчерской службы по телефонам указанным на сайте.
