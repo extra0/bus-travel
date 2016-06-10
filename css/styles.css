@@ -1,21 +1,2390 @@
-/*!
- * Bootstrap v3.3.5 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- *//*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=3571862c89813ee0b483)
- * Config saved to config.json and https://gist.github.com/3571862c89813ee0b483
- *//*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width: 768px){.container{width:750px}}@media (min-width: 992px){.container{width:970px}}@media (min-width: 1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2,.col-xs-3,.col-sm-3,.col-md-3,.col-lg-3,.col-xs-4,.col-sm-4,.col-md-4,.col-lg-4,.col-xs-5,.col-sm-5,.col-md-5,.col-lg-5,.col-xs-6,.col-sm-6,.col-md-6,.col-lg-6,.col-xs-7,.col-sm-7,.col-md-7,.col-lg-7,.col-xs-8,.col-sm-8,.col-md-8,.col-lg-8,.col-xs-9,.col-sm-9,.col-md-9,.col-lg-9,.col-xs-10,.col-sm-10,.col-md-10,.col-lg-10,.col-xs-11,.col-sm-11,.col-md-11,.col-lg-11,.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width: 768px){.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width: 992px){.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width: 1200px){.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width;}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width: 767px){.visible-xs{display:block !important}table.visible-xs{display:table !important}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width: 767px){.visible-xs-block{display:block !important}}@media (max-width: 767px){.visible-xs-inline{display:inline !important}}@media (max-width: 767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width: 768px) and (max-width: 991px){.visible-sm{display:block !important}table.visible-sm{display:table !important}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width: 768px) and (max-width: 991px){.visible-sm-block{display:block !important}}@media (min-width: 768px) and (max-width: 991px){.visible-sm-inline{display:inline !important}}@media (min-width: 768px) and (max-width: 991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width: 992px) and (max-width: 1199px){.visible-md{display:block !important}table.visible-md{display:table !important}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width: 992px) and (max-width: 1199px){.visible-md-block{display:block !important}}@media (min-width: 992px) and (max-width: 1199px){.visible-md-inline{display:inline !important}}@media (min-width: 992px) and (max-width: 1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width: 1200px){.visible-lg{display:block !important}table.visible-lg{display:table !important}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width: 1200px){.visible-lg-block{display:block !important}}@media (min-width: 1200px){.visible-lg-inline{display:inline !important}}@media (min-width: 1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width: 767px){.hidden-xs{display:none !important}}@media (min-width: 768px) and (max-width: 991px){.hidden-sm{display:none !important}}@media (min-width: 992px) and (max-width: 1199px){.hidden-md{display:none !important}}@media (min-width: 1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table !important}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}@font-face{font-family:"Roboto";font-style:normal;font-weight:normal;src:url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),url("../fonts/Roboto-Regular.ttf") format("truetype"),url("../fonts/Roboto-Regular.svg#Roboto") format("svg");}@font-face{font-family:"Roboto";font-style:italic;font-weight:normal;src:url("../fonts/Roboto-Italic.eot?#iefix") format("embedded-opentype"),url("../fonts/Roboto-Italic.ttf") format("truetype"),url("../fonts/Roboto-Italic.svg#Roboto") format("svg");}@font-face{font-family:"Roboto";font-style:normal;font-weight:bold;src:url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"),url("../fonts/Roboto-Bold.ttf") format("truetype"),url("../fonts/Roboto-Bold.svg#Roboto") format("svg");}@font-face{font-family:"Rubl";font-style:normal;font-weight:normal;src:url("../fonts/ALSRubl.eot?#iefix") format("embedded-opentype"),url("../fonts/ALSRubl.woff") format("woff"),url("../fonts/ALSRubl.ttf") format("truetype");}@font-face{font-family:"PT Sans";font-style:normal;font-weight:normal;src:url("../fonts/PTSans-Regular.eot?#iefix") format("embedded-opentype"),url("../fonts/PTSans-Regular.ttf") format("truetype"),url("../fonts/PTSans-Regular.svg#PT Sans") format("svg");}@font-face{font-family:"PT Sans";font-style:normal;font-weight:bold;src:url("../fonts/PTSans-Bold.eot?#iefix") format("embedded-opentype"),url("../fonts/PTSans-Bold.ttf") format("truetype"),url("../fonts/PTSans-Bold.svg#PT Sans") format("svg");}/*!
- *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */@font-face{font-family:'FontAwesome';src:url('../fonts/fontawesome-webfont.eot?v=4.5.0');src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'),url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal;}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-lg{font-size:1.333333333em;line-height:0.75em;vertical-align:-15%}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-fw{width:1.285714286em;text-align:center}.fa-ul{padding-left:0;margin-left:2.142857143em;list-style-type:none}.fa-ul>li{position:relative}.fa-li{position:absolute;left:-2.142857143em;width:2.142857143em;top:0.142857143em;text-align:center}.fa-li.fa-lg{left:-1.857142857em}.fa-border{padding:0.2em 0.25em 0.15em;border:solid 0.08em #eee;border-radius:0.1em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left{margin-right:0.3em}.fa.fa-pull-right{margin-left:0.3em}.pull-right{float:right}.pull-left{float:left}.fa.pull-left{margin-right:0.3em}.fa.pull-right{margin-left:0.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}.fa-rotate-90{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);-webkit-transform:rotate(270deg);-ms-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0);-webkit-transform:scale(-1, 1);-ms-transform:scale(-1, 1);transform:scale(-1, 1)}.fa-flip-vertical{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);-webkit-transform:scale(1, -1);-ms-transform:scale(1, -1);transform:scale(1, -1)}:root .fa-rotate-90,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-flip-horizontal,:root .fa-flip-vertical{filter:none}.fa-stack{position:relative;display:inline-block;width:2em;height:2em;line-height:2em;vertical-align:middle}.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}.fa-stack-1x{line-height:inherit}.fa-stack-2x{font-size:2em}.fa-inverse{color:#fff}.fa-glass:before{content:"\f000"}.fa-music:before{content:"\f001"}.fa-search:before{content:"\f002"}.fa-envelope-o:before{content:"\f003"}.fa-heart:before{content:"\f004"}.fa-star:before{content:"\f005"}.fa-star-o:before{content:"\f006"}.fa-user:before{content:"\f007"}.fa-film:before{content:"\f008"}.fa-th-large:before{content:"\f009"}.fa-th:before{content:"\f00a"}.fa-th-list:before{content:"\f00b"}.fa-check:before{content:"\f00c"}.fa-remove:before,.fa-close:before,.fa-times:before{content:"\f00d"}.fa-search-plus:before{content:"\f00e"}.fa-search-minus:before{content:"\f010"}.fa-power-off:before{content:"\f011"}.fa-signal:before{content:"\f012"}.fa-gear:before,.fa-cog:before{content:"\f013"}.fa-trash-o:before{content:"\f014"}.fa-home:before{content:"\f015"}.fa-file-o:before{content:"\f016"}.fa-clock-o:before{content:"\f017"}.fa-road:before{content:"\f018"}.fa-download:before{content:"\f019"}.fa-arrow-circle-o-down:before{content:"\f01a"}.fa-arrow-circle-o-up:before{content:"\f01b"}.fa-inbox:before{content:"\f01c"}.fa-play-circle-o:before{content:"\f01d"}.fa-rotate-right:before,.fa-repeat:before{content:"\f01e"}.fa-refresh:before{content:"\f021"}.fa-list-alt:before{content:"\f022"}.fa-lock:before{content:"\f023"}.fa-flag:before{content:"\f024"}.fa-headphones:before{content:"\f025"}.fa-volume-off:before{content:"\f026"}.fa-volume-down:before{content:"\f027"}.fa-volume-up:before{content:"\f028"}.fa-qrcode:before{content:"\f029"}.fa-barcode:before{content:"\f02a"}.fa-tag:before{content:"\f02b"}.fa-tags:before{content:"\f02c"}.fa-book:before{content:"\f02d"}.fa-bookmark:before{content:"\f02e"}.fa-print:before{content:"\f02f"}.fa-camera:before{content:"\f030"}.fa-font:before{content:"\f031"}.fa-bold:before{content:"\f032"}.fa-italic:before{content:"\f033"}.fa-text-height:before{content:"\f034"}.fa-text-width:before{content:"\f035"}.fa-align-left:before{content:"\f036"}.fa-align-center:before{content:"\f037"}.fa-align-right:before{content:"\f038"}.fa-align-justify:before{content:"\f039"}.fa-list:before{content:"\f03a"}.fa-dedent:before,.fa-outdent:before{content:"\f03b"}.fa-indent:before{content:"\f03c"}.fa-video-camera:before{content:"\f03d"}.fa-photo:before,.fa-image:before,.fa-picture-o:before{content:"\f03e"}.fa-pencil:before{content:"\f040"}.fa-map-marker:before{content:"\f041"}.fa-adjust:before{content:"\f042"}.fa-tint:before{content:"\f043"}.fa-edit:before,.fa-pencil-square-o:before{content:"\f044"}.fa-share-square-o:before{content:"\f045"}.fa-check-square-o:before{content:"\f046"}.fa-arrows:before{content:"\f047"}.fa-step-backward:before{content:"\f048"}.fa-fast-backward:before{content:"\f049"}.fa-backward:before{content:"\f04a"}.fa-play:before{content:"\f04b"}.fa-pause:before{content:"\f04c"}.fa-stop:before{content:"\f04d"}.fa-forward:before{content:"\f04e"}.fa-fast-forward:before{content:"\f050"}.fa-step-forward:before{content:"\f051"}.fa-eject:before{content:"\f052"}.fa-chevron-left:before{content:"\f053"}.fa-chevron-right:before{content:"\f054"}.fa-plus-circle:before{content:"\f055"}.fa-minus-circle:before{content:"\f056"}.fa-times-circle:before{content:"\f057"}.fa-check-circle:before{content:"\f058"}.fa-question-circle:before{content:"\f059"}.fa-info-circle:before{content:"\f05a"}.fa-crosshairs:before{content:"\f05b"}.fa-times-circle-o:before{content:"\f05c"}.fa-check-circle-o:before{content:"\f05d"}.fa-ban:before{content:"\f05e"}.fa-arrow-left:before{content:"\f060"}.fa-arrow-right:before{content:"\f061"}.fa-arrow-up:before{content:"\f062"}.fa-arrow-down:before{content:"\f063"}.fa-mail-forward:before,.fa-share:before{content:"\f064"}.fa-expand:before{content:"\f065"}.fa-compress:before{content:"\f066"}.fa-plus:before{content:"\f067"}.fa-minus:before{content:"\f068"}.fa-asterisk:before{content:"\f069"}.fa-exclamation-circle:before{content:"\f06a"}.fa-gift:before{content:"\f06b"}.fa-leaf:before{content:"\f06c"}.fa-fire:before{content:"\f06d"}.fa-eye:before{content:"\f06e"}.fa-eye-slash:before{content:"\f070"}.fa-warning:before,.fa-exclamation-triangle:before{content:"\f071"}.fa-plane:before{content:"\f072"}.fa-calendar:before{content:"\f073"}.fa-random:before{content:"\f074"}.fa-comment:before{content:"\f075"}.fa-magnet:before{content:"\f076"}.fa-chevron-up:before{content:"\f077"}.fa-chevron-down:before{content:"\f078"}.fa-retweet:before{content:"\f079"}.fa-shopping-cart:before{content:"\f07a"}.fa-folder:before{content:"\f07b"}.fa-folder-open:before{content:"\f07c"}.fa-arrows-v:before{content:"\f07d"}.fa-arrows-h:before{content:"\f07e"}.fa-bar-chart-o:before,.fa-bar-chart:before{content:"\f080"}.fa-twitter-square:before{content:"\f081"}.fa-facebook-square:before{content:"\f082"}.fa-camera-retro:before{content:"\f083"}.fa-key:before{content:"\f084"}.fa-gears:before,.fa-cogs:before{content:"\f085"}.fa-comments:before{content:"\f086"}.fa-thumbs-o-up:before{content:"\f087"}.fa-thumbs-o-down:before{content:"\f088"}.fa-star-half:before{content:"\f089"}.fa-heart-o:before{content:"\f08a"}.fa-sign-out:before{content:"\f08b"}.fa-linkedin-square:before{content:"\f08c"}.fa-thumb-tack:before{content:"\f08d"}.fa-external-link:before{content:"\f08e"}.fa-sign-in:before{content:"\f090"}.fa-trophy:before{content:"\f091"}.fa-github-square:before{content:"\f092"}.fa-upload:before{content:"\f093"}.fa-lemon-o:before{content:"\f094"}.fa-phone:before{content:"\f095"}.fa-square-o:before{content:"\f096"}.fa-bookmark-o:before{content:"\f097"}.fa-phone-square:before{content:"\f098"}.fa-twitter:before{content:"\f099"}.fa-facebook-f:before,.fa-facebook:before{content:"\f09a"}.fa-github:before{content:"\f09b"}.fa-unlock:before{content:"\f09c"}.fa-credit-card:before{content:"\f09d"}.fa-feed:before,.fa-rss:before{content:"\f09e"}.fa-hdd-o:before{content:"\f0a0"}.fa-bullhorn:before{content:"\f0a1"}.fa-bell:before{content:"\f0f3"}.fa-certificate:before{content:"\f0a3"}.fa-hand-o-right:before{content:"\f0a4"}.fa-hand-o-left:before{content:"\f0a5"}.fa-hand-o-up:before{content:"\f0a6"}.fa-hand-o-down:before{content:"\f0a7"}.fa-arrow-circle-left:before{content:"\f0a8"}.fa-arrow-circle-right:before{content:"\f0a9"}.fa-arrow-circle-up:before{content:"\f0aa"}.fa-arrow-circle-down:before{content:"\f0ab"}.fa-globe:before{content:"\f0ac"}.fa-wrench:before{content:"\f0ad"}.fa-tasks:before{content:"\f0ae"}.fa-filter:before{content:"\f0b0"}.fa-briefcase:before{content:"\f0b1"}.fa-arrows-alt:before{content:"\f0b2"}.fa-group:before,.fa-users:before{content:"\f0c0"}.fa-chain:before,.fa-link:before{content:"\f0c1"}.fa-cloud:before{content:"\f0c2"}.fa-flask:before{content:"\f0c3"}.fa-cut:before,.fa-scissors:before{content:"\f0c4"}.fa-copy:before,.fa-files-o:before{content:"\f0c5"}.fa-paperclip:before{content:"\f0c6"}.fa-save:before,.fa-floppy-o:before{content:"\f0c7"}.fa-square:before{content:"\f0c8"}.fa-navicon:before,.fa-reorder:before,.fa-bars:before{content:"\f0c9"}.fa-list-ul:before{content:"\f0ca"}.fa-list-ol:before{content:"\f0cb"}.fa-strikethrough:before{content:"\f0cc"}.fa-underline:before{content:"\f0cd"}.fa-table:before{content:"\f0ce"}.fa-magic:before{content:"\f0d0"}.fa-truck:before{content:"\f0d1"}.fa-pinterest:before{content:"\f0d2"}.fa-pinterest-square:before{content:"\f0d3"}.fa-google-plus-square:before{content:"\f0d4"}.fa-google-plus:before{content:"\f0d5"}.fa-money:before{content:"\f0d6"}.fa-caret-down:before{content:"\f0d7"}.fa-caret-up:before{content:"\f0d8"}.fa-caret-left:before{content:"\f0d9"}.fa-caret-right:before{content:"\f0da"}.fa-columns:before{content:"\f0db"}.fa-unsorted:before,.fa-sort:before{content:"\f0dc"}.fa-sort-down:before,.fa-sort-desc:before{content:"\f0dd"}.fa-sort-up:before,.fa-sort-asc:before{content:"\f0de"}.fa-envelope:before{content:"\f0e0"}.fa-linkedin:before{content:"\f0e1"}.fa-rotate-left:before,.fa-undo:before{content:"\f0e2"}.fa-legal:before,.fa-gavel:before{content:"\f0e3"}.fa-dashboard:before,.fa-tachometer:before{content:"\f0e4"}.fa-comment-o:before{content:"\f0e5"}.fa-comments-o:before{content:"\f0e6"}.fa-flash:before,.fa-bolt:before{content:"\f0e7"}.fa-sitemap:before{content:"\f0e8"}.fa-umbrella:before{content:"\f0e9"}.fa-paste:before,.fa-clipboard:before{content:"\f0ea"}.fa-lightbulb-o:before{content:"\f0eb"}.fa-exchange:before{content:"\f0ec"}.fa-cloud-download:before{content:"\f0ed"}.fa-cloud-upload:before{content:"\f0ee"}.fa-user-md:before{content:"\f0f0"}.fa-stethoscope:before{content:"\f0f1"}.fa-suitcase:before{content:"\f0f2"}.fa-bell-o:before{content:"\f0a2"}.fa-coffee:before{content:"\f0f4"}.fa-cutlery:before{content:"\f0f5"}.fa-file-text-o:before{content:"\f0f6"}.fa-building-o:before{content:"\f0f7"}.fa-hospital-o:before{content:"\f0f8"}.fa-ambulance:before{content:"\f0f9"}.fa-medkit:before{content:"\f0fa"}.fa-fighter-jet:before{content:"\f0fb"}.fa-beer:before{content:"\f0fc"}.fa-h-square:before{content:"\f0fd"}.fa-plus-square:before{content:"\f0fe"}.fa-angle-double-left:before{content:"\f100"}.fa-angle-double-right:before{content:"\f101"}.fa-angle-double-up:before{content:"\f102"}.fa-angle-double-down:before{content:"\f103"}.fa-angle-left:before{content:"\f104"}.fa-angle-right:before{content:"\f105"}.fa-angle-up:before{content:"\f106"}.fa-angle-down:before{content:"\f107"}.fa-desktop:before{content:"\f108"}.fa-laptop:before{content:"\f109"}.fa-tablet:before{content:"\f10a"}.fa-mobile-phone:before,.fa-mobile:before{content:"\f10b"}.fa-circle-o:before{content:"\f10c"}.fa-quote-left:before{content:"\f10d"}.fa-quote-right:before{content:"\f10e"}.fa-spinner:before{content:"\f110"}.fa-circle:before{content:"\f111"}.fa-mail-reply:before,.fa-reply:before{content:"\f112"}.fa-github-alt:before{content:"\f113"}.fa-folder-o:before{content:"\f114"}.fa-folder-open-o:before{content:"\f115"}.fa-smile-o:before{content:"\f118"}.fa-frown-o:before{content:"\f119"}.fa-meh-o:before{content:"\f11a"}.fa-gamepad:before{content:"\f11b"}.fa-keyboard-o:before{content:"\f11c"}.fa-flag-o:before{content:"\f11d"}.fa-flag-checkered:before{content:"\f11e"}.fa-terminal:before{content:"\f120"}.fa-code:before{content:"\f121"}.fa-mail-reply-all:before,.fa-reply-all:before{content:"\f122"}.fa-star-half-empty:before,.fa-star-half-full:before,.fa-star-half-o:before{content:"\f123"}.fa-location-arrow:before{content:"\f124"}.fa-crop:before{content:"\f125"}.fa-code-fork:before{content:"\f126"}.fa-unlink:before,.fa-chain-broken:before{content:"\f127"}.fa-question:before{content:"\f128"}.fa-info:before{content:"\f129"}.fa-exclamation:before{content:"\f12a"}.fa-superscript:before{content:"\f12b"}.fa-subscript:before{content:"\f12c"}.fa-eraser:before{content:"\f12d"}.fa-puzzle-piece:before{content:"\f12e"}.fa-microphone:before{content:"\f130"}.fa-microphone-slash:before{content:"\f131"}.fa-shield:before{content:"\f132"}.fa-calendar-o:before{content:"\f133"}.fa-fire-extinguisher:before{content:"\f134"}.fa-rocket:before{content:"\f135"}.fa-maxcdn:before{content:"\f136"}.fa-chevron-circle-left:before{content:"\f137"}.fa-chevron-circle-right:before{content:"\f138"}.fa-chevron-circle-up:before{content:"\f139"}.fa-chevron-circle-down:before{content:"\f13a"}.fa-html5:before{content:"\f13b"}.fa-css3:before{content:"\f13c"}.fa-anchor:before{content:"\f13d"}.fa-unlock-alt:before{content:"\f13e"}.fa-bullseye:before{content:"\f140"}.fa-ellipsis-h:before{content:"\f141"}.fa-ellipsis-v:before{content:"\f142"}.fa-rss-square:before{content:"\f143"}.fa-play-circle:before{content:"\f144"}.fa-ticket:before{content:"\f145"}.fa-minus-square:before{content:"\f146"}.fa-minus-square-o:before{content:"\f147"}.fa-level-up:before{content:"\f148"}.fa-level-down:before{content:"\f149"}.fa-check-square:before{content:"\f14a"}.fa-pencil-square:before{content:"\f14b"}.fa-external-link-square:before{content:"\f14c"}.fa-share-square:before{content:"\f14d"}.fa-compass:before{content:"\f14e"}.fa-toggle-down:before,.fa-caret-square-o-down:before{content:"\f150"}.fa-toggle-up:before,.fa-caret-square-o-up:before{content:"\f151"}.fa-toggle-right:before,.fa-caret-square-o-right:before{content:"\f152"}.fa-euro:before,.fa-eur:before{content:"\f153"}.fa-gbp:before{content:"\f154"}.fa-dollar:before,.fa-usd:before{content:"\f155"}.fa-rupee:before,.fa-inr:before{content:"\f156"}.fa-cny:before,.fa-rmb:before,.fa-yen:before,.fa-jpy:before{content:"\f157"}.fa-ruble:before,.fa-rouble:before,.fa-rub:before{content:"\f158"}.fa-won:before,.fa-krw:before{content:"\f159"}.fa-bitcoin:before,.fa-btc:before{content:"\f15a"}.fa-file:before{content:"\f15b"}.fa-file-text:before{content:"\f15c"}.fa-sort-alpha-asc:before{content:"\f15d"}.fa-sort-alpha-desc:before{content:"\f15e"}.fa-sort-amount-asc:before{content:"\f160"}.fa-sort-amount-desc:before{content:"\f161"}.fa-sort-numeric-asc:before{content:"\f162"}.fa-sort-numeric-desc:before{content:"\f163"}.fa-thumbs-up:before{content:"\f164"}.fa-thumbs-down:before{content:"\f165"}.fa-youtube-square:before{content:"\f166"}.fa-youtube:before{content:"\f167"}.fa-xing:before{content:"\f168"}.fa-xing-square:before{content:"\f169"}.fa-youtube-play:before{content:"\f16a"}.fa-dropbox:before{content:"\f16b"}.fa-stack-overflow:before{content:"\f16c"}.fa-instagram:before{content:"\f16d"}.fa-flickr:before{content:"\f16e"}.fa-adn:before{content:"\f170"}.fa-bitbucket:before{content:"\f171"}.fa-bitbucket-square:before{content:"\f172"}.fa-tumblr:before{content:"\f173"}.fa-tumblr-square:before{content:"\f174"}.fa-long-arrow-down:before{content:"\f175"}.fa-long-arrow-up:before{content:"\f176"}.fa-long-arrow-left:before{content:"\f177"}.fa-long-arrow-right:before{content:"\f178"}.fa-apple:before{content:"\f179"}.fa-windows:before{content:"\f17a"}.fa-android:before{content:"\f17b"}.fa-linux:before{content:"\f17c"}.fa-dribbble:before{content:"\f17d"}.fa-skype:before{content:"\f17e"}.fa-foursquare:before{content:"\f180"}.fa-trello:before{content:"\f181"}.fa-female:before{content:"\f182"}.fa-male:before{content:"\f183"}.fa-gittip:before,.fa-gratipay:before{content:"\f184"}.fa-sun-o:before{content:"\f185"}.fa-moon-o:before{content:"\f186"}.fa-archive:before{content:"\f187"}.fa-bug:before{content:"\f188"}.fa-vk:before{content:"\f189"}.fa-weibo:before{content:"\f18a"}.fa-renren:before{content:"\f18b"}.fa-pagelines:before{content:"\f18c"}.fa-stack-exchange:before{content:"\f18d"}.fa-arrow-circle-o-right:before{content:"\f18e"}.fa-arrow-circle-o-left:before{content:"\f190"}.fa-toggle-left:before,.fa-caret-square-o-left:before{content:"\f191"}.fa-dot-circle-o:before{content:"\f192"}.fa-wheelchair:before{content:"\f193"}.fa-vimeo-square:before{content:"\f194"}.fa-turkish-lira:before,.fa-try:before{content:"\f195"}.fa-plus-square-o:before{content:"\f196"}.fa-space-shuttle:before{content:"\f197"}.fa-slack:before{content:"\f198"}.fa-envelope-square:before{content:"\f199"}.fa-wordpress:before{content:"\f19a"}.fa-openid:before{content:"\f19b"}.fa-institution:before,.fa-bank:before,.fa-university:before{content:"\f19c"}.fa-mortar-board:before,.fa-graduation-cap:before{content:"\f19d"}.fa-yahoo:before{content:"\f19e"}.fa-google:before{content:"\f1a0"}.fa-reddit:before{content:"\f1a1"}.fa-reddit-square:before{content:"\f1a2"}.fa-stumbleupon-circle:before{content:"\f1a3"}.fa-stumbleupon:before{content:"\f1a4"}.fa-delicious:before{content:"\f1a5"}.fa-digg:before{content:"\f1a6"}.fa-pied-piper:before{content:"\f1a7"}.fa-pied-piper-alt:before{content:"\f1a8"}.fa-drupal:before{content:"\f1a9"}.fa-joomla:before{content:"\f1aa"}.fa-language:before{content:"\f1ab"}.fa-fax:before{content:"\f1ac"}.fa-building:before{content:"\f1ad"}.fa-child:before{content:"\f1ae"}.fa-paw:before{content:"\f1b0"}.fa-spoon:before{content:"\f1b1"}.fa-cube:before{content:"\f1b2"}.fa-cubes:before{content:"\f1b3"}.fa-behance:before{content:"\f1b4"}.fa-behance-square:before{content:"\f1b5"}.fa-steam:before{content:"\f1b6"}.fa-steam-square:before{content:"\f1b7"}.fa-recycle:before{content:"\f1b8"}.fa-automobile:before,.fa-car:before{content:"\f1b9"}.fa-cab:before,.fa-taxi:before{content:"\f1ba"}.fa-tree:before{content:"\f1bb"}.fa-spotify:before{content:"\f1bc"}.fa-deviantart:before{content:"\f1bd"}.fa-soundcloud:before{content:"\f1be"}.fa-database:before{content:"\f1c0"}.fa-file-pdf-o:before{content:"\f1c1"}.fa-file-word-o:before{content:"\f1c2"}.fa-file-excel-o:before{content:"\f1c3"}.fa-file-powerpoint-o:before{content:"\f1c4"}.fa-file-photo-o:before,.fa-file-picture-o:before,.fa-file-image-o:before{content:"\f1c5"}.fa-file-zip-o:before,.fa-file-archive-o:before{content:"\f1c6"}.fa-file-sound-o:before,.fa-file-audio-o:before{content:"\f1c7"}.fa-file-movie-o:before,.fa-file-video-o:before{content:"\f1c8"}.fa-file-code-o:before{content:"\f1c9"}.fa-vine:before{content:"\f1ca"}.fa-codepen:before{content:"\f1cb"}.fa-jsfiddle:before{content:"\f1cc"}.fa-life-bouy:before,.fa-life-buoy:before,.fa-life-saver:before,.fa-support:before,.fa-life-ring:before{content:"\f1cd"}.fa-circle-o-notch:before{content:"\f1ce"}.fa-ra:before,.fa-rebel:before{content:"\f1d0"}.fa-ge:before,.fa-empire:before{content:"\f1d1"}.fa-git-square:before{content:"\f1d2"}.fa-git:before{content:"\f1d3"}.fa-y-combinator-square:before,.fa-yc-square:before,.fa-hacker-news:before{content:"\f1d4"}.fa-tencent-weibo:before{content:"\f1d5"}.fa-qq:before{content:"\f1d6"}.fa-wechat:before,.fa-weixin:before{content:"\f1d7"}.fa-send:before,.fa-paper-plane:before{content:"\f1d8"}.fa-send-o:before,.fa-paper-plane-o:before{content:"\f1d9"}.fa-history:before{content:"\f1da"}.fa-circle-thin:before{content:"\f1db"}.fa-header:before{content:"\f1dc"}.fa-paragraph:before{content:"\f1dd"}.fa-sliders:before{content:"\f1de"}.fa-share-alt:before{content:"\f1e0"}.fa-share-alt-square:before{content:"\f1e1"}.fa-bomb:before{content:"\f1e2"}.fa-soccer-ball-o:before,.fa-futbol-o:before{content:"\f1e3"}.fa-tty:before{content:"\f1e4"}.fa-binoculars:before{content:"\f1e5"}.fa-plug:before{content:"\f1e6"}.fa-slideshare:before{content:"\f1e7"}.fa-twitch:before{content:"\f1e8"}.fa-yelp:before{content:"\f1e9"}.fa-newspaper-o:before{content:"\f1ea"}.fa-wifi:before{content:"\f1eb"}.fa-calculator:before{content:"\f1ec"}.fa-paypal:before{content:"\f1ed"}.fa-google-wallet:before{content:"\f1ee"}.fa-cc-visa:before{content:"\f1f0"}.fa-cc-mastercard:before{content:"\f1f1"}.fa-cc-discover:before{content:"\f1f2"}.fa-cc-amex:before{content:"\f1f3"}.fa-cc-paypal:before{content:"\f1f4"}.fa-cc-stripe:before{content:"\f1f5"}.fa-bell-slash:before{content:"\f1f6"}.fa-bell-slash-o:before{content:"\f1f7"}.fa-trash:before{content:"\f1f8"}.fa-copyright:before{content:"\f1f9"}.fa-at:before{content:"\f1fa"}.fa-eyedropper:before{content:"\f1fb"}.fa-paint-brush:before{content:"\f1fc"}.fa-birthday-cake:before{content:"\f1fd"}.fa-area-chart:before{content:"\f1fe"}.fa-pie-chart:before{content:"\f200"}.fa-line-chart:before{content:"\f201"}.fa-lastfm:before{content:"\f202"}.fa-lastfm-square:before{content:"\f203"}.fa-toggle-off:before{content:"\f204"}.fa-toggle-on:before{content:"\f205"}.fa-bicycle:before{content:"\f206"}.fa-bus:before{content:"\f207"}.fa-ioxhost:before{content:"\f208"}.fa-angellist:before{content:"\f209"}.fa-cc:before{content:"\f20a"}.fa-shekel:before,.fa-sheqel:before,.fa-ils:before{content:"\f20b"}.fa-meanpath:before{content:"\f20c"}.fa-buysellads:before{content:"\f20d"}.fa-connectdevelop:before{content:"\f20e"}.fa-dashcube:before{content:"\f210"}.fa-forumbee:before{content:"\f211"}.fa-leanpub:before{content:"\f212"}.fa-sellsy:before{content:"\f213"}.fa-shirtsinbulk:before{content:"\f214"}.fa-simplybuilt:before{content:"\f215"}.fa-skyatlas:before{content:"\f216"}.fa-cart-plus:before{content:"\f217"}.fa-cart-arrow-down:before{content:"\f218"}.fa-diamond:before{content:"\f219"}.fa-ship:before{content:"\f21a"}.fa-user-secret:before{content:"\f21b"}.fa-motorcycle:before{content:"\f21c"}.fa-street-view:before{content:"\f21d"}.fa-heartbeat:before{content:"\f21e"}.fa-venus:before{content:"\f221"}.fa-mars:before{content:"\f222"}.fa-mercury:before{content:"\f223"}.fa-intersex:before,.fa-transgender:before{content:"\f224"}.fa-transgender-alt:before{content:"\f225"}.fa-venus-double:before{content:"\f226"}.fa-mars-double:before{content:"\f227"}.fa-venus-mars:before{content:"\f228"}.fa-mars-stroke:before{content:"\f229"}.fa-mars-stroke-v:before{content:"\f22a"}.fa-mars-stroke-h:before{content:"\f22b"}.fa-neuter:before{content:"\f22c"}.fa-genderless:before{content:"\f22d"}.fa-facebook-official:before{content:"\f230"}.fa-pinterest-p:before{content:"\f231"}.fa-whatsapp:before{content:"\f232"}.fa-server:before{content:"\f233"}.fa-user-plus:before{content:"\f234"}.fa-user-times:before{content:"\f235"}.fa-hotel:before,.fa-bed:before{content:"\f236"}.fa-viacoin:before{content:"\f237"}.fa-train:before{content:"\f238"}.fa-subway:before{content:"\f239"}.fa-medium:before{content:"\f23a"}.fa-yc:before,.fa-y-combinator:before{content:"\f23b"}.fa-optin-monster:before{content:"\f23c"}.fa-opencart:before{content:"\f23d"}.fa-expeditedssl:before{content:"\f23e"}.fa-battery-4:before,.fa-battery-full:before{content:"\f240"}.fa-battery-3:before,.fa-battery-three-quarters:before{content:"\f241"}.fa-battery-2:before,.fa-battery-half:before{content:"\f242"}.fa-battery-1:before,.fa-battery-quarter:before{content:"\f243"}.fa-battery-0:before,.fa-battery-empty:before{content:"\f244"}.fa-mouse-pointer:before{content:"\f245"}.fa-i-cursor:before{content:"\f246"}.fa-object-group:before{content:"\f247"}.fa-object-ungroup:before{content:"\f248"}.fa-sticky-note:before{content:"\f249"}.fa-sticky-note-o:before{content:"\f24a"}.fa-cc-jcb:before{content:"\f24b"}.fa-cc-diners-club:before{content:"\f24c"}.fa-clone:before{content:"\f24d"}.fa-balance-scale:before{content:"\f24e"}.fa-hourglass-o:before{content:"\f250"}.fa-hourglass-1:before,.fa-hourglass-start:before{content:"\f251"}.fa-hourglass-2:before,.fa-hourglass-half:before{content:"\f252"}.fa-hourglass-3:before,.fa-hourglass-end:before{content:"\f253"}.fa-hourglass:before{content:"\f254"}.fa-hand-grab-o:before,.fa-hand-rock-o:before{content:"\f255"}.fa-hand-stop-o:before,.fa-hand-paper-o:before{content:"\f256"}.fa-hand-scissors-o:before{content:"\f257"}.fa-hand-lizard-o:before{content:"\f258"}.fa-hand-spock-o:before{content:"\f259"}.fa-hand-pointer-o:before{content:"\f25a"}.fa-hand-peace-o:before{content:"\f25b"}.fa-trademark:before{content:"\f25c"}.fa-registered:before{content:"\f25d"}.fa-creative-commons:before{content:"\f25e"}.fa-gg:before{content:"\f260"}.fa-gg-circle:before{content:"\f261"}.fa-tripadvisor:before{content:"\f262"}.fa-odnoklassniki:before{content:"\f263"}.fa-odnoklassniki-square:before{content:"\f264"}.fa-get-pocket:before{content:"\f265"}.fa-wikipedia-w:before{content:"\f266"}.fa-safari:before{content:"\f267"}.fa-chrome:before{content:"\f268"}.fa-firefox:before{content:"\f269"}.fa-opera:before{content:"\f26a"}.fa-internet-explorer:before{content:"\f26b"}.fa-tv:before,.fa-television:before{content:"\f26c"}.fa-contao:before{content:"\f26d"}.fa-500px:before{content:"\f26e"}.fa-amazon:before{content:"\f270"}.fa-calendar-plus-o:before{content:"\f271"}.fa-calendar-minus-o:before{content:"\f272"}.fa-calendar-times-o:before{content:"\f273"}.fa-calendar-check-o:before{content:"\f274"}.fa-industry:before{content:"\f275"}.fa-map-pin:before{content:"\f276"}.fa-map-signs:before{content:"\f277"}.fa-map-o:before{content:"\f278"}.fa-map:before{content:"\f279"}.fa-commenting:before{content:"\f27a"}.fa-commenting-o:before{content:"\f27b"}.fa-houzz:before{content:"\f27c"}.fa-vimeo:before{content:"\f27d"}.fa-black-tie:before{content:"\f27e"}.fa-fonticons:before{content:"\f280"}.fa-reddit-alien:before{content:"\f281"}.fa-edge:before{content:"\f282"}.fa-credit-card-alt:before{content:"\f283"}.fa-codiepie:before{content:"\f284"}.fa-modx:before{content:"\f285"}.fa-fort-awesome:before{content:"\f286"}.fa-usb:before{content:"\f287"}.fa-product-hunt:before{content:"\f288"}.fa-mixcloud:before{content:"\f289"}.fa-scribd:before{content:"\f28a"}.fa-pause-circle:before{content:"\f28b"}.fa-pause-circle-o:before{content:"\f28c"}.fa-stop-circle:before{content:"\f28d"}.fa-stop-circle-o:before{content:"\f28e"}.fa-shopping-bag:before{content:"\f290"}.fa-shopping-basket:before{content:"\f291"}.fa-hashtag:before{content:"\f292"}.fa-bluetooth:before{content:"\f293"}.fa-bluetooth-b:before{content:"\f294"}.fa-percent:before{content:"\f295"}html{height:100%}body{font-family:'PT Sans',sans-serif;font-weight:normal;height:100%;font-size:14px;color:#000}label{font-weight:normal}img{max-width:100%}a img{border:none}button,input,textarea{outline:none}.text-right{text-align:right}.text-center{text-align:center}.no-margin{margin:0 !important}.margin-bottom-50{margin-bottom:50px}.rubl{display:inline-block;font-family:'Rubl';margin-left:5px}.btn{display:inline-block;color:#fff;text-decoration:none;font-weight:bold;border-radius:4px;padding:7px 22px;background:#1B8C2B;position:relative;border:none;border-bottom:3px solid #075813;font-family:PT Sans;font-size:16px;top:0;-webkit-transition:all 0.4s ease-in-out;-moz-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.btn:active,.btn:focus,.btn:hover{color:#fff;text-decoration:none;background:#1fa132}.btn:active{-webkit-transition:all 0.1s ease-in-out;-moz-transition:all 0.1s ease-in-out;transition:all 0.1s ease-in-out;border-bottom:3px solid transparent;top:3px}.fancybox-image,.fancybox-inner,.fancybox-nav,.fancybox-nav span,.fancybox-outer,.fancybox-skin,.fancybox-tmp,.fancybox-wrap,.fancybox-wrap iframe,.fancybox-wrap object{padding:0;margin:0;border:0;outline:0;vertical-align:top}.fancybox-wrap{position:absolute;top:0;left:0;z-index:8020}.fancybox-skin{position:relative;background:0 0;border-radius:0;color:#444;padding:0 !important;text-shadow:none}.fancybox-opened{z-index:8030}.fancybox-inner,.fancybox-outer{position:relative}.fancybox-inner{overflow:hidden}.fancybox-type-iframe .fancybox-inner{-webkit-overflow-scrolling:touch}.fancybox-error{color:#444;font:14px/20px 'PT Sans',sans-serif;margin:0;padding:15px;white-space:nowrap}.fancybox-iframe,.fancybox-image{display:block;width:100%;height:100%}.fancybox-image{max-width:100%;max-height:100%}#fancybox-loading,.fancybox-close,.fancybox-next span,.fancybox-prev span{background-image:url(../img/fancybox_sprite.png)}#fancybox-loading{position:fixed;top:50%;left:50%;margin-top:-22px;margin-left:-22px;background-position:0 -108px;opacity:0.8;cursor:pointer;z-index:8060}#fancybox-loading div{width:44px;height:44px;background:url(../img/fancybox_loading.gif) center center no-repeat}.fancybox-close{position:absolute;top:-12px;right:-12px;width:36px;height:36px;cursor:pointer;z-index:8040}.fancybox-nav{position:absolute;top:0;width:40%;height:100%;cursor:pointer;text-decoration:none;background:url(../img/blank.gif);-webkit-tap-highlight-color:transparent;z-index:8040}.fancybox-prev{left:0}.fancybox-next{right:0}.fancybox-nav span{position:absolute;top:50%;width:36px;height:34px;margin-top:-18px;cursor:pointer;z-index:8040}.fancybox-prev span{left:10px;background-position:0 -36px}.fancybox-next span{right:10px;background-position:0 -72px}.fancybox-nav:hover span{visibility:visible}.fancybox-tmp{position:absolute;top:-99999px;left:-99999px;visibility:hidden;max-width:99999px;max-height:99999px;overflow:visible !important}.fancybox-lock{overflow:hidden}.fancybox-overlay{position:absolute;top:0;left:0;overflow:hidden;display:none;z-index:8010;background:rgba(0,0,0,0.75)}.fancybox-overlay-fixed{position:fixed;bottom:0;right:0}.fancybox-lock .fancybox-overlay{overflow:auto;overflow-y:scroll}.fancybox-title{visibility:hidden;font:400 13px/20px 'PT Sans',sans-serif;position:relative;text-shadow:none;z-index:8050}.fancybox-opened .fancybox-title{visibility:visible}.fancybox-title-float-wrap{position:absolute;bottom:0;right:50%;margin-bottom:-35px;z-index:8050;text-align:center}.fancybox-title-float-wrap .child{display:inline-block;margin-right:-100%;padding:2px 20px;background:0 0;background:rgba(0,0,0,0.8);text-shadow:0 1px 2px #222;color:#FFF;font-weight:700;line-height:24px;white-space:nowrap}.fancybox-title-outside-wrap{position:relative;margin-top:10px;color:#ffffff}.fancybox-title-inside-wrap{padding-top:10px}.fancybox-title-over-wrap{position:absolute;bottom:0;left:0;color:#fff;padding:10px;background:#000;background:rgba(0,0,0,0.8)}/*!
- * Datepicker for Bootstrap v1.5.1 (https://github.com/eternicode/bootstrap-datepicker)
- *
- * Copyright 2012 Stefan Petre
- * Improvements by Andrew Rowls
- * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
- */.datepicker-dropdown:after,.datepicker-dropdown:before{content:'';display:inline-block;border-top:0;position:absolute}.datepicker{border-radius:4px;direction:ltr}.datepicker-inline{width:220px}.datepicker.datepicker-rtl{direction:rtl}.datepicker.datepicker-rtl table tr td span{float:right}.datepicker-dropdown{top:0;left:0;padding:4px}.datepicker-dropdown:before{border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:7px solid rgba(0,0,0,0.15);border-bottom-color:rgba(0,0,0,0.2)}.datepicker-dropdown:after{border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:6px solid #fff}.datepicker-dropdown.datepicker-orient-left:before{left:6px}.datepicker-dropdown.datepicker-orient-left:after{left:7px}.datepicker-dropdown.datepicker-orient-right:before{right:6px}.datepicker-dropdown.datepicker-orient-right:after{right:7px}.datepicker-dropdown.datepicker-orient-bottom:before{top:-7px}.datepicker-dropdown.datepicker-orient-bottom:after{top:-6px}.datepicker-dropdown.datepicker-orient-top:before{bottom:-7px;border-bottom:0;border-top:7px solid rgba(0,0,0,0.15)}.datepicker-dropdown.datepicker-orient-top:after{bottom:-6px;border-bottom:0;border-top:6px solid #fff}.datepicker>div{display:none}.datepicker table{margin:0;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.datepicker table tr td,.datepicker table tr th{text-align:center;width:30px;height:30px;border-radius:4px;border:none}.table-striped .datepicker table tr td,.table-striped .datepicker table tr th{background-color:transparent}.datepicker table tr td.new,.datepicker table tr td.old{color:#999}.datepicker table tr td.day:hover,.datepicker table tr td.focused{background:#eee;cursor:pointer}.datepicker table tr td.disabled,.datepicker table tr td.disabled:hover{background:0 0;color:#999;cursor:default}.datepicker table tr td.highlighted{color:#000;background-color:#d9edf7;border-color:#85c5e5;border-radius:0}.datepicker table tr td.highlighted.focus,.datepicker table tr td.highlighted:focus{color:#000;background-color:#afd9ee;border-color:#298fc2}.datepicker table tr td.highlighted.active,.datepicker table tr td.highlighted:active,.datepicker table tr td.highlighted:hover,.open>.dropdown-toggle.datepicker table tr td.highlighted{color:#000;background-color:#afd9ee;border-color:#52addb}.datepicker table tr td.highlighted.active.focus,.datepicker table tr td.highlighted.active:focus,.datepicker table tr td.highlighted.active:hover,.datepicker table tr td.highlighted:active.focus,.datepicker table tr td.highlighted:active:focus,.datepicker table tr td.highlighted:active:hover,.open>.dropdown-toggle.datepicker table tr td.highlighted.focus,.open>.dropdown-toggle.datepicker table tr td.highlighted:focus,.open>.dropdown-toggle.datepicker table tr td.highlighted:hover{color:#000;background-color:#91cbe8;border-color:#298fc2}.datepicker table tr td.highlighted.active,.datepicker table tr td.highlighted:active,.open>.dropdown-toggle.datepicker table tr td.highlighted{background-image:none}.datepicker table tr td.highlighted.disabled.focus,.datepicker table tr td.highlighted.disabled:focus,.datepicker table tr td.highlighted.disabled:hover,.datepicker table tr td.highlighted[disabled].focus,.datepicker table tr td.highlighted[disabled]:focus,.datepicker table tr td.highlighted[disabled]:hover,fieldset[disabled] .datepicker table tr td.highlighted.focus,fieldset[disabled] .datepicker table tr td.highlighted:focus,fieldset[disabled] .datepicker table tr td.highlighted:hover{background-color:#d9edf7;border-color:#85c5e5}.datepicker table tr td.highlighted.focused{background:#afd9ee}.datepicker table tr td.highlighted.disabled,.datepicker table tr td.highlighted.disabled:active{background:#d9edf7;color:#999}.datepicker table tr td.today{color:#000;background-color:#ffdb99;border-color:#ffb733}.datepicker table tr td.today.focus,.datepicker table tr td.today:focus{color:#000;background-color:#ffc966;border-color:#b37400}.datepicker table tr td.today.active,.datepicker table tr td.today:active,.datepicker table tr td.today:hover,.open>.dropdown-toggle.datepicker table tr td.today{color:#000;background-color:#ffc966;border-color:#f59e00}.datepicker table tr td.today.active.focus,.datepicker table tr td.today.active:focus,.datepicker table tr td.today.active:hover,.datepicker table tr td.today:active.focus,.datepicker table tr td.today:active:focus,.datepicker table tr td.today:active:hover,.open>.dropdown-toggle.datepicker table tr td.today.focus,.open>.dropdown-toggle.datepicker table tr td.today:focus,.open>.dropdown-toggle.datepicker table tr td.today:hover{color:#000;background-color:#ffbc42;border-color:#b37400}.datepicker table tr td.today.active,.datepicker table tr td.today:active,.open>.dropdown-toggle.datepicker table tr td.today{background-image:none}.datepicker table tr td.today.disabled.focus,.datepicker table tr td.today.disabled:focus,.datepicker table tr td.today.disabled:hover,.datepicker table tr td.today[disabled].focus,.datepicker table tr td.today[disabled]:focus,.datepicker table tr td.today[disabled]:hover,fieldset[disabled] .datepicker table tr td.today.focus,fieldset[disabled] .datepicker table tr td.today:focus,fieldset[disabled] .datepicker table tr td.today:hover{background-color:#ffdb99;border-color:#ffb733}.datepicker table tr td.today.focused{background:#ffc966}.datepicker table tr td.today.disabled,.datepicker table tr td.today.disabled:active{background:#ffdb99;color:#999}.datepicker table tr td.range{color:#000;background-color:#eee;border-color:#bbb;border-radius:0}.datepicker table tr td.range.focus,.datepicker table tr td.range:focus{color:#000;background-color:#d5d5d5;border-color:#7c7c7c}.datepicker table tr td.range.active,.datepicker table tr td.range:active,.datepicker table tr td.range:hover,.open>.dropdown-toggle.datepicker table tr td.range{color:#000;background-color:#d5d5d5;border-color:#9d9d9d}.datepicker table tr td.range.active.focus,.datepicker table tr td.range.active:focus,.datepicker table tr td.range.active:hover,.datepicker table tr td.range:active.focus,.datepicker table tr td.range:active:focus,.datepicker table tr td.range:active:hover,.open>.dropdown-toggle.datepicker table tr td.range.focus,.open>.dropdown-toggle.datepicker table tr td.range:focus,.open>.dropdown-toggle.datepicker table tr td.range:hover{color:#000;background-color:#c3c3c3;border-color:#7c7c7c}.datepicker table tr td.range.active,.datepicker table tr td.range:active,.open>.dropdown-toggle.datepicker table tr td.range{background-image:none}.datepicker table tr td.range.disabled.focus,.datepicker table tr td.range.disabled:focus,.datepicker table tr td.range.disabled:hover,.datepicker table tr td.range[disabled].focus,.datepicker table tr td.range[disabled]:focus,.datepicker table tr td.range[disabled]:hover,fieldset[disabled] .datepicker table tr td.range.focus,fieldset[disabled] .datepicker table tr td.range:focus,fieldset[disabled] .datepicker table tr td.range:hover{background-color:#eee;border-color:#bbb}.datepicker table tr td.range.focused{background:#d5d5d5}.datepicker table tr td.range.disabled,.datepicker table tr td.range.disabled:active{background:#eee;color:#999}.datepicker table tr td.range.highlighted{color:#000;background-color:#e4eef3;border-color:#9dc1d3}.datepicker table tr td.range.highlighted.focus,.datepicker table tr td.range.highlighted:focus{color:#000;background-color:#c1d7e3;border-color:#4b88a6}.datepicker table tr td.range.highlighted.active,.datepicker table tr td.range.highlighted:active,.datepicker table tr td.range.highlighted:hover,.open>.dropdown-toggle.datepicker table tr td.range.highlighted{color:#000;background-color:#c1d7e3;border-color:#73a6c0}.datepicker table tr td.range.highlighted.active.focus,.datepicker table tr td.range.highlighted.active:focus,.datepicker table tr td.range.highlighted.active:hover,.datepicker table tr td.range.highlighted:active.focus,.datepicker table tr td.range.highlighted:active:focus,.datepicker table tr td.range.highlighted:active:hover,.open>.dropdown-toggle.datepicker table tr td.range.highlighted.focus,.open>.dropdown-toggle.datepicker table tr td.range.highlighted:focus,.open>.dropdown-toggle.datepicker table tr td.range.highlighted:hover{color:#000;background-color:#a8c8d8;border-color:#4b88a6}.datepicker table tr td.range.highlighted.active,.datepicker table tr td.range.highlighted:active,.open>.dropdown-toggle.datepicker table tr td.range.highlighted{background-image:none}.datepicker table tr td.range.highlighted.disabled.focus,.datepicker table tr td.range.highlighted.disabled:focus,.datepicker table tr td.range.highlighted.disabled:hover,.datepicker table tr td.range.highlighted[disabled].focus,.datepicker table tr td.range.highlighted[disabled]:focus,.datepicker table tr td.range.highlighted[disabled]:hover,fieldset[disabled] .datepicker table tr td.range.highlighted.focus,fieldset[disabled] .datepicker table tr td.range.highlighted:focus,fieldset[disabled] .datepicker table tr td.range.highlighted:hover{background-color:#e4eef3;border-color:#9dc1d3}.datepicker table tr td.range.highlighted.focused{background:#c1d7e3}.datepicker table tr td.range.highlighted.disabled,.datepicker table tr td.range.highlighted.disabled:active{background:#e4eef3;color:#999}.datepicker table tr td.range.today{color:#000;background-color:#f7ca77;border-color:#f1a417}.datepicker table tr td.range.today.focus,.datepicker table tr td.range.today:focus{color:#000;background-color:#f4b747;border-color:#815608}.datepicker table tr td.range.today.active,.datepicker table tr td.range.today:active,.datepicker table tr td.range.today:hover,.open>.dropdown-toggle.datepicker table tr td.range.today{color:#000;background-color:#f4b747;border-color:#bf800c}.datepicker table tr td.range.today.active.focus,.datepicker table tr td.range.today.active:focus,.datepicker table tr td.range.today.active:hover,.datepicker table tr td.range.today:active.focus,.datepicker table tr td.range.today:active:focus,.datepicker table tr td.range.today:active:hover,.open>.dropdown-toggle.datepicker table tr td.range.today.focus,.open>.dropdown-toggle.datepicker table tr td.range.today:focus,.open>.dropdown-toggle.datepicker table tr td.range.today:hover{color:#000;background-color:#f2aa25;border-color:#815608}.datepicker table tr td.range.today.active,.datepicker table tr td.range.today:active,.open>.dropdown-toggle.datepicker table tr td.range.today{background-image:none}.datepicker table tr td.range.today.disabled.focus,.datepicker table tr td.range.today.disabled:focus,.datepicker table tr td.range.today.disabled:hover,.datepicker table tr td.range.today[disabled].focus,.datepicker table tr td.range.today[disabled]:focus,.datepicker table tr td.range.today[disabled]:hover,fieldset[disabled] .datepicker table tr td.range.today.focus,fieldset[disabled] .datepicker table tr td.range.today:focus,fieldset[disabled] .datepicker table tr td.range.today:hover{background-color:#f7ca77;border-color:#f1a417}.datepicker table tr td.range.today.disabled,.datepicker table tr td.range.today.disabled:active{background:#f7ca77;color:#999}.datepicker table tr td.active.active,.datepicker table tr td.active.highlighted.active,.datepicker table tr td.active.highlighted:active,.datepicker table tr td.active:active,.datepicker table tr td.selected.active,.datepicker table tr td.selected.highlighted.active,.datepicker table tr td.selected.highlighted:active,.datepicker table tr td.selected:active,.open>.dropdown-toggle.datepicker table tr td.active,.open>.dropdown-toggle.datepicker table tr td.active.highlighted,.open>.dropdown-toggle.datepicker table tr td.selected,.open>.dropdown-toggle.datepicker table tr td.selected.highlighted{background-image:none}.datepicker table tr td.selected,.datepicker table tr td.selected.highlighted{color:#fff;background-color:#999;border-color:#555;text-shadow:0 -1px 0 rgba(0,0,0,0.25)}.datepicker table tr td.selected.focus,.datepicker table tr td.selected.highlighted.focus,.datepicker table tr td.selected.highlighted:focus,.datepicker table tr td.selected:focus{color:#fff;background-color:grey;border-color:#161616}.datepicker table tr td.selected.active,.datepicker table tr td.selected.highlighted.active,.datepicker table tr td.selected.highlighted:active,.datepicker table tr td.selected.highlighted:hover,.datepicker table tr td.selected:active,.datepicker table tr td.selected:hover,.open>.dropdown-toggle.datepicker table tr td.selected,.open>.dropdown-toggle.datepicker table tr td.selected.highlighted{color:#fff;background-color:grey;border-color:#373737}.datepicker table tr td.selected.active.focus,.datepicker table tr td.selected.active:focus,.datepicker table tr td.selected.active:hover,.datepicker table tr td.selected.highlighted.active.focus,.datepicker table tr td.selected.highlighted.active:focus,.datepicker table tr td.selected.highlighted.active:hover,.datepicker table tr td.selected.highlighted:active.focus,.datepicker table tr td.selected.highlighted:active:focus,.datepicker table tr td.selected.highlighted:active:hover,.datepicker table tr td.selected:active.focus,.datepicker table tr td.selected:active:focus,.datepicker table tr td.selected:active:hover,.open>.dropdown-toggle.datepicker table tr td.selected.focus,.open>.dropdown-toggle.datepicker table tr td.selected.highlighted.focus,.open>.dropdown-toggle.datepicker table tr td.selected.highlighted:focus,.open>.dropdown-toggle.datepicker table tr td.selected.highlighted:hover,.open>.dropdown-toggle.datepicker table tr td.selected:focus,.open>.dropdown-toggle.datepicker table tr td.selected:hover{color:#fff;background-color:#6e6e6e;border-color:#161616}.datepicker table tr td.selected.disabled.focus,.datepicker table tr td.selected.disabled:focus,.datepicker table tr td.selected.disabled:hover,.datepicker table tr td.selected.highlighted.disabled.focus,.datepicker table tr td.selected.highlighted.disabled:focus,.datepicker table tr td.selected.highlighted.disabled:hover,.datepicker table tr td.selected.highlighted[disabled].focus,.datepicker table tr td.selected.highlighted[disabled]:focus,.datepicker table tr td.selected.highlighted[disabled]:hover,.datepicker table tr td.selected[disabled].focus,.datepicker table tr td.selected[disabled]:focus,.datepicker table tr td.selected[disabled]:hover,fieldset[disabled] .datepicker table tr td.selected.focus,fieldset[disabled] .datepicker table tr td.selected.highlighted.focus,fieldset[disabled] .datepicker table tr td.selected.highlighted:focus,fieldset[disabled] .datepicker table tr td.selected.highlighted:hover,fieldset[disabled] .datepicker table tr td.selected:focus,fieldset[disabled] .datepicker table tr td.selected:hover{background-color:#999;border-color:#555}.datepicker table tr td.active,.datepicker table tr td.active.highlighted{color:#fff;background-color:#428bca;border-color:#357ebd;text-shadow:0 -1px 0 rgba(0,0,0,0.25)}.datepicker table tr td.active.focus,.datepicker table tr td.active.highlighted.focus,.datepicker table tr td.active.highlighted:focus,.datepicker table tr td.active:focus{color:#fff;background-color:#3071a9;border-color:#193c5a}.datepicker table tr td.active.active,.datepicker table tr td.active.highlighted.active,.datepicker table tr td.active.highlighted:active,.datepicker table tr td.active.highlighted:hover,.datepicker table tr td.active:active,.datepicker table tr td.active:hover,.open>.dropdown-toggle.datepicker table tr td.active,.open>.dropdown-toggle.datepicker table tr td.active.highlighted{color:#fff;background-color:#3071a9;border-color:#285e8e}.datepicker table tr td.active.active.focus,.datepicker table tr td.active.active:focus,.datepicker table tr td.active.active:hover,.datepicker table tr td.active.highlighted.active.focus,.datepicker table tr td.active.highlighted.active:focus,.datepicker table tr td.active.highlighted.active:hover,.datepicker table tr td.active.highlighted:active.focus,.datepicker table tr td.active.highlighted:active:focus,.datepicker table tr td.active.highlighted:active:hover,.datepicker table tr td.active:active.focus,.datepicker table tr td.active:active:focus,.datepicker table tr td.active:active:hover,.open>.dropdown-toggle.datepicker table tr td.active.focus,.open>.dropdown-toggle.datepicker table tr td.active.highlighted.focus,.open>.dropdown-toggle.datepicker table tr td.active.highlighted:focus,.open>.dropdown-toggle.datepicker table tr td.active.highlighted:hover,.open>.dropdown-toggle.datepicker table tr td.active:focus,.open>.dropdown-toggle.datepicker table tr td.active:hover{color:#fff;background-color:#285e8e;border-color:#193c5a}.datepicker table tr td.active.disabled.focus,.datepicker table tr td.active.disabled:focus,.datepicker table tr td.active.disabled:hover,.datepicker table tr td.active.highlighted.disabled.focus,.datepicker table tr td.active.highlighted.disabled:focus,.datepicker table tr td.active.highlighted.disabled:hover,.datepicker table tr td.active.highlighted[disabled].focus,.datepicker table tr td.active.highlighted[disabled]:focus,.datepicker table tr td.active.highlighted[disabled]:hover,.datepicker table tr td.active[disabled].focus,.datepicker table tr td.active[disabled]:focus,.datepicker table tr td.active[disabled]:hover,fieldset[disabled] .datepicker table tr td.active.focus,fieldset[disabled] .datepicker table tr td.active.highlighted.focus,fieldset[disabled] .datepicker table tr td.active.highlighted:focus,fieldset[disabled] .datepicker table tr td.active.highlighted:hover,fieldset[disabled] .datepicker table tr td.active:focus,fieldset[disabled] .datepicker table tr td.active:hover{background-color:#428bca;border-color:#357ebd}.datepicker table tr td span{display:block;width:23%;height:54px;line-height:54px;float:left;margin:1%;cursor:pointer;border-radius:4px}.datepicker table tr td span:hover{background:#eee}.datepicker table tr td span.disabled,.datepicker table tr td span.disabled:hover{background:0 0;color:#999;cursor:default}.datepicker .datepicker-switch,.datepicker .next,.datepicker .prev,.datepicker tfoot tr th,.input-group.date .input-group-addon{cursor:pointer}.datepicker table tr td span.active,.datepicker table tr td span.active.disabled,.datepicker table tr td span.active.disabled:hover,.datepicker table tr td span.active:hover{color:#fff;background-color:#428bca;border-color:#357ebd;text-shadow:0 -1px 0 rgba(0,0,0,0.25)}.datepicker table tr td span.active.disabled.focus,.datepicker table tr td span.active.disabled:focus,.datepicker table tr td span.active.disabled:hover.focus,.datepicker table tr td span.active.disabled:hover:focus,.datepicker table tr td span.active.focus,.datepicker table tr td span.active:focus,.datepicker table tr td span.active:hover.focus,.datepicker table tr td span.active:hover:focus{color:#fff;background-color:#3071a9;border-color:#193c5a}.datepicker table tr td span.active.active,.datepicker table tr td span.active.disabled.active,.datepicker table tr td span.active.disabled:active,.datepicker table tr td span.active.disabled:hover,.datepicker table tr td span.active.disabled:hover.active,.datepicker table tr td span.active.disabled:hover:active,.datepicker table tr td span.active.disabled:hover:hover,.datepicker table tr td span.active:active,.datepicker table tr td span.active:hover,.datepicker table tr td span.active:hover.active,.datepicker table tr td span.active:hover:active,.datepicker table tr td span.active:hover:hover,.open>.dropdown-toggle.datepicker table tr td span.active,.open>.dropdown-toggle.datepicker table tr td span.active.disabled,.open>.dropdown-toggle.datepicker table tr td span.active.disabled:hover,.open>.dropdown-toggle.datepicker table tr td span.active:hover{color:#fff;background-color:#3071a9;border-color:#285e8e}.datepicker table tr td span.active.active.focus,.datepicker table tr td span.active.active:focus,.datepicker table tr td span.active.active:hover,.datepicker table tr td span.active.disabled.active.focus,.datepicker table tr td span.active.disabled.active:focus,.datepicker table tr td span.active.disabled.active:hover,.datepicker table tr td span.active.disabled:active.focus,.datepicker table tr td span.active.disabled:active:focus,.datepicker table tr td span.active.disabled:active:hover,.datepicker table tr td span.active.disabled:hover.active.focus,.datepicker table tr td span.active.disabled:hover.active:focus,.datepicker table tr td span.active.disabled:hover.active:hover,.datepicker table tr td span.active.disabled:hover:active.focus,.datepicker table tr td span.active.disabled:hover:active:focus,.datepicker table tr td span.active.disabled:hover:active:hover,.datepicker table tr td span.active:active.focus,.datepicker table tr td span.active:active:focus,.datepicker table tr td span.active:active:hover,.datepicker table tr td span.active:hover.active.focus,.datepicker table tr td span.active:hover.active:focus,.datepicker table tr td span.active:hover.active:hover,.datepicker table tr td span.active:hover:active.focus,.datepicker table tr td span.active:hover:active:focus,.datepicker table tr td span.active:hover:active:hover,.open>.dropdown-toggle.datepicker table tr td span.active.disabled.focus,.open>.dropdown-toggle.datepicker table tr td span.active.disabled:focus,.open>.dropdown-toggle.datepicker table tr td span.active.disabled:hover,.open>.dropdown-toggle.datepicker table tr td span.active.disabled:hover.focus,.open>.dropdown-toggle.datepicker table tr td span.active.disabled:hover:focus,.open>.dropdown-toggle.datepicker table tr td span.active.disabled:hover:hover,.open>.dropdown-toggle.datepicker table tr td span.active.focus,.open>.dropdown-toggle.datepicker table tr td span.active:focus,.open>.dropdown-toggle.datepicker table tr td span.active:hover,.open>.dropdown-toggle.datepicker table tr td span.active:hover.focus,.open>.dropdown-toggle.datepicker table tr td span.active:hover:focus,.open>.dropdown-toggle.datepicker table tr td span.active:hover:hover{color:#fff;background-color:#285e8e;border-color:#193c5a}.datepicker table tr td span.active.active,.datepicker table tr td span.active.disabled.active,.datepicker table tr td span.active.disabled:active,.datepicker table tr td span.active.disabled:hover.active,.datepicker table tr td span.active.disabled:hover:active,.datepicker table tr td span.active:active,.datepicker table tr td span.active:hover.active,.datepicker table tr td span.active:hover:active,.open>.dropdown-toggle.datepicker table tr td span.active,.open>.dropdown-toggle.datepicker table tr td span.active.disabled,.open>.dropdown-toggle.datepicker table tr td span.active.disabled:hover,.open>.dropdown-toggle.datepicker table tr td span.active:hover{background-image:none}.datepicker table tr td span.active.disabled.disabled.focus,.datepicker table tr td span.active.disabled.disabled:focus,.datepicker table tr td span.active.disabled.disabled:hover,.datepicker table tr td span.active.disabled.focus,.datepicker table tr td span.active.disabled:focus,.datepicker table tr td span.active.disabled:hover,.datepicker table tr td span.active.disabled:hover.disabled.focus,.datepicker table tr td span.active.disabled:hover.disabled:focus,.datepicker table tr td span.active.disabled:hover.disabled:hover,.datepicker table tr td span.active.disabled:hover[disabled].focus,.datepicker table tr td span.active.disabled:hover[disabled]:focus,.datepicker table tr td span.active.disabled:hover[disabled]:hover,.datepicker table tr td span.active.disabled[disabled].focus,.datepicker table tr td span.active.disabled[disabled]:focus,.datepicker table tr td span.active.disabled[disabled]:hover,.datepicker table tr td span.active:hover.disabled.focus,.datepicker table tr td span.active:hover.disabled:focus,.datepicker table tr td span.active:hover.disabled:hover,.datepicker table tr td span.active:hover[disabled].focus,.datepicker table tr td span.active:hover[disabled]:focus,.datepicker table tr td span.active:hover[disabled]:hover,.datepicker table tr td span.active[disabled].focus,.datepicker table tr td span.active[disabled]:focus,.datepicker table tr td span.active[disabled]:hover,fieldset[disabled] .datepicker table tr td span.active.disabled.focus,fieldset[disabled] .datepicker table tr td span.active.disabled:focus,fieldset[disabled] .datepicker table tr td span.active.disabled:hover,fieldset[disabled] .datepicker table tr td span.active.disabled:hover.focus,fieldset[disabled] .datepicker table tr td span.active.disabled:hover:focus,fieldset[disabled] .datepicker table tr td span.active.disabled:hover:hover,fieldset[disabled] .datepicker table tr td span.active.focus,fieldset[disabled] .datepicker table tr td span.active:focus,fieldset[disabled] .datepicker table tr td span.active:hover,fieldset[disabled] .datepicker table tr td span.active:hover.focus,fieldset[disabled] .datepicker table tr td span.active:hover:focus,fieldset[disabled] .datepicker table tr td span.active:hover:hover{background-color:#428bca;border-color:#357ebd}.datepicker table tr td span.new,.datepicker table tr td span.old{color:#999}.datepicker .datepicker-switch{width:145px}.datepicker .datepicker-switch:hover,.datepicker .next:hover,.datepicker .prev:hover,.datepicker tfoot tr th:hover{background:#eee}.datepicker .cw{font-size:10px;width:12px;padding:0 2px 0 5px;vertical-align:middle}.input-daterange{width:100%}.input-daterange input{text-align:center}.input-daterange input:first-child{border-radius:3px 0 0 3px}.input-daterange input:last-child{border-radius:0 3px 3px 0}.input-daterange .input-group-addon{width:auto;min-width:16px;padding:4px 5px;font-weight:400;line-height:1.42857143;text-align:center;text-shadow:0 1px 0 #fff;vertical-align:middle;background-color:#eee;border:solid #ccc;border-width:1px 0;margin-left:-5px;margin-right:-5px}.datepicker-dropdown{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:160px;padding:5px 0;margin:2px 0 0;font-size:14px;list-style:none;background-color:#fff;border:1px solid #ccc;border:1px solid rgba(0,0,0,0.15);border-radius:4px;-webkit-box-shadow:0 6px 12px rgba(0,0,0,0.175);box-shadow:0 6px 12px rgba(0,0,0,0.175);background-clip:padding-box}.header{padding:20px 0}.header__phone{text-decoration:none;color:#000;font-weight:bold;font-size:24px;position:relative;display:inline-block;font-family:'Roboto'}.header__phone:active,.header__phone:focus,.header__phone:hover{text-decoration:none;color:#000}.header__phone._headphones:before{content:'';background:url(../img/phone.png) 0 0 no-repeat;position:absolute;top:4px;left:-30px;width:24px;height:19px}.header__phone._viber:before{content:'';background:url(../img/viber.png) 0 0 no-repeat;position:absolute;top:3px;left:-30px;width:24px;height:24px}.header__phone-prefix{font-size:18px;color:#887E7E;vertical-align:top;margin:2px 5px 0 0;display:inline-block}.header__btn{margin-top:15px}.toTop{position:fixed;right:10px;bottom:-100px;overflow:auto;padding:12px 14px 14px;font-size:18px;line-height:10px;cursor:pointer;background-color:#1B8C2B;border-radius:3px;color:#fff;z-index:200;-webkit-transition:all 0.4s ease-in-out;-moz-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.toTop.active{bottom:10px}.toTop:hover{opacity:0.8}.main{padding:140px 0;background:url(../img/content/main-pattern.jpg) no-repeat;background-position:center !important;display:-webkit-box;display:-moz-box;display:box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-moz-box-align:center;box-align:center;-webkit-align-items:center;-moz-align-items:center;-ms-align-items:center;-o-align-items:center;align-items:center;-ms-flex-align:center;position:relative}.main:before{content:'';background:rgba(0,0,0,0.2);position:absolute;top:0;left:0;width:100%;height:100%;z-index:0}.main__form{padding:15px 20px 5px 20px;background:rgba(0,0,0,0.7)}.main__title{color:#fff;font-weight:bold;position:relative;font-size:38px;text-align:center;text-shadow:1px 1px 10px #333333;margin-top:-20px;margin-bottom:30px}.main__title span{display:inline-block}.main._partner-bg{background:url(../img/content/partner.jpg) no-repeat}.main._moscow-bg{background:url(../img/content/city-pattern/moscow.jpg) no-repeat}.main._voronej-bg{background:url(../img/content/city-pattern/voronej.jpg) no-repeat}.main._pavlovsk-bg{background:url(../img/content/city-pattern/pavlovsk.jpg) no-repeat}.main._tula-bg{background:url(../img/content/city-pattern/tula.jpg) no-repeat}.main._kiev-bg{background:url(../img/content/city-pattern/kiev.jpg) no-repeat}.main._borispol-bg{background:url(../img/content/city-pattern/borispol.jpg) no-repeat}.main._piryatin-bg{background:url(../img/content/city-pattern/piryatin.jpg) no-repeat}.main._lubni-bg{background:url(../img/content/city-pattern/lubni.jpg) no-repeat}.main._poltava-bg{background:url(../img/content/city-pattern/poltava.jpg) no-repeat}.main._kharkov-bg{background:url(../img/content/city-pattern/kharkov.jpg) no-repeat}.main._dnepr-bg{background:url(../img/content/city-pattern/dnepr.jpg) no-repeat}.main._donetsk-bg{background:url(../img/content/city-pattern/donetsk.jpg) no-repeat}.main._rostov-bg{background:url(../img/content/city-pattern/rostov.jpg) no-repeat}.main._kerch-bg{background:url(../img/content/city-pattern/kerch.jpg) no-repeat}.main._feodosiya-bg{background:url(../img/content/city-pattern/feodosiya.jpg) no-repeat}.main._simferopol-bg{background:url(../img/content/city-pattern/simferopol.jpg) no-repeat}.main._alushta-bg{background:url(../img/content/city-pattern/alushta.jpg) no-repeat}.main._yalta-bg{background:url(../img/content/city-pattern/yalta.jpg) no-repeat}.main._sevastopol-bg{background:url(../img/content/city-pattern/sevastopol.jpg) no-repeat}.main._belgorod-bg{background:url(../img/content/city-pattern/belgorod.jpg) no-repeat}.main._piter-bg{background:url(../img/content/city-pattern/piter.jpg) no-repeat}.main._bryansk-bg{background:url(../img/content/city-pattern/bryansk.jpg) no-repeat}.main._anapa-bg{background:url(../img/content/city-pattern/anapa.jpg) no-repeat}.title{font-size:36px;color:#000;text-align:center;margin:40px 0 20px}.subtitle{text-align:center;padding-bottom:10px;margin-bottom:25px;color:#675F5F;font-size:26px;border-bottom:1px solid #ddd}.subtitle__img{margin-right:15px;vertical-align:bottom}.form__textarea,.form__input{width:100%;height:40px;font-size:15px;padding:0 10px 0 32px;box-shadow:inset 0 4px 7px -7px rgba(0,0,0,0.5);border:2px solid #ccc;font-family:PT Sans;-webkit-transition:all 0.4s ease-in-out;-moz-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.form__textarea.error,.form__input.error{border:2px solid #f20}.form__textarea:focus,.form__input:focus{border:2px solid #1B8C2B}.form__textarea{height:auto;padding:7px;resize:none}.form__select{width:100%;padding:0 10px 0 36px;height:40px;font-size:15px;font-family:PT Sans;box-shadow:inset 0 4px 7px -7px rgba(0,0,0,0.5);border:2px solid #ccc}.form__submit{width:100%;font-size:18px;padding:5px 22px}.form__submit-partner{width:auto}.form__submit-search{padding:7px 22px}.form__control{position:relative;margin-bottom:15px}.form__control>.fa{color:#444;position:absolute;top:13px;left:8px}.form__label{font-size:18px;font-weight:bold;display:block}.form__result{padding:5px 10px 10px 10px;color:#fff;font-size:16px;display:none}.form__result .fa{position:relative;top:-3px}.form__result .popular__name{color:#fff;margin-left:10px;font-size:20px;border-bottom:1px solid}.form__result .popular__price{font-size:20px;margin:0;color:#fff;border-bottom:1px solid}.form__result .popular__link:hover .popular__price,.form__result .popular__link:hover .popular__name{border-bottom:1px solid transparent}.form__block .form__input{font-size:18px}.modal{display:none;width:400px;border-radius:4px;background:#fff;padding:10px 20px 20px 20px}.modal__title{text-align:center;font-size:22px;font-weight:bold;font-family:PT Sans;margin:10px 0}.modal__submit{width:auto}.modal__text{margin:5px 0;line-height:normal}.ways{padding-bottom:40px;background:#f5f5f5}.ways__block{margin-bottom:30px;position:relative;display:-webkit-box;display:-moz-box;display:box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-moz-box-align:center;box-align:center;-webkit-align-items:center;-moz-align-items:center;-ms-align-items:center;-o-align-items:center;align-items:center;-ms-flex-align:center;overflow:hidden;width:100%}.ways__block:before{content:'';background:rgba(0,0,0,0.2);position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;-webkit-transition:all 0.4s ease-in-out;-moz-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.ways__block:hover .ways__img{-webkit-transform:scale(1.15) rotate(-7deg);-moz-transform:scale(1.15) rotate(-7deg);-ms-transform:scale(1.15) rotate(-7deg);-o-transform:scale(1.15) rotate(-7deg);transform:scale(1.15) rotate(-7deg)}.ways__block:hover:before{content:'';background:rgba(0,0,0,0.4);position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;-webkit-transition:all 0.4s ease-in-out;-moz-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.ways__block._promo{border-radius:5px}.ways__block._promo:before{content:'';position:absolute;top:0;background:url(../img/promo.png) 0 0 no-repeat;left:0;width:170px;height:170px}.ways__block._promo .ways__img{-webkit-transform:none;-moz-transform:none;-ms-transform:none;-o-transform:none;transform:none}.ways__block._promo .ways__price{font-size:28px;background:#E52326;padding:3px 24px 4px 24px;line-height:normal;font-weight:bold}.ways__block._promo .ways__title{font-size:38px}.ways__img{width:100%;-webkit-transition:all 0.4s ease-in-out;-moz-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.ways__price{z-index:2;padding:2px 14px 3px 14px;position:relative;color:#fff;font-size:19px;background:#1B8C2B;display:inline-block;margin:0;font-weight:bold;font-family:'Roboto'}.ways__price-wrapper{position:absolute;bottom:0;left:0;text-align:center;width:100%}.ways__title{z-index:2;position:absolute;top:40%;right:0;left:0;margin:0;width:100%;color:#fff;text-align:center;font-size:28px;color:#fff;text-shadow:1px 1px 10px #333333}.ways__link{position:relative}.ways__link._best-price:before{content:'';background:url(../img/best-price.png) 0 0 no-repeat;position:absolute;top:-20px;left:-20px;width:150px;height:145px;z-index:10}.ways__link._best-way:before{content:'';background:url(../img/best-way.png) 0 0 no-repeat;position:absolute;top:-20px;left:-20px;width:110px;height:110px;z-index:10}.description{padding:40px 0;background:#f5f5f5}.description__text{font-size:16px}.description__title{font-size:20px}.popular{padding:0 0 10px}.popular .fa{margin-right:5px}.popular__block{margin-bottom:10px}.popular__link:hover{color:inherit;text-decoration:none}.popular__link:hover .popular__price,.popular__link:hover .popular__name{border-bottom:1px solid}.popular__name{font-size:16px;margin:0;color:#000;display:inline-block;line-height:16px}.popular__price{display:inline-block;line-height:16px;font-size:16px;margin:-2px 0 0 7px;color:#1B8C2B;font-weight:bold;float:right;font-family:'Roboto'}.schedule__main-title{font-weight:normal;margin:20px 0;font-size:21px}.schedule__main-title .fa{margin-right:10px}.schedule__section>.row:first-child{background:#828282 !important}.schedule__section>.row:first-child .schedule__title{color:#fff}.schedule__section>.row:nth-child(even){background:rgba(221,221,221,0.62)}.schedule__section>.row:nth-child(odd){background:#F7F7F7}.schedule__title{font-size:16px}.schedule__btn{font-weight:normal;display:block;padding:7px 0}.schedule__time{font-family:'Roboto';font-weight:bold;display:inline-block;margin:0 10px 0 0}.schedule__price{font-family:'Roboto';margin-bottom:0}.schedule__price>*{font-size:18px}.schedule__text{font-size:16px}.advantages{margin:60px 0 20px 0;text-align:center}.advantages .fa{color:#1B8C2B;font-size:7em}.advantages__title{font-size:18px;text-transform:uppercase;font-weight:bold}.advantages__text{font-size:16px;padding:0 20px}.advantages__block{margin-bottom:50px}.advantages__main-title{margin:0 0 50px 0}.share{margin:20px 0 40px}.share__text{vertical-align:top;display:inline-block;margin:12px 10px 10px 10px;font-size:18px;font-weight:bold}.share .fa{vertical-align:top;margin-top:13px;color:#1B8C2B}.toggle-block{-webkit-transition:all 0.4s ease-in-out;-moz-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out;max-height:290px;overflow:hidden}.toggle-block.active{max-height:2000px}.toggle-link{color:#1B8C2B;font-size:16px;display:inline-block;margin-top:25px;border-bottom:1px solid}.toggle-link:hover{color:#1B8C2B;text-decoration:none;border-bottom:1px solid transparent}.toggle-link:focus,.toggle-link:active{color:#1B8C2B;text-decoration:none}.back__link{color:#1B8C2B;border-bottom:1px solid;font-size:18px}.back__link:focus,.back__link:active,.back__link:hover{color:#1B8C2B;text-decoration:none;border-bottom:1px solid transparent}.back__link+.fa{color:#1B8C2B;display:inline-block;margin-left:7px}.footer{background:#333;color:#fff;padding:30px 0}.footer__copyright{font-size:16px;margin:0}.footer__social{text-align:center}.footer__social-link{margin:0 10px;color:#fff;-webkit-transition:all 0.4s ease-in-out;-moz-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.footer__social-link:hover{color:#1B8C2B}.footer__social-text{color:#fff;margin:0 0 5px;display:block}.footer__phone{color:#fff;display:inline-block;margin-left:20px;font-size:16px}.footer__phone:hover{color:#fff;text-decoration:none}.footer__phone-block{text-align:right;margin-left:-30px}.footer__link{color:#fff;display:inline-block;border-bottom:1px solid #fff;margin-bottom:20px}.footer__link:hover{color:#fff;text-decoration:none;border-bottom:1px solid transparent}.footer__micro{font-size:12px;margin:0}.footer__micro.dib{display:inline-block}@media (max-width: 767px){.main{padding:80px 0;background-size:cover !important}.main__form{padding:15px 20px;margin:0 20px}.main__title{font-size:28px}.ways__block{display:block;max-width:500px;margin:0 auto 30px auto}.ways__block:hover .ways__img{-webkit-transform:scale(1) rotate(0deg);-moz-transform:scale(1) rotate(0deg);-ms-transform:scale(1) rotate(0deg);-o-transform:scale(1) rotate(0deg);transform:scale(1) rotate(0deg)}.ways__title{font-size:38px}.ways__price{font-size:28px;font-weight:bold}.footer__micro,.footer__copyright,.footer__social,.footer__phone-block{text-align:center}.footer__micro.dib{display:block}.footer__social{margin:20px 0}.footer__phone{margin:0 0 10px;display:block}.footer__phone-block{margin:0}.advantages__block{max-width:400px;margin:0 auto 40px auto}.advantages .fa{font-size:5em}.schedule__main-title{font-size:18px}.form__input,.form__select{box-shadow:none}.form__result{padding:20px 10px 0 10px}.popular__price,.popular__name{font-size:14px;border-bottom:1px solid}.popular__price{margin:0 0 0 7px}.popular__link:hover .popular__price,.popular__link:hover .popular__name{border-bottom:1px solid transparent}}@media (max-width: 500px){.header__phone{font-size:16px;margin-left:-30px}.header__phone:before{display:none}.header__phone-prefix{font-size:14px;margin:0 5px 0 0}.main__form{margin:0}.main__title{font-size:24px}.title{font-size:24px;margin:40px 0 20px}.modal{width:280px;padding:5px 10px}.form__result{text-align:center}.form__result .popular__price{display:none}.advantages{margin:0 0 20px 0}.advantages__main-title{margin:20px 0}.share{margin:20px 0}.ways__title{font-size:28px}.ways__price{font-size:19px}}@media (min-width: 768px) and (max-width: 991px){.main{padding:120px 0}.main__title{font-size:32px}}
+@charset "UTF-8";
+/*! Bootstrap v3.3.5 (http://getbootstrap.com) Copyright 2011-2016 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
+/*! Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=3571862c89813ee0b483) Config saved to config.json and https://gist.github.com/3571862c89813ee0b483 */
+/*! Bootstrap v3.3.6 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+
+body { margin: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+audio, canvas, progress, video { display: inline-block; vertical-align: baseline; }
+
+audio:not([controls]) { display: none; height: 0; }
+
+[hidden], template { display: none; }
+
+a { background-color: transparent; }
+
+a:active, a:hover { outline: 0; }
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+h1 { font-size: 2em; margin: 0.67em 0; }
+
+mark { background: #ff0; color: #000; }
+
+small { font-size: 80%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+img { border: 0; }
+
+svg:not(:root) { overflow: hidden; }
+
+figure { margin: 1em 40px; }
+
+hr { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
+
+pre { overflow: auto; }
+
+code, kbd, pre, samp { font-family: monospace, monospace; font-size: 1em; }
+
+button, input, optgroup, select, textarea { color: inherit; font: inherit; margin: 0; }
+
+button { overflow: visible; }
+
+button, select { text-transform: none; }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; cursor: pointer; }
+
+button[disabled], html input[disabled] { cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+input { line-height: normal; }
+
+input[type="checkbox"], input[type="radio"] { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { height: auto; }
+
+input[type="search"] { -webkit-appearance: textfield; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+
+legend { border: 0; padding: 0; }
+
+textarea { overflow: auto; }
+
+optgroup { font-weight: bold; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+td, th { padding: 0; }
+
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+*:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+html { font-size: 10px; -webkit-tap-highlight-color: transparent; }
+
+body { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.42857143; color: #333; background-color: #fff; }
+
+input, button, select, textarea { font-family: inherit; font-size: inherit; line-height: inherit; }
+
+a { color: #337ab7; text-decoration: none; }
+
+a:hover, a:focus { color: #23527c; text-decoration: underline; }
+
+a:focus { outline: thin dotted; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
+
+figure { margin: 0; }
+
+img { vertical-align: middle; }
+
+.img-responsive { display: block; max-width: 100%; height: auto; }
+
+.img-rounded { border-radius: 6px; }
+
+.img-thumbnail { padding: 4px; line-height: 1.42857143; background-color: #fff; border: 1px solid #ddd; border-radius: 4px; -webkit-transition: all .2s ease-in-out; -o-transition: all .2s ease-in-out; transition: all .2s ease-in-out; display: inline-block; max-width: 100%; height: auto; }
+
+.img-circle { border-radius: 50%; }
+
+hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #eee; }
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+
+.sr-only-focusable:active, .sr-only-focusable:focus { position: static; width: auto; height: auto; margin: 0; overflow: visible; clip: auto; }
+
+[role="button"] { cursor: pointer; }
+
+.container { margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px; }
+
+@media (min-width: 768px) { .container { width: 750px; } }
+
+@media (min-width: 992px) { .container { width: 970px; } }
+
+@media (min-width: 1200px) { .container { width: 1170px; } }
+
+.container-fluid { margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px; }
+
+.row { margin-left: -15px; margin-right: -15px; }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 { position: relative; min-height: 1px; padding-left: 15px; padding-right: 15px; }
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 { float: left; }
+
+.col-xs-12 { width: 100%; }
+
+.col-xs-11 { width: 91.66666667%; }
+
+.col-xs-10 { width: 83.33333333%; }
+
+.col-xs-9 { width: 75%; }
+
+.col-xs-8 { width: 66.66666667%; }
+
+.col-xs-7 { width: 58.33333333%; }
+
+.col-xs-6 { width: 50%; }
+
+.col-xs-5 { width: 41.66666667%; }
+
+.col-xs-4 { width: 33.33333333%; }
+
+.col-xs-3 { width: 25%; }
+
+.col-xs-2 { width: 16.66666667%; }
+
+.col-xs-1 { width: 8.33333333%; }
+
+.col-xs-pull-12 { right: 100%; }
+
+.col-xs-pull-11 { right: 91.66666667%; }
+
+.col-xs-pull-10 { right: 83.33333333%; }
+
+.col-xs-pull-9 { right: 75%; }
+
+.col-xs-pull-8 { right: 66.66666667%; }
+
+.col-xs-pull-7 { right: 58.33333333%; }
+
+.col-xs-pull-6 { right: 50%; }
+
+.col-xs-pull-5 { right: 41.66666667%; }
+
+.col-xs-pull-4 { right: 33.33333333%; }
+
+.col-xs-pull-3 { right: 25%; }
+
+.col-xs-pull-2 { right: 16.66666667%; }
+
+.col-xs-pull-1 { right: 8.33333333%; }
+
+.col-xs-pull-0 { right: auto; }
+
+.col-xs-push-12 { left: 100%; }
+
+.col-xs-push-11 { left: 91.66666667%; }
+
+.col-xs-push-10 { left: 83.33333333%; }
+
+.col-xs-push-9 { left: 75%; }
+
+.col-xs-push-8 { left: 66.66666667%; }
+
+.col-xs-push-7 { left: 58.33333333%; }
+
+.col-xs-push-6 { left: 50%; }
+
+.col-xs-push-5 { left: 41.66666667%; }
+
+.col-xs-push-4 { left: 33.33333333%; }
+
+.col-xs-push-3 { left: 25%; }
+
+.col-xs-push-2 { left: 16.66666667%; }
+
+.col-xs-push-1 { left: 8.33333333%; }
+
+.col-xs-push-0 { left: auto; }
+
+.col-xs-offset-12 { margin-left: 100%; }
+
+.col-xs-offset-11 { margin-left: 91.66666667%; }
+
+.col-xs-offset-10 { margin-left: 83.33333333%; }
+
+.col-xs-offset-9 { margin-left: 75%; }
+
+.col-xs-offset-8 { margin-left: 66.66666667%; }
+
+.col-xs-offset-7 { margin-left: 58.33333333%; }
+
+.col-xs-offset-6 { margin-left: 50%; }
+
+.col-xs-offset-5 { margin-left: 41.66666667%; }
+
+.col-xs-offset-4 { margin-left: 33.33333333%; }
+
+.col-xs-offset-3 { margin-left: 25%; }
+
+.col-xs-offset-2 { margin-left: 16.66666667%; }
+
+.col-xs-offset-1 { margin-left: 8.33333333%; }
+
+.col-xs-offset-0 { margin-left: 0; }
+
+@media (min-width: 768px) { .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 { float: left; }
+  .col-sm-12 { width: 100%; }
+  .col-sm-11 { width: 91.66666667%; }
+  .col-sm-10 { width: 83.33333333%; }
+  .col-sm-9 { width: 75%; }
+  .col-sm-8 { width: 66.66666667%; }
+  .col-sm-7 { width: 58.33333333%; }
+  .col-sm-6 { width: 50%; }
+  .col-sm-5 { width: 41.66666667%; }
+  .col-sm-4 { width: 33.33333333%; }
+  .col-sm-3 { width: 25%; }
+  .col-sm-2 { width: 16.66666667%; }
+  .col-sm-1 { width: 8.33333333%; }
+  .col-sm-pull-12 { right: 100%; }
+  .col-sm-pull-11 { right: 91.66666667%; }
+  .col-sm-pull-10 { right: 83.33333333%; }
+  .col-sm-pull-9 { right: 75%; }
+  .col-sm-pull-8 { right: 66.66666667%; }
+  .col-sm-pull-7 { right: 58.33333333%; }
+  .col-sm-pull-6 { right: 50%; }
+  .col-sm-pull-5 { right: 41.66666667%; }
+  .col-sm-pull-4 { right: 33.33333333%; }
+  .col-sm-pull-3 { right: 25%; }
+  .col-sm-pull-2 { right: 16.66666667%; }
+  .col-sm-pull-1 { right: 8.33333333%; }
+  .col-sm-pull-0 { right: auto; }
+  .col-sm-push-12 { left: 100%; }
+  .col-sm-push-11 { left: 91.66666667%; }
+  .col-sm-push-10 { left: 83.33333333%; }
+  .col-sm-push-9 { left: 75%; }
+  .col-sm-push-8 { left: 66.66666667%; }
+  .col-sm-push-7 { left: 58.33333333%; }
+  .col-sm-push-6 { left: 50%; }
+  .col-sm-push-5 { left: 41.66666667%; }
+  .col-sm-push-4 { left: 33.33333333%; }
+  .col-sm-push-3 { left: 25%; }
+  .col-sm-push-2 { left: 16.66666667%; }
+  .col-sm-push-1 { left: 8.33333333%; }
+  .col-sm-push-0 { left: auto; }
+  .col-sm-offset-12 { margin-left: 100%; }
+  .col-sm-offset-11 { margin-left: 91.66666667%; }
+  .col-sm-offset-10 { margin-left: 83.33333333%; }
+  .col-sm-offset-9 { margin-left: 75%; }
+  .col-sm-offset-8 { margin-left: 66.66666667%; }
+  .col-sm-offset-7 { margin-left: 58.33333333%; }
+  .col-sm-offset-6 { margin-left: 50%; }
+  .col-sm-offset-5 { margin-left: 41.66666667%; }
+  .col-sm-offset-4 { margin-left: 33.33333333%; }
+  .col-sm-offset-3 { margin-left: 25%; }
+  .col-sm-offset-2 { margin-left: 16.66666667%; }
+  .col-sm-offset-1 { margin-left: 8.33333333%; }
+  .col-sm-offset-0 { margin-left: 0; } }
+
+@media (min-width: 992px) { .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 { float: left; }
+  .col-md-12 { width: 100%; }
+  .col-md-11 { width: 91.66666667%; }
+  .col-md-10 { width: 83.33333333%; }
+  .col-md-9 { width: 75%; }
+  .col-md-8 { width: 66.66666667%; }
+  .col-md-7 { width: 58.33333333%; }
+  .col-md-6 { width: 50%; }
+  .col-md-5 { width: 41.66666667%; }
+  .col-md-4 { width: 33.33333333%; }
+  .col-md-3 { width: 25%; }
+  .col-md-2 { width: 16.66666667%; }
+  .col-md-1 { width: 8.33333333%; }
+  .col-md-pull-12 { right: 100%; }
+  .col-md-pull-11 { right: 91.66666667%; }
+  .col-md-pull-10 { right: 83.33333333%; }
+  .col-md-pull-9 { right: 75%; }
+  .col-md-pull-8 { right: 66.66666667%; }
+  .col-md-pull-7 { right: 58.33333333%; }
+  .col-md-pull-6 { right: 50%; }
+  .col-md-pull-5 { right: 41.66666667%; }
+  .col-md-pull-4 { right: 33.33333333%; }
+  .col-md-pull-3 { right: 25%; }
+  .col-md-pull-2 { right: 16.66666667%; }
+  .col-md-pull-1 { right: 8.33333333%; }
+  .col-md-pull-0 { right: auto; }
+  .col-md-push-12 { left: 100%; }
+  .col-md-push-11 { left: 91.66666667%; }
+  .col-md-push-10 { left: 83.33333333%; }
+  .col-md-push-9 { left: 75%; }
+  .col-md-push-8 { left: 66.66666667%; }
+  .col-md-push-7 { left: 58.33333333%; }
+  .col-md-push-6 { left: 50%; }
+  .col-md-push-5 { left: 41.66666667%; }
+  .col-md-push-4 { left: 33.33333333%; }
+  .col-md-push-3 { left: 25%; }
+  .col-md-push-2 { left: 16.66666667%; }
+  .col-md-push-1 { left: 8.33333333%; }
+  .col-md-push-0 { left: auto; }
+  .col-md-offset-12 { margin-left: 100%; }
+  .col-md-offset-11 { margin-left: 91.66666667%; }
+  .col-md-offset-10 { margin-left: 83.33333333%; }
+  .col-md-offset-9 { margin-left: 75%; }
+  .col-md-offset-8 { margin-left: 66.66666667%; }
+  .col-md-offset-7 { margin-left: 58.33333333%; }
+  .col-md-offset-6 { margin-left: 50%; }
+  .col-md-offset-5 { margin-left: 41.66666667%; }
+  .col-md-offset-4 { margin-left: 33.33333333%; }
+  .col-md-offset-3 { margin-left: 25%; }
+  .col-md-offset-2 { margin-left: 16.66666667%; }
+  .col-md-offset-1 { margin-left: 8.33333333%; }
+  .col-md-offset-0 { margin-left: 0; } }
+
+@media (min-width: 1200px) { .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 { float: left; }
+  .col-lg-12 { width: 100%; }
+  .col-lg-11 { width: 91.66666667%; }
+  .col-lg-10 { width: 83.33333333%; }
+  .col-lg-9 { width: 75%; }
+  .col-lg-8 { width: 66.66666667%; }
+  .col-lg-7 { width: 58.33333333%; }
+  .col-lg-6 { width: 50%; }
+  .col-lg-5 { width: 41.66666667%; }
+  .col-lg-4 { width: 33.33333333%; }
+  .col-lg-3 { width: 25%; }
+  .col-lg-2 { width: 16.66666667%; }
+  .col-lg-1 { width: 8.33333333%; }
+  .col-lg-pull-12 { right: 100%; }
+  .col-lg-pull-11 { right: 91.66666667%; }
+  .col-lg-pull-10 { right: 83.33333333%; }
+  .col-lg-pull-9 { right: 75%; }
+  .col-lg-pull-8 { right: 66.66666667%; }
+  .col-lg-pull-7 { right: 58.33333333%; }
+  .col-lg-pull-6 { right: 50%; }
+  .col-lg-pull-5 { right: 41.66666667%; }
+  .col-lg-pull-4 { right: 33.33333333%; }
+  .col-lg-pull-3 { right: 25%; }
+  .col-lg-pull-2 { right: 16.66666667%; }
+  .col-lg-pull-1 { right: 8.33333333%; }
+  .col-lg-pull-0 { right: auto; }
+  .col-lg-push-12 { left: 100%; }
+  .col-lg-push-11 { left: 91.66666667%; }
+  .col-lg-push-10 { left: 83.33333333%; }
+  .col-lg-push-9 { left: 75%; }
+  .col-lg-push-8 { left: 66.66666667%; }
+  .col-lg-push-7 { left: 58.33333333%; }
+  .col-lg-push-6 { left: 50%; }
+  .col-lg-push-5 { left: 41.66666667%; }
+  .col-lg-push-4 { left: 33.33333333%; }
+  .col-lg-push-3 { left: 25%; }
+  .col-lg-push-2 { left: 16.66666667%; }
+  .col-lg-push-1 { left: 8.33333333%; }
+  .col-lg-push-0 { left: auto; }
+  .col-lg-offset-12 { margin-left: 100%; }
+  .col-lg-offset-11 { margin-left: 91.66666667%; }
+  .col-lg-offset-10 { margin-left: 83.33333333%; }
+  .col-lg-offset-9 { margin-left: 75%; }
+  .col-lg-offset-8 { margin-left: 66.66666667%; }
+  .col-lg-offset-7 { margin-left: 58.33333333%; }
+  .col-lg-offset-6 { margin-left: 50%; }
+  .col-lg-offset-5 { margin-left: 41.66666667%; }
+  .col-lg-offset-4 { margin-left: 33.33333333%; }
+  .col-lg-offset-3 { margin-left: 25%; }
+  .col-lg-offset-2 { margin-left: 16.66666667%; }
+  .col-lg-offset-1 { margin-left: 8.33333333%; }
+  .col-lg-offset-0 { margin-left: 0; } }
+
+.clearfix:before, .clearfix:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after { content: " "; display: table; }
+
+.clearfix:after, .container:after, .container-fluid:after, .row:after { clear: both; }
+
+.center-block { display: block; margin-left: auto; margin-right: auto; }
+
+.pull-right { float: right !important; }
+
+.pull-left { float: left !important; }
+
+.hide { display: none !important; }
+
+.show { display: block !important; }
+
+.invisible { visibility: hidden; }
+
+.text-hide { font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; }
+
+.hidden { display: none !important; }
+
+.affix { position: fixed; }
+
+@-ms-viewport { width: device-width; }
+
+.visible-xs, .visible-sm, .visible-md, .visible-lg { display: none !important; }
+
+.visible-xs-block, .visible-xs-inline, .visible-xs-inline-block, .visible-sm-block, .visible-sm-inline, .visible-sm-inline-block, .visible-md-block, .visible-md-inline, .visible-md-inline-block, .visible-lg-block, .visible-lg-inline, .visible-lg-inline-block { display: none !important; }
+
+@media (max-width: 767px) { .visible-xs { display: block !important; }
+  table.visible-xs { display: table !important; }
+  tr.visible-xs { display: table-row !important; }
+  th.visible-xs, td.visible-xs { display: table-cell !important; } }
+
+@media (max-width: 767px) { .visible-xs-block { display: block !important; } }
+
+@media (max-width: 767px) { .visible-xs-inline { display: inline !important; } }
+
+@media (max-width: 767px) { .visible-xs-inline-block { display: inline-block !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) { .visible-sm { display: block !important; }
+  table.visible-sm { display: table !important; }
+  tr.visible-sm { display: table-row !important; }
+  th.visible-sm, td.visible-sm { display: table-cell !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) { .visible-sm-block { display: block !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) { .visible-sm-inline { display: inline !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) { .visible-sm-inline-block { display: inline-block !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) { .visible-md { display: block !important; }
+  table.visible-md { display: table !important; }
+  tr.visible-md { display: table-row !important; }
+  th.visible-md, td.visible-md { display: table-cell !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) { .visible-md-block { display: block !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) { .visible-md-inline { display: inline !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) { .visible-md-inline-block { display: inline-block !important; } }
+
+@media (min-width: 1200px) { .visible-lg { display: block !important; }
+  table.visible-lg { display: table !important; }
+  tr.visible-lg { display: table-row !important; }
+  th.visible-lg, td.visible-lg { display: table-cell !important; } }
+
+@media (min-width: 1200px) { .visible-lg-block { display: block !important; } }
+
+@media (min-width: 1200px) { .visible-lg-inline { display: inline !important; } }
+
+@media (min-width: 1200px) { .visible-lg-inline-block { display: inline-block !important; } }
+
+@media (max-width: 767px) { .hidden-xs { display: none !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) { .hidden-sm { display: none !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) { .hidden-md { display: none !important; } }
+
+@media (min-width: 1200px) { .hidden-lg { display: none !important; } }
+
+.visible-print { display: none !important; }
+
+@media print { .visible-print { display: block !important; }
+  table.visible-print { display: table !important; }
+  tr.visible-print { display: table-row !important; }
+  th.visible-print, td.visible-print { display: table-cell !important; } }
+
+.visible-print-block { display: none !important; }
+
+@media print { .visible-print-block { display: block !important; } }
+
+.visible-print-inline { display: none !important; }
+
+@media print { .visible-print-inline { display: inline !important; } }
+
+.visible-print-inline-block { display: none !important; }
+
+@media print { .visible-print-inline-block { display: inline-block !important; } }
+
+@media print { .hidden-print { display: none !important; } }
+
+@font-face { font-family: "Roboto"; font-style: normal; font-weight: normal; src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg#Roboto") format("svg"); }
+
+@font-face { font-family: "Roboto"; font-style: italic; font-weight: normal; src: url("../fonts/Roboto-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Italic.ttf") format("truetype"), url("../fonts/Roboto-Italic.svg#Roboto") format("svg"); }
+
+@font-face { font-family: "Roboto"; font-style: normal; font-weight: bold; src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.svg#Roboto") format("svg"); }
+
+@font-face { font-family: "Rubl"; font-style: normal; font-weight: normal; src: url("../fonts/ALSRubl.eot?#iefix") format("embedded-opentype"), url("../fonts/ALSRubl.woff") format("woff"), url("../fonts/ALSRubl.ttf") format("truetype"); }
+
+@font-face { font-family: "PT Sans"; font-style: normal; font-weight: normal; src: url("../fonts/PTSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSans-Regular.ttf") format("truetype"), url("../fonts/PTSans-Regular.svg#PT Sans") format("svg"); }
+
+@font-face { font-family: "PT Sans"; font-style: normal; font-weight: bold; src: url("../fonts/PTSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSans-Bold.ttf") format("truetype"), url("../fonts/PTSans-Bold.svg#PT Sans") format("svg"); }
+
+/*! Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License) */
+/* FONT PATH -------------------------- */
+@font-face { font-family: 'FontAwesome'; src: url("../fonts/fontawesome-webfont.eot?v=4.5.0"); src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
+
+.fa { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* makes the font 33% larger relative to the icon container */
+.fa-lg { font-size: 1.33333em; line-height: 0.75em; vertical-align: -15%; }
+
+.fa-2x { font-size: 2em; }
+
+.fa-3x { font-size: 3em; }
+
+.fa-4x { font-size: 4em; }
+
+.fa-5x { font-size: 5em; }
+
+.fa-fw { width: 1.28571em; text-align: center; }
+
+.fa-ul { padding-left: 0; margin-left: 2.14286em; list-style-type: none; }
+
+.fa-ul > li { position: relative; }
+
+.fa-li { position: absolute; left: -2.14286em; width: 2.14286em; top: 0.14286em; text-align: center; }
+
+.fa-li.fa-lg { left: -1.85714em; }
+
+.fa-border { padding: .2em .25em .15em; border: solid 0.08em #eee; border-radius: .1em; }
+
+.fa-pull-left { float: left; }
+
+.fa-pull-right { float: right; }
+
+.fa.fa-pull-left { margin-right: .3em; }
+
+.fa.fa-pull-right { margin-left: .3em; }
+
+/* Deprecated as of 4.4.0 */
+.pull-right { float: right; }
+
+.pull-left { float: left; }
+
+.fa.pull-left { margin-right: .3em; }
+
+.fa.pull-right { margin-left: .3em; }
+
+.fa-spin { -webkit-animation: fa-spin 2s infinite linear; animation: fa-spin 2s infinite linear; }
+
+.fa-pulse { -webkit-animation: fa-spin 1s infinite steps(8); animation: fa-spin 1s infinite steps(8); }
+
+@-webkit-keyframes fa-spin { 0% { -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@keyframes fa-spin { 0% { -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+.fa-rotate-90 { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
+
+.fa-rotate-180 { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
+
+.fa-rotate-270 { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); -webkit-transform: rotate(270deg); -ms-transform: rotate(270deg); transform: rotate(270deg); }
+
+.fa-flip-horizontal { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0); -webkit-transform: scale(-1, 1); -ms-transform: scale(-1, 1); transform: scale(-1, 1); }
+
+.fa-flip-vertical { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); -webkit-transform: scale(1, -1); -ms-transform: scale(1, -1); transform: scale(1, -1); }
+
+:root .fa-rotate-90, :root .fa-rotate-180, :root .fa-rotate-270, :root .fa-flip-horizontal, :root .fa-flip-vertical { filter: none; }
+
+.fa-stack { position: relative; display: inline-block; width: 2em; height: 2em; line-height: 2em; vertical-align: middle; }
+
+.fa-stack-1x, .fa-stack-2x { position: absolute; left: 0; width: 100%; text-align: center; }
+
+.fa-stack-1x { line-height: inherit; }
+
+.fa-stack-2x { font-size: 2em; }
+
+.fa-inverse { color: #fff; }
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen readers do not read off random characters that represent icons */
+.fa-glass:before { content: ""; }
+
+.fa-music:before { content: ""; }
+
+.fa-search:before { content: ""; }
+
+.fa-envelope-o:before { content: ""; }
+
+.fa-heart:before { content: ""; }
+
+.fa-star:before { content: ""; }
+
+.fa-star-o:before { content: ""; }
+
+.fa-user:before { content: ""; }
+
+.fa-film:before { content: ""; }
+
+.fa-th-large:before { content: ""; }
+
+.fa-th:before { content: ""; }
+
+.fa-th-list:before { content: ""; }
+
+.fa-check:before { content: ""; }
+
+.fa-remove:before, .fa-close:before, .fa-times:before { content: ""; }
+
+.fa-search-plus:before { content: ""; }
+
+.fa-search-minus:before { content: ""; }
+
+.fa-power-off:before { content: ""; }
+
+.fa-signal:before { content: ""; }
+
+.fa-gear:before, .fa-cog:before { content: ""; }
+
+.fa-trash-o:before { content: ""; }
+
+.fa-home:before { content: ""; }
+
+.fa-file-o:before { content: ""; }
+
+.fa-clock-o:before { content: ""; }
+
+.fa-road:before { content: ""; }
+
+.fa-download:before { content: ""; }
+
+.fa-arrow-circle-o-down:before { content: ""; }
+
+.fa-arrow-circle-o-up:before { content: ""; }
+
+.fa-inbox:before { content: ""; }
+
+.fa-play-circle-o:before { content: ""; }
+
+.fa-rotate-right:before, .fa-repeat:before { content: ""; }
+
+.fa-refresh:before { content: ""; }
+
+.fa-list-alt:before { content: ""; }
+
+.fa-lock:before { content: ""; }
+
+.fa-flag:before { content: ""; }
+
+.fa-headphones:before { content: ""; }
+
+.fa-volume-off:before { content: ""; }
+
+.fa-volume-down:before { content: ""; }
+
+.fa-volume-up:before { content: ""; }
+
+.fa-qrcode:before { content: ""; }
+
+.fa-barcode:before { content: ""; }
+
+.fa-tag:before { content: ""; }
+
+.fa-tags:before { content: ""; }
+
+.fa-book:before { content: ""; }
+
+.fa-bookmark:before { content: ""; }
+
+.fa-print:before { content: ""; }
+
+.fa-camera:before { content: ""; }
+
+.fa-font:before { content: ""; }
+
+.fa-bold:before { content: ""; }
+
+.fa-italic:before { content: ""; }
+
+.fa-text-height:before { content: ""; }
+
+.fa-text-width:before { content: ""; }
+
+.fa-align-left:before { content: ""; }
+
+.fa-align-center:before { content: ""; }
+
+.fa-align-right:before { content: ""; }
+
+.fa-align-justify:before { content: ""; }
+
+.fa-list:before { content: ""; }
+
+.fa-dedent:before, .fa-outdent:before { content: ""; }
+
+.fa-indent:before { content: ""; }
+
+.fa-video-camera:before { content: ""; }
+
+.fa-photo:before, .fa-image:before, .fa-picture-o:before { content: ""; }
+
+.fa-pencil:before { content: ""; }
+
+.fa-map-marker:before { content: ""; }
+
+.fa-adjust:before { content: ""; }
+
+.fa-tint:before { content: ""; }
+
+.fa-edit:before, .fa-pencil-square-o:before { content: ""; }
+
+.fa-share-square-o:before { content: ""; }
+
+.fa-check-square-o:before { content: ""; }
+
+.fa-arrows:before { content: ""; }
+
+.fa-step-backward:before { content: ""; }
+
+.fa-fast-backward:before { content: ""; }
+
+.fa-backward:before { content: ""; }
+
+.fa-play:before { content: ""; }
+
+.fa-pause:before { content: ""; }
+
+.fa-stop:before { content: ""; }
+
+.fa-forward:before { content: ""; }
+
+.fa-fast-forward:before { content: ""; }
+
+.fa-step-forward:before { content: ""; }
+
+.fa-eject:before { content: ""; }
+
+.fa-chevron-left:before { content: ""; }
+
+.fa-chevron-right:before { content: ""; }
+
+.fa-plus-circle:before { content: ""; }
+
+.fa-minus-circle:before { content: ""; }
+
+.fa-times-circle:before { content: ""; }
+
+.fa-check-circle:before { content: ""; }
+
+.fa-question-circle:before { content: ""; }
+
+.fa-info-circle:before { content: ""; }
+
+.fa-crosshairs:before { content: ""; }
+
+.fa-times-circle-o:before { content: ""; }
+
+.fa-check-circle-o:before { content: ""; }
+
+.fa-ban:before { content: ""; }
+
+.fa-arrow-left:before { content: ""; }
+
+.fa-arrow-right:before { content: ""; }
+
+.fa-arrow-up:before { content: ""; }
+
+.fa-arrow-down:before { content: ""; }
+
+.fa-mail-forward:before, .fa-share:before { content: ""; }
+
+.fa-expand:before { content: ""; }
+
+.fa-compress:before { content: ""; }
+
+.fa-plus:before { content: ""; }
+
+.fa-minus:before { content: ""; }
+
+.fa-asterisk:before { content: ""; }
+
+.fa-exclamation-circle:before { content: ""; }
+
+.fa-gift:before { content: ""; }
+
+.fa-leaf:before { content: ""; }
+
+.fa-fire:before { content: ""; }
+
+.fa-eye:before { content: ""; }
+
+.fa-eye-slash:before { content: ""; }
+
+.fa-warning:before, .fa-exclamation-triangle:before { content: ""; }
+
+.fa-plane:before { content: ""; }
+
+.fa-calendar:before { content: ""; }
+
+.fa-random:before { content: ""; }
+
+.fa-comment:before { content: ""; }
+
+.fa-magnet:before { content: ""; }
+
+.fa-chevron-up:before { content: ""; }
+
+.fa-chevron-down:before { content: ""; }
+
+.fa-retweet:before { content: ""; }
+
+.fa-shopping-cart:before { content: ""; }
+
+.fa-folder:before { content: ""; }
+
+.fa-folder-open:before { content: ""; }
+
+.fa-arrows-v:before { content: ""; }
+
+.fa-arrows-h:before { content: ""; }
+
+.fa-bar-chart-o:before, .fa-bar-chart:before { content: ""; }
+
+.fa-twitter-square:before { content: ""; }
+
+.fa-facebook-square:before { content: ""; }
+
+.fa-camera-retro:before { content: ""; }
+
+.fa-key:before { content: ""; }
+
+.fa-gears:before, .fa-cogs:before { content: ""; }
+
+.fa-comments:before { content: ""; }
+
+.fa-thumbs-o-up:before { content: ""; }
+
+.fa-thumbs-o-down:before { content: ""; }
+
+.fa-star-half:before { content: ""; }
+
+.fa-heart-o:before { content: ""; }
+
+.fa-sign-out:before { content: ""; }
+
+.fa-linkedin-square:before { content: ""; }
+
+.fa-thumb-tack:before { content: ""; }
+
+.fa-external-link:before { content: ""; }
+
+.fa-sign-in:before { content: ""; }
+
+.fa-trophy:before { content: ""; }
+
+.fa-github-square:before { content: ""; }
+
+.fa-upload:before { content: ""; }
+
+.fa-lemon-o:before { content: ""; }
+
+.fa-phone:before { content: ""; }
+
+.fa-square-o:before { content: ""; }
+
+.fa-bookmark-o:before { content: ""; }
+
+.fa-phone-square:before { content: ""; }
+
+.fa-twitter:before { content: ""; }
+
+.fa-facebook-f:before, .fa-facebook:before { content: ""; }
+
+.fa-github:before { content: ""; }
+
+.fa-unlock:before { content: ""; }
+
+.fa-credit-card:before { content: ""; }
+
+.fa-feed:before, .fa-rss:before { content: ""; }
+
+.fa-hdd-o:before { content: ""; }
+
+.fa-bullhorn:before { content: ""; }
+
+.fa-bell:before { content: ""; }
+
+.fa-certificate:before { content: ""; }
+
+.fa-hand-o-right:before { content: ""; }
+
+.fa-hand-o-left:before { content: ""; }
+
+.fa-hand-o-up:before { content: ""; }
+
+.fa-hand-o-down:before { content: ""; }
+
+.fa-arrow-circle-left:before { content: ""; }
+
+.fa-arrow-circle-right:before { content: ""; }
+
+.fa-arrow-circle-up:before { content: ""; }
+
+.fa-arrow-circle-down:before { content: ""; }
+
+.fa-globe:before { content: ""; }
+
+.fa-wrench:before { content: ""; }
+
+.fa-tasks:before { content: ""; }
+
+.fa-filter:before { content: ""; }
+
+.fa-briefcase:before { content: ""; }
+
+.fa-arrows-alt:before { content: ""; }
+
+.fa-group:before, .fa-users:before { content: ""; }
+
+.fa-chain:before, .fa-link:before { content: ""; }
+
+.fa-cloud:before { content: ""; }
+
+.fa-flask:before { content: ""; }
+
+.fa-cut:before, .fa-scissors:before { content: ""; }
+
+.fa-copy:before, .fa-files-o:before { content: ""; }
+
+.fa-paperclip:before { content: ""; }
+
+.fa-save:before, .fa-floppy-o:before { content: ""; }
+
+.fa-square:before { content: ""; }
+
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before { content: ""; }
+
+.fa-list-ul:before { content: ""; }
+
+.fa-list-ol:before { content: ""; }
+
+.fa-strikethrough:before { content: ""; }
+
+.fa-underline:before { content: ""; }
+
+.fa-table:before { content: ""; }
+
+.fa-magic:before { content: ""; }
+
+.fa-truck:before { content: ""; }
+
+.fa-pinterest:before { content: ""; }
+
+.fa-pinterest-square:before { content: ""; }
+
+.fa-google-plus-square:before { content: ""; }
+
+.fa-google-plus:before { content: ""; }
+
+.fa-money:before { content: ""; }
+
+.fa-caret-down:before { content: ""; }
+
+.fa-caret-up:before { content: ""; }
+
+.fa-caret-left:before { content: ""; }
+
+.fa-caret-right:before { content: ""; }
+
+.fa-columns:before { content: ""; }
+
+.fa-unsorted:before, .fa-sort:before { content: ""; }
+
+.fa-sort-down:before, .fa-sort-desc:before { content: ""; }
+
+.fa-sort-up:before, .fa-sort-asc:before { content: ""; }
+
+.fa-envelope:before { content: ""; }
+
+.fa-linkedin:before { content: ""; }
+
+.fa-rotate-left:before, .fa-undo:before { content: ""; }
+
+.fa-legal:before, .fa-gavel:before { content: ""; }
+
+.fa-dashboard:before, .fa-tachometer:before { content: ""; }
+
+.fa-comment-o:before { content: ""; }
+
+.fa-comments-o:before { content: ""; }
+
+.fa-flash:before, .fa-bolt:before { content: ""; }
+
+.fa-sitemap:before { content: ""; }
+
+.fa-umbrella:before { content: ""; }
+
+.fa-paste:before, .fa-clipboard:before { content: ""; }
+
+.fa-lightbulb-o:before { content: ""; }
+
+.fa-exchange:before { content: ""; }
+
+.fa-cloud-download:before { content: ""; }
+
+.fa-cloud-upload:before { content: ""; }
+
+.fa-user-md:before { content: ""; }
+
+.fa-stethoscope:before { content: ""; }
+
+.fa-suitcase:before { content: ""; }
+
+.fa-bell-o:before { content: ""; }
+
+.fa-coffee:before { content: ""; }
+
+.fa-cutlery:before { content: ""; }
+
+.fa-file-text-o:before { content: ""; }
+
+.fa-building-o:before { content: ""; }
+
+.fa-hospital-o:before { content: ""; }
+
+.fa-ambulance:before { content: ""; }
+
+.fa-medkit:before { content: ""; }
+
+.fa-fighter-jet:before { content: ""; }
+
+.fa-beer:before { content: ""; }
+
+.fa-h-square:before { content: ""; }
+
+.fa-plus-square:before { content: ""; }
+
+.fa-angle-double-left:before { content: ""; }
+
+.fa-angle-double-right:before { content: ""; }
+
+.fa-angle-double-up:before { content: ""; }
+
+.fa-angle-double-down:before { content: ""; }
+
+.fa-angle-left:before { content: ""; }
+
+.fa-angle-right:before { content: ""; }
+
+.fa-angle-up:before { content: ""; }
+
+.fa-angle-down:before { content: ""; }
+
+.fa-desktop:before { content: ""; }
+
+.fa-laptop:before { content: ""; }
+
+.fa-tablet:before { content: ""; }
+
+.fa-mobile-phone:before, .fa-mobile:before { content: ""; }
+
+.fa-circle-o:before { content: ""; }
+
+.fa-quote-left:before { content: ""; }
+
+.fa-quote-right:before { content: ""; }
+
+.fa-spinner:before { content: ""; }
+
+.fa-circle:before { content: ""; }
+
+.fa-mail-reply:before, .fa-reply:before { content: ""; }
+
+.fa-github-alt:before { content: ""; }
+
+.fa-folder-o:before { content: ""; }
+
+.fa-folder-open-o:before { content: ""; }
+
+.fa-smile-o:before { content: ""; }
+
+.fa-frown-o:before { content: ""; }
+
+.fa-meh-o:before { content: ""; }
+
+.fa-gamepad:before { content: ""; }
+
+.fa-keyboard-o:before { content: ""; }
+
+.fa-flag-o:before { content: ""; }
+
+.fa-flag-checkered:before { content: ""; }
+
+.fa-terminal:before { content: ""; }
+
+.fa-code:before { content: ""; }
+
+.fa-mail-reply-all:before, .fa-reply-all:before { content: ""; }
+
+.fa-star-half-empty:before, .fa-star-half-full:before, .fa-star-half-o:before { content: ""; }
+
+.fa-location-arrow:before { content: ""; }
+
+.fa-crop:before { content: ""; }
+
+.fa-code-fork:before { content: ""; }
+
+.fa-unlink:before, .fa-chain-broken:before { content: ""; }
+
+.fa-question:before { content: ""; }
+
+.fa-info:before { content: ""; }
+
+.fa-exclamation:before { content: ""; }
+
+.fa-superscript:before { content: ""; }
+
+.fa-subscript:before { content: ""; }
+
+.fa-eraser:before { content: ""; }
+
+.fa-puzzle-piece:before { content: ""; }
+
+.fa-microphone:before { content: ""; }
+
+.fa-microphone-slash:before { content: ""; }
+
+.fa-shield:before { content: ""; }
+
+.fa-calendar-o:before { content: ""; }
+
+.fa-fire-extinguisher:before { content: ""; }
+
+.fa-rocket:before { content: ""; }
+
+.fa-maxcdn:before { content: ""; }
+
+.fa-chevron-circle-left:before { content: ""; }
+
+.fa-chevron-circle-right:before { content: ""; }
+
+.fa-chevron-circle-up:before { content: ""; }
+
+.fa-chevron-circle-down:before { content: ""; }
+
+.fa-html5:before { content: ""; }
+
+.fa-css3:before { content: ""; }
+
+.fa-anchor:before { content: ""; }
+
+.fa-unlock-alt:before { content: ""; }
+
+.fa-bullseye:before { content: ""; }
+
+.fa-ellipsis-h:before { content: ""; }
+
+.fa-ellipsis-v:before { content: ""; }
+
+.fa-rss-square:before { content: ""; }
+
+.fa-play-circle:before { content: ""; }
+
+.fa-ticket:before { content: ""; }
+
+.fa-minus-square:before { content: ""; }
+
+.fa-minus-square-o:before { content: ""; }
+
+.fa-level-up:before { content: ""; }
+
+.fa-level-down:before { content: ""; }
+
+.fa-check-square:before { content: ""; }
+
+.fa-pencil-square:before { content: ""; }
+
+.fa-external-link-square:before { content: ""; }
+
+.fa-share-square:before { content: ""; }
+
+.fa-compass:before { content: ""; }
+
+.fa-toggle-down:before, .fa-caret-square-o-down:before { content: ""; }
+
+.fa-toggle-up:before, .fa-caret-square-o-up:before { content: ""; }
+
+.fa-toggle-right:before, .fa-caret-square-o-right:before { content: ""; }
+
+.fa-euro:before, .fa-eur:before { content: ""; }
+
+.fa-gbp:before { content: ""; }
+
+.fa-dollar:before, .fa-usd:before { content: ""; }
+
+.fa-rupee:before, .fa-inr:before { content: ""; }
+
+.fa-cny:before, .fa-rmb:before, .fa-yen:before, .fa-jpy:before { content: ""; }
+
+.fa-ruble:before, .fa-rouble:before, .fa-rub:before { content: ""; }
+
+.fa-won:before, .fa-krw:before { content: ""; }
+
+.fa-bitcoin:before, .fa-btc:before { content: ""; }
+
+.fa-file:before { content: ""; }
+
+.fa-file-text:before { content: ""; }
+
+.fa-sort-alpha-asc:before { content: ""; }
+
+.fa-sort-alpha-desc:before { content: ""; }
+
+.fa-sort-amount-asc:before { content: ""; }
+
+.fa-sort-amount-desc:before { content: ""; }
+
+.fa-sort-numeric-asc:before { content: ""; }
+
+.fa-sort-numeric-desc:before { content: ""; }
+
+.fa-thumbs-up:before { content: ""; }
+
+.fa-thumbs-down:before { content: ""; }
+
+.fa-youtube-square:before { content: ""; }
+
+.fa-youtube:before { content: ""; }
+
+.fa-xing:before { content: ""; }
+
+.fa-xing-square:before { content: ""; }
+
+.fa-youtube-play:before { content: ""; }
+
+.fa-dropbox:before { content: ""; }
+
+.fa-stack-overflow:before { content: ""; }
+
+.fa-instagram:before { content: ""; }
+
+.fa-flickr:before { content: ""; }
+
+.fa-adn:before { content: ""; }
+
+.fa-bitbucket:before { content: ""; }
+
+.fa-bitbucket-square:before { content: ""; }
+
+.fa-tumblr:before { content: ""; }
+
+.fa-tumblr-square:before { content: ""; }
+
+.fa-long-arrow-down:before { content: ""; }
+
+.fa-long-arrow-up:before { content: ""; }
+
+.fa-long-arrow-left:before { content: ""; }
+
+.fa-long-arrow-right:before { content: ""; }
+
+.fa-apple:before { content: ""; }
+
+.fa-windows:before { content: ""; }
+
+.fa-android:before { content: ""; }
+
+.fa-linux:before { content: ""; }
+
+.fa-dribbble:before { content: ""; }
+
+.fa-skype:before { content: ""; }
+
+.fa-foursquare:before { content: ""; }
+
+.fa-trello:before { content: ""; }
+
+.fa-female:before { content: ""; }
+
+.fa-male:before { content: ""; }
+
+.fa-gittip:before, .fa-gratipay:before { content: ""; }
+
+.fa-sun-o:before { content: ""; }
+
+.fa-moon-o:before { content: ""; }
+
+.fa-archive:before { content: ""; }
+
+.fa-bug:before { content: ""; }
+
+.fa-vk:before { content: ""; }
+
+.fa-weibo:before { content: ""; }
+
+.fa-renren:before { content: ""; }
+
+.fa-pagelines:before { content: ""; }
+
+.fa-stack-exchange:before { content: ""; }
+
+.fa-arrow-circle-o-right:before { content: ""; }
+
+.fa-arrow-circle-o-left:before { content: ""; }
+
+.fa-toggle-left:before, .fa-caret-square-o-left:before { content: ""; }
+
+.fa-dot-circle-o:before { content: ""; }
+
+.fa-wheelchair:before { content: ""; }
+
+.fa-vimeo-square:before { content: ""; }
+
+.fa-turkish-lira:before, .fa-try:before { content: ""; }
+
+.fa-plus-square-o:before { content: ""; }
+
+.fa-space-shuttle:before { content: ""; }
+
+.fa-slack:before { content: ""; }
+
+.fa-envelope-square:before { content: ""; }
+
+.fa-wordpress:before { content: ""; }
+
+.fa-openid:before { content: ""; }
+
+.fa-institution:before, .fa-bank:before, .fa-university:before { content: ""; }
+
+.fa-mortar-board:before, .fa-graduation-cap:before { content: ""; }
+
+.fa-yahoo:before { content: ""; }
+
+.fa-google:before { content: ""; }
+
+.fa-reddit:before { content: ""; }
+
+.fa-reddit-square:before { content: ""; }
+
+.fa-stumbleupon-circle:before { content: ""; }
+
+.fa-stumbleupon:before { content: ""; }
+
+.fa-delicious:before { content: ""; }
+
+.fa-digg:before { content: ""; }
+
+.fa-pied-piper:before { content: ""; }
+
+.fa-pied-piper-alt:before { content: ""; }
+
+.fa-drupal:before { content: ""; }
+
+.fa-joomla:before { content: ""; }
+
+.fa-language:before { content: ""; }
+
+.fa-fax:before { content: ""; }
+
+.fa-building:before { content: ""; }
+
+.fa-child:before { content: ""; }
+
+.fa-paw:before { content: ""; }
+
+.fa-spoon:before { content: ""; }
+
+.fa-cube:before { content: ""; }
+
+.fa-cubes:before { content: ""; }
+
+.fa-behance:before { content: ""; }
+
+.fa-behance-square:before { content: ""; }
+
+.fa-steam:before { content: ""; }
+
+.fa-steam-square:before { content: ""; }
+
+.fa-recycle:before { content: ""; }
+
+.fa-automobile:before, .fa-car:before { content: ""; }
+
+.fa-cab:before, .fa-taxi:before { content: ""; }
+
+.fa-tree:before { content: ""; }
+
+.fa-spotify:before { content: ""; }
+
+.fa-deviantart:before { content: ""; }
+
+.fa-soundcloud:before { content: ""; }
+
+.fa-database:before { content: ""; }
+
+.fa-file-pdf-o:before { content: ""; }
+
+.fa-file-word-o:before { content: ""; }
+
+.fa-file-excel-o:before { content: ""; }
+
+.fa-file-powerpoint-o:before { content: ""; }
+
+.fa-file-photo-o:before, .fa-file-picture-o:before, .fa-file-image-o:before { content: ""; }
+
+.fa-file-zip-o:before, .fa-file-archive-o:before { content: ""; }
+
+.fa-file-sound-o:before, .fa-file-audio-o:before { content: ""; }
+
+.fa-file-movie-o:before, .fa-file-video-o:before { content: ""; }
+
+.fa-file-code-o:before { content: ""; }
+
+.fa-vine:before { content: ""; }
+
+.fa-codepen:before { content: ""; }
+
+.fa-jsfiddle:before { content: ""; }
+
+.fa-life-bouy:before, .fa-life-buoy:before, .fa-life-saver:before, .fa-support:before, .fa-life-ring:before { content: ""; }
+
+.fa-circle-o-notch:before { content: ""; }
+
+.fa-ra:before, .fa-rebel:before { content: ""; }
+
+.fa-ge:before, .fa-empire:before { content: ""; }
+
+.fa-git-square:before { content: ""; }
+
+.fa-git:before { content: ""; }
+
+.fa-y-combinator-square:before, .fa-yc-square:before, .fa-hacker-news:before { content: ""; }
+
+.fa-tencent-weibo:before { content: ""; }
+
+.fa-qq:before { content: ""; }
+
+.fa-wechat:before, .fa-weixin:before { content: ""; }
+
+.fa-send:before, .fa-paper-plane:before { content: ""; }
+
+.fa-send-o:before, .fa-paper-plane-o:before { content: ""; }
+
+.fa-history:before { content: ""; }
+
+.fa-circle-thin:before { content: ""; }
+
+.fa-header:before { content: ""; }
+
+.fa-paragraph:before { content: ""; }
+
+.fa-sliders:before { content: ""; }
+
+.fa-share-alt:before { content: ""; }
+
+.fa-share-alt-square:before { content: ""; }
+
+.fa-bomb:before { content: ""; }
+
+.fa-soccer-ball-o:before, .fa-futbol-o:before { content: ""; }
+
+.fa-tty:before { content: ""; }
+
+.fa-binoculars:before { content: ""; }
+
+.fa-plug:before { content: ""; }
+
+.fa-slideshare:before { content: ""; }
+
+.fa-twitch:before { content: ""; }
+
+.fa-yelp:before { content: ""; }
+
+.fa-newspaper-o:before { content: ""; }
+
+.fa-wifi:before { content: ""; }
+
+.fa-calculator:before { content: ""; }
+
+.fa-paypal:before { content: ""; }
+
+.fa-google-wallet:before { content: ""; }
+
+.fa-cc-visa:before { content: ""; }
+
+.fa-cc-mastercard:before { content: ""; }
+
+.fa-cc-discover:before { content: ""; }
+
+.fa-cc-amex:before { content: ""; }
+
+.fa-cc-paypal:before { content: ""; }
+
+.fa-cc-stripe:before { content: ""; }
+
+.fa-bell-slash:before { content: ""; }
+
+.fa-bell-slash-o:before { content: ""; }
+
+.fa-trash:before { content: ""; }
+
+.fa-copyright:before { content: ""; }
+
+.fa-at:before { content: ""; }
+
+.fa-eyedropper:before { content: ""; }
+
+.fa-paint-brush:before { content: ""; }
+
+.fa-birthday-cake:before { content: ""; }
+
+.fa-area-chart:before { content: ""; }
+
+.fa-pie-chart:before { content: ""; }
+
+.fa-line-chart:before { content: ""; }
+
+.fa-lastfm:before { content: ""; }
+
+.fa-lastfm-square:before { content: ""; }
+
+.fa-toggle-off:before { content: ""; }
+
+.fa-toggle-on:before { content: ""; }
+
+.fa-bicycle:before { content: ""; }
+
+.fa-bus:before { content: ""; }
+
+.fa-ioxhost:before { content: ""; }
+
+.fa-angellist:before { content: ""; }
+
+.fa-cc:before { content: ""; }
+
+.fa-shekel:before, .fa-sheqel:before, .fa-ils:before { content: ""; }
+
+.fa-meanpath:before { content: ""; }
+
+.fa-buysellads:before { content: ""; }
+
+.fa-connectdevelop:before { content: ""; }
+
+.fa-dashcube:before { content: ""; }
+
+.fa-forumbee:before { content: ""; }
+
+.fa-leanpub:before { content: ""; }
+
+.fa-sellsy:before { content: ""; }
+
+.fa-shirtsinbulk:before { content: ""; }
+
+.fa-simplybuilt:before { content: ""; }
+
+.fa-skyatlas:before { content: ""; }
+
+.fa-cart-plus:before { content: ""; }
+
+.fa-cart-arrow-down:before { content: ""; }
+
+.fa-diamond:before { content: ""; }
+
+.fa-ship:before { content: ""; }
+
+.fa-user-secret:before { content: ""; }
+
+.fa-motorcycle:before { content: ""; }
+
+.fa-street-view:before { content: ""; }
+
+.fa-heartbeat:before { content: ""; }
+
+.fa-venus:before { content: ""; }
+
+.fa-mars:before { content: ""; }
+
+.fa-mercury:before { content: ""; }
+
+.fa-intersex:before, .fa-transgender:before { content: ""; }
+
+.fa-transgender-alt:before { content: ""; }
+
+.fa-venus-double:before { content: ""; }
+
+.fa-mars-double:before { content: ""; }
+
+.fa-venus-mars:before { content: ""; }
+
+.fa-mars-stroke:before { content: ""; }
+
+.fa-mars-stroke-v:before { content: ""; }
+
+.fa-mars-stroke-h:before { content: ""; }
+
+.fa-neuter:before { content: ""; }
+
+.fa-genderless:before { content: ""; }
+
+.fa-facebook-official:before { content: ""; }
+
+.fa-pinterest-p:before { content: ""; }
+
+.fa-whatsapp:before { content: ""; }
+
+.fa-server:before { content: ""; }
+
+.fa-user-plus:before { content: ""; }
+
+.fa-user-times:before { content: ""; }
+
+.fa-hotel:before, .fa-bed:before { content: ""; }
+
+.fa-viacoin:before { content: ""; }
+
+.fa-train:before { content: ""; }
+
+.fa-subway:before { content: ""; }
+
+.fa-medium:before { content: ""; }
+
+.fa-yc:before, .fa-y-combinator:before { content: ""; }
+
+.fa-optin-monster:before { content: ""; }
+
+.fa-opencart:before { content: ""; }
+
+.fa-expeditedssl:before { content: ""; }
+
+.fa-battery-4:before, .fa-battery-full:before { content: ""; }
+
+.fa-battery-3:before, .fa-battery-three-quarters:before { content: ""; }
+
+.fa-battery-2:before, .fa-battery-half:before { content: ""; }
+
+.fa-battery-1:before, .fa-battery-quarter:before { content: ""; }
+
+.fa-battery-0:before, .fa-battery-empty:before { content: ""; }
+
+.fa-mouse-pointer:before { content: ""; }
+
+.fa-i-cursor:before { content: ""; }
+
+.fa-object-group:before { content: ""; }
+
+.fa-object-ungroup:before { content: ""; }
+
+.fa-sticky-note:before { content: ""; }
+
+.fa-sticky-note-o:before { content: ""; }
+
+.fa-cc-jcb:before { content: ""; }
+
+.fa-cc-diners-club:before { content: ""; }
+
+.fa-clone:before { content: ""; }
+
+.fa-balance-scale:before { content: ""; }
+
+.fa-hourglass-o:before { content: ""; }
+
+.fa-hourglass-1:before, .fa-hourglass-start:before { content: ""; }
+
+.fa-hourglass-2:before, .fa-hourglass-half:before { content: ""; }
+
+.fa-hourglass-3:before, .fa-hourglass-end:before { content: ""; }
+
+.fa-hourglass:before { content: ""; }
+
+.fa-hand-grab-o:before, .fa-hand-rock-o:before { content: ""; }
+
+.fa-hand-stop-o:before, .fa-hand-paper-o:before { content: ""; }
+
+.fa-hand-scissors-o:before { content: ""; }
+
+.fa-hand-lizard-o:before { content: ""; }
+
+.fa-hand-spock-o:before { content: ""; }
+
+.fa-hand-pointer-o:before { content: ""; }
+
+.fa-hand-peace-o:before { content: ""; }
+
+.fa-trademark:before { content: ""; }
+
+.fa-registered:before { content: ""; }
+
+.fa-creative-commons:before { content: ""; }
+
+.fa-gg:before { content: ""; }
+
+.fa-gg-circle:before { content: ""; }
+
+.fa-tripadvisor:before { content: ""; }
+
+.fa-odnoklassniki:before { content: ""; }
+
+.fa-odnoklassniki-square:before { content: ""; }
+
+.fa-get-pocket:before { content: ""; }
+
+.fa-wikipedia-w:before { content: ""; }
+
+.fa-safari:before { content: ""; }
+
+.fa-chrome:before { content: ""; }
+
+.fa-firefox:before { content: ""; }
+
+.fa-opera:before { content: ""; }
+
+.fa-internet-explorer:before { content: ""; }
+
+.fa-tv:before, .fa-television:before { content: ""; }
+
+.fa-contao:before { content: ""; }
+
+.fa-500px:before { content: ""; }
+
+.fa-amazon:before { content: ""; }
+
+.fa-calendar-plus-o:before { content: ""; }
+
+.fa-calendar-minus-o:before { content: ""; }
+
+.fa-calendar-times-o:before { content: ""; }
+
+.fa-calendar-check-o:before { content: ""; }
+
+.fa-industry:before { content: ""; }
+
+.fa-map-pin:before { content: ""; }
+
+.fa-map-signs:before { content: ""; }
+
+.fa-map-o:before { content: ""; }
+
+.fa-map:before { content: ""; }
+
+.fa-commenting:before { content: ""; }
+
+.fa-commenting-o:before { content: ""; }
+
+.fa-houzz:before { content: ""; }
+
+.fa-vimeo:before { content: ""; }
+
+.fa-black-tie:before { content: ""; }
+
+.fa-fonticons:before { content: ""; }
+
+.fa-reddit-alien:before { content: ""; }
+
+.fa-edge:before { content: ""; }
+
+.fa-credit-card-alt:before { content: ""; }
+
+.fa-codiepie:before { content: ""; }
+
+.fa-modx:before { content: ""; }
+
+.fa-fort-awesome:before { content: ""; }
+
+.fa-usb:before { content: ""; }
+
+.fa-product-hunt:before { content: ""; }
+
+.fa-mixcloud:before { content: ""; }
+
+.fa-scribd:before { content: ""; }
+
+.fa-pause-circle:before { content: ""; }
+
+.fa-pause-circle-o:before { content: ""; }
+
+.fa-stop-circle:before { content: ""; }
+
+.fa-stop-circle-o:before { content: ""; }
+
+.fa-shopping-bag:before { content: ""; }
+
+.fa-shopping-basket:before { content: ""; }
+
+.fa-hashtag:before { content: ""; }
+
+.fa-bluetooth:before { content: ""; }
+
+.fa-bluetooth-b:before { content: ""; }
+
+.fa-percent:before { content: ""; }
+
+html { height: 100%; }
+
+body { font-family: "PT Sans", sans-serif; font-weight: normal; height: 100%; font-size: 14px; color: #000; }
+
+label { font-weight: normal; }
+
+img { max-width: 100%; }
+
+a img { border: none; }
+
+button, input, textarea { outline: none; }
+
+.text-right { text-align: right; }
+
+.text-center { text-align: center; }
+
+.no-margin { margin: 0 !important; }
+
+.margin-bottom-50 { margin-bottom: 50px; }
+
+.rubl { display: inline-block; font-family: 'Rubl'; margin-left: 5px; }
+
+.btn { display: inline-block; color: #fff; text-decoration: none; font-weight: bold; border-radius: 4px; padding: 7px 22px; background: #1B8C2B; position: relative; border: none; border-bottom: 3px solid #075813; font-family: PT Sans; font-size: 16px; top: 0; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
+
+.btn:active, .btn:focus, .btn:hover { color: #fff; text-decoration: none; background: #1fa132; }
+
+.btn:active { -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; border-bottom: 3px solid transparent; top: 3px; }
+
+/* VENDOR  CSS */
+.fancybox-image, .fancybox-inner, .fancybox-nav, .fancybox-nav span, .fancybox-outer, .fancybox-skin, .fancybox-tmp, .fancybox-wrap, .fancybox-wrap iframe, .fancybox-wrap object { padding: 0; margin: 0; border: 0; outline: 0; vertical-align: top; }
+
+.fancybox-wrap { position: absolute; top: 0; left: 0; z-index: 8020; }
+
+.fancybox-skin { position: relative; background: 0 0; border-radius: 0; color: #444; padding: 0 !important; text-shadow: none; }
+
+.fancybox-opened { z-index: 8030; }
+
+.fancybox-inner, .fancybox-outer { position: relative; }
+
+.fancybox-inner { overflow: hidden; }
+
+.fancybox-type-iframe .fancybox-inner { -webkit-overflow-scrolling: touch; }
+
+.fancybox-error { color: #444; font: 14px/20px "PT Sans", sans-serif; margin: 0; padding: 15px; white-space: nowrap; }
+
+.fancybox-iframe, .fancybox-image { display: block; width: 100%; height: 100%; }
+
+.fancybox-image { max-width: 100%; max-height: 100%; }
+
+#fancybox-loading, .fancybox-close, .fancybox-next span, .fancybox-prev span { background-image: url(../img/fancybox_sprite.png); }
+
+#fancybox-loading { position: fixed; top: 50%; left: 50%; margin-top: -22px; margin-left: -22px; background-position: 0 -108px; opacity: .8; cursor: pointer; z-index: 8060; }
+
+#fancybox-loading div { width: 44px; height: 44px; background: url(../img/fancybox_loading.gif) center center no-repeat; }
+
+.fancybox-close { position: absolute; top: -12px; right: -12px; width: 36px; height: 36px; cursor: pointer; z-index: 8040; }
+
+.fancybox-nav { position: absolute; top: 0; width: 40%; height: 100%; cursor: pointer; text-decoration: none; background: url(../img/blank.gif); -webkit-tap-highlight-color: transparent; z-index: 8040; }
+
+.fancybox-prev { left: 0; }
+
+.fancybox-next { right: 0; }
+
+.fancybox-nav span { position: absolute; top: 50%; width: 36px; height: 34px; margin-top: -18px; cursor: pointer; z-index: 8040; }
+
+.fancybox-prev span { left: 10px; background-position: 0 -36px; }
+
+.fancybox-next span { right: 10px; background-position: 0 -72px; }
+
+.fancybox-nav:hover span { visibility: visible; }
+
+.fancybox-tmp { position: absolute; top: -99999px; left: -99999px; visibility: hidden; max-width: 99999px; max-height: 99999px; overflow: visible !important; }
+
+.fancybox-lock { overflow: hidden; }
+
+.fancybox-overlay { position: absolute; top: 0; left: 0; overflow: hidden; display: none; z-index: 8010; background: rgba(0, 0, 0, 0.75); }
+
+.fancybox-overlay-fixed { position: fixed; bottom: 0; right: 0; }
+
+.fancybox-lock .fancybox-overlay { overflow: auto; overflow-y: scroll; }
+
+.fancybox-title { visibility: hidden; font: 400 13px/20px "PT Sans", sans-serif; position: relative; text-shadow: none; z-index: 8050; }
+
+.fancybox-opened .fancybox-title { visibility: visible; }
+
+.fancybox-title-float-wrap { position: absolute; bottom: 0; right: 50%; margin-bottom: -35px; z-index: 8050; text-align: center; }
+
+.fancybox-title-float-wrap .child { display: inline-block; margin-right: -100%; padding: 2px 20px; background: 0 0; background: rgba(0, 0, 0, 0.8); text-shadow: 0 1px 2px #222; color: #FFF; font-weight: 700; line-height: 24px; white-space: nowrap; }
+
+.fancybox-title-outside-wrap { position: relative; margin-top: 10px; color: #ffffff; }
+
+.fancybox-title-inside-wrap { padding-top: 10px; }
+
+.fancybox-title-over-wrap { position: absolute; bottom: 0; left: 0; color: #fff; padding: 10px; background: #000; background: rgba(0, 0, 0, 0.8); }
+
+/*! Datepicker for Bootstrap v1.5.1 (https://github.com/eternicode/bootstrap-datepicker) Copyright 2012 Stefan Petre Improvements by Andrew Rowls Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0) */
+.datepicker-dropdown:after, .datepicker-dropdown:before { content: ''; display: inline-block; border-top: 0; position: absolute; }
+
+.datepicker { border-radius: 4px; direction: ltr; }
+
+.datepicker-inline { width: 220px; }
+
+.datepicker.datepicker-rtl { direction: rtl; }
+
+.datepicker.datepicker-rtl table tr td span { float: right; }
+
+.datepicker-dropdown { top: 0; left: 0; padding: 4px; }
+
+.datepicker-dropdown:before { border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 7px solid rgba(0, 0, 0, 0.15); border-bottom-color: rgba(0, 0, 0, 0.2); }
+
+.datepicker-dropdown:after { border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 6px solid #fff; }
+
+.datepicker-dropdown.datepicker-orient-left:before { left: 6px; }
+
+.datepicker-dropdown.datepicker-orient-left:after { left: 7px; }
+
+.datepicker-dropdown.datepicker-orient-right:before { right: 6px; }
+
+.datepicker-dropdown.datepicker-orient-right:after { right: 7px; }
+
+.datepicker-dropdown.datepicker-orient-bottom:before { top: -7px; }
+
+.datepicker-dropdown.datepicker-orient-bottom:after { top: -6px; }
+
+.datepicker-dropdown.datepicker-orient-top:before { bottom: -7px; border-bottom: 0; border-top: 7px solid rgba(0, 0, 0, 0.15); }
+
+.datepicker-dropdown.datepicker-orient-top:after { bottom: -6px; border-bottom: 0; border-top: 6px solid #fff; }
+
+.datepicker > div { display: none; }
+
+.datepicker table { margin: 0; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+.datepicker table tr td, .datepicker table tr th { text-align: center; width: 30px; height: 30px; border-radius: 4px; border: none; }
+
+.table-striped .datepicker table tr td, .table-striped .datepicker table tr th { background-color: transparent; }
+
+.datepicker table tr td.new, .datepicker table tr td.old { color: #999; }
+
+.datepicker table tr td.day:hover, .datepicker table tr td.focused { background: #eee; cursor: pointer; }
+
+.datepicker table tr td.disabled, .datepicker table tr td.disabled:hover { background: 0 0; color: #999; cursor: default; }
+
+.datepicker table tr td.highlighted { color: #000; background-color: #d9edf7; border-color: #85c5e5; border-radius: 0; }
+
+.datepicker table tr td.highlighted.focus, .datepicker table tr td.highlighted:focus { color: #000; background-color: #afd9ee; border-color: #298fc2; }
+
+.datepicker table tr td.highlighted.active, .datepicker table tr td.highlighted:active, .datepicker table tr td.highlighted:hover, .open > .dropdown-toggle.datepicker table tr td.highlighted { color: #000; background-color: #afd9ee; border-color: #52addb; }
+
+.datepicker table tr td.highlighted.active.focus, .datepicker table tr td.highlighted.active:focus, .datepicker table tr td.highlighted.active:hover, .datepicker table tr td.highlighted:active.focus, .datepicker table tr td.highlighted:active:focus, .datepicker table tr td.highlighted:active:hover, .open > .dropdown-toggle.datepicker table tr td.highlighted.focus, .open > .dropdown-toggle.datepicker table tr td.highlighted:focus, .open > .dropdown-toggle.datepicker table tr td.highlighted:hover { color: #000; background-color: #91cbe8; border-color: #298fc2; }
+
+.datepicker table tr td.highlighted.active, .datepicker table tr td.highlighted:active, .open > .dropdown-toggle.datepicker table tr td.highlighted { background-image: none; }
+
+.datepicker table tr td.highlighted.disabled.focus, .datepicker table tr td.highlighted.disabled:focus, .datepicker table tr td.highlighted.disabled:hover, .datepicker table tr td.highlighted[disabled].focus, .datepicker table tr td.highlighted[disabled]:focus, .datepicker table tr td.highlighted[disabled]:hover, fieldset[disabled] .datepicker table tr td.highlighted.focus, fieldset[disabled] .datepicker table tr td.highlighted:focus, fieldset[disabled] .datepicker table tr td.highlighted:hover { background-color: #d9edf7; border-color: #85c5e5; }
+
+.datepicker table tr td.highlighted.focused { background: #afd9ee; }
+
+.datepicker table tr td.highlighted.disabled, .datepicker table tr td.highlighted.disabled:active { background: #d9edf7; color: #999; }
+
+.datepicker table tr td.today { color: #000; background-color: #ffdb99; border-color: #ffb733; }
+
+.datepicker table tr td.today.focus, .datepicker table tr td.today:focus { color: #000; background-color: #ffc966; border-color: #b37400; }
+
+.datepicker table tr td.today.active, .datepicker table tr td.today:active, .datepicker table tr td.today:hover, .open > .dropdown-toggle.datepicker table tr td.today { color: #000; background-color: #ffc966; border-color: #f59e00; }
+
+.datepicker table tr td.today.active.focus, .datepicker table tr td.today.active:focus, .datepicker table tr td.today.active:hover, .datepicker table tr td.today:active.focus, .datepicker table tr td.today:active:focus, .datepicker table tr td.today:active:hover, .open > .dropdown-toggle.datepicker table tr td.today.focus, .open > .dropdown-toggle.datepicker table tr td.today:focus, .open > .dropdown-toggle.datepicker table tr td.today:hover { color: #000; background-color: #ffbc42; border-color: #b37400; }
+
+.datepicker table tr td.today.active, .datepicker table tr td.today:active, .open > .dropdown-toggle.datepicker table tr td.today { background-image: none; }
+
+.datepicker table tr td.today.disabled.focus, .datepicker table tr td.today.disabled:focus, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today[disabled].focus, .datepicker table tr td.today[disabled]:focus, .datepicker table tr td.today[disabled]:hover, fieldset[disabled] .datepicker table tr td.today.focus, fieldset[disabled] .datepicker table tr td.today:focus, fieldset[disabled] .datepicker table tr td.today:hover { background-color: #ffdb99; border-color: #ffb733; }
+
+.datepicker table tr td.today.focused { background: #ffc966; }
+
+.datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:active { background: #ffdb99; color: #999; }
+
+.datepicker table tr td.range { color: #000; background-color: #eee; border-color: #bbb; border-radius: 0; }
+
+.datepicker table tr td.range.focus, .datepicker table tr td.range:focus { color: #000; background-color: #d5d5d5; border-color: #7c7c7c; }
+
+.datepicker table tr td.range.active, .datepicker table tr td.range:active, .datepicker table tr td.range:hover, .open > .dropdown-toggle.datepicker table tr td.range { color: #000; background-color: #d5d5d5; border-color: #9d9d9d; }
+
+.datepicker table tr td.range.active.focus, .datepicker table tr td.range.active:focus, .datepicker table tr td.range.active:hover, .datepicker table tr td.range:active.focus, .datepicker table tr td.range:active:focus, .datepicker table tr td.range:active:hover, .open > .dropdown-toggle.datepicker table tr td.range.focus, .open > .dropdown-toggle.datepicker table tr td.range:focus, .open > .dropdown-toggle.datepicker table tr td.range:hover { color: #000; background-color: #c3c3c3; border-color: #7c7c7c; }
+
+.datepicker table tr td.range.active, .datepicker table tr td.range:active, .open > .dropdown-toggle.datepicker table tr td.range { background-image: none; }
+
+.datepicker table tr td.range.disabled.focus, .datepicker table tr td.range.disabled:focus, .datepicker table tr td.range.disabled:hover, .datepicker table tr td.range[disabled].focus, .datepicker table tr td.range[disabled]:focus, .datepicker table tr td.range[disabled]:hover, fieldset[disabled] .datepicker table tr td.range.focus, fieldset[disabled] .datepicker table tr td.range:focus, fieldset[disabled] .datepicker table tr td.range:hover { background-color: #eee; border-color: #bbb; }
+
+.datepicker table tr td.range.focused { background: #d5d5d5; }
+
+.datepicker table tr td.range.disabled, .datepicker table tr td.range.disabled:active { background: #eee; color: #999; }
+
+.datepicker table tr td.range.highlighted { color: #000; background-color: #e4eef3; border-color: #9dc1d3; }
+
+.datepicker table tr td.range.highlighted.focus, .datepicker table tr td.range.highlighted:focus { color: #000; background-color: #c1d7e3; border-color: #4b88a6; }
+
+.datepicker table tr td.range.highlighted.active, .datepicker table tr td.range.highlighted:active, .datepicker table tr td.range.highlighted:hover, .open > .dropdown-toggle.datepicker table tr td.range.highlighted { color: #000; background-color: #c1d7e3; border-color: #73a6c0; }
+
+.datepicker table tr td.range.highlighted.active.focus, .datepicker table tr td.range.highlighted.active:focus, .datepicker table tr td.range.highlighted.active:hover, .datepicker table tr td.range.highlighted:active.focus, .datepicker table tr td.range.highlighted:active:focus, .datepicker table tr td.range.highlighted:active:hover, .open > .dropdown-toggle.datepicker table tr td.range.highlighted.focus, .open > .dropdown-toggle.datepicker table tr td.range.highlighted:focus, .open > .dropdown-toggle.datepicker table tr td.range.highlighted:hover { color: #000; background-color: #a8c8d8; border-color: #4b88a6; }
+
+.datepicker table tr td.range.highlighted.active, .datepicker table tr td.range.highlighted:active, .open > .dropdown-toggle.datepicker table tr td.range.highlighted { background-image: none; }
+
+.datepicker table tr td.range.highlighted.disabled.focus, .datepicker table tr td.range.highlighted.disabled:focus, .datepicker table tr td.range.highlighted.disabled:hover, .datepicker table tr td.range.highlighted[disabled].focus, .datepicker table tr td.range.highlighted[disabled]:focus, .datepicker table tr td.range.highlighted[disabled]:hover, fieldset[disabled] .datepicker table tr td.range.highlighted.focus, fieldset[disabled] .datepicker table tr td.range.highlighted:focus, fieldset[disabled] .datepicker table tr td.range.highlighted:hover { background-color: #e4eef3; border-color: #9dc1d3; }
+
+.datepicker table tr td.range.highlighted.focused { background: #c1d7e3; }
+
+.datepicker table tr td.range.highlighted.disabled, .datepicker table tr td.range.highlighted.disabled:active { background: #e4eef3; color: #999; }
+
+.datepicker table tr td.range.today { color: #000; background-color: #f7ca77; border-color: #f1a417; }
+
+.datepicker table tr td.range.today.focus, .datepicker table tr td.range.today:focus { color: #000; background-color: #f4b747; border-color: #815608; }
+
+.datepicker table tr td.range.today.active, .datepicker table tr td.range.today:active, .datepicker table tr td.range.today:hover, .open > .dropdown-toggle.datepicker table tr td.range.today { color: #000; background-color: #f4b747; border-color: #bf800c; }
+
+.datepicker table tr td.range.today.active.focus, .datepicker table tr td.range.today.active:focus, .datepicker table tr td.range.today.active:hover, .datepicker table tr td.range.today:active.focus, .datepicker table tr td.range.today:active:focus, .datepicker table tr td.range.today:active:hover, .open > .dropdown-toggle.datepicker table tr td.range.today.focus, .open > .dropdown-toggle.datepicker table tr td.range.today:focus, .open > .dropdown-toggle.datepicker table tr td.range.today:hover { color: #000; background-color: #f2aa25; border-color: #815608; }
+
+.datepicker table tr td.range.today.active, .datepicker table tr td.range.today:active, .open > .dropdown-toggle.datepicker table tr td.range.today { background-image: none; }
+
+.datepicker table tr td.range.today.disabled.focus, .datepicker table tr td.range.today.disabled:focus, .datepicker table tr td.range.today.disabled:hover, .datepicker table tr td.range.today[disabled].focus, .datepicker table tr td.range.today[disabled]:focus, .datepicker table tr td.range.today[disabled]:hover, fieldset[disabled] .datepicker table tr td.range.today.focus, fieldset[disabled] .datepicker table tr td.range.today:focus, fieldset[disabled] .datepicker table tr td.range.today:hover { background-color: #f7ca77; border-color: #f1a417; }
+
+.datepicker table tr td.range.today.disabled, .datepicker table tr td.range.today.disabled:active { background: #f7ca77; color: #999; }
+
+.datepicker table tr td.active.active, .datepicker table tr td.active.highlighted.active, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active:active, .datepicker table tr td.selected.active, .datepicker table tr td.selected.highlighted.active, .datepicker table tr td.selected.highlighted:active, .datepicker table tr td.selected:active, .open > .dropdown-toggle.datepicker table tr td.active, .open > .dropdown-toggle.datepicker table tr td.active.highlighted, .open > .dropdown-toggle.datepicker table tr td.selected, .open > .dropdown-toggle.datepicker table tr td.selected.highlighted { background-image: none; }
+
+.datepicker table tr td.selected, .datepicker table tr td.selected.highlighted { color: #fff; background-color: #999; border-color: #555; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+
+.datepicker table tr td.selected.focus, .datepicker table tr td.selected.highlighted.focus, .datepicker table tr td.selected.highlighted:focus, .datepicker table tr td.selected:focus { color: #fff; background-color: grey; border-color: #161616; }
+
+.datepicker table tr td.selected.active, .datepicker table tr td.selected.highlighted.active, .datepicker table tr td.selected.highlighted:active, .datepicker table tr td.selected.highlighted:hover, .datepicker table tr td.selected:active, .datepicker table tr td.selected:hover, .open > .dropdown-toggle.datepicker table tr td.selected, .open > .dropdown-toggle.datepicker table tr td.selected.highlighted { color: #fff; background-color: grey; border-color: #373737; }
+
+.datepicker table tr td.selected.active.focus, .datepicker table tr td.selected.active:focus, .datepicker table tr td.selected.active:hover, .datepicker table tr td.selected.highlighted.active.focus, .datepicker table tr td.selected.highlighted.active:focus, .datepicker table tr td.selected.highlighted.active:hover, .datepicker table tr td.selected.highlighted:active.focus, .datepicker table tr td.selected.highlighted:active:focus, .datepicker table tr td.selected.highlighted:active:hover, .datepicker table tr td.selected:active.focus, .datepicker table tr td.selected:active:focus, .datepicker table tr td.selected:active:hover, .open > .dropdown-toggle.datepicker table tr td.selected.focus, .open > .dropdown-toggle.datepicker table tr td.selected.highlighted.focus, .open > .dropdown-toggle.datepicker table tr td.selected.highlighted:focus, .open > .dropdown-toggle.datepicker table tr td.selected.highlighted:hover, .open > .dropdown-toggle.datepicker table tr td.selected:focus, .open > .dropdown-toggle.datepicker table tr td.selected:hover { color: #fff; background-color: #6e6e6e; border-color: #161616; }
+
+.datepicker table tr td.selected.disabled.focus, .datepicker table tr td.selected.disabled:focus, .datepicker table tr td.selected.disabled:hover, .datepicker table tr td.selected.highlighted.disabled.focus, .datepicker table tr td.selected.highlighted.disabled:focus, .datepicker table tr td.selected.highlighted.disabled:hover, .datepicker table tr td.selected.highlighted[disabled].focus, .datepicker table tr td.selected.highlighted[disabled]:focus, .datepicker table tr td.selected.highlighted[disabled]:hover, .datepicker table tr td.selected[disabled].focus, .datepicker table tr td.selected[disabled]:focus, .datepicker table tr td.selected[disabled]:hover, fieldset[disabled] .datepicker table tr td.selected.focus, fieldset[disabled] .datepicker table tr td.selected.highlighted.focus, fieldset[disabled] .datepicker table tr td.selected.highlighted:focus, fieldset[disabled] .datepicker table tr td.selected.highlighted:hover, fieldset[disabled] .datepicker table tr td.selected:focus, fieldset[disabled] .datepicker table tr td.selected:hover { background-color: #999; border-color: #555; }
+
+.datepicker table tr td.active, .datepicker table tr td.active.highlighted { color: #fff; background-color: #428bca; border-color: #357ebd; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+
+.datepicker table tr td.active.focus, .datepicker table tr td.active.highlighted.focus, .datepicker table tr td.active.highlighted:focus, .datepicker table tr td.active:focus { color: #fff; background-color: #3071a9; border-color: #193c5a; }
+
+.datepicker table tr td.active.active, .datepicker table tr td.active.highlighted.active, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active.highlighted:hover, .datepicker table tr td.active:active, .datepicker table tr td.active:hover, .open > .dropdown-toggle.datepicker table tr td.active, .open > .dropdown-toggle.datepicker table tr td.active.highlighted { color: #fff; background-color: #3071a9; border-color: #285e8e; }
+
+.datepicker table tr td.active.active.focus, .datepicker table tr td.active.active:focus, .datepicker table tr td.active.active:hover, .datepicker table tr td.active.highlighted.active.focus, .datepicker table tr td.active.highlighted.active:focus, .datepicker table tr td.active.highlighted.active:hover, .datepicker table tr td.active.highlighted:active.focus, .datepicker table tr td.active.highlighted:active:focus, .datepicker table tr td.active.highlighted:active:hover, .datepicker table tr td.active:active.focus, .datepicker table tr td.active:active:focus, .datepicker table tr td.active:active:hover, .open > .dropdown-toggle.datepicker table tr td.active.focus, .open > .dropdown-toggle.datepicker table tr td.active.highlighted.focus, .open > .dropdown-toggle.datepicker table tr td.active.highlighted:focus, .open > .dropdown-toggle.datepicker table tr td.active.highlighted:hover, .open > .dropdown-toggle.datepicker table tr td.active:focus, .open > .dropdown-toggle.datepicker table tr td.active:hover { color: #fff; background-color: #285e8e; border-color: #193c5a; }
+
+.datepicker table tr td.active.disabled.focus, .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.highlighted.disabled.focus, .datepicker table tr td.active.highlighted.disabled:focus, .datepicker table tr td.active.highlighted.disabled:hover, .datepicker table tr td.active.highlighted[disabled].focus, .datepicker table tr td.active.highlighted[disabled]:focus, .datepicker table tr td.active.highlighted[disabled]:hover, .datepicker table tr td.active[disabled].focus, .datepicker table tr td.active[disabled]:focus, .datepicker table tr td.active[disabled]:hover, fieldset[disabled] .datepicker table tr td.active.focus, fieldset[disabled] .datepicker table tr td.active.highlighted.focus, fieldset[disabled] .datepicker table tr td.active.highlighted:focus, fieldset[disabled] .datepicker table tr td.active.highlighted:hover, fieldset[disabled] .datepicker table tr td.active:focus, fieldset[disabled] .datepicker table tr td.active:hover { background-color: #428bca; border-color: #357ebd; }
+
+.datepicker table tr td span { display: block; width: 23%; height: 54px; line-height: 54px; float: left; margin: 1%; cursor: pointer; border-radius: 4px; }
+
+.datepicker table tr td span:hover { background: #eee; }
+
+.datepicker table tr td span.disabled, .datepicker table tr td span.disabled:hover { background: 0 0; color: #999; cursor: default; }
+
+.datepicker .datepicker-switch, .datepicker .next, .datepicker .prev, .datepicker tfoot tr th, .input-group.date .input-group-addon { cursor: pointer; }
+
+.datepicker table tr td span.active, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active.disabled:hover, .datepicker table tr td span.active:hover { color: #fff; background-color: #428bca; border-color: #357ebd; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+
+.datepicker table tr td span.active.disabled.focus, .datepicker table tr td span.active.disabled:focus, .datepicker table tr td span.active.disabled:hover.focus, .datepicker table tr td span.active.disabled:hover:focus, .datepicker table tr td span.active.focus, .datepicker table tr td span.active:focus, .datepicker table tr td span.active:hover.focus, .datepicker table tr td span.active:hover:focus { color: #fff; background-color: #3071a9; border-color: #193c5a; }
+
+.datepicker table tr td span.active.active, .datepicker table tr td span.active.disabled.active, .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled:hover, .datepicker table tr td span.active.disabled:hover.active, .datepicker table tr td span.active.disabled:hover:active, .datepicker table tr td span.active.disabled:hover:hover, .datepicker table tr td span.active:active, .datepicker table tr td span.active:hover, .datepicker table tr td span.active:hover.active, .datepicker table tr td span.active:hover:active, .datepicker table tr td span.active:hover:hover, .open > .dropdown-toggle.datepicker table tr td span.active, .open > .dropdown-toggle.datepicker table tr td span.active.disabled, .open > .dropdown-toggle.datepicker table tr td span.active.disabled:hover, .open > .dropdown-toggle.datepicker table tr td span.active:hover { color: #fff; background-color: #3071a9; border-color: #285e8e; }
+
+.datepicker table tr td span.active.active.focus, .datepicker table tr td span.active.active:focus, .datepicker table tr td span.active.active:hover, .datepicker table tr td span.active.disabled.active.focus, .datepicker table tr td span.active.disabled.active:focus, .datepicker table tr td span.active.disabled.active:hover, .datepicker table tr td span.active.disabled:active.focus, .datepicker table tr td span.active.disabled:active:focus, .datepicker table tr td span.active.disabled:active:hover, .datepicker table tr td span.active.disabled:hover.active.focus, .datepicker table tr td span.active.disabled:hover.active:focus, .datepicker table tr td span.active.disabled:hover.active:hover, .datepicker table tr td span.active.disabled:hover:active.focus, .datepicker table tr td span.active.disabled:hover:active:focus, .datepicker table tr td span.active.disabled:hover:active:hover, .datepicker table tr td span.active:active.focus, .datepicker table tr td span.active:active:focus, .datepicker table tr td span.active:active:hover, .datepicker table tr td span.active:hover.active.focus, .datepicker table tr td span.active:hover.active:focus, .datepicker table tr td span.active:hover.active:hover, .datepicker table tr td span.active:hover:active.focus, .datepicker table tr td span.active:hover:active:focus, .datepicker table tr td span.active:hover:active:hover, .open > .dropdown-toggle.datepicker table tr td span.active.disabled.focus, .open > .dropdown-toggle.datepicker table tr td span.active.disabled:focus, .open > .dropdown-toggle.datepicker table tr td span.active.disabled:hover, .open > .dropdown-toggle.datepicker table tr td span.active.disabled:hover.focus, .open > .dropdown-toggle.datepicker table tr td span.active.disabled:hover:focus, .open > .dropdown-toggle.datepicker table tr td span.active.disabled:hover:hover, .open > .dropdown-toggle.datepicker table tr td span.active.focus, .open > .dropdown-toggle.datepicker table tr td span.active:focus, .open > .dropdown-toggle.datepicker table tr td span.active:hover, .open > .dropdown-toggle.datepicker table tr td span.active:hover.focus, .open > .dropdown-toggle.datepicker table tr td span.active:hover:focus, .open > .dropdown-toggle.datepicker table tr td span.active:hover:hover { color: #fff; background-color: #285e8e; border-color: #193c5a; }
+
+.datepicker table tr td span.active.active, .datepicker table tr td span.active.disabled.active, .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled:hover.active, .datepicker table tr td span.active.disabled:hover:active, .datepicker table tr td span.active:active, .datepicker table tr td span.active:hover.active, .datepicker table tr td span.active:hover:active, .open > .dropdown-toggle.datepicker table tr td span.active, .open > .dropdown-toggle.datepicker table tr td span.active.disabled, .open > .dropdown-toggle.datepicker table tr td span.active.disabled:hover, .open > .dropdown-toggle.datepicker table tr td span.active:hover { background-image: none; }
+
+.datepicker table tr td span.active.disabled.disabled.focus, .datepicker table tr td span.active.disabled.disabled:focus, .datepicker table tr td span.active.disabled.disabled:hover, .datepicker table tr td span.active.disabled.focus, .datepicker table tr td span.active.disabled:focus, .datepicker table tr td span.active.disabled:hover, .datepicker table tr td span.active.disabled:hover.disabled.focus, .datepicker table tr td span.active.disabled:hover.disabled:focus, .datepicker table tr td span.active.disabled:hover.disabled:hover, .datepicker table tr td span.active.disabled:hover[disabled].focus, .datepicker table tr td span.active.disabled:hover[disabled]:focus, .datepicker table tr td span.active.disabled:hover[disabled]:hover, .datepicker table tr td span.active.disabled[disabled].focus, .datepicker table tr td span.active.disabled[disabled]:focus, .datepicker table tr td span.active.disabled[disabled]:hover, .datepicker table tr td span.active:hover.disabled.focus, .datepicker table tr td span.active:hover.disabled:focus, .datepicker table tr td span.active:hover.disabled:hover, .datepicker table tr td span.active:hover[disabled].focus, .datepicker table tr td span.active:hover[disabled]:focus, .datepicker table tr td span.active:hover[disabled]:hover, .datepicker table tr td span.active[disabled].focus, .datepicker table tr td span.active[disabled]:focus, .datepicker table tr td span.active[disabled]:hover, fieldset[disabled] .datepicker table tr td span.active.disabled.focus, fieldset[disabled] .datepicker table tr td span.active.disabled:focus, fieldset[disabled] .datepicker table tr td span.active.disabled:hover, fieldset[disabled] .datepicker table tr td span.active.disabled:hover.focus, fieldset[disabled] .datepicker table tr td span.active.disabled:hover:focus, fieldset[disabled] .datepicker table tr td span.active.disabled:hover:hover, fieldset[disabled] .datepicker table tr td span.active.focus, fieldset[disabled] .datepicker table tr td span.active:focus, fieldset[disabled] .datepicker table tr td span.active:hover, fieldset[disabled] .datepicker table tr td span.active:hover.focus, fieldset[disabled] .datepicker table tr td span.active:hover:focus, fieldset[disabled] .datepicker table tr td span.active:hover:hover { background-color: #428bca; border-color: #357ebd; }
+
+.datepicker table tr td span.new, .datepicker table tr td span.old { color: #999; }
+
+.datepicker .datepicker-switch { width: 145px; }
+
+.datepicker .datepicker-switch:hover, .datepicker .next:hover, .datepicker .prev:hover, .datepicker tfoot tr th:hover { background: #eee; }
+
+.datepicker .cw { font-size: 10px; width: 12px; padding: 0 2px 0 5px; vertical-align: middle; }
+
+.input-daterange { width: 100%; }
+
+.input-daterange input { text-align: center; }
+
+.input-daterange input:first-child { border-radius: 3px 0 0 3px; }
+
+.input-daterange input:last-child { border-radius: 0 3px 3px 0; }
+
+.input-daterange .input-group-addon { width: auto; min-width: 16px; padding: 4px 5px; font-weight: 400; line-height: 1.42857143; text-align: center; text-shadow: 0 1px 0 #fff; vertical-align: middle; background-color: #eee; border: solid #ccc; border-width: 1px 0; margin-left: -5px; margin-right: -5px; }
+
+.datepicker-dropdown { position: absolute; top: 100%; left: 0; z-index: 1000; display: none; float: left; min-width: 160px; padding: 5px 0; margin: 2px 0 0; font-size: 14px; list-style: none; background-color: #fff; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.15); border-radius: 4px; -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); background-clip: padding-box; }
+
+.header { padding: 20px 0; }
+
+.header__phone { text-decoration: none; color: #000; font-weight: bold; font-size: 24px; position: relative; display: inline-block; font-family: 'Roboto'; }
+
+.header__phone:active, .header__phone:focus, .header__phone:hover { text-decoration: none; color: #000; }
+
+.header__phone._headphones:before { content: ''; background: url(../img/phone.png) 0 0 no-repeat; position: absolute; top: 4px; left: -30px; width: 24px; height: 19px; }
+
+.header__phone._viber:before { content: ''; background: url(../img/viber.png) 0 0 no-repeat; position: absolute; top: 3px; left: -30px; width: 24px; height: 24px; }
+
+.header__phone-prefix { font-size: 18px; color: #887E7E; vertical-align: top; margin: 2px 5px 0 0; display: inline-block; }
+
+.header__btn { margin-top: 15px; }
+
+.toTop { position: fixed; right: 10px; bottom: -100px; overflow: auto; padding: 12px 14px 14px; font-size: 18px; line-height: 10px; cursor: pointer; background-color: #1B8C2B; border-radius: 3px; color: #fff; z-index: 200; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
+
+.toTop.active { bottom: 10px; }
+
+.toTop:hover { opacity: 0.8; }
+
+.main { padding: 140px 0; background: url(../img/content/main-pattern.jpg) no-repeat; background-position: center !important; display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: center; position: relative; }
+
+.main:before { content: ''; background: rgba(0, 0, 0, 0.2); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; }
+
+.main__form { padding: 15px 20px 5px 20px; background: rgba(0, 0, 0, 0.7); }
+
+.main__title { color: #fff; font-weight: bold; position: relative; font-size: 38px; text-align: center; text-shadow: 1px 1px 10px #333333; margin-top: -20px; margin-bottom: 30px; }
+
+.main__title span { display: inline-block; }
+
+.main._partner-bg { background: url(../img/content/partner.jpg) no-repeat; }
+
+.main._moscow-bg { background: url(../img/content/city-pattern/moscow.jpg) no-repeat; }
+
+.main._voronej-bg { background: url(../img/content/city-pattern/voronej.jpg) no-repeat; }
+
+.main._pavlovsk-bg { background: url(../img/content/city-pattern/pavlovsk.jpg) no-repeat; }
+
+.main._tula-bg { background: url(../img/content/city-pattern/tula.jpg) no-repeat; }
+
+.main._kiev-bg { background: url(../img/content/city-pattern/kiev.jpg) no-repeat; }
+
+.main._borispol-bg { background: url(../img/content/city-pattern/borispol.jpg) no-repeat; }
+
+.main._piryatin-bg { background: url(../img/content/city-pattern/piryatin.jpg) no-repeat; }
+
+.main._lubni-bg { background: url(../img/content/city-pattern/lubni.jpg) no-repeat; }
+
+.main._poltava-bg { background: url(../img/content/city-pattern/poltava.jpg) no-repeat; }
+
+.main._kharkov-bg { background: url(../img/content/city-pattern/kharkov.jpg) no-repeat; }
+
+.main._dnepr-bg { background: url(../img/content/city-pattern/dnepr.jpg) no-repeat; }
+
+.main._donetsk-bg { background: url(../img/content/city-pattern/donetsk.jpg) no-repeat; }
+
+.main._rostov-bg { background: url(../img/content/city-pattern/rostov.jpg) no-repeat; }
+
+.main._kerch-bg { background: url(../img/content/city-pattern/kerch.jpg) no-repeat; }
+
+.main._feodosiya-bg { background: url(../img/content/city-pattern/feodosiya.jpg) no-repeat; }
+
+.main._simferopol-bg { background: url(../img/content/city-pattern/simferopol.jpg) no-repeat; }
+
+.main._alushta-bg { background: url(../img/content/city-pattern/alushta.jpg) no-repeat; }
+
+.main._yalta-bg { background: url(../img/content/city-pattern/yalta.jpg) no-repeat; }
+
+.main._sevastopol-bg { background: url(../img/content/city-pattern/sevastopol.jpg) no-repeat; }
+
+.main._belgorod-bg { background: url(../img/content/city-pattern/belgorod.jpg) no-repeat; }
+
+.main._piter-bg { background: url(../img/content/city-pattern/piter.jpg) no-repeat; }
+
+.main._bryansk-bg { background: url(../img/content/city-pattern/bryansk.jpg) no-repeat; }
+
+.main._anapa-bg { background: url(../img/content/city-pattern/anapa.jpg) no-repeat; }
+
+.main._adler-bg { background: url(../img/content/city-pattern/adler.jpg) no-repeat; }
+
+.title { font-size: 36px; color: #000; text-align: center; margin: 40px 0 20px; }
+
+.subtitle { text-align: center; padding-bottom: 10px; margin-bottom: 25px; color: #675F5F; font-size: 26px; border-bottom: 1px solid #ddd; }
+
+.subtitle__img { margin-right: 15px; vertical-align: bottom; }
+
+.form__textarea, .form__input { width: 100%; height: 40px; font-size: 15px; padding: 0 10px 0 32px; box-shadow: inset 0 4px 7px -7px rgba(0, 0, 0, 0.5); border: 2px solid #ccc; font-family: PT Sans; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
+
+.form__textarea.error, .form__input.error { border: 2px solid #f20; }
+
+.form__textarea:focus, .form__input:focus { border: 2px solid #1B8C2B; }
+
+.form__textarea { height: auto; padding: 7px; resize: none; }
+
+.form__select { width: 100%; padding: 0 10px 0 36px; height: 40px; font-size: 15px; font-family: PT Sans; box-shadow: inset 0 4px 7px -7px rgba(0, 0, 0, 0.5); border: 2px solid #ccc; }
+
+.form__submit { width: 100%; font-size: 18px; padding: 5px 22px; }
+
+.form__submit-partner { width: auto; }
+
+.form__submit-search { padding: 7px 22px; }
+
+.form__control { position: relative; margin-bottom: 15px; }
+
+.form__control > .fa { color: #444; position: absolute; top: 13px; left: 8px; }
+
+.form__label { font-size: 18px; font-weight: bold; display: block; }
+
+.form__result { padding: 5px 10px 10px 10px; color: #fff; font-size: 16px; display: none; }
+
+.form__result .fa { position: relative; top: -3px; }
+
+.form__result .popular__name { color: #fff; margin-left: 10px; font-size: 20px; border-bottom: 1px solid; }
+
+.form__result .popular__price { font-size: 20px; margin: 0; color: #fff; border-bottom: 1px solid; }
+
+.form__result .popular__link:hover .popular__price, .form__result .popular__link:hover .popular__name { border-bottom: 1px solid transparent; }
+
+.form__block .form__input { font-size: 18px; }
+
+.modal { display: none; width: 400px; border-radius: 4px; background: #fff; padding: 10px 20px 20px 20px; }
+
+.modal__title { text-align: center; font-size: 22px; font-weight: bold; font-family: PT Sans; margin: 10px 0; }
+
+.modal__submit { width: auto; }
+
+.modal__text { margin: 5px 0; line-height: normal; }
+
+.ways { padding-bottom: 40px; background: #f5f5f5; }
+
+.ways__block { margin-bottom: 30px; position: relative; display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: center; overflow: hidden; width: 100%; }
+
+.ways__block:before { content: ''; background: rgba(0, 0, 0, 0.2); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
+
+.ways__block:hover .ways__img { -webkit-transform: scale(1.15) rotate(-7deg); -moz-transform: scale(1.15) rotate(-7deg); -ms-transform: scale(1.15) rotate(-7deg); -o-transform: scale(1.15) rotate(-7deg); transform: scale(1.15) rotate(-7deg); }
+
+.ways__block:hover:before { content: ''; background: rgba(0, 0, 0, 0.4); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
+
+.ways__block._promo { border-radius: 5px; }
+
+.ways__block._promo:before { content: ''; position: absolute; top: 0; background: url(../img/promo.png) 0 0 no-repeat; left: 0; width: 170px; height: 170px; }
+
+.ways__block._promo .ways__img { -webkit-transform: none; -moz-transform: none; -ms-transform: none; -o-transform: none; transform: none; }
+
+.ways__block._promo .ways__price { font-size: 28px; background: #E52326; padding: 3px 24px 4px 24px; line-height: normal; font-weight: bold; }
+
+.ways__block._promo .ways__title { font-size: 38px; }
+
+.ways__img { width: 100%; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
+
+.ways__price { z-index: 2; padding: 2px 14px 3px 14px; position: relative; color: #fff; font-size: 19px; background: #1B8C2B; display: inline-block; margin: 0; font-weight: bold; font-family: 'Roboto'; }
+
+.ways__price-wrapper { position: absolute; bottom: 0; left: 0; text-align: center; width: 100%; }
+
+.ways__title { z-index: 2; position: absolute; top: 40%; right: 0; left: 0; margin: 0; width: 100%; color: #fff; text-align: center; font-size: 28px; color: #fff; text-shadow: 1px 1px 10px #333333; }
+
+.ways__link { position: relative; }
+
+.ways__link._best-price:before { content: ''; background: url(../img/best-price.png) 0 0 no-repeat; position: absolute; top: -20px; left: -20px; width: 150px; height: 145px; z-index: 10; }
+
+.ways__link._best-way:before { content: ''; background: url(../img/best-way.png) 0 0 no-repeat; position: absolute; top: -20px; left: -20px; width: 110px; height: 110px; z-index: 10; }
+
+.description { padding: 40px 0; background: #f5f5f5; }
+
+.description__text { font-size: 16px; }
+
+.description__title { font-size: 20px; }
+
+.popular { padding: 0 0 10px; }
+
+.popular .fa { margin-right: 5px; }
+
+.popular__block { margin-bottom: 10px; }
+
+.popular__link:hover { color: inherit; text-decoration: none; }
+
+.popular__link:hover .popular__price, .popular__link:hover .popular__name { border-bottom: 1px solid; }
+
+.popular__name { font-size: 16px; margin: 0; color: #000; display: inline-block; line-height: 16px; }
+
+.popular__price { display: inline-block; line-height: 16px; font-size: 16px; margin: -2px 0 0 7px; color: #1B8C2B; font-weight: bold; float: right; font-family: 'Roboto'; }
+
+.schedule__main-title { font-weight: normal; margin: 20px 0; font-size: 21px; }
+
+.schedule__main-title .fa { margin-right: 10px; }
+
+.schedule__section > .row:first-child { background: #828282 !important; }
+
+.schedule__section > .row:first-child .schedule__title { color: #fff; }
+
+.schedule__section > .row:nth-child(even) { background: rgba(221, 221, 221, 0.62); }
+
+.schedule__section > .row:nth-child(odd) { background: #F7F7F7; }
+
+.schedule__title { font-size: 16px; }
+
+.schedule__btn { font-weight: normal; display: block; padding: 7px 0; }
+
+.schedule__time { font-family: 'Roboto'; font-weight: bold; display: inline-block; margin: 0 10px 0 0; }
+
+.schedule__price { font-family: 'Roboto'; margin-bottom: 0; }
+
+.schedule__price > * { font-size: 18px; }
+
+.schedule__text { font-size: 16px; }
+
+.advantages { margin: 60px 0 20px 0; text-align: center; }
+
+.advantages .fa { color: #1B8C2B; font-size: 7em; }
+
+.advantages__title { font-size: 18px; text-transform: uppercase; font-weight: bold; }
+
+.advantages__text { font-size: 16px; padding: 0 20px; }
+
+.advantages__block { margin-bottom: 50px; }
+
+.advantages__main-title { margin: 0 0 50px 0; }
+
+.share { margin: 20px 0 40px; }
+
+.share__text { vertical-align: top; display: inline-block; margin: 12px 10px 10px 10px; font-size: 18px; font-weight: bold; }
+
+.share .fa { vertical-align: top; margin-top: 13px; color: #1B8C2B; }
+
+.toggle-block { -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; max-height: 290px; overflow: hidden; }
+
+.toggle-block.active { max-height: 2000px; }
+
+.toggle-link { color: #1B8C2B; font-size: 16px; display: inline-block; margin-top: 25px; border-bottom: 1px solid; }
+
+.toggle-link:hover { color: #1B8C2B; text-decoration: none; border-bottom: 1px solid transparent; }
+
+.toggle-link:focus, .toggle-link:active { color: #1B8C2B; text-decoration: none; }
+
+.back__link { color: #1B8C2B; border-bottom: 1px solid; font-size: 18px; }
+
+.back__link:focus, .back__link:active, .back__link:hover { color: #1B8C2B; text-decoration: none; border-bottom: 1px solid transparent; }
+
+.back__link + .fa { color: #1B8C2B; display: inline-block; margin-left: 7px; }
+
+.footer { background: #333; color: #fff; padding: 30px 0; }
+
+.footer__copyright { font-size: 16px; margin: 0; }
+
+.footer__social { text-align: center; }
+
+.footer__social-link { margin: 0 10px; color: #fff; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
+
+.footer__social-link:hover { color: #1B8C2B; }
+
+.footer__social-text { color: #fff; margin: 0 0 5px; display: block; }
+
+.footer__phone { color: #fff; display: inline-block; margin-left: 20px; font-size: 16px; }
+
+.footer__phone:hover { color: #fff; text-decoration: none; }
+
+.footer__phone-block { text-align: right; margin-left: -30px; }
+
+.footer__link { color: #fff; display: inline-block; border-bottom: 1px solid #fff; margin-bottom: 20px; }
+
+.footer__link:hover { color: #fff; text-decoration: none; border-bottom: 1px solid transparent; }
+
+.footer__micro { font-size: 12px; margin: 0; }
+
+.footer__micro.dib { display: inline-block; }
+
+@media (max-width: 767px) { .main { padding: 80px 0; background-size: cover !important; }
+  .main__form { padding: 15px 20px; margin: 0 20px; }
+  .main__title { font-size: 28px; }
+  .ways__block { display: block; max-width: 500px; margin: 0 auto 30px auto; }
+  .ways__block:hover .ways__img { -webkit-transform: scale(1) rotate(0deg); -moz-transform: scale(1) rotate(0deg); -ms-transform: scale(1) rotate(0deg); -o-transform: scale(1) rotate(0deg); transform: scale(1) rotate(0deg); }
+  .ways__title { font-size: 38px; }
+  .ways__price { font-size: 28px; font-weight: bold; }
+  .footer__micro, .footer__copyright, .footer__social, .footer__phone-block { text-align: center; }
+  .footer__micro.dib { display: block; }
+  .footer__social { margin: 20px 0; }
+  .footer__phone { margin: 0 0 10px; display: block; }
+  .footer__phone-block { margin: 0; }
+  .advantages__block { max-width: 400px; margin: 0 auto 40px auto; }
+  .advantages .fa { font-size: 5em; }
+  .schedule__main-title { font-size: 18px; }
+  .form__input, .form__select { box-shadow: none; }
+  .form__result { padding: 20px 10px 0 10px; }
+  .popular__price, .popular__name { font-size: 14px; border-bottom: 1px solid; }
+  .popular__price { margin: 0 0 0 7px; }
+  .popular__link:hover .popular__price, .popular__link:hover .popular__name { border-bottom: 1px solid transparent; } }
+
+@media (max-width: 500px) { .header__phone { font-size: 16px; margin-left: -30px; }
+  .header__phone:before { display: none; }
+  .header__phone-prefix { font-size: 14px; margin: 0 5px 0 0; }
+  .main__form { margin: 0; }
+  .main__title { font-size: 24px; }
+  .title { font-size: 24px; margin: 40px 0 20px; }
+  .modal { width: 280px; padding: 5px 10px; }
+  .form__result { text-align: center; }
+  .form__result .popular__price { display: none; }
+  .advantages { margin: 0 0 20px 0; }
+  .advantages__main-title { margin: 20px 0; }
+  .share { margin: 20px 0; }
+  .ways__title { font-size: 28px; }
+  .ways__price { font-size: 19px; } }
+
+@media (min-width: 768px) and (max-width: 991px) { .main { padding: 120px 0; }
+  .main__title { font-size: 32px; } }
