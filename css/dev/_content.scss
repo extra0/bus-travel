@@ -498,20 +498,19 @@
 }
 .back {
 	&__link {
-		color: $green;
-		border-bottom: 1px solid;
+		color: #fff;
 		font-size: 18px;
+		font-weight: normal;
 		&:focus,
 		&:active,
 		&:hover {
-			color: $green;
+			color: #fff;
 			text-decoration: none;
-			border-bottom: 1px solid transparent;
 		}
-		& + .fa {
-			color: $green;
+		.fa {
+			color: #fff;
 			display: inline-block;
-			margin-left: 7px;
+			margin-right: 5px;
 		}
 	}
 }
