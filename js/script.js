@@ -80,7 +80,7 @@ $(function() {
 					if (data == "true") {
 						$.fancybox.close();
 						$.fancybox($('#thanks'));
-						setTimeout("$.fancybox.close()", 3000);
+						setTimeout("$.fancybox.close()", 5000);
 					}
 				}
 			});
@@ -111,7 +111,7 @@ $(function() {
 					if (data == "true") {
 						$.fancybox.close();
 						$.fancybox($('#thanks'));
-						setTimeout("$.fancybox.close()", 3000);
+						setTimeout("$.fancybox.close()", 5000);
 					}
 				}
 			});
@@ -146,7 +146,7 @@ $(function() {
 					if (data == "true") {
 						$.fancybox.close();
 						$.fancybox($('#thanks'));
-						setTimeout("$.fancybox.close()", 3000);
+						setTimeout("$.fancybox.close()", 5000);
 					}
 				}
 			});
