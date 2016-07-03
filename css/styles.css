@@ -2310,6 +2310,8 @@ button, input, textarea { outline: none; }
 
 .share .fa { vertical-align: top; margin-top: 13px; color: #1B8C2B; }
 
+.uptolike-buttons { display: inline-block; margin-top: 5px; }
+
 .toggle-block { -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; max-height: 290px; overflow: hidden; }
 
 .toggle-block.active { max-height: 2000px; }
