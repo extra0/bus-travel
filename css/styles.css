@@ -2381,6 +2381,7 @@ button, input, textarea { outline: none; }
 
 @media (max-width: 500px) { .header__phone { font-size: 16px; margin-left: -30px; }
   .header__phone:before { display: none; }
+  .header__phone._headphones { margin: -30px 0 5px -30px; }
   .header__phone-prefix { font-size: 14px; margin: 0 5px 0 0; }
   .main__form { margin: 0; }
   .main__title { font-size: 24px; }
