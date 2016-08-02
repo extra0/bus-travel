@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="images/vnd.microsoft.icon" href="/favicon.ico">
-    <link href="/css/styles.css?ver.1.00004" rel="stylesheet" media="all">
+    <link href="/css/styles.css?ver.1.00005" rel="stylesheet" media="all">
     <meta name="description" content="Автобус Донецк - Москва, пассажирские перевозки. Расписание автобусов Донецк - Москва. Заказ и бронирование билетов на автобус Донецк - Москва онлайн">
     <meta name="keywords" content="пассажирские перевозки Донецк - Москва, автобус Донецк - Москва, цена билета на автобус Донецк - Москва, билеты на автобус Донецк - Москва, Расписание автобусов Донецк - Москва">
     <meta name="robots" content="noodp">
@@ -51,6 +51,7 @@
         </div>
         <div class="form__control"><i class="fa fa-lg fa-users"></i>
           <select name="places" class="form__select">
+            <option value="Не выбрано">Количество мест</option>
             <option value="1 место">1 место</option>
             <option value="2 места">2 места</option>
             <option value="3 места">3 места</option>
@@ -356,6 +357,53 @@
                   </div>
                   <div class="col-xs-8 col-sm-12">
                     <p price class="schedule__price"><strong>1 800</strong><span class="rubl">a</span></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12 text-center">
+                    <p class="schedule__text"><a href="#order" fancybox class="btn schedule__btn">Выбрать</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div place-parent class="row">
+              <div class="col-xs-12 col-sm-4">
+                <div class="row">
+                  <div class="col-xs-4 visible-xs">
+                    <p class="schedule__title">Отправление</p>
+                  </div>
+                  <div class="col-xs-8 col-sm-12">
+                    <p place-from class="schedule__text"><span class="schedule__time">13:00 </span>ресторан "Старгород"</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <div class="row">
+                  <div class="col-xs-4 visible-xs">
+                    <p class="schedule__title">Прибытие</p>
+                  </div>
+                  <div class="col-xs-8 col-sm-12">
+                    <p place-to class="schedule__text"><span class="schedule__time">11:00 </span>ст. м. Новоясиневская</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-2">
+                <div class="row">
+                  <div class="col-xs-4 visible-xs">
+                    <p class="schedule__title">В пути</p>
+                  </div>
+                  <div class="col-xs-8 col-sm-12">
+                    <p class="schedule__text">Пн, Пт<br>~ 22 часа</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-2">
+                <div class="row">
+                  <div class="col-xs-4 visible-xs">
+                    <p class="schedule__title">Стоимость</p>
+                  </div>
+                  <div class="col-xs-8 col-sm-12">
+                    <p price class="schedule__price"><strong>1 500</strong><span class="rubl">a</span></p>
                   </div>
                 </div>
                 <div class="row">
