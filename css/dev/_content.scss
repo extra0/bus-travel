@@ -287,12 +287,12 @@
 		padding: 2px 14px 3px 14px;
 		position: relative;
 		color: #fff;
-		font-size: 19px;
+		font-size: 26px;
 		background: $green;
 		display: inline-block;
 		margin: 0;
 		font-weight: bold;
-		font-family: 'Roboto';
+		// font-family: 'Roboto';
 		&-wrapper {
 			@include position(absolute, null null 0 0);
 			text-align: center;
@@ -349,7 +349,7 @@
 .popular {
 	padding: 0 0 10px;
 	.fa {
-		margin-right: 5px;
+		margin-right: 10px;
 	}
 	&__block {
 		margin-bottom: 10px;
@@ -374,7 +374,7 @@
 	&__price {
 		display: inline-block;
 		line-height: 16px;
-		font-size: 16px;
+		font-size: 17px;
 		margin: -2px 0 0 7px;
 		color: $green;
 		font-weight: bold;
@@ -427,7 +427,7 @@
 		font-family: 'Roboto';
 		margin-bottom: 0;
 		& > * {
-			font-size: 18px;
+			font-size: 22px;
 		}
 	}
 	&__text {

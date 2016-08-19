@@ -85,10 +85,32 @@
   position: absolute;
   top: -12px;
   right: -12px;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   z-index: 8040;
+  background: #1fa132;
+  border-radius: 50%;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    @include transform(rotate(45deg));
+    top: 13px;
+    left: 5px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    @include transform(rotate(-45deg));
+    top: 13px;
+    left: 5px;
+  }
 }
 .fancybox-nav {
   position: absolute;
