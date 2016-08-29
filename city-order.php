@@ -11,8 +11,8 @@ $phone        = $_POST['phone'];
 $price        = $_POST['price'];
 // Формирование заголовка письма
 $subject  = "Бронирование на рейс ".$citys."";
-$headers  = "From: " . strip_tags($usermail) . "\r\n";
-$headers .= "Reply-To: ". strip_tags($usermail) . "\r\n";
+$headers  = "From: " . strip_tags("order@vseputi.com.ua") . "\r\n";
+$headers .= "Reply-To: ". strip_tags("order@vseputi.com.ua") . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
 // Формирование тела письма
