@@ -2,8 +2,12 @@ header.header
 	.container
 		.row
 			.col-sm-4.col-xs-6
-				a.header__logo(href="/")
-					img(src="/img/logo.png" alt="Site Logo")
+				- if (index == true) {
+					img(src="/img/logo.png" alt="Vseputi - Пассажирские перевозки из Донецка в города Украины и России.")
+				- } else {
+					a.header__logo(href="/" title="Vseputi - Пассажирские перевозки из Донецка в города Украины и России.")
+						img(src="/img/logo.png" alt="Vseputi - Пассажирские перевозки из Донецка в города Украины и России.")
+				- }
 			.col-sm-4.hidden-xs
 				.text-center
 					a.btn.header__btn(href="#callback" fancybox) Обратный звонок
