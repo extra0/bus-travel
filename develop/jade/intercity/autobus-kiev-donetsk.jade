@@ -10,7 +10,7 @@ block content
 				.col-sm-12.col-xs-12
 					h1.main__title.no-margin Купить билет на автобус Киев  - Донецк 
 						span от #{kievDonPrice}
-							span.rubl a
+							|  грн
 	.container
 		.row
 			.col-sm-12.col-xs-12
@@ -73,6 +73,41 @@ block content
 									p.schedule__title Отправление
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
+										span.schedule__time 17:00 
+										| АВ "Киев-1", ул. Петлюры 32 
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 09:00 
+										| АВ "Южный"
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Ср, Сб<br>(с пересадкой борт в борт)<br>~ 14 часов
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong #{kievDonPrice}
+											|  грн
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Выбрать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
 										span.schedule__time 18:45 
 										| Автовокзал
 						.col-xs-12.col-sm-4
@@ -95,7 +130,7 @@ block content
 									p.schedule__title Стоимость
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
-										strong #{kievDonPrice}
+										strong 1 800
 										span.rubl a
 							.row
 								.col-xs-12.col-sm-12.text-center

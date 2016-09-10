@@ -21,6 +21,7 @@
 	padding: 140px 0;
 	background: url(../img/content/main-pattern.jpg) no-repeat;
 	background-position: center!important;
+	background-size: cover!important;
 	@include display(flex);
 	@include align-items(center);
 	position: relative;
@@ -79,6 +80,7 @@
 	&._sochi-bg {      background: url(../img/content/city-pattern/sochi.jpg) no-repeat;}
 	&._kislovodsk-bg { background: url(../img/content/city-pattern/kislovodsk.jpg) no-repeat;}
 	&._index-bg {      background: url(../img/content/city-pattern/index-pattern.jpg) no-repeat;}
+	&._volgograd-bg {  background: url(../img/content/city-pattern/volgograd.jpg) no-repeat;}
 }
 .title {
 	font-size: 36px;

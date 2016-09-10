@@ -1,5 +1,14 @@
 .popular__block
 	i.fa.fa-lg.fa-map-signs
+	a.popular__link(href="/international/autobus-kiev-moskva")
+		p.popular__price от #{kievMskPrice}
+			|  грн
+		p.popular__name 
+			span(cityFrom) Киев
+			|  - 
+			span(cityTo) Москва
+.popular__block
+	i.fa.fa-lg.fa-map-signs
 	a.popular__link(href="/international/autobus-donetsk-adler")
 		p.popular__price от #{adlerPrice}
 			span.rubl a
@@ -288,6 +297,15 @@
 			span(cityTo) Ялта
 .popular__block
 	i.fa.fa-lg.fa-map-signs
+	a.popular__link(href="/international/autobus-gorlovka-moskva")
+		p.popular__price от #{gorlovkaMskPrice}
+			span.rubl a
+		p.popular__name 
+			span(cityFrom) Горловка
+			|  - 
+			span(cityTo) Москва
+.popular__block
+	i.fa.fa-lg.fa-map-signs
 	a.popular__link(href="/international/autobus-kiev-sevastopol")
 		p.popular__price от #{kievKrimPrice}
 			|  грн
@@ -340,3 +358,12 @@
 			span(cityFrom) Донецк
 			|  - 
 			span(cityTo) Ставрополь
+.popular__block
+	i.fa.fa-lg.fa-map-signs
+	a.popular__link(href="/international/autobus-donetsk-volgograd")
+		p.popular__price от #{volgogradPrice}
+			span.rubl a
+		p.popular__name 
+			span(cityFrom) Донецк
+			|  - 
+			span(cityTo) Волгоград

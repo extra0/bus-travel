@@ -15,10 +15,8 @@ gulp.task('sass', function(){ // sass компилятор
 
 
 gulp.task('jade', function(){ // jade компилятор
-	return gulp.src(['develop/jade/**/[^_]*.jade', 'develop/jade/index.jade'], {since: gulp.lastRun('jade')})
-		.pipe(jade({
-			pretty: true
-		}))
+	return gulp.src('develop/jade/**/[^_]*.jade', {since: gulp.lastRun('jade')})
+		.pipe(jade())
 		.pipe(gulp.dest('production'));
 });
 

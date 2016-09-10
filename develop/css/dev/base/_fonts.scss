@@ -1,6 +1,6 @@
-@include font-face("Roboto", "../fonts/Roboto-Regular",normal,normal, $file-formats: eot svg ttf);
-@include font-face("Roboto", "../fonts/Roboto-Italic",normal,italic, $file-formats: eot svg ttf);
-@include font-face("Roboto", "../fonts/Roboto-Bold",bold,normal, $file-formats: eot svg ttf);
-@include font-face("Rubl", "../fonts/ALSRubl", $file-formats: eot ttf woff);
-@include font-face("PT Sans", "../fonts/PTSans-Regular",normal, normal, $file-formats: eot ttf svg);
-@include font-face("PT Sans", "../fonts/PTSans-Bold",bold, normal, $file-formats: eot ttf svg);
+@include font-face("Roboto", "../fonts/Roboto-Regular",normal,normal, $file-formats: ttf);
+@include font-face("Roboto", "../fonts/Roboto-Italic",normal,italic, $file-formats: ttf);
+@include font-face("Roboto", "../fonts/Roboto-Bold",bold,normal, $file-formats: ttf);
+@include font-face("Rubl", "../fonts/ALSRubl", $file-formats: ttf);
+@include font-face("PT Sans", "../fonts/PTSans-Regular",normal, normal, $file-formats: ttf);
+@include font-face("PT Sans", "../fonts/PTSans-Bold",bold, normal, $file-formats: ttf);

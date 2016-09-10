@@ -1,6 +1,6 @@
 extends ../_layout
 block append head
-	- var city = "Донецк - Киев"
+	- var city = "Москва - Киев"
 	- pageImg = "http://vseputi.com.ua/img/content/city-pattern/kiev.jpg"
 	include ../includes/modules/_meta
 block content
@@ -8,16 +8,16 @@ block content
 		.container
 			.row
 				.col-sm-12.col-xs-12
-					h1.main__title.no-margin Купить билет на автобус Донецк - Киев 
-						span от #{kievPrice}
-							span.rubl a
+					h1.main__title.no-margin Купить билет на автобус Москва - Киев 
+						span от #{mskKievPrice}
+						span.rubl a
 	.container
 		.row
 			.col-sm-12.col-xs-12
 				h2.schedule__main-title
 					i.fa.fa-table
 					| Расписание автобусов 
-					span(citys) Донецк - Киев
+					span(citys) Москва - Киев 
 	block moskow-way
 		.schedule
 			.container
@@ -38,99 +38,29 @@ block content
 									p.schedule__title Отправление
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
-										span.schedule__time 06:00 
-										| Мотель
-						.col-xs-12.col-sm-4
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title Прибытие
-								.col-xs-8.col-sm-12
-									p.schedule__text(place-to)
 										span.schedule__time 22:00 
-										| ЖД Вокзал (Макдональдс)
-						.col-xs-12.col-sm-2
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title В пути
-								.col-xs-8.col-sm-12
-									p.schedule__text Вт, Пт<br>(без пересадки на БП)<br>~ 16 часов
-						.col-xs-12.col-sm-2
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title Стоимость
-								.col-xs-8.col-sm-12
-									p.schedule__price(price)
-										strong 2 200
-										span.rubl a
-							.row
-								.col-xs-12.col-sm-12.text-center
-									p.schedule__text
-										a.btn.schedule__btn(href="#order" fancybox) Выбрать
-					.row(place-parent)
-						.col-xs-12.col-sm-4
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title Отправление
-								.col-xs-8.col-sm-12
-									p.schedule__text(place-from)
-										span.schedule__time 13:00 
-										| Место отправления уточняйте
+										| ст. м. Новоясиневская
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Прибытие
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
-										span.schedule__time 05:00 
-										| Киевский автовозкал
-						.col-xs-12.col-sm-2
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title В пути
-								.col-xs-8.col-sm-12
-									p.schedule__text Ежедневно<br>(с пересадкой на БП)<br>~ 16 часов
-						.col-xs-12.col-sm-2
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title Стоимость
-								.col-xs-8.col-sm-12
-									p.schedule__price(price)
-										strong #{kievPrice}
-										span.rubl a
-							.row
-								.col-xs-12.col-sm-12.text-center
-									p.schedule__text
-										a.btn.schedule__btn(href="#order" fancybox) Выбрать
-					.row(place-parent)
-						.col-xs-12.col-sm-4
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title Отправление
-								.col-xs-8.col-sm-12
-									p.schedule__text(place-from)
 										span.schedule__time 14:00 
-										| АВ "Южный"
-						.col-xs-12.col-sm-4
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title Прибытие
-								.col-xs-8.col-sm-12
-									p.schedule__text(place-to)
-										span.schedule__time 06:00 
-										| АВ "Киев-1", ул. Петлюры 32
+										| АС "Киев-1", ул. Петлюры 32 
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Вт, Пт<br>(с пересадкой борт в борт)<br>~ 16 часов
+									p.schedule__text Ежедневно, кроме Вт<br>~ 16 часов
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Стоимость
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
-										strong 1 500
+										strong #{mskKievPrice}
 										span.rubl a
 							.row
 								.col-xs-12.col-sm-12.text-center
@@ -138,13 +68,12 @@ block content
 										a.btn.schedule__btn(href="#order" fancybox) Выбрать
 				br
 				.text-center
-					a.back__link.btn(href="/intercity/autobus-kiev-donetsk") <i class="fa fa-refresh"></i> Посмотреть обратный маршрут
-					
+					a.back__link.btn(href="/international/autobus-kiev-moskva") <i class="fa fa-refresh"></i> Посмотреть обратный маршрут
 	include ../includes/modules/_share
 	include ../includes/modules/_advantages
-	.description.hidden-xs
+	//- .description.hidden-xs
 		.container
-			.col-sm-12.col-xs-12
+			.col-sm-12
 				h2.description__title <strong>Автобус Донецк – Киев – Донецк (пассажирские автобусные перевозки в оба конца)</strong>
 				p.description__text В связи с непростой обстановкой на Донбассе, очень сложно <strong>добраться из Донецка в Киев</strong>, впрочем как и из <strong>Киева в Донецк</strong>. Путь из одного города в другой преграждают большое количество блок постов, так называемая «буферная зона», которую очень сложно пересечь даже с наличием электронного пропуска. Наша транспортная компания «VSEPUTI» предоставляет комфортабельные <strong>пассажирские автобусные перевозки Донецк – Киев и Киев – Донецк</strong>, маршрут таких перевозок осуществляется опытными и осведомленными водителями по максимально безопасному маршруту. <strong>Купить билет на автобус Донецк-Киев</strong> или забронировать место на определенную дату и время вы можете, заполнив форму на сайте или позвонив по номерам указанным на сайте. Покупая или бронируя билеты на автобус Донецк-Киев у вас обязательно должен быть электронный пропуск позволяющий пересекать линию разграничения. Если у вас нет желания или возможности лично выехать из Донецка по направлению Донецк - Киев - Донецк, вы можете <strong>передать багаж</strong> нашим рейсом, цену на данную услугу вы можете узнать непосредственно у водителя автобуса, и она будет зависеть от размеров багажа. 
 				h2.description__title <strong>Расписание автобусов Донецк – Киев</strong>
