@@ -1,0 +1,3 @@
+User-agent: *
+Host: vseputi.com.ua
+Disallow: /js
