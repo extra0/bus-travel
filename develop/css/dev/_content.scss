@@ -232,6 +232,7 @@
 		@include display(flex);
 		@include align-items(center);
 		overflow: hidden;
+		border-radius: 5px;
 		width: 100%;
 		&:before {
 			content: '';
