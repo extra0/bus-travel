@@ -526,3 +526,41 @@
 		}
 	}
 }
+.breadcrumbs {
+	&__list {
+		list-style-type: none;
+		padding: 0;
+	}
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 15px;
+			&:before {
+				content: "\f101";
+				@include position(absolute, 3px -12px null null);
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: inherit;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		}
+	}
+	&__link {
+		color: #1B8C2B;
+	    border-bottom: 1px solid;
+	    @include transition(all 0.2s ease-in-out);
+	    &:focus,
+	    &:hover {
+	    	text-decoration: none;
+	    	color: #1B8C2B;
+	    	border-bottom: 1px solid transparent; 
+	    }
+	    &.current {
+	    	color: #000;
+	    	border-bottom: 1px solid transparent; 
+	    }
+	}
+}

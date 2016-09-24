@@ -1,6 +1,7 @@
 extends ../_layout
 block append head
 	- var city = "Донецк - Сочи"
+	- category = "Международные перевозки"
 	- pageImg = "http://vseputi.com.ua/img/content/city-pattern/sochi.jpg"
 	include ../includes/modules/_meta
 block content
@@ -14,6 +15,7 @@ block content
 	.container
 		.row
 			.col-sm-12.col-xs-12
+				include ../includes/modules/_breadcrumbs
 				h2.schedule__main-title
 					i.fa.fa-table
 					| Расписание автобусов 
