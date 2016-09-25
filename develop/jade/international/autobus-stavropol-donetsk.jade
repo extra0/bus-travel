@@ -1,7 +1,7 @@
 extends ../_layout
 block append head
 	- var city = "Ставрополь - Донецк"
-	- category = "Международные перевозки"
+	- category = "Международные рейсы"
 	- pageImg = "http://vseputi.com.ua/img/content/city-pattern/donetsk.jpg"
 	include ../includes/modules/_meta
 block content
@@ -70,7 +70,7 @@ block content
 										a.btn.schedule__btn(href="#order" fancybox) Выбрать
 				br
 				.text-center
-					a.back__link.btn(href="/international/autobus-donetsk-stavropol") <i class="fa fa-refresh"></i> Посмотреть обратный маршрут
+					a.back__link.btn(href="/international/autobus-donetsk-stavropol") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
 					
 	include ../includes/modules/_share
 	include ../includes/modules/_advantages

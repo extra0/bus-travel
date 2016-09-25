@@ -1,7 +1,7 @@
 extends ../_layout
 block append head
 	- var city = "Феодосия - Горловка"
-	- category = "Международные перевозки"
+	- category = "Международные рейсы"
 	include ../includes/modules/_meta
 block content
 	.main
@@ -69,7 +69,7 @@ block content
 										a.btn.schedule__btn(href="#order" fancybox) Выбрать
 				br
 				.text-center
-					a.back__link.btn(href="/international/autobus-gorlovka-feodosiya") <i class="fa fa-refresh"></i> Посмотреть обратный маршрут
+					a.back__link.btn(href="/international/autobus-gorlovka-feodosiya") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
 					
 	include ../includes/modules/_share
 	include ../includes/modules/_advantages

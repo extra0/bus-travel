@@ -236,4 +236,10 @@ $(function() {
         $(".toTop").scrollToTop();
     });
 
+    // открываем моб меню
+    $('.main-menu__mob-btn').on('click', function(){
+    	$(this).toggleClass('active');
+    	$('.main-menu__list').slideToggle(200);
+    });
+
 });

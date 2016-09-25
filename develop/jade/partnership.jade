@@ -20,6 +20,12 @@ block content
 	.container
 		.row
 			.col-sm-12.col-xs-12
+				.breadcrumbs.hidden-xs
+					ul.breadcrumbs__list(itemscope itemtype="http://data-vocabulary.org/Breadcrumb")
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="/" itemprop="url" title="Главная") Главная
+						li.breadcrumbs__item
+							span.breadcrumbs__link.current Сотрудничество с нами
 				h2.subtitle Приглашаем автотранспортные кампании и агентов к плодотворному и взаимовыгодному сотрудничеству.
 			.col-sm-8.col-sm-offset-2.col-xs-12
 				form.form__form(action="#")

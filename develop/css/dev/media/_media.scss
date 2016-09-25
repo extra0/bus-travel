@@ -10,6 +10,29 @@
 			font-size: 28px;
 		}
 	}
+	.main-menu {
+		&__item {
+			display: block;
+			margin: 0 -15px;
+			&:not(:last-child) {
+				a {
+					border-bottom: 1px solid #fff;
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+		&__list {
+			display: none;
+		}
+		&__link {
+			font-size: 17px;
+			&-sticker {
+				right: -4px;
+			}
+		}
+	}
 	.ways {
 		&__block {
 			display: block;
@@ -168,6 +191,19 @@
 		padding: 120px 0;
 		&__title {
 			font-size: 32px;
+		}
+	}
+	.main-menu {
+		&__link {
+			font-size: 16px;
+			padding: 13px 15px;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.main-menu {
+		&__list {
+			display: block !important;
 		}
 	}
 }
