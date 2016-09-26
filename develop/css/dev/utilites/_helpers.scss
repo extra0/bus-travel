@@ -1,3 +1,6 @@
+.main-wrapper {
+	overflow: hidden;
+}
 .text-right {
 	text-align: right;
 }
@@ -11,15 +14,23 @@
 .margin-bottom-50 {
 	margin-bottom: 50px;
 }
-
-.rubl {
-	display: inline-block;
-	font-family: 'Rubl';
-	margin-left: 5px;
+.fa.fa-rub {
+	font-size: 85%;
+	margin: 0 0 0 5px!important;
+	top: 0!important;
 }
+
+// .rubl {
+// 	display: inline-block;
+// 	font-family: 'Rubl';
+// 	margin-left: 5px;
+// }
 
 .color-green {
 	color: #1B8C2B;
+}
+.color-red {
+	color: #f20;
 }
 
 .btn {

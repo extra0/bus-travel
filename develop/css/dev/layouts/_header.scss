@@ -18,9 +18,9 @@
 			&:before {
 			    content: "\f098";
 				color: #1fa132;;
-				@include position(absolute, 4px null null -30px);
+				@include position(absolute, 1px null null -30px);
 				font: normal normal normal 14px/1 FontAwesome;
-			    font-size: inherit;
+			    font-size: 28px;
 			    text-rendering: auto;
 			    -webkit-font-smoothing: antialiased;
 			    -moz-osx-font-smoothing: grayscale;
@@ -28,14 +28,12 @@
 		}
 		&._viber {
 			&:before {
-			    content: "\f098";
-				color: #1fa132;;
+			    content: "";
 				@include position(absolute, 3px null null -30px);
-				font: normal normal normal 14px/1 FontAwesome;
-			    font-size: inherit;
-			    text-rendering: auto;
-			    -webkit-font-smoothing: antialiased;
-			    -moz-osx-font-smoothing: grayscale;
+				background: url(../img/viber.svg) no-repeat;
+				background-size: 100%;
+				width: 24px;
+				height: 24px;
 			}
 		}
 		&-prefix {

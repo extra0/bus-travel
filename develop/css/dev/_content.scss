@@ -299,7 +299,6 @@
 		display: inline-block;
 		margin: 0;
 		font-weight: bold;
-		// font-family: 'Roboto';
 		&-wrapper {
 			@include position(absolute, null null 0 0);
 			text-align: center;
@@ -434,7 +433,7 @@
 		font-family: 'Roboto';
 		margin-bottom: 0;
 		& > * {
-			font-size: 22px;
+			font-size: 22px!important;
 		}
 	}
 	&__text {
