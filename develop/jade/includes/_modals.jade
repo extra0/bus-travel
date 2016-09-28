@@ -5,9 +5,9 @@
 .modal#callback
 	form.form__form(action="#")
 		p.modal__title Заказ звонка
-		.form__control
-			i.fa.fa-lg.fa-user
-			input.form__input(type="text" placeholder="ФИО" name="name" required)
+		//- .form__control
+		//- 	i.fa.fa-lg.fa-user
+		//- 	input.form__input(type="text" placeholder="ФИО" name="name" required)
 		.form__control
 			i.fa.fa-lg.fa-phone
 			input.form__input(type="tel" only-numbers placeholder="Ваш телефон" name="phone" required)
@@ -16,7 +16,7 @@
 				button.form__submit.btn.modal__submit.callback Перезвонить
 .modal#order
 	form.form__form(action="#")
-		p.modal__title Забронировать место
+		p.modal__title Забронировать места
 		.form__control
 			p.modal__text(place-from)
 			p.modal__text(place-to)
