@@ -66,12 +66,13 @@ $(function() {
 
 	// обратная связь
 	$(".callback").on("click", function() {
-		var name = $(this).parents('.form__form').find('input[name="name"]'),
-			tel = $(this).parents('.form__form').find('input[name="phone"]'),
-			nameVal = $(this).parents('.form__form').find('input[name="name"]').val().length,
+		var tel = $(this).parents('.form__form').find('input[name="phone"]'),
+			// name = $(this).parents('.form__form').find('input[name="name"]'),
+			// nameVal = $(this).parents('.form__form').find('input[name="name"]').val().length,
 			telVal = $(this).parents('.form__form').find('input[name="phone"]').val().length;
 		// обратный звонок
-		if ((nameVal >= 2) && (telVal >= 10)) {
+		// if ((nameVal >= 2) && (telVal >= 10)) {
+		if ((telVal >= 10)) {
 			$.ajax({
 				type: 'POST',
 				url: '/callback.php',
@@ -85,9 +86,9 @@ $(function() {
 				}
 			});
 		} else {
-			if (nameVal < 2) {
-				name.addClass('error');
-			}
+			// if (nameVal < 2) {
+			// 	name.addClass('error');
+			// }
 			if (telVal < 10) {
 				tel.addClass('error');
 			}
