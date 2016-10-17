@@ -7,7 +7,6 @@
 		font-size: 24px;
 		position: relative;
 		display: inline-block;
-		font-family: 'Roboto';
 		&:active,
 		&:focus,
 		&:hover {
@@ -70,10 +69,10 @@
 			a {
 				&:before {
 					content: '';
-					@include position(absolute, 12px 0 null null);
+					@include position(absolute, 7px 0 null null);
 				    width: 1px;
-				    height: 28px;
-				    background: #fff;
+				    height: 38px;
+				    background: linear-gradient(0deg, rgba(158, 158, 158, 0), #ffffff 50%, #ffffff 0, rgba(158, 158, 158, 0));
 				}
 			}
 		}

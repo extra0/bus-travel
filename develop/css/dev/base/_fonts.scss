@@ -1,6 +1,2 @@
-@include font-face("Roboto", "../fonts/Roboto-Regular",normal,normal, $file-formats: ttf);
-@include font-face("Roboto", "../fonts/Roboto-Italic",normal,italic, $file-formats: ttf);
-@include font-face("Roboto", "../fonts/Roboto-Bold",bold,normal, $file-formats: ttf);
-// @include font-face("Rubl", "../fonts/ALSRubl", $file-formats: ttf);
 @include font-face("PT Sans", "../fonts/PTSans-Regular",normal, normal, $file-formats: ttf);
 @include font-face("PT Sans", "../fonts/PTSans-Bold",bold, normal, $file-formats: ttf);

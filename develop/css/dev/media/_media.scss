@@ -113,7 +113,8 @@
 			border-bottom: 1px solid;
 		}
 		&__price {
-			margin: 0 0 0 7px;
+			margin: 2px 0 0 7px;
+			font-size: 16px;
 		}
 		&__link {
 			&:hover {
@@ -237,5 +238,13 @@
 		&__block._promo .ways__title {
 			font-size: 50px;
 		}
+	}
+}
+@media (max-height: 420px) {
+	.modal__title {
+		margin: 6px 0;
+	}
+	.xxs-height {
+		display: none;
 	}
 }
