@@ -136,6 +136,9 @@
 			}
 		}
 	}
+	.toTop {
+		padding: 6px 8px 8px;
+	}
 }
 @media (max-width: 500px) {
 	.header {
@@ -221,6 +224,16 @@
 	.main-menu {
 		&__list {
 			display: block !important;
+		}
+	}
+	.toTop {
+		&.active {
+			bottom: 40px;
+		}
+	}
+	.schedule {
+		&__btn {
+			margin-top: -10px;
 		}
 	}
 }
