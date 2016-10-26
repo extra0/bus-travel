@@ -210,7 +210,7 @@
 	width: 400px;
 	border-radius: $radius;
 	background: #fff;
-	padding: 10px 20px 20px 20px;
+	padding: 5px 20px;
 	&__title {
 		text-align: center;
 		font-size: 22px;
@@ -267,6 +267,9 @@
 				z-index: 1;
 				@include transition(all 0.4s ease-in-out);
 			}
+			.ways__block-badge-item {
+				padding: 7px 10px 8px 20px;
+			}
 		}
 		&._promo {
 			border-radius: 5px;
@@ -291,6 +294,56 @@
 			}
 			.ways__title {
 				font-size: 38px;
+			}
+		}
+		&-badge {
+			@include position(absolute, 15px null null 0);
+			z-index: 10;
+			&-item {
+				padding: 7px 10px 8px 10px;
+				color: #fff;
+				margin: 0 0 10px;
+				font-size: 18px;
+				display: inline-block;
+				position: relative;
+				@include transition(all 0.2s ease-in-out);
+				.fa {
+					margin-right: 8px;
+				}
+				&:before {
+					content: '';
+					position: absolute;
+					top: 0;
+					right: -10px;
+					height: 100%;
+					border-bottom: 38px solid transparent;
+					border-left: 10px solid #E52326;
+					border-top: 0px solid transparent;
+				}
+				&-red {
+					background: #E52326;
+					&:before {
+						border-left: 10px solid #E52326;
+					}
+				}
+				&-orange {
+					background: #FF9800;
+					&:before {
+						border-left: 10px solid #FF9800;
+					}	
+				}
+				&-green {
+					background: #1B8C2B;
+					&:before {
+						border-left: 10px solid #1B8C2B;
+					}	
+				}
+				&-blue {
+					background: #057FF2;
+					&:before {
+						border-left: 10px solid #057FF2;
+					}	
+				}
 			}
 		}
 	}
@@ -442,6 +495,13 @@
 		font-weight: normal;
 		display: block;
 		padding: 7px 0;
+		border-bottom: 3px solid #580707;
+		background: #cc0e0e;
+		&:active,
+		&:focus,
+		&:hover {
+			background: lighten(#cc0e0e, 5%);
+		}
 	}
 	&__time {
 		font-size: 17px;

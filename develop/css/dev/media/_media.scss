@@ -48,6 +48,13 @@
 					@include transform(scale(1) rotate(0deg));	
 				}
 			}
+			&-badge {
+				top: 10px;
+				&-item {
+					font-size: 16px;
+					margin: 0 0 5px;
+				}
+			}
 		}
 		&__title {
 			font-size: 38px;
@@ -220,6 +227,19 @@
 		}
 	}
 }
+@media (min-width: 992px) and (max-width: 119px) {
+	.ways {
+		&__block {
+			&-badge {
+				top: 10px;
+				&-item {
+					font-size: 16px;
+					margin: 0 0 5px;
+				}
+			}
+		}
+	}
+}
 @media (min-width: 768px) {
 	.main-menu {
 		&__list {
@@ -248,8 +268,21 @@
 		&__title {
 			font-size: 45px;
 		}
-		&__block._promo .ways__title {
-			font-size: 50px;
+		&__block {
+			&._promo .ways__title {
+				font-size: 50px;
+			}
+			&-badge {
+				&-item {
+					font-size: 21px;
+					&:before {
+						border-bottom: 44px solid transparent;
+					}
+				}
+			}	
+		}
+		&__price {
+			font-size: 30px;
 		}
 	}
 }
