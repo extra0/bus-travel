@@ -1,0 +1,366 @@
+extends ../_layout
+block append head
+	- var city = "Донецк - Ялта"
+	- category = "Международные рейсы"
+	- pageImg = "http://vseputi.com.ua/img/content/city-pattern/yalta.jpg"
+	include ../includes/modules/_meta
+block content
+	.main._yalta-bg
+		.container
+			.row
+				.col-sm-12.col-xs-12
+					h1.main__title.no-margin Купить билет на автобус Донецк - Ялта 
+						span от #{yaltaPrice}
+							i.fa.fa-rub
+	.container
+		.row
+			.col-sm-12.col-xs-12
+				include ../includes/modules/_breadcrumbs
+				h2.schedule__main-title
+					i.fa.fa-table
+					| Расписание автобусов 
+					span(citys) Донецк (через Макеевка, Харцызск) - Ялта (через Насыпное, Грушевка)
+	block moskow-way
+		.schedule
+			.container
+				.schedule__section
+					.row.hidden-xs
+						.col-sm-4
+							p.schedule__title Отправление
+						.col-sm-4
+							p.schedule__title Прибытие
+						.col-sm-2
+							p.schedule__title В пути
+						.col-sm-2
+							p.schedule__title Стоимость
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 06:00
+										| Донецк, Цирк (Фонтан)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 01:00 
+										| Автовокзал
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Чт<br>≈ 19 часов
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong 2 000
+										i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Выбрать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 09:00
+										| Донецк, Мотель
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 07:00 
+										| Автовокзал
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Вт, Сб<br>≈ 22 часа
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong 2 000
+										i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Выбрать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 10:20
+										| Донецк, Кр. рынок
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 08:30 
+										| Автовокзал
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Ежедневно<br>≈ 22 часа
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong 2 000
+										i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Выбрать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 11:00
+										| Донецк, ресторан "Старгород"
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 09:00 
+										| Автовокзал
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Вт, Ср, Пт, Сб<br>≈ 22 часов
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong 2 000
+										i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Выбрать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 12:30
+										| Донецк, Кр. рынок
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 09:30 
+										| Автовокзал
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Пн, Ср, Пт<br>≈ 22 часа
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong 2 000
+										i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Выбрать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 13:20
+										| Ресторан "Старгород"
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 11:20 
+										| Автовокзал
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Пн, Пт, Вт, Сб<br>≈ 22 часа
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong 2 000
+										i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Выбрать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 14:00
+										| АВ "Южный"
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 12:00 
+										| Автовокзал
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Ср, Сб<br>≈ 22 часа
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong #{yaltaPrice}
+										i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Выбрать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 14:30
+										| АВ "Южный", Кафе "Пингвин"
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 13:30 
+										| Автовокзал
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Вт, Пт<br>≈ 22 часа
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong 2 500
+										i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Выбрать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 16:00
+										| Донецк, Мотель
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 08:00 
+										| Автовокзал
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Чт, Сб<br>≈ 18 часов
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong 2 000
+										i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Выбрать
+				br
+				.text-center
+					a.back__link.btn(href="/international/autobus-yalta-donetsk") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
+					
+	include ../includes/modules/_share
+	include ../includes/modules/_advantages
+	include ../includes/modules/_attention
+	.description
+		.container
+			.col-sm-12
+				h2.description__title 
+					strong Автобус Донецк - Ялта (пассажирские автобусные перевозки в оба конца)
+				p.description__text В связи с непростой обстановкой на Донбассе, очень сложно <strong>добраться из Донецка в Ялту</strong>. Наша транспортная компания «VSEPUTI» предоставляет комфортабельные <strong>пассажирские автобусные перевозки Донецк - Ялта через Россию</strong>,маршрут таких перевозок осуществляется опытными и осведомленными водителями по максимально безопасному маршруту. <strong>Купить билет на автобус Донецк - Ялта </strong>или забронировать место на определенную дату и время вы можете, заполнив форму на сайте или позвонив по номерам указанным на сайте. Если у вас нет желания или возможности лично выехать из Донецка по направлению <strong>Донецк - Ялта - Донецк</strong>, вы можете <strong>передать багаж</strong> нашим рейсом, цену на данную услугу вы можете узнать непосредственно у водителя автобуса, и она будет зависеть от размеров багажа.
+				h2.description__title 
+					strong Расписание автобусов Донецк - Ялта
+				p.description__text <strong>Расписание автобусов по направлению Донецк - Ялта </strong>выстроено с наиболее удобным временем отправления и прибытия маршрутов, учитывая так же нюансы пропускного времени через границу. На ваш выбор предоставляется <strong>автобусы Донецк - Ялта </strong>в нескольких вариантах 46 местные и 8 местные (без пересадок), более подробную информацию вы можете узнать у менеджеров нашей диспетчерской службы по телефонам указанным на сайте.
