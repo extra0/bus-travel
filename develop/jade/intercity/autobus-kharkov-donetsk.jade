@@ -1,0 +1,83 @@
+extends ../_layout
+block append head
+	- var city = "Харьков - Донецк"
+	- category = "Междугородние перевозки"
+	- pageImg = "http://vseputi.com.ua/img/content/city-pattern/donetsk.jpg"
+	include ../includes/modules/_meta
+block content
+	.main._donetsk-bg
+		.container
+			.row
+				.col-sm-12.col-xs-12
+					h1.main__title.no-margin Купить билет на автобус Харьков - Донецк 
+						span от #{kharkovDonPrice}
+						|  грн
+	.container
+		.row
+			.col-sm-12.col-xs-12
+				include ../includes/modules/_breadcrumbs
+				h2.schedule__main-title
+					i.fa.fa-table
+					| Расписание автобусов 
+					span(citys) Харьков - Донецк
+	block moskow-way
+		.schedule
+			.container
+				.schedule__section
+					.row.hidden-xs
+						.col-sm-4
+							p.schedule__title Отправление
+						.col-sm-4
+							p.schedule__title Прибытие
+						.col-sm-2
+							p.schedule__title В пути
+						.col-sm-2
+							p.schedule__title Стоимость
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 05:00 
+										| ЖД, Макдональдс
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 13:00 
+										| АВ "Южный"
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Ежедневно<br>(без пересадки на БП)<br>≈ 8 часов
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong #{kharkovDonPrice} 
+										| грн
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Выбрать
+				br
+				.text-center
+					a.back__link.btn(href="/intercity/autobus-donetsk-kharkov") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
+					
+	include ../includes/modules/_share
+	include ../includes/modules/_advantages
+	include ../includes/modules/_attention
+	.description
+		.container
+			.col-sm-12
+				h2.description__title 
+					strong Автобус Харьков - Донецк, пассажирские перевозки
+				p.description__text Планируете поездку в Харьков, но не знаете, как добраться в Донецк из Харькова? Нет ничего проще, наша диспетчерская служба предлагает <strong>ежедневный маршрут по направлению Харьков - Донецк</strong>. В связи со сложной ситуацией на востоке страны, все рейсы осуществляются по максимально безопасным маршрутам. <strong>Автобус Харьков - Донецк</strong> это комфортабельный 8 или 16 местный микроавтобус, который следует согласно указанному маршруту без пересадок. Покупая <strong>билет на автобус Харьков - Донецк</strong>, вы обязательно должны иметь электронный пропуск позволяющий пересекать линию разграничения. <strong>Пассажирские перевозки по направлению Харьков - Донецк</strong> (через Украину) занимает около 6-8 часов, включая прохождение пропускного пункта в зоне разграничения. <strong>Купить билет на автобус Харьков - Донецк</strong> вы можете, заблаговременно забронировав место с помощью формы бронирования билетов или позвонив по телефонам указанным на сайте. Бронируя билет на автобус онлайн вам не нужно стоять большие очереди в кассах, заказав билет на автобус Харьков - Донецк с помощью онлайн бронирования компании «VSEPUTI» вы гарантированно оставляете за собой место в автобусе по нужному направлению в нужную дату и время, оплата билета производиться непосредственно при посадке водителю автобуса. Так же по указанным номерам, вы можете уточнить все возникшие вопросы у наших менеджеров.

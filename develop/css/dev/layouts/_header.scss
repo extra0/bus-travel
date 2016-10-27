@@ -1,0 +1,147 @@
+.header {
+	padding: 10px 0 20px;
+	&__phone {
+		text-decoration: none;
+		color: #000;
+		font-weight: bold;
+		font-size: 24px;
+		position: relative;
+		display: inline-block;
+		&:active,
+		&:focus,
+		&:hover {
+			text-decoration: none;
+			color: #000;
+		}
+		&._headphones {
+			&:before {
+			    content: "\f098";
+				color: #1fa132;;
+				@include position(absolute, 1px null null -30px);
+				font: normal normal normal 14px/1 FontAwesome;
+			    font-size: 28px;
+			    text-rendering: auto;
+			    -webkit-font-smoothing: antialiased;
+			    -moz-osx-font-smoothing: grayscale;
+			}
+		}
+		&._viber {
+			&:before {
+			    content: "";
+				@include position(absolute, 3px null null -30px);
+				background: url(../img/viber.svg) no-repeat;
+				background-size: 100%;
+				width: 24px;
+				height: 24px;
+			}
+		}
+		&-prefix {
+			font-size: 18px;
+			color: #887E7E;
+			vertical-align: top;
+			margin: 2px 5px 0 0;
+			display: inline-block;
+		}
+	}
+	&__btn {
+		margin-top: 15px;
+		font-weight: normal;
+	}
+}
+.main-menu {
+	background: #1B8C2B;
+	margin-top: 15px;
+	margin-bottom: -20px;
+	text-align: center;
+	&__mob-btn {
+		background: none;
+		border: none;
+	}
+	&__list {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		&:not(:last-child) {
+			a {
+				&:before {
+					content: '';
+					@include position(absolute, 7px 0 null null);
+				    width: 1px;
+				    height: 38px;
+				    background: linear-gradient(0deg, rgba(158, 158, 158, 0), #ffffff 50%, #ffffff 0, rgba(158, 158, 158, 0));
+				}
+			}
+		}
+	}
+	&__link {
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		font-size: 17px;
+		padding: 13px 20px;
+		position: relative;
+		@include transition(all 0.2s ease-in-out);
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			background: #075813;
+			color: #fff;
+		}
+		.fa {
+			margin: 0px 6px 0 0;
+		    position: relative;
+		    top: 1px;
+		}
+		&-sticker {
+			@include position(absolute, -15px -15px null null);
+			width: 42px;
+			height: 42px;
+		}
+	}
+	&__mob-btn {
+		margin: 15px auto;
+	    width: 30px;
+	    height: 19px;
+	    background: none;
+	    border: none;
+	    border-top: 3px solid #fff;
+	    z-index: 100;
+	    color: #fff;
+	    vertical-align: top;
+	    position: relative;
+		@include transition(all 0.4s ease-in-out);
+		&:before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 3px;
+			background: #fff;
+			@include position(absolute, 13px null null 0);
+			@include transition(all 0.4s ease-in-out);
+		}
+		&:after {
+			content: '';
+		    position: absolute;
+		    background: #fff;
+		    width: 100%;
+		    height: 3px;
+		    @include position(absolute, 5px null null 0);
+		    @include transition(all 0.4s ease-in-out);
+		}
+		&.active {
+			border-top: none;
+			&:before {
+				top: 6px;
+				@include transform(rotate(-135deg));
+			}
+			&:after {
+				@include transform(rotate(135deg));
+				top: 6px;
+			}
+		}
+	}
+}

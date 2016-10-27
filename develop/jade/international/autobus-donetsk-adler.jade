@@ -1,0 +1,83 @@
+extends ../_layout
+block append head
+	- var city = "Донецк - Адлер"
+	- category = "Международные рейсы"
+	- pageImg = "http://vseputi.com.ua/img/content/city-pattern/adler.jpg"
+	include ../includes/modules/_meta
+block content
+	.main._adler-bg
+		.container
+			.row
+				.col-sm-12.col-xs-12
+					h1.main__title.no-margin Купить билет на автобус #{city} 
+						span от #{adlerPrice}
+							i.fa.fa-rub
+	.container
+		.row
+			.col-sm-12.col-xs-12
+				include ../includes/modules/_breadcrumbs
+				h2.schedule__main-title
+					i.fa.fa-table
+					| Расписание автобусов 
+					span(citys) #{city} 
+	block moskow-way
+		.schedule
+			.container
+				.schedule__section
+					.row.hidden-xs
+						.col-sm-4
+							p.schedule__title Отправление
+						.col-sm-4
+							p.schedule__title Прибытие
+						.col-sm-2
+							p.schedule__title В пути
+						.col-sm-2
+							p.schedule__title Стоимость
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 15:00 
+										| АВ "Южный"
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 06:00 
+										| ТЦ "Магнит"
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Ежедневно<br>≈ 15 часов
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong #{adlerPrice}
+										i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Выбрать
+				br
+				.text-center
+					a.back__link.btn(href="/international/autobus-adler-donetsk") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
+					
+	include ../includes/modules/_share
+	include ../includes/modules/_advantages
+	include ../includes/modules/_attention
+	.description
+		.container
+			.col-sm-12.col-xs-12
+				h2.description__title 
+					strong Автобус #{city}, пассажирские перевозки в оба конца
+				p.description__text Транспортная компания «VSEPUTI» осуществляет <strong>автобусные пассажирские перевозки по направлению #{city}</strong>. Сейчас это одно из самых популярных направлений, поэтому зачастую <strong>купить билет на автобус #{city}</strong> достаточно проблематично. Однако, воспользовавшись услугами нашей компании, вы всегда сможете заранее <strong>забронировать билет на автобус по направлению #{city}</strong> без труда, обеспечив себе место в комфортабельном автобусе на необходимое вам число и время. Еще одним преимуществом является то, что осуществлять посадку на автобус по маршруту #{city} можно не только в начальном пункте отправки (Донецк), но и в городах через которые проложен маршрут #{city}. Для этого в заявке на <strong>бронирование билетов на автобус #{city}</strong> укажите желаемое место посадки, так вы будете уверены в том, что в не зависимости от города посадки на маршрут #{city} за вами будет закреплено нужное количество мест. <strong>Автобус #{city}</strong>, это комфортабельные, безопасные перевозки в кротчайшие сроки. <strong>Время в пути автобуса #{city}</strong> подсчитать достаточно сложно ведь это зависит от множества факторов, одним из которых является пересечение Российской границы. Однако стоит отметить, что купив <strong>билеты на автобус #{city}</strong>, вы можете быть абсолютно спокойны, и уверены в том, что автобус в максимально короткое время пройдет таможню и продолжит следовать по указанному маршруту. Это обусловлено наличием полного пакета документов у водителей автобусов нашей компании. Для вашего удобства, покупая билет из Донецка в Адлер, вы можете предварительно заказать билет в обратном направлении (<strong>#{city}</strong>), на необходимую дату и удобное для вас время, вы можете это сделать как из Донецка, так и из Адлера позвонив по российскому номеру телефона указанному на сайте. Автобус #{city}, следует согласно графику, и <strong>цены на</strong> <strong>билеты на автобус #{city}</strong> вы можете найти на нашем сайте или уточнить у менеджеров по телефонам. Вы можете так же воспользоваться услугой «Обратный звонок», после чего в максимально короткое время с вами свяжутся наши высококвалифицированные менеджеры, у которых вы можете уточнить все волнующие вас вопросы и аспекты, связанные с маршрутом #{city} и заказом билетов в обе стороны. <strong>Расписание автобусов #{city}</strong> насчитывает несколько маршрутов, с формированием автобусов из Донецка, так вы можете выбрать необходимое место посадки без дополнительных затрат на дорогу до места формирования автобуса по направлению #{city}. <strong>Купить билет на автобус #{city} : Адлер - Донецк</strong> вы можете не выходя из дома заполнив форму на сайте или позвонив по указанным на сайте номерам телефонов. Более того покупая <strong>билет на автобус #{city}</strong> вы можете быть уверены, что в любых ситуациях вы можете обращаться за помощью к нашим диспетчерам, которые помогут не только скоординировать вас по месту формирования автобуса, но и смогут разрешить форс мажорные ситуации.
