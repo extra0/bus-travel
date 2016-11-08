@@ -146,6 +146,11 @@
 	.toTop {
 		padding: 6px 8px 8px;
 	}
+	.service {
+		&__main-title {
+			margin: 15px 0;
+		}
+	}
 }
 @media (max-width: 500px) {
 	.header {

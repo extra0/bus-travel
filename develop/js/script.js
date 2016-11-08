@@ -81,7 +81,7 @@ $(function() {
 					if (data == "true") {
 						$.fancybox.close();
 						$.fancybox($('#thanks'));
-						setTimeout("$.fancybox.close()", 5000);
+						setTimeout("$.fancybox.close()", 12000);
 					}
 				}
 			});
