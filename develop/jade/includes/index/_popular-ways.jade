@@ -12,21 +12,21 @@
 					include ../modules/_to-russia
 				.text-center
 					a.toggle-link(href="javascript:void(0);") Еще маршруты
-			.col-md-5.col-md-offset-2.col-sm-6.margin-bottom-50
-				h3.subtitle 
-					img.subtitle__img(src="/img/ukr.png", alt="flag")
-					| в Украину
-				.toggle-block
-					include ../modules/_to-ukraine
-				.text-center
-					a.toggle-link(href="javascript:void(0);") Еще маршруты
-		.row
-			.col-md-5.col-sm-6.margin-bottom-50
+			.col-md-5.col-sm-6.col-md-offset-2.margin-bottom-50
 				h3.subtitle 
 					img.subtitle__img(src="/img/rus.png", alt="flag")
 					| из России
 				.toggle-block
 					include ../modules/_from-russia
+				.text-center
+					a.toggle-link(href="javascript:void(0);") Еще маршруты
+		.row
+			.col-md-5.col-sm-6.margin-bottom-50
+				h3.subtitle 
+					img.subtitle__img(src="/img/ukr.png", alt="flag")
+					| в Украину
+				.toggle-block
+					include ../modules/_to-ukraine
 				.text-center
 					a.toggle-link(href="javascript:void(0);") Еще маршруты
 			.col-md-5.col-md-offset-2.col-sm-6.margin-bottom-50
@@ -37,3 +37,20 @@
 					include ../modules/_from-ukraine
 				.text-center
 					a.toggle-link(href="javascript:void(0);") Еще маршруты
+		.row
+			.col-md-5.col-sm-6.margin-bottom-50
+				h3.subtitle 
+					img.subtitle__img(src="/img/bel.jpg", alt="flag")
+					| в Белоруссию
+				.toggle-block
+					include ../modules/_to-belorus
+				//- .text-center
+				//- 	a.toggle-link(href="javascript:void(0);") Еще маршруты
+			.col-md-5.col-md-offset-2.col-sm-6.margin-bottom-50
+				h3.subtitle 
+					img.subtitle__img(src="/img/bel.jpg", alt="flag")
+					| из Белорусии
+				.toggle-block
+					include ../modules/_from-belorus
+				//- .text-center
+				//- 	a.toggle-link(href="javascript:void(0);") Еще маршруты

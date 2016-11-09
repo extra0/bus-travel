@@ -1,17 +1,17 @@
 extends ../_layout
 block append head
-	- var city = "Харьков - Москва"
+	- var city = "Донецк - Могилёв"
 	- category = "Международные рейсы"
-	- pageImg = "http://vseputi.com.ua/img/content/city-pattern/moscow.jpg"
+	- pageImg = "http://vseputi.com.ua/img/content/city-pattern/mogilev.jpg"
 	include ../includes/modules/_meta
 block content
-	.main._moscow-bg
+	.main._mogilev-bg
 		.container
 			.row
 				.col-sm-12.col-xs-12
 					h1.main__title.no-margin Купить билет на автобус #{city} 
-						span от #{kharkovMsk}
-							|  грн
+						span от #{mogPrice}
+						i.fa.fa-rub
 	.container
 		.row
 			.col-sm-12.col-xs-12
@@ -19,7 +19,7 @@ block content
 				h2.schedule__main-title
 					i.fa.fa-table
 					| Расписание автобусов 
-					span(citys) #{city}
+					span(citys) Донецк (через Макеевка, Харцызск, Шахтерск) - Могилёв
 	block moskow-way
 		.schedule
 			.container
@@ -40,82 +40,47 @@ block content
 									p.schedule__title Отправление
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
-										span.schedule__time 21:00 
-										| ст.м. Пролетарская
+										span.schedule__time 09:00 
+										| Донецк, Мотель
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Прибытие
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
-										span.schedule__time 08:00 
-										| ст.м. Новоясеневская
+										span.schedule__time 15:00 
+										| Могилёв, Автовокзал
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Чт, Пт, Сб<br>≈ 11 часов
+									p.schedule__text Сб<br>≈ 30 часов
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Стоимость
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
-										strong 500
-											|  грн
-							.row
-								.col-xs-12.col-sm-12.text-center
-									p.schedule__text
-										a.btn.schedule__btn(href="#order" fancybox) Выбрать
-					.row(place-parent)
-						.col-xs-12.col-sm-4
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title Отправление
-								.col-xs-8.col-sm-12
-									p.schedule__text(place-from)
-										span.schedule__time 21:00 
-										| ст.м. Пролетарская
-						.col-xs-12.col-sm-4
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title Прибытие
-								.col-xs-8.col-sm-12
-									p.schedule__text(place-to)
-										span.schedule__time 08:00 
-										| ст.м. Новоясеневская
-						.col-xs-12.col-sm-2
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title В пути
-								.col-xs-8.col-sm-12
-									p.schedule__text Ежедневно<br>≈ 11 часов
-						.col-xs-12.col-sm-2
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title Стоимость
-								.col-xs-8.col-sm-12
-									p.schedule__price(price)
-										strong #{kharkovMsk}
-											|  грн
+										strong #{mogPrice}
+										i.fa.fa-rub
 							.row
 								.col-xs-12.col-sm-12.text-center
 									p.schedule__text
 										a.btn.schedule__btn(href="#order" fancybox) Выбрать
 				br
 				.text-center
-					a.back__link.btn(href="/international/autobus-moskva-kharkov") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
+					a.back__link.btn(href="/international/autobus-mogilev-donetsk") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
 	include ../includes/modules/_share
 	include ../includes/modules/_advantages
 	include ../includes/modules/_attention
 	.description
 		.container
 			.col-sm-12
-				- iz = "Харькова";
-				- izN = "Москвы";
-				- v = "Москву";
-				- vN = "Харьков";
+				- iz = "Донецка";
+				- izN = "Могилёва";
+				- v = "Могилёв";
+				- vN = "Донецк";
 				h2.description__title <strong>Автобус #{city}</strong>
 				p.description__text Вам нужно быстро, комфортно и недорого <strong>добраться из #{iz} в #{v}</strong>? В этом случае вам подойдут автобусные пассажирские перевозки. Это самый дешевый и достаточно комфортабельный вид транспорта. Наша диспетчерская служба Vseputi предлагает забронировать билеты на <strong>автобус #{city}</strong> по низким ценам на нужное число и удобное для вас время. Новые комфортабельные автобусы и профессиональные водители сделают вашу поездку не только комфортной, но и максимально безопасной. 
 				p.description__text <strong>Маршрут #{city}</strong> проложен по скоростным трассам, что значительно сократит время пребывания в пути. Более того перевозчики предоставляющие транспортные услуги имеют все необходимые документы и разрешения, что так же сократит время прохождения границы и общее время поездки. 
