@@ -11,7 +11,7 @@ block content
 				.col-sm-12.col-xs-12
 					h1.main__title.no-margin Купить билет на автобус #{city} 
 						span от #{zapPrice}
-						i.fa.fa-rub
+						|  грн
 	.container
 		.row
 			.col-sm-12.col-xs-12
@@ -40,15 +40,15 @@ block content
 									p.schedule__title Отправление
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
-										span.schedule__time 04:30 
-										| Мотель
+										span.schedule__time 05:45 
+										| АВ "Южный"
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Прибытие
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
-										span.schedule__time 13:00 
+										span.schedule__time 14:45 
 										| Автовокзал
 						.col-xs-12.col-sm-2
 							.row
@@ -63,7 +63,7 @@ block content
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
 										strong #{zapPrice} 
-										i.fa.fa-rub
+										|  грн
 							.row
 								.col-xs-12.col-sm-12.text-center
 									p.schedule__text
