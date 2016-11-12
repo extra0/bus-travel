@@ -10,7 +10,7 @@
 	border-radius: 3px;
 	color: #fff;
 	z-index: 200;
-	@include transition(all 0.4s ease-in-out);
+	@include transition(all 0.2s ease-in-out);
 	&.active {
 		bottom: 10px;
 	}
@@ -98,6 +98,7 @@
 	&._gomel-bg {      background: url(../img/content/city-pattern/gomel.jpg) no-repeat;}
 	&._mogilev-bg {    background: url(../img/content/city-pattern/mogilev.jpg) no-repeat;}
 	&._odessa-bg {     background: url(../img/content/city-pattern/odessa.jpg) no-repeat;}
+	&._tver-bg {       background: url(../img/content/city-pattern/tver.jpg) no-repeat;}
 }
 .title {
 	font-size: 36px;
@@ -128,7 +129,7 @@
 		box-shadow: inset 0 4px 7px -7px rgba(0,0,0,0.5);
 		border: 2px solid #ccc;
 		font-family: PT Sans;
-		@include transition(all 0.4s ease-in-out);
+		@include transition(all 0.2s ease-in-out);
 		&.error {
 			border: 2px solid #f20;
 		}
@@ -259,7 +260,7 @@
 			width: 100%;
 			height: 100%;
 			z-index: 1;
-			@include transition(all 0.4s ease-in-out);
+			@include transition(all 0.2s ease-in-out);
 		}
 		&:hover {
 			.ways__img {
@@ -272,7 +273,7 @@
 				width: 100%;
 				height: 100%;
 				z-index: 1;
-				@include transition(all 0.4s ease-in-out);
+				@include transition(all 0.2s ease-in-out);
 			}
 			.ways__block-badge-item {
 				padding: 7px 10px 8px 20px;
@@ -356,7 +357,7 @@
 	}
 	&__img {
 		width: 100%;
-		@include transition(all 0.4s ease-in-out);
+		@include transition(all 0.2s ease-in-out);
 	}
 	&__price {
 		z-index: 2;
@@ -570,7 +571,7 @@
 }
 .toggle {
 	&-block {
-		@include transition(all 0.4s ease-in-out);
+		@include transition(all 0.2s ease-in-out);
 		max-height: 290px;
 		overflow: hidden;
 		&.active {
@@ -716,7 +717,7 @@
 		margin: 35px 0;
 		color: #2b2f38;
 		letter-spacing: 1px;
-		@include transition(all 0.4s ease-in-out);
+		@include transition(all 0.2s ease-in-out);
 	}
 	&__main-title {
 		text-shadow: none;
@@ -727,6 +728,6 @@
 		font-size: 16px;
 		margin: -70px 0 25px 0;
 		opacity: 0;
-		@include transition(all 0.4s ease-in-out);
+		@include transition(all 0.2s ease-in-out);
 	}
 }

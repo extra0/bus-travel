@@ -113,7 +113,7 @@
 	    color: #fff;
 	    vertical-align: top;
 	    position: relative;
-		@include transition(all 0.4s ease-in-out);
+		@include transition(all 0.2s ease-in-out);
 		&:before {
 			content: '';
 			position: absolute;
@@ -121,7 +121,7 @@
 			height: 3px;
 			background: #fff;
 			@include position(absolute, 13px null null 0);
-			@include transition(all 0.4s ease-in-out);
+			@include transition(all 0.2s ease-in-out);
 		}
 		&:after {
 			content: '';
@@ -130,7 +130,7 @@
 		    width: 100%;
 		    height: 3px;
 		    @include position(absolute, 5px null null 0);
-		    @include transition(all 0.4s ease-in-out);
+		    @include transition(all 0.2s ease-in-out);
 		}
 		&.active {
 			border-top: none;
