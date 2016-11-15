@@ -730,4 +730,213 @@
 		opacity: 0;
 		@include transition(all 0.2s ease-in-out);
 	}
+	&__main {
+		background: url(../img/content/service.jpg) 0 0 no-repeat;
+		background-position: 50% 0;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		overflow: hidden;
+		min-height: 600px;
+		background-size: cover;
+	}
+	&__page {
+		&-title {
+			text-transform: uppercase;
+			font-size: 61px;
+			color: #fff;
+			font-weight: bold;
+			margin: 0 0 -5px;
+			width: 100%;
+		}
+		&-subtitle {
+			text-transform: uppercase;
+			color: #fff;
+			font-size: 23px;
+			margin: 0;
+			padding: 0 0 28px;
+			width: 100%;
+			position: relative;
+			font-weight: bold;
+			&:before {
+				content: '';
+				@include position(absolute, null 0 0 0);
+				width: 160px;
+				height: 2px;
+				background: #fff;
+				margin: 0 auto;
+			}
+		}
+		&-preview {
+			text-align: center;
+			// height: calc(100vh - 269px);
+			height: 85vh;
+			min-height: 500px;
+			@include align-content(center);
+			@include flex-wrap(wrap);
+			@include display(flex);
+			@include align-items(center);
+			@include justify-content(center);
+		}
+	}
+	&__form {
+		&-block {
+			padding: 35px 0 28px;
+			background: #191F26;
+			.form__label {
+				color: #fff;
+				font-weight: normal;
+				margin-bottom: 5px;
+				.fa {
+					margin-right: 5px;
+				}
+			}
+			.form__input {
+				padding: 0 10px;
+			}
+		}
+		&-btn {
+			border-bottom: 3px solid #580707;
+			background: #cc0e0e;
+			margin-top: 28px;
+		    font-size: 20px;
+		    padding: 16px 0;
+			&:active,
+			&:focus,
+			&:hover {
+				background: lighten(#cc0e0e, 5%);
+			}
+		}
+		&-quantity {
+			max-width: 140px;
+			display: inline-block;
+			padding: 0 10px;
+			text-align: center;
+			margin-left: 10px;
+		}
+	}
+	&__advantages {
+		padding: 60px 0 25px 0;
+	}
+	&__description {
+		margin-bottom: 30px;
+		&-icon {
+			float: left;
+			border: 2px solid #34394A;
+			color: #34394A;
+			border-radius: 50%;
+			height: 100px;
+			width: 100px;
+			font-size: 50px;
+			@include display(flex);
+			@include align-items(center);
+			@include justify-content(center);
+		}
+		&-block {
+			margin-left: 120px;
+		}
+		&-title {
+			margin: 0 0 15px;
+			text-transform: uppercase;
+			color: $green;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		&-text {
+			font-size: 15px;
+		}
+	}
+	&__line {
+		&-block {
+			background: #1B8C2B;
+			padding: 15px 0;
+		}
+		&-title {
+			margin: 6px 0;
+			font-size: 29px;
+			color: #fff;
+			text-align: center;
+		}
+		&-btn {
+			border-bottom: 3px solid #580707;
+			background: #cc0e0e;
+		    font-size: 20px;
+		    width: 100%;
+		    text-align: center;
+		    padding: 12px 0;
+			&:active,
+			&:focus,
+			&:hover {
+				background: lighten(#cc0e0e, 5%);
+			}
+		}
+	}
+	&__auto {
+		&-description {
+			padding: 25px 30px;
+		    border-right: 1px solid #DFDFD0;
+			&-title {
+				font-size: 17px;
+				margin: 0 0 15px 0;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+			&-text {
+			    text-shadow: 0 0 0 #ccc;
+			    margin:  0 0 15px;
+			}
+		}
+	}
+	&__work {
+		background: #191F26 url(../img/service/work.png) bottom center no-repeat;
+		padding: 50px 0 30px;
+		&-title {
+			text-transform: uppercase;
+			color: #fff;
+			font-weight: bold;
+			position: relative;
+			margin-bottom: 50px;
+			font-size: 39px;
+			text-align: center;
+			.fa {
+				color: #1B8C2B;
+				position: relative;
+				top: -10px;
+				left: -10px;
+				font-size: 85%;
+			}
+		}
+		&-block {
+			color: #fff;
+			text-align: center;
+			max-width: 300px;
+			margin: 0 auto 30px auto;
+		}
+		&-icon {
+			border-radius: 50%;
+			border: 2px solid #fff;
+			width: 100px;
+			height: 100px;
+			margin: 0 auto;
+			@include display(flex);
+			@include align-items(center);
+			@include justify-content(center);
+			.fa {
+				font-size: 45px;
+			}
+		}
+		&-text {
+			line-height: normal;
+			font-size: 18px;
+			a {
+				color: #fff;
+				border-bottom: 1px dotted #fff;
+				@include transition(all 0.2s ease-in-out);
+				&:focus,
+				&:hover {
+					border-bottom: 1px dotted transparent;
+					text-decoration: none;
+				}
+			}
+		}
+	}
 }

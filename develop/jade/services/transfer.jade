@@ -10,13 +10,163 @@ block append head
 	meta(property="og:url" content="http://vseputi.com.ua/services/")
 	meta(property="og:site_name" content="Всепути - Купить билет на автобус онлайн, заказать автобусный билет.")
 	meta(property="og:image" content="http://vseputi.com.ua/img/service/service.jpg")
-	title Услуги
+	title Трансфер
+	- service = true;
 block content
-	.main
+	.service__main
+		.container
+			.service__page-preview
+				.service__page-title Ищете трансфер?
+				.service__page-subtitle Тогда Вы обратились по адресу.
+	.service__form-block#anchor-block
+		.container
+			form.form__form(action="#")
+				.row
+					.col-sm-4
+						.form__control
+							label.form__label
+								i.fa.fa-calendar
+								| Дата и время отправления
+							input.form__input(type="text" name="date" datepicker required)
+					.col-sm-4
+						.form__control
+							label.form__label
+								i.fa.fa-building
+								| Город и место отправления
+							input.form__input(type="text" name="city-departure" required)
+					.col-sm-4
+						.form__control
+							label.form__label
+								i.fa.fa-building-o
+								| Город и место прибытия
+							input.form__input(type="text" name="city-arrive" required)
+				.row
+					.col-lg-4.col-md-3.col-sm-6
+						.form__control
+							label.form__label
+								i.fa.fa-user
+								| ФИО
+							input.form__input(type="text" name="name" required)
+					.col-sm-6.col-md-3
+						.form__control
+							label.form__label
+								i.fa.fa-phone
+								| Телефон
+							input.form__input(type="tel" name="phone" only-numbers required)
+					.col-lg-5.col-md-6
+						.form__control.margin-top-30
+							label.form__label(style="display:inline-block;")
+								i.fa.fa-users
+								| Кол-во пассажиров (включая детей)
+							input.form__input.service__form-quantity(type="text" name="quantity" only-numbers maxlength="3" required)
+				.row
+					.col-sm-8
+						.form__control
+							label.form__label(style="display:inline-block;")
+								i.fa.fa-comments-o
+								| Комментарии к заказу
+							textarea.form__textarea(name="message")
+					.col-sm-4
+						.form__control
+							button.form__submit.btn.service__form-btn(type="submit")
+								i.fa.fa-location-arrow 
+								|  Заказать трансфер
+	.service__advantages
 		.container
 			.row
-				.col-sm-12.col-xs-12
-					.main__title.no-margin Страница в разработке
-						br
-						br
-						i.fa.fa-gears.fa-2x
+				.col-sm-4
+					.service__description
+						.service__description-icon
+							i.fa.fa-user
+						.service__description-block
+							p.service__description-title Lorem ipsum dolor.
+							p.service__description-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum illum quibusdam dolores expedita aspernatur necessitatibus dolorem modi veritatis minima voluptates.
+				.col-sm-4
+					.service__description
+						.service__description-icon
+							i.fa.fa-wrench
+						.service__description-block
+							p.service__description-title Lorem ipsum.
+							p.service__description-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum illum quibusdam dolores expedita aspernatur necessitatibus dolorem modi veritatis minima voluptates.
+				.col-sm-4
+					.service__description
+						.service__description-icon
+							i.fa.fa-shopping-cart
+						.service__description-block
+							p.service__description-title Lorem ipsum dolor sit.
+							p.service__description-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum illum quibusdam dolores expedita aspernatur necessitatibus dolorem modi veritatis minima voluptates.
+			.row
+				.col-sm-4
+					.service__description
+						.service__description-icon
+							i.fa.fa-user
+						.service__description-block
+							p.service__description-title Lorem ipsum dolor.
+							p.service__description-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum illum quibusdam dolores expedita aspernatur necessitatibus dolorem modi veritatis minima voluptates.
+				.col-sm-4
+					.service__description
+						.service__description-icon
+							i.fa.fa-wrench
+						.service__description-block
+							p.service__description-title Lorem ipsum.
+							p.service__description-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum illum quibusdam dolores expedita aspernatur necessitatibus dolorem modi veritatis minima voluptates.
+				.col-sm-4
+					.service__description
+						.service__description-icon
+							i.fa.fa-shopping-cart
+						.service__description-block
+							p.service__description-title Lorem ipsum dolor sit.
+							p.service__description-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum illum quibusdam dolores expedita aspernatur necessitatibus dolorem modi veritatis minima voluptates.
+	.service__line-block
+		.container
+			.row
+				.col-sm-8.col-md-9
+					p.service__line-title Как быстро и без суеты добраться к пункту назначения ?
+				.col-sm-4.col-md-3
+					a.btn.service__line-btn(href="#anchor-block" anchor-trigger)
+						i.fa.fa-flag-checkered
+						|  Заказать трансфер
+	.service__auto
+		.row
+			- for (i=1;i<=4;i++) {
+				.col-sm-6.col-md-3.col-xs-6.col-xxs-12.no-padding
+					img.service__auto-img(src="http://themeenergy.com/themes/wordpress/transfers/wp-content/uploads/2015/06/img81.jpg", alt="")
+					.service__auto-description
+						p.service__auto-description-title Lorem ipsum dolor.
+						p.service__auto-description-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti magni incidunt blanditiis, impedit doloremque alias, nesciunt quae, provident itaque tempore vero unde quibusdam debitis ipsa.
+			- }
+	.service__work
+		.container
+			.service__work-title
+				i.fa.fa-quote-right
+				|  Как мы работаем
+			.row
+				.col-sm-6.col-md-3
+					.service__work-block
+						.service__work-icon
+							i.fa.fa-pencil
+						p.service__work-text Вы оставляете заявку на заказ трансфера заполнив <a href="#anchor-block" anchor-trigger>форму</a>
+				.col-sm-6.col-md-3
+					.service__work-block
+						.service__work-icon
+							i.fa.fa-phone
+						p.service__work-text Мы принимаем заказ и связываемся с Вами для подтверждения и уточнения деталей поездки.
+				.col-sm-6.col-md-3
+					.service__work-block
+						.service__work-icon
+							i.fa.fa-bank
+						p.service__work-text В назначенное время и место прибывает Ваш трансфер.
+				.col-sm-6.col-md-3
+					.service__work-block
+						.service__work-icon
+							i.fa.fa-flag-checkered
+						p.service__work-text Вы прибыли к пункту назначения вовремя, комфортно и получили ряд положительных эмоций.
+	.service__line-block
+		.container
+			.row
+				.col-sm-8.col-md-9
+					p.service__line-title Не медлите, закажите комфорт прямо сейчас!
+				.col-sm-4.col-md-3
+					a.btn.service__line-btn(href="#anchor-block" anchor-trigger)
+						i.fa.fa-flag-checkered
+						|  Заказать трансфер

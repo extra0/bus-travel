@@ -150,7 +150,28 @@
 		&__main-title {
 			margin: 15px 0;
 		}
+		&__form  {
+			&-btn {
+				margin-top: 0;
+				padding: 12px 0;
+				font-size: 18px;
+			}
+			&-block {
+				.form__label {
+					font-size: 16px;
+				}
+			}
+		}
+		&__line-title {
+			margin: 6px 0 15px;
+		}
+		&__line-btn {
+			max-width: 290px;
+			margin: 0 auto 10px auto;
+			display: block;
+		}
 	}
+
 }
 @media (max-width: 500px) {
 	.header {
@@ -217,6 +238,41 @@
 			display: none;
 		}
 	}
+	.service {
+		&__form {
+			&-block  {
+				.form__input {
+					display: block;
+					margin: 0;
+					width: 100%;
+				}
+			}
+		}
+		&__page {
+			&-title {
+				font-size: 30px;
+			}
+			&-subtitle {
+				font-size: 16px;
+			}
+		}
+		&__description {
+			&-icon {
+				height: 70px;
+				width: 70px;
+				font-size: 30px;
+			}
+			&-block {
+				margin-left: 85px;
+			}
+		}
+		&__line-title {
+			font-size: 20px;
+		}
+		&__work-title {
+			font-size: 27px;
+		}
+	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.main {
@@ -231,8 +287,40 @@
 			padding: 13px 15px;
 		}
 	}
+	.service {
+		&__form {
+			&-block {
+				.form__label {
+					font-size: 16px;
+				}		
+			}
+			&-quantity {
+				width: 62px;
+			}
+		}
+		&__description {
+			&-icon {
+				float: none;
+				margin-bottom: 10px;
+			}
+			&-block {
+				margin-left: 0;
+			}
+		}
+		&__line-title {
+			font-size: 24px;
+		}
+		&__line-btn {
+			margin-top: 15px;
+		}
+	}
+	.form__control {
+		&.margin-top-30 {
+			margin-top: 27px;
+		}
+	}
 }
-@media (min-width: 992px) and (max-width: 119px) {
+@media (min-width: 992px) and (max-width: 1199px) {
 	.ways {
 		&__block {
 			&-badge {
@@ -244,6 +332,15 @@
 			}
 		}
 	}
+	.service {
+		&__form-quantity {
+			width: 102px;
+		}
+		&__line-title {
+			font-size: 28px;
+		}
+	}
+
 }
 @media (min-width: 768px) {
 	.main-menu {

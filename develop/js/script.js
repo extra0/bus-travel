@@ -14,6 +14,7 @@ $(function() {
 		todayHighlight: true
 	});
 
+	
 	// только цифры для телефонов
 	$('[only-numbers]').bind("change keyup input click", function() {
 		if (this.value.match(/[^0-9\+]/g, '')) {
@@ -102,7 +103,6 @@ $(function() {
 			tel = $(this).parents('.form__form').find('input[name="phone"]'),
 			nameVal = $(this).parents('.form__form').find('input[name="name"]').val().length,
 			telVal = $(this).parents('.form__form').find('input[name="phone"]').val().length;
-		// обратный звонок
 		if ((nameVal >= 2) && (telVal >= 10)) {
 			$.ajax({
 				type: 'POST',
@@ -124,7 +124,6 @@ $(function() {
 				tel.addClass('error');
 			}
 		}
-
 	});
 
 
@@ -160,6 +159,55 @@ $(function() {
 			}
 			if (cityAriveVal < 2) {
 				cityArive.addClass('error');
+			}
+		}
+	});
+
+	// форма заказа трансфера
+	$(".service__form-btn").on("click", function() {
+		var name = $(this).parents('.form__form').find('input[name="name"]'),
+			tel = $(this).parents('.form__form').find('input[name="phone"]'),
+			date = $(this).parents('.form__form').find('input[name="date"]'),
+			cityDep = $(this).parents('.form__form').find('input[name="city-departure"]'),
+			cityArr = $(this).parents('.form__form').find('input[name="city-arrive"]'),
+			quantity = $(this).parents('.form__form').find('input[name="quantity"]'),
+			nameVal = $(this).parents('.form__form').find('input[name="name"]').val().length,
+			telVal = $(this).parents('.form__form').find('input[name="phone"]').val().length;
+			dateVal = $(this).parents('.form__form').find('input[name="date"]').val().length;
+			cityDepVal = $(this).parents('.form__form').find('input[name="city-departure"]').val().length;
+			cityArrVal = $(this).parents('.form__form').find('input[name="city-arrive"]').val().length;
+			quantityVal = $(this).parents('.form__form').find('input[name="quantity"]').val().length;
+		if ((nameVal >= 2) && (telVal >= 10) && (dateVal >= 6) && (cityDepVal >= 5) && (cityArrVal >= 5) && (quantityVal >= 1)) {
+			$.ajax({
+				type: 'POST',
+				url: '/transfer.php',
+				data: $(this).parents('.form__form').serialize(),
+				success: function(data) {
+					if (data == "true") {
+						$.fancybox.close();
+						$.fancybox($('#thanks'));
+						setTimeout("$.fancybox.close()", 5000);
+					}
+				}
+			});
+		} else {
+			if (nameVal < 2) { 
+				name.addClass('error');
+			}
+			if (telVal < 10) {
+				tel.addClass('error');
+			}
+			if (dateVal < 6) {
+				date.addClass('error');
+			}
+			if (cityDepVal < 5) {
+				cityDep.addClass('error');
+			}
+			if (cityArrVal < 5) {
+				cityArr.addClass('error');
+			}
+			if (quantityVal < 1) {
+				quantity.addClass('error');
 			}
 		}
 	});
@@ -241,6 +289,15 @@ $(function() {
     $('.main-menu__mob-btn').on('click', function(){
     	$(this).toggleClass('active');
     	$('.main-menu__list').slideToggle(200);
+    });
+
+    // плавный скролл к якорю
+    $('[anchor-trigger]').bind("click", function(e) {
+    	var anchor = $(this);
+    	$('html, body').stop().animate({
+    		scrollTop: $(anchor.attr('href')).offset().top
+    	}, 1000);
+    	e.preventDefault();
     });
 
 });
