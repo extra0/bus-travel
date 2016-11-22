@@ -1,12 +1,12 @@
 extends _layout
 block append head
-	meta(description="Сотрудничество с диспетчесткой службой VSEPUTI для автоперевозчиков и агентов.")
+	meta(description="Сотрудничество с диспетчесткой службой VSEPUTI для автоперевозчиков, агентов и владельцев отелей.")
 	meta(keywords="сотрудничество с диспетческой службой")
 	meta(name="robots" content="noodp")
 	meta(property="og:locale" content="ru_RU")
 	meta(property="og:type" content="website")
 	meta(property="og:title" content="Сотрудничество")
-	meta(property="og:description" content="Сотрудничество с диспетчесткой службой VSEPUTI для автоперевозчиков и агентов.")
+	meta(property="og:description" content="Сотрудничество с диспетчесткой службой VSEPUTI для автоперевозчиков, агентов и владельцев отелей.")
 	meta(property="og:url" content="http://vseputi.com.ua/")
 	meta(property="og:site_name" content="Всепути - Купить билет на автобус онлайн, заказать автобусный билет.")
 	meta(property="og:image" content="http://vseputi.com.ua/img/content/partner.jpg")
@@ -25,8 +25,8 @@ block content
 						li.breadcrumbs__item
 							a.breadcrumbs__link(href="/" itemprop="url" title="Главная") Главная
 						li.breadcrumbs__item
-							span.breadcrumbs__link.current Сотрудничество с нами
-				h2.subtitle Приглашаем автотранспортные кампании и агентов к плодотворному и взаимовыгодному сотрудничеству.
+							span.breadcrumbs__link.current Сотрудничество
+				h2.subtitle Приглашаем автотранспортные кампании, агентов и руководителей гостиничного бизнеса к плодотворному и взаимовыгодному сотрудничеству.
 			.col-sm-8.col-sm-offset-2.col-xs-12
 				form.form__form(action="#")
 					.form__control
@@ -39,8 +39,10 @@ block content
 					.form__control
 						i.fa.fa-users
 						select.form__select(name="category")
-							option(value="Перевозчик") Перевозчик
+							option(value="Транспортная компания или ЧП") Транспортная компания или ЧП
 							option(value="Агент") Агент
+							option(value="Гостиница, отель") Гостиница, отель
+							option(value="Размещение рекламы на сайте") Размещение рекламы на сайте
 					.form__control
 						label.form__label Ваш телефон для связи:
 					.form__control

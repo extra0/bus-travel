@@ -234,7 +234,16 @@
 		}
 	}
 	&__submit {
-		width: auto;
+		font-weight: normal;
+		display: block;
+		padding: 7px 0;
+		border-bottom: 3px solid #580707;
+		background: #cc0e0e;
+		&:active,
+		&:focus,
+		&:hover {
+			background: lighten(#cc0e0e, 5%);
+		}
 	}
 	&__text {
 		margin: 5px 0;
@@ -742,7 +751,7 @@
 	&__page {
 		&-title {
 			text-transform: uppercase;
-			font-size: 61px;
+			font-size: 50px;
 			color: #fff;
 			font-weight: bold;
 			margin: 0 0 -5px;
@@ -819,6 +828,7 @@
 	}
 	&__description {
 		margin-bottom: 30px;
+		@include clearfix;
 		&-icon {
 			float: left;
 			border: 2px solid #34394A;
@@ -871,14 +881,17 @@
 		}
 	}
 	&__auto {
+		max-width: 1920px;
+		margin: 0 auto;
 		&-description {
 			padding: 25px 30px;
 		    border-right: 1px solid #DFDFD0;
 			&-title {
-				font-size: 17px;
+				font-size: 20px;
 				margin: 0 0 15px 0;
 				text-transform: uppercase;
 				font-weight: bold;
+				color: $green;
 			}
 			&-text {
 			    text-shadow: 0 0 0 #ccc;
@@ -907,9 +920,17 @@
 		}
 		&-block {
 			color: #fff;
-			text-align: center;
+			min-width: 230px;
 			max-width: 300px;
+			width: 20%;
 			margin: 0 auto 30px auto;
+			padding: 0 15px;
+			vertical-align: top;
+			display: inline-block;
+			&-section {
+				text-align: center;
+				margin: 0 -15px;
+			}
 		}
 		&-icon {
 			border-radius: 50%;
@@ -923,6 +944,12 @@
 			.fa {
 				font-size: 45px;
 			}
+		}
+		&-step-title {
+			text-transform: uppercase;
+			font-weight: bold;
+			margin-bottom: -10px;
+			font-size: 24px;
 		}
 		&-text {
 			line-height: normal;
@@ -939,4 +966,86 @@
 			}
 		}
 	}
+	&__faq {
+	    background: #f5f5f5;
+	    padding-bottom: 50px;
+	    &-title {
+	    	font-size: 38px;
+	    	font-weight: bold;
+	    	text-align: center;
+	    	margin: 40px 0 20px;
+	    	text-transform: uppercase;
+	    }
+	    &-list {
+	    	list-style-type: none;
+	    	padding: 0;
+	    	margin: 0;
+	    	&-item {
+	    		padding: 10px;
+	    		&:not(:last-child) {
+	    			border-bottom: 1px solid #ced5e2;
+	    		}
+	    	}
+	    	&-question {
+	    		font-size: 20px;
+    		    color: #000;
+    		    font-weight: bold;
+    		    display: block;
+    		    &:hover,
+    		    &:focus {
+    		    	text-decoration: none;
+    		    	color: #000;
+    		    }
+    		    .fa {
+    		    	margin-top: 5px;
+    		    	margin-left: 10px;
+    		    	@include transition(all 0.2s ease-in-out);
+    		    }
+    		    &.active {
+    		    	.fa {
+    		    		@include transform(rotate(180deg));
+    		    	}
+    		    }
+	    	}
+	    	&-answer {
+	    		font-size: 16px;
+	    		display: none;
+	    		padding-bottom: 20px;
+	    		a {
+	    			color: $green;
+	    			border-bottom: 1px dashed $green;
+	    			@include transition(all 0.2s ease-in-out);
+	    			&:hover,
+	    			&:focus {
+	    				text-decoration: none;
+	    				border-bottom: 1px dashed transparent;
+	    			}
+	    		}
+	    	}
+	    }
+	}
+}
+// стилизация пуш окна
+.sendpulse-safari .sendpulse-prompt-buttons .sp-link-wrapper {
+	display: none!important;
+}
+.sendpulse-prompt-buttons {
+	text-align: center!important;
+}
+.sendpulse-safari .sendpulse-prompt-info {
+	margin-bottom: 0 !important;
+}
+@media (min-width: 480px) {
+	.sendpulse-safari.sendpulse-prompt {
+	    width: 390px!important;
+	    margin-left: -180px!important;
+	}	
+}
+
+// убираем стрелки на input date
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }

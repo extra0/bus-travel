@@ -5,12 +5,12 @@ block append head
 	meta(name="robots" content="noodp")
 	meta(property="og:locale" content="ru_RU")
 	meta(property="og:type" content="website")
-	meta(property="og:title" content="Услуги")
+	meta(property="og:title" content="Наши услуги")
 	meta(property="og:description" content="Компания VSEPUTI предоставляет ряд услуг по заказу трансферов, автобусов для мероприятий и бронированию авиабилетов.")
 	meta(property="og:url" content="http://vseputi.com.ua/services/")
 	meta(property="og:site_name" content="Всепути - Купить билет на автобус онлайн, заказать автобусный билет.")
 	meta(property="og:image" content="http://vseputi.com.ua/img/service/service.jpg")
-	title Услуги
+	title Наши услуги
 block content
 	.container
 		.row
@@ -20,28 +20,28 @@ block content
 						li.breadcrumbs__item
 							a.breadcrumbs__link(href="/" itemprop="url" title="Главная") Главная
 						li.breadcrumbs__item
-							span.breadcrumbs__link.current Услуги
+							span.breadcrumbs__link.current Наши услуги
 		.row
 			.col-sm-12.col-xs-12
-				h1.main__title.service__main-title Услуги
+				h1.main__title.service__main-title Наши услуги
 		.row
-			.col-sm-12.col-md-4
-				.service__block
-					a(href="/services/bus-rent")
-						.service__block-top
-							.service__icon(style="background: url(../img/service/bus-rent.png) center center no-repeat;")
-							img.service__img(src="/img/service/bus-rent.jpg", alt="Аренда автобуса")
-						.service__block-bottom
-							p.service__title Аренда автобуса
-							p.service__text Аренда автобуса под Ваши нужды в более чем 100 городах Украины и РФ.
-			.col-sm-12.col-md-4
+			//- .col-sm-12.col-md-4
+			//- 	.service__block
+			//- 		a(href="/services/bus-rent")
+			//- 			.service__block-top
+			//- 				.service__icon(style="background: url(../img/service/bus-rent.png) center center no-repeat;")
+			//- 				img.service__img(src="/img/service/bus-rent.jpg", alt="Аренда автобуса")
+			//- 			.service__block-bottom
+			//- 				p.service__title Аренда автобуса
+			//- 				p.service__text Аренда автобуса под Ваши нужды в более чем 100 городах Украины и РФ.
+			.col-sm-12.col-md-4.col-md-offset-2
 				.service__block
 					a(href="/services/transfer")
 						.service__block-top
 							.service__icon(style="background: url(../img/service/transfer.png) center center no-repeat;")
 							img.service__img(src="/img/service/transfer.jpg", alt="Трансфер")
 						.service__block-bottom
-							p.service__title Трансфер
+							p.service__title Трансфер по Крыму
 							p.service__text Встречи в аэропортах, вокзалах и отелях. Быстро и с комфортом.  
 			.col-sm-12.col-md-4
 				.service__block
@@ -53,4 +53,12 @@ block content
 							p.service__title Бронь авиабилетов
 							p.service__text Бронирование самых дешевых авиабилетов на любые направления.
 		include ../includes/modules/_share
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
 		br

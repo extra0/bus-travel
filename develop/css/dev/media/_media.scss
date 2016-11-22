@@ -272,6 +272,14 @@
 		&__work-title {
 			font-size: 27px;
 		}
+		&__faq {
+			&-title {
+				font-size: 26px;	
+			}
+			&-list-item {
+				padding: 10px 0;
+			}
+		}
 	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -319,6 +327,12 @@
 			margin-top: 27px;
 		}
 	}
+	.schedule {
+		&__btn {
+			font-size: 14px;
+			margin-right: -8px;
+		}
+	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	.ways {
@@ -338,6 +352,9 @@
 		}
 		&__line-title {
 			font-size: 28px;
+		}
+		&__work-block {
+			width: 30%;
 		}
 	}
 

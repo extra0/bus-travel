@@ -14,6 +14,20 @@ $(function() {
 		todayHighlight: true
 	});
 
+
+	// выбор даты и времени
+	$('[datepicker-time]').datepicker({
+		format: 'dd.mm.yyyy',
+		startDate: '0d',
+		maxViewMode: 0,
+		language: "ru",
+		pickTime: true,
+		forceParse: false,
+		autoclose: true,
+		pick12HourFormat: false,
+		todayHighlight: true
+	});
+
 	
 	// только цифры для телефонов
 	$('[only-numbers]').bind("change keyup input click", function() {
@@ -112,7 +126,7 @@ $(function() {
 					if (data == "true") {
 						$.fancybox.close();
 						$.fancybox($('#thanks'));
-						setTimeout("$.fancybox.close()", 5000);
+						setTimeout("$.fancybox.close()", 20000);
 					}
 				}
 			});
@@ -146,7 +160,7 @@ $(function() {
 					if (data == "true") {
 						$.fancybox.close();
 						$.fancybox($('#thanks'));
-						setTimeout("$.fancybox.close()", 5000);
+						setTimeout("$.fancybox.close()", 20000);
 					}
 				}
 			});
@@ -186,7 +200,7 @@ $(function() {
 					if (data == "true") {
 						$.fancybox.close();
 						$.fancybox($('#thanks'));
-						setTimeout("$.fancybox.close()", 5000);
+						setTimeout("$.fancybox.close()", 20000);
 					}
 				}
 			});
@@ -298,6 +312,13 @@ $(function() {
     		scrollTop: $(anchor.attr('href')).offset().top
     	}, 1000);
     	e.preventDefault();
+    });
+
+    // collapse
+    $('[data-collapse]').on('click', function(){
+    	$(this).toggleClass('active');
+    	$('#'+ $(this).attr('data-collapse') +'').slideToggle(300);
+    	return false;
     });
 
 });

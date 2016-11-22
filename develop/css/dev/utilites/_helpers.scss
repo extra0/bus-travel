@@ -20,10 +20,15 @@
 	margin: 0 0 0 5px!important;
 	top: 0!important;
 }
-
+.strong {
+	font-weight: bold;
+}
+.uppercase {
+	text-transform: uppercase;
+}
 
 .color-green {
-	color: #1B8C2B;
+	color: $green;
 }
 .color-red {
 	color: #f20;

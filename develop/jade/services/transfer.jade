@@ -10,24 +10,32 @@ block append head
 	meta(property="og:url" content="http://vseputi.com.ua/services/")
 	meta(property="og:site_name" content="Всепути - Купить билет на автобус онлайн, заказать автобусный билет.")
 	meta(property="og:image" content="http://vseputi.com.ua/img/service/service.jpg")
-	title Трансфер
+	title Трансфер по Крыму
 	- service = true;
 block content
 	.service__main
 		.container
 			.service__page-preview
-				.service__page-title Ищете трансфер?
+				.service__page-title Ищете трансфер по Крыму?
 				.service__page-subtitle Тогда Вы обратились по адресу.
 	.service__form-block#anchor-block
 		.container
 			form.form__form(action="#")
 				.row
 					.col-sm-4
-						.form__control
-							label.form__label
-								i.fa.fa-calendar
-								| Дата и время отправления
-							input.form__input(type="text" name="date" datepicker required)
+						.row
+							.col-sm-6.col-xs-6
+								.form__control
+									label.form__label
+										i.fa.fa-calendar
+										| Дата
+									input.form__input(type="text" name="date" datepicker-time required)
+							.col-sm-6.col-xs-6
+								.form__control
+									label.form__label
+										i.fa.fa-clock-o
+										| Время
+									input.form__input(type="time" name="time" required)
 					.col-sm-4
 						.form__control
 							label.form__label
@@ -77,46 +85,46 @@ block content
 				.col-sm-4
 					.service__description
 						.service__description-icon
-							i.fa.fa-user
+							i.fa.fa-users
 						.service__description-block
-							p.service__description-title Lorem ipsum dolor.
-							p.service__description-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum illum quibusdam dolores expedita aspernatur necessitatibus dolorem modi veritatis minima voluptates.
+							p.service__description-title Персонал
+							p.service__description-text Наши водители являются профессионалами в своей сфере, благодаря чему они выберут лучшую дорогу и спланируют маршрут в обход пробок.
 				.col-sm-4
 					.service__description
 						.service__description-icon
-							i.fa.fa-wrench
+							i.fa.fa-shield
 						.service__description-block
-							p.service__description-title Lorem ipsum.
-							p.service__description-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum illum quibusdam dolores expedita aspernatur necessitatibus dolorem modi veritatis minima voluptates.
+							p.service__description-title Надежно
+							p.service__description-text Вам всегда будет комфортно и уютно благодаря просторному салону и вместительному багажнику, мягкой подвеске и высокому уровню безопасности.
 				.col-sm-4
 					.service__description
 						.service__description-icon
-							i.fa.fa-shopping-cart
+							i.fa.fa-diamond
 						.service__description-block
-							p.service__description-title Lorem ipsum dolor sit.
-							p.service__description-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum illum quibusdam dolores expedita aspernatur necessitatibus dolorem modi veritatis minima voluptates.
+							p.service__description-title Доступно
+							p.service__description-text Мы предоставляем самые выгодные цены на услуги трансфера и лёгкость системы резервирования.
 			.row
 				.col-sm-4
 					.service__description
 						.service__description-icon
-							i.fa.fa-user
+							i.fa.fa-usd
 						.service__description-block
-							p.service__description-title Lorem ipsum dolor.
-							p.service__description-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum illum quibusdam dolores expedita aspernatur necessitatibus dolorem modi veritatis minima voluptates.
+							p.service__description-title Оплата
+							p.service__description-text Оплачивайте услуги трансфера быстро и легко благодаря безопасным онлайн платежам.
 				.col-sm-4
 					.service__description
 						.service__description-icon
-							i.fa.fa-wrench
+							i.fa.fa-clock-o
 						.service__description-block
-							p.service__description-title Lorem ipsum.
-							p.service__description-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum illum quibusdam dolores expedita aspernatur necessitatibus dolorem modi veritatis minima voluptates.
+							p.service__description-title не нужно ждать
+							p.service__description-text Вы не тратите время на ожидание или заказ автотранспорта по месту прибытия. Наш водитель Вас встретит и поможет с упаковкой багажа в авто.
 				.col-sm-4
 					.service__description
 						.service__description-icon
-							i.fa.fa-shopping-cart
+							i.fa.fa-star
 						.service__description-block
-							p.service__description-title Lorem ipsum dolor sit.
-							p.service__description-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum illum quibusdam dolores expedita aspernatur necessitatibus dolorem modi veritatis minima voluptates.
+							p.service__description-title Поддержка
+							p.service__description-text Мы стремимся к высокому качеству обслуживания своих клиентом, поэтому предоставляем персонального диспетчера на все время трансфера.
 	.service__line-block
 		.container
 			.row
@@ -128,39 +136,52 @@ block content
 						|  Заказать трансфер
 	.service__auto
 		.row
-			- for (i=1;i<=4;i++) {
-				.col-sm-6.col-md-3.col-xs-6.col-xxs-12.no-padding
-					img.service__auto-img(src="http://themeenergy.com/themes/wordpress/transfers/wp-content/uploads/2015/06/img81.jpg", alt="")
-					.service__auto-description
-						p.service__auto-description-title Lorem ipsum dolor.
-						p.service__auto-description-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti magni incidunt blanditiis, impedit doloremque alias, nesciunt quae, provident itaque tempore vero unde quibusdam debitis ipsa.
-			- }
+			.col-sm-4.col-xs-12.no-padding
+				img.service__auto-img(src="/img/service/aveo.jpg", alt="transfer img")
+				.service__auto-description
+					p.service__auto-description-title Эконом класс
+					p.service__auto-description-text Предназначен для клиентов, которые предпочитают недорогие транспортные услуги. Мы готовы предоставить в Ваше распоряжение надежные, удобные, но в тоже время недорогие автомобили эконом класса для трансфера по Крыму.
+			.col-sm-4.col-xs-12.no-padding
+				img.service__auto-img(src="/img/service/tucson.jpg", alt="transfer img")
+				.service__auto-description
+					p.service__auto-description-title Средний класс
+					p.service__auto-description-text Этот класс выбирают клиенты, которые помимо качества и комфорта ценят статус. Автомобили среднего класса также отличаются большей вместительностью багажного отделения, для того чтобы с лихвой вместить все Ваши чемоданы.
+			.col-sm-4.col-xs-12.no-padding
+				img.service__auto-img(src="/img/service/micro.jpg", alt="transfer img")
+				.service__auto-description
+					p.service__auto-description-title Микроавтобус
+					p.service__auto-description-text Идеальный вариант для большой компании. Вместительный микроавтобус с легкостью вместит весь Ваш багаж и предоставит до 8 комфортных посадочных мест в салоне. Перемещайтесь весело и комфортно.
 	.service__work
 		.container
 			.service__work-title
 				i.fa.fa-quote-right
 				|  Как мы работаем
-			.row
-				.col-sm-6.col-md-3
-					.service__work-block
-						.service__work-icon
-							i.fa.fa-pencil
-						p.service__work-text Вы оставляете заявку на заказ трансфера заполнив <a href="#anchor-block" anchor-trigger>форму</a>
-				.col-sm-6.col-md-3
-					.service__work-block
-						.service__work-icon
-							i.fa.fa-phone
-						p.service__work-text Мы принимаем заказ и связываемся с Вами для подтверждения и уточнения деталей поездки.
-				.col-sm-6.col-md-3
-					.service__work-block
-						.service__work-icon
-							i.fa.fa-bank
-						p.service__work-text В назначенное время и место прибывает Ваш трансфер.
-				.col-sm-6.col-md-3
-					.service__work-block
-						.service__work-icon
-							i.fa.fa-flag-checkered
-						p.service__work-text Вы прибыли к пункту назначения вовремя, комфортно и получили ряд положительных эмоций.
+			.service__work-block-section
+				.service__work-block
+					.service__work-icon
+						i.fa.fa-pencil
+					p.service__work-step-title Шаг 1
+					p.service__work-text Вы оставляете заявку на заказ трансфера заполнив <a href="#anchor-block" anchor-trigger>форму</a>
+				.service__work-block
+					.service__work-icon
+						i.fa.fa-phone
+					p.service__work-step-title Шаг 2
+					p.service__work-text Мы принимаем заказ и связываемся с Вами для подтверждения и уточнения деталей поездки.
+				.service__work-block
+					.service__work-icon
+						i.fa.fa-database
+					p.service__work-step-title Шаг 3
+					p.service__work-text Вы вносите полную или частичную оплату.
+				.service__work-block
+					.service__work-icon
+						i.fa.fa-bank
+					p.service__work-step-title Шаг 4
+					p.service__work-text В назначенное время и место прибывает Ваш трансфер.
+				.service__work-block
+					.service__work-icon
+						i.fa.fa-flag-checkered
+					p.service__work-step-title Шаг 5
+					p.service__work-text Вы прибыли к пункту назначения вовремя, комфортно и получили ряд положительных эмоций.
 	.service__line-block
 		.container
 			.row
@@ -170,3 +191,48 @@ block content
 					a.btn.service__line-btn(href="#anchor-block" anchor-trigger)
 						i.fa.fa-flag-checkered
 						|  Заказать трансфер
+	.service__faq
+		.container
+			.service__faq-title
+				i.fa.fa-comments-o
+				|  Часто задаваемые вопросы
+			.row
+				.col-md-10.col-md-offset-1
+					ul.service__faq-list
+						li.service__faq-list-item
+							a.service__faq-list-question(href="javascript:void(0);" data-collapse="question-1") 
+								i.fa.fa-chevron-circle-down.pull-right
+								| Хочу заказать трансфер, как это сделать ?
+							.service__faq-list-answer#question-1
+								p 
+									strong Порядок заказа трансфера:
+								ol
+									li Перейдите к <a href="#anchor-block" anchor-trigger>форме</a> и заполните все поля.
+									li В комментариях к заказу укажите необходимый Вам вид транспорта, а также какие либо Ваши пожелания.
+									li Ожидайте звонка диспетчера.
+									li Оплатите заказ на предоставленный расчетный счет от диспетчера.
+						li.service__faq-list-item
+							a.service__faq-list-question(href="javascript:void(0);" data-collapse="question-2") 
+								i.fa.fa-chevron-circle-down.pull-right
+								| Как мне оплатить трансфер ?
+							.service__faq-list-answer#question-2
+								p Оплатить услугу трансфера можно по предоставленным реквизитам от диспетчера при подтверждении заказа трансфера. 
+						li.service__faq-list-item
+							a.service__faq-list-question(href="javascript:void(0);" data-collapse="question-3") 
+								i.fa.fa-chevron-circle-down.pull-right
+								| Как отменить трансфер ?
+							.service__faq-list-answer#question-3
+								p Для отмены ранее заказанного трансфера и возврата денежных средств необходимо сообщить Вашему диспетчеру по телефону: <strong>+7 (978) 806 19 36</strong> или <strong>+38 (095) 402 79 77</strong>.
+								p
+									strong Обратите внимание:
+								ul
+									li Средства возвращаются при своевременной отмене заказа, граничный срок которого составляет не менее 24 часов до запланированной даты.
+									li В случае отмены заказа позже указанного срока, денежные средства <strong>возврату не подлежат</strong>.
+									li При форс-мажорных обстоятельствах возврату подлежит полная стоимость услуги трансфера.
+									li Комиссия платежных систем возврату не подлежит.
+						li.service__faq-list-item
+							a.service__faq-list-question(href="javascript:void(0);" data-collapse="question-4") 
+								i.fa.fa-chevron-circle-down.pull-right
+								| У меня крупногабаритный багаж, как мне быть ?
+							.service__faq-list-answer#question-4
+								p В случае, если Вы имеете в наличии крупногабаритный багаж, обязательно укажите в соответствующем поле формы, при заполнении заказа. Таким образом мы сможем подобрать для Вас наиболее подходящий транспорт.
