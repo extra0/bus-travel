@@ -19,9 +19,9 @@
 		&__item {
 			display: block;
 			margin: 0 -15px;
+			border-top: 1px solid #fff;
 			&:not(:last-child) {
 				a {
-					border-bottom: 1px solid #fff;
 					&:before {
 						display: none;
 					}
@@ -171,6 +171,9 @@
 			display: block;
 		}
 	}
+	.m-b-xs-15 {
+		margin-bottom: 15px;
+	}
 
 }
 @media (max-width: 500px) {
@@ -181,8 +184,9 @@
 			&:before {
 				display: none;
 			}
+			&._viber,
 			&._headphones {
-				margin: -30px 0 5px -30px;
+				margin: -30px -5px 5px -10px;
 			}
 			&-prefix {
 				font-size: 14px;
@@ -374,6 +378,11 @@
 		&__btn {
 			margin-top: -10px;
 		}
+	}
+}
+@media (min-width: 1200px) {
+	.header__btn {
+		margin-left: 50px;
 	}
 }
 @media (min-width: 1600px) {

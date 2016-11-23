@@ -36,6 +36,17 @@
 			margin-left: -30px;
 		}
 	}
+	&__email {
+		color: #fff;
+		display: inline-block;
+		margin-top: 5px;
+		font-size: 14px;
+		&:focus,
+		&:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
 	&__link {
 		color: #fff;
 		display: inline-block;
