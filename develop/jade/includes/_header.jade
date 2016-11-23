@@ -1,25 +1,34 @@
 header.header
 	.container
 		.row
-			.col-sm-4.col-xs-6
+			.col-sm-3.col-xs-6
 				- if (index == true) {
 					img(src="/img/logo.png" alt="Диспетчерская служба 'Всепути'")
 				- } else {
 					a.header__logo(href="/" title="Диспетчерская служба 'Всепути'")
 						img(src="/img/logo.png" alt="Диспетчерская служба 'Всепути'")
 				- }
-			.col-sm-4.hidden-xs
+			.col-md-3.hidden-xs.hidden-sm
 				.text-center
 					a.btn.header__btn(href="#callback" fancybox) Обратный звонок
-			.col-sm-4.col-xs-6
+			.col-sm-3.col-xs-6
 				.text-right
-					a.header__phone._viber(href="tel:+380954027977") 
+					a.header__phone._headphones(href="tel:+380954027977") 
 						span.header__phone-prefix +38 (095) 
 						| 402 79 77
 					br
 					a.header__phone._headphones(href="tel:+79788061936") 
 						span.header__phone-prefix +7 (978) 
 						| 806 19 36
+			.col-sm-3.col-xs-6
+				.text-right
+					a.header__phone._viber(href="tel:+380958744992") 
+						span.header__phone-prefix +38 (095) 
+						| 874 49 92
+					br
+					a.header__phone._headphones(href="tel:+380732237833") 
+						span.header__phone-prefix +38 (073) 
+						| 223 78 33
 	.main-menu
 		.container
 			.row
