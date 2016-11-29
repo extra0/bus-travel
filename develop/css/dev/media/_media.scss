@@ -174,7 +174,23 @@
 	.m-b-xs-15 {
 		margin-bottom: 15px;
 	}
-
+	.hotels {
+		&__block {
+			&-description {
+				right: 4px;
+				width: auto;
+				&-list {
+					.fa {
+						font-size: 18px;
+						margin-right: 6px;
+					}
+				}
+				&-name {
+					font-size: 14px;
+				}
+			}
+		}
+	}
 }
 @media (max-width: 500px) {
 	.header {
@@ -337,6 +353,24 @@
 			margin-right: -8px;
 		}
 	}
+	.hotels {
+		&__block {
+			min-height: 350px;
+			&-description {
+				right: 4px;
+				width: auto;
+				&-list {
+					.fa {
+						font-size: 18px;
+						margin-right: 6px;
+					}
+				}
+				&-name {
+					font-size: 14px;
+				}
+			}
+		}
+	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	.ways {
@@ -367,11 +401,6 @@
 	.main-menu {
 		&__list {
 			display: block !important;
-		}
-	}
-	.toTop {
-		&.active {
-			bottom: 40px;
 		}
 	}
 	.schedule {

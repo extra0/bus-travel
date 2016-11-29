@@ -72,6 +72,19 @@ $(function() {
 		return false;
 	});
 
+	// показываем весь текст
+	$('.toggle-link__text').on('click', function() {
+		if ($(this).hasClass('active')) {
+			$(this).html('Показать все');
+			$(this).removeClass('active');
+		} else {
+			$(this).html('Скрыть');
+			$(this).addClass('active');
+		}
+		$(this).parent().find('.toggle-block').toggleClass('active');
+		return false;
+	});
+
 	// ================ ПИСЬМА =================
 
 	// обработка письма обратного звонка

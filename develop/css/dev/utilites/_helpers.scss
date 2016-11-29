@@ -47,7 +47,7 @@
 	font-family: PT Sans;
 	font-size: 16px;
 	top: 0;
-	@include transition(all 0.4s ease-in-out);
+	@include transition(all 0.2s ease-in-out);
 	&:active,
 	&:focus,
 	&:hover {
@@ -56,8 +56,19 @@
 		background: lighten($green, 5%);
 	}
 	&:active {
-		@include transition(all 0.1s ease-in-out);
+		@include transition(all 0.2s ease-in-out);
 		border-bottom: 3px solid transparent;
 		top: 3px;
+	}
+	&-red {
+		font-weight: normal;
+		padding: 7px 22px;
+		border-bottom: 3px solid #580707;
+		background: #cc0e0e;
+		&:active,
+		&:focus,
+		&:hover {
+			background: lighten(#cc0e0e, 5%);
+		}
 	}
 }
