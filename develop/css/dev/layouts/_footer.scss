@@ -18,7 +18,8 @@
 		}
 		&-text {
 			color: #fff;
-			margin: 0 0 5px;
+			font-size: 16px;
+			margin: 0 0 10px;
 			display: block;
 		}
 	}
@@ -27,6 +28,7 @@
 		display: inline-block;
 		margin-left: 20px;
 		font-size: 16px;
+		&:focus,
 		&:hover {
 			color: #fff;
 			text-decoration: none;
