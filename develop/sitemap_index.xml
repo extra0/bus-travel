@@ -25,9 +25,6 @@
   <loc>http://vseputi.com.ua/international/autobus-donetsk-yalta</loc>
 </url>
 <url>
-  <loc>http://vseputi.com.ua/international/autobus-donetsk-moskva</loc>
-</url>
-<url>
   <loc>http://vseputi.com.ua/international/autobus-sankt-peterburg-donetsk</loc>
 </url>
 <url>
@@ -37,19 +34,25 @@
   <loc>http://vseputi.com.ua/international/autobus-donetsk-minsk</loc>
 </url>
 <url>
-  <loc>http://vseputi.com.ua/international/autobus-donetsk-orel</loc>
+  <loc>http://vseputi.com.ua/international/autobus-lugansk-alushta</loc>
+</url>
+<url>
+  <loc>http://vseputi.com.ua/international/autobus-donetsk-moskva</loc>
+</url>
+<url>
+  <loc>http://vseputi.com.ua/international/autobus-donetsk-samara</loc>
 </url>
 <url>
   <loc>http://vseputi.com.ua/intercity/autobus-donetsk-kiev</loc>
 </url>
 <url>
-  <loc>http://vseputi.com.ua/international/autobus-donetsk-mogilev</loc>
-</url>
-<url>
   <loc>http://vseputi.com.ua/international/autobus-moskva-kiev</loc>
 </url>
 <url>
-  <loc>http://vseputi.com.ua/international/autobus-donetsk-samara</loc>
+  <loc>http://vseputi.com.ua/international/autobus-donetsk-orel</loc>
+</url>
+<url>
+  <loc>http://vseputi.com.ua/international/autobus-donetsk-mogilev</loc>
 </url>
 <url>
   <loc>http://vseputi.com.ua/international/autobus-artemovsk-belgorod</loc>
@@ -272,9 +275,6 @@
 </url>
 <url>
   <loc>http://vseputi.com.ua/international/autobus-lugansk-simferopol</loc>
-</url>
-<url>
-  <loc>http://vseputi.com.ua/international/autobus-lugansk-alushta</loc>
 </url>
 <url>
   <loc>http://vseputi.com.ua/international/autobus-lugansk-yalta</loc>
@@ -676,6 +676,9 @@
   <loc>http://vseputi.com.ua/intercity/autobus-donetsk-odessa</loc>
 </url>
 <url>
+  <loc>http://vseputi.com.ua/intercity/autobus-donetsk-berdyansk</loc>
+</url>
+<url>
   <loc>http://vseputi.com.ua/intercity/autobus-kiev-donetsk</loc>
 </url>
 <url>
@@ -734,6 +737,9 @@
 </url>
 <url>
   <loc>http://vseputi.com.ua/intercity/autobus-odessa-donetsk</loc>
+</url>
+<url>
+  <loc>http://vseputi.com.ua/intercity/autobus-berdyansk-donetsk</loc>
 </url>
 <url>
   <loc>http://vseputi.com.ua/international/autobus-donetsk-gomel</loc>
