@@ -1107,8 +1107,8 @@
 			position: absolute;
 		    padding: 0px 0 8px 0;
 		    @include transition(all 0.2s ease-in-out);
-		    @include position(absolute, null -56px 4px null);
-		    width: 80px;
+		    @include position(absolute, null -70px 4px null);
+		    width: 95px;
 	        background: #fff;
 	        white-space: nowrap;
 			&-title {
