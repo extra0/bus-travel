@@ -1100,6 +1100,8 @@
 			margin: 3px 0;
 			.fa {
 				color: #000;
+				width: 11px;
+				text-align: center;
 				margin-right: 7px;
 			}
 		}
@@ -1107,7 +1109,7 @@
 			position: absolute;
 		    padding: 0px 0 8px 0;
 		    @include transition(all 0.2s ease-in-out);
-		    @include position(absolute, null -70px 4px null);
+		    @include position(absolute, 3px -70px null null);
 		    width: 95px;
 	        background: #fff;
 	        white-space: nowrap;
