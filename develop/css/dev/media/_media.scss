@@ -190,6 +190,13 @@
 				}
 			}
 		}
+		&__btn-trigger {
+			display: block;
+			margin: 10px auto -10px auto;
+			display: block;
+			text-align: center;
+			float: none;
+		}
 	}
 }
 @media (max-width: 500px) {

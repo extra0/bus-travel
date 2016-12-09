@@ -1151,6 +1151,11 @@
 			text-align: center;
 		}
 	}
+	&__btn-trigger {
+		float: right;
+		max-width: 202px;
+		margin: 2px 0 10px 10px;
+	}
 }
 
 
@@ -1185,4 +1190,8 @@ input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.g-invisible object {
+	display: none;
 }
