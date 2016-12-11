@@ -70,4 +70,17 @@
 			display: inline-block;
 		}
 	}
+	&__pay {
+		&-block {
+			margin-bottom: 20px;
+			.fa {
+				margin: 0 5px;
+			}
+		}
+		&-img {
+			max-width: 75px;
+			display: inline-block;
+			margin: -26px 0 -12px 3px;
+		}
+	}
 }
