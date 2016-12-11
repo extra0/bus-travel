@@ -1,0 +1,296 @@
+extends ../_layout
+block append head
+	meta(description="")
+	meta(keywords="")
+	meta(name="robots" content="noodp")
+	meta(property="og:locale" content="ru_RU")
+	meta(property="og:type" content="website")
+	meta(property="og:title" content="Рейсы в Крым")
+	meta(property="og:description" content="")
+	meta(property="og:url" content="http://vseputi.com.ua/crimea/")
+	meta(property="og:site_name" content="Всепути - Купить билет на автобус онлайн, заказать автобусный билет.")
+	meta(property="og:image" content="http://vseputi.com.ua/img/crimea/crimea.jpg")
+	title Рейсы в Крым
+block content
+	.container
+		.row
+			.col-sm-12.col-xs-12
+				.breadcrumbs.hidden-xs
+					ul.breadcrumbs__list(itemscope itemtype="http://data-vocabulary.org/Breadcrumb")
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="/" itemprop="url" title="Главная") Главная
+						li.breadcrumbs__item
+							span.breadcrumbs__link.current Рейсы в Крым
+		.row
+			.col-sm-12.col-xs-12
+				h1.main__title.service__main-title Рейсы в Крым
+		.row
+			.col-sm-12.col-xs-12.text-center
+				a.btn(style="margin: 5px" href="#don-anchor" anchor-trigger) Донецкое направление
+				a.btn(style="margin: 5px" href="#lug-anchor" anchor-trigger) Луганское направление
+				a.btn(style="margin: 5px" href="#kiev-anchor" anchor-trigger) Киевское направление
+		br
+		br
+		.row
+			.col-sm-12.col-xs-12
+				.main__title.service__main-title#don-anchor Донецкое направление
+		.row
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-donetsk-alushta")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{alushtaPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/alushta.jpg", alt="Автобус Донецк - Алушта - Донецк")
+						.service__block-bottom
+							p.service__subtitle Донецк - Алушта - Донецк
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-donetsk-feodosiya")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{feodosiyaPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/feodosiya.jpg", alt="Автобус Донецк - Феодосия - Донецк")
+						.service__block-bottom
+							p.service__subtitle Донецк - Феодосия - Донецк
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-donetsk-kerch")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{kerchPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/kerch.jpg", alt="Автобус Донецк - Керчь - Донецк")
+						.service__block-bottom
+							p.service__subtitle Донецк - Керчь - Донецк
+		.row
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-donetsk-sevastopol")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{sevastopolPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/sevastopol.jpg", alt="Автобус Донецк - Севастополь - Донецк")
+						.service__block-bottom
+							p.service__subtitle Донецк - Севастополь - Донецк
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-donetsk-simferopol")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{simferopolPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/simferopol.jpg", alt="Автобус Донецк - Симферополь - Донецк")
+						.service__block-bottom
+							p.service__subtitle Донецк - Симферополь - Донецк
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-donetsk-yalta")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{yaltaPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/yalta.jpg", alt="Автобус Донецк - Ялта - Донецк")
+						.service__block-bottom
+							p.service__subtitle Донецк - Ялта - Донецк
+		.row
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-gorlovka-alushta")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{gorAlushtaPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/alushta.jpg", alt="Автобус Горловка - Алушта - Горловка")
+						.service__block-bottom
+							p.service__subtitle Горловка - Алушта - Горловка
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-gorlovka-feodosiya")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{gorFeodosiyaPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/feodosiya.jpg", alt="Автобус Горловка - Феодосия - Горловка")
+						.service__block-bottom
+							p.service__subtitle Горловка - Феодосия - Горловка
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-gorlovka-kerch")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{gorKerchPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/kerch.jpg", alt="Автобус Горловка - Керчь - Горловка")
+						.service__block-bottom
+							p.service__subtitle Горловка - Керчь - Горловка
+		.row
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-gorlovka-sevastopol")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{gorSevastopolPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/sevastopol.jpg", alt="Автобус Горловка - Севастополь - Горловка")
+						.service__block-bottom
+							p.service__subtitle Горловка - Севастополь - Горловка
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-gorlovka-simferopol")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{gorSimferopolPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/simferopol.jpg", alt="Автобус Горловка - Симферополь - Горловка")
+						.service__block-bottom
+							p.service__subtitle Горловка - Симферополь - Горловка
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-gorlovka-yalta")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{gorYaltaPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/yalta.jpg", alt="Автобус Горловка - Ялта - Горловка")
+						.service__block-bottom
+							p.service__subtitle Горловка - Ялта - Горловка
+		br
+		br
+		br
+		.row
+			.col-sm-12.col-xs-12
+				.main__title.service__main-title#lug-anchor Луганское направление
+		.row
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-lugansk-sevastopol")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{lugSev}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/sevastopol.jpg", alt="Автобус Луганск - Севастополь - Луганск")
+						.service__block-bottom
+							p.service__subtitle Луганск - Севастополь - Луганск
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-lugansk-simferopol")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{lugSimf}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/simferopol.jpg", alt="Автобус Луганск - Симферополь - Луганск")
+						.service__block-bottom
+							p.service__subtitle Луганск - Симферополь - Луганск
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-lugansk-yalta")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{lugYalta}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/yalta.jpg", alt="Автобус Луганск - Ялта - Луганск")
+						.service__block-bottom
+							p.service__subtitle Луганск - Ялта - Луганск
+		.row
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-lugansk-alushta")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{lugAlushta}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/alushta.jpg", alt="Автобус Луганск - Алушта - Луганск")
+						.service__block-bottom
+							p.service__subtitle Луганск - Алушта - Луганск
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-lugansk-feodosiya")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{lugFeodisya}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/feodosiya.jpg", alt="Автобус Луганск - Феодосия - Луганск")
+						.service__block-bottom
+							p.service__subtitle Луганск - Феодосия - Луганск
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-lugansk-kerch")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{lugKerch}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/kerch.jpg", alt="Автобус Луганск - Керчь - Луганск")
+						.service__block-bottom
+							p.service__subtitle Луганск - Керчь - Луганск
+		br
+		br
+		br
+		.row
+			.col-sm-12.col-xs-12
+				.main__title.service__main-title#kiev-anchor Киевское направление
+		.row
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-kiev-sevastopol")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{kievKrimPrice} грн
+							img.service__img(src="/img/crimea/sevastopol.jpg", alt="Автобус Киев - Севастополь - Киев")
+						.service__block-bottom
+							p.service__subtitle Киев - Севастополь - Киев
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-kiev-simferopol")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{kievKrimPrice} грн
+							img.service__img(src="/img/crimea/simferopol.jpg", alt="Автобус Киев - Симферополь - Киев")
+						.service__block-bottom
+							p.service__subtitle Киев - Симферополь - Киев
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-kiev-yalta")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{kievKrimPrice} грн
+							img.service__img(src="/img/crimea/yalta.jpg", alt="Автобус Киев - Ялта - Киев")
+						.service__block-bottom
+							p.service__subtitle Киев - Ялта - Киев
+		.row
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-kiev-yalta")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{kievKrimPrice} грн
+							img.service__img(src="/img/crimea/yalta.jpg", alt="Автобус Киев - Ялта - Киев")
+						.service__block-bottom
+							p.service__subtitle Киев - Ялта - Киев
+		include ../includes/modules/_share
+		//- .description
+			.container
+				.toggle-block.toggle-block__text
+					- iz = "Алушты";
+					- izN = "Луганска";
+					- v = "Луганск";
+					- vN = "Алушту";
+					h2.description__title <strong>Автобус #{city}</strong>
+					p.description__text Вам нужно быстро, комфортно и недорого <strong>добраться из #{iz} в #{v}</strong>? В этом случае вам подойдут автобусные пассажирские перевозки. Это самый дешевый и достаточно комфортабельный вид транспорта. Наша диспетчерская служба Vseputi предлагает забронировать билеты на <strong>автобус #{city}</strong> по низким ценам на нужное число и удобное для вас время. Новые комфортабельные автобусы и профессиональные водители сделают вашу поездку не только комфортной, но и максимально безопасной. 
+					p.description__text <strong>Маршрут #{city}</strong> проложен по скоростным трассам, что значительно сократит время пребывания в пути. Более того перевозчики предоставляющие транспортные услуги имеют все необходимые документы и разрешения, что так же сократит время прохождения границы и общее время поездки. 
+					p.description__text Все предоставляемые автобусы, в том числе <strong>автобус #{city}</strong>, оснащены телевизорами и кондиционерами, что внесет еще больший уют и комфорт в пути. В некоторых автобусах предусмотрены точки доступа  Wi-Fi, которым вы можете воспользоваться, находясь непосредственно в пути. Более полную информацию вы можете уточнить у диспетчеров компании.
+					h2.description__title <strong>Купить билет на автобус #{city}</strong>
+					p.description__text <strong>Купить билет на автобус #{city}</strong> достаточно проблематично из-за высокого спроса на данный рейс, именно по этому, на нашем сайте вы можете заблаговременно <strong>забронировать билет на автобус #{city}</strong> в режиме онлайн или же позвонив по указанным номерам телефонов. Опытные и вежливые диспетчера ответят на все волнующие вас вопросы, а при отсутствии мест на рейс, предложат другие варианты, из которых вы можете выбрать подходящий и удобный для вас. Обращаем ваше внимание, что оплата  производится непосредственно при посадке в автобус водителю. <strong>Приобрести билет на автобус #{city}</strong> можно за две, три недели до назначенной даты, при этом за день до отправки с вами свяжутся наши диспетчера либо непосредственно перевозчики, напоминая о поездке и уточняя номер автобуса. Если по каким либо причинам вы опаздываете на <strong>рейс #{city}</strong>, водитель еще раз с вами созванивается, уточняя информацию.
+					h2.description__title <strong>Билеты на автобус #{city}: онлайн бронирование</strong>
+					p.description__text Компания Vseputi предоставляет услугу <strong>онлайн бронирования билетов</strong>, так <strong>билеты на автобус #{city}</strong> вы можете забронировать всего в несколько кликов. Выбрав нужный вам рейс, нажмите на кнопку «Выбрать», после чего на экране появится форма «Забронировать места». Обращаем ваше внимание, что в первой строке формы необходимо указать из какого города будет осуществляться посадка, это может быть как начальный пункт отправления (#{vN}), так и города находящиеся по маршруту. Затем необходимо выбрать нужную дату и количество мест. Что бы <strong>забронировать билет на автобус #{city}</strong>, внимательно заполните строку с вашим номером телефона. В случае ошибки наши диспетчера не смогут подтвердить бронь, и место за вами будет не закреплено. Так же для удобства в общении при подтверждении заказа на <strong>онлайн бронирование билетов</strong> заполните строку с Фамилией и именем.
+					p.description__text Для вашего удобства во время бронирования билета на <strong>автобус #{city}</strong>, вы сразу можете <strong>забронировать билет на обратный рейс</strong> (#{v} - #{vN}) на нужную дату и время. Забронировать <strong>билет на обратный рейс #{v} - #{vN}</strong> вы можете, воспользовавшись формой для онлайн бронирования билетов, либо позвонив по номерам указанным на сайте (в верхнем правом углу). Заблаговременно <strong>купить билет на автобус #{v} - #{vN}</strong> вы можете как из #{iz}, так и из #{izN} позвонив на украинский номер телефона. 
+					p.description__text Бронируя <strong>билет на автобус #{city}</strong> в нашей диспетчерской компании Vseputi, вы можете быть уверенны в том, что в любой ситуации наши операторы в максимально короткое сроки смогут уладить все возникшие проблемы. А так же ответить на все ваши вопросы и скоординировать по месту формирования автобуса.
+					h2.description__title <strong>Автобус #{city}: расписание рейсов</strong>
+					p.description__text <strong>Расписание автобусов #{city}</strong>, насчитывает несколько рейсов различных по времени отправления и прибытия автобуса в пункт назначения. Однако хотим в очередной раз обратить ваше внимание на время прибытия и <strong>время в пути автобуса #{city}</strong>, на сайте указано примерное время, без учета форс-мажорных ситуаций.  На время прохождение таможни как вы понимаете повлиять кардинальным образом нельзя, однако все возможные меры по сокращению времени в пути уже предприняты (наличие документов, профессиональные водители со стажем, максимально короткий путь).
+					h2.description__title <strong>Цена билета на автобус #{city}</strong>
+					p.description__text <strong>Цены на автобус #{city}</strong> вы можете найти на сайте или уточнить у наших менеджеров по указанным телефонам. Вы так же можете заказать услугу обратного звонка, после чего в максимально короткое время с вами свяжется наш оператор, у которого вы можете узнать все интересующие вас вопросы. Для более комфортного и дешевого проезда наша компания предлагает одно, а по некоторым маршрутам два бесплатных багажных места. 
+					p.description__text На все предоставляемые рейсы, в том числе и <strong>#{city}</strong>, предоставляется уникальная дисконтная программа для детей (до 12 лет). Все подробности вы можете узнать у диспетчеров компании Vseputi.
+				a.toggle-link__text(href="javascript:void(0);") Показать все

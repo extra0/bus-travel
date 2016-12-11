@@ -736,6 +736,11 @@
 		letter-spacing: 1px;
 		@include transition(all 0.2s ease-in-out);
 	}
+	&__subtitle {
+		font-size: 20px;
+		margin: 20px 0;
+		color: #2b2f38;
+	}
 	&__main-title {
 		text-shadow: none;
 		color: #333;
