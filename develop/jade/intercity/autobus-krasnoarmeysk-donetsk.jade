@@ -68,10 +68,44 @@ block content
 								.col-xs-12.col-sm-12.text-center
 									p.schedule__text
 										a.btn.schedule__btn(href="#order" fancybox) Забронировать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 14:00 
+										| Автовокзал
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 20:00 
+										| АВ "Южный"
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Ежедневно<br>(без пересадки на БП)<br>≈ 6 часов
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong 400
+										|  грн
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Забронировать
 				br
 				.text-center
 					a.back__link.btn(href="/intercity/autobus-donetsk-krasnoarmeysk") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
-					
 	include ../includes/modules/_share
 	include ../includes/modules/_advantages
 	include ../includes/modules/_attention

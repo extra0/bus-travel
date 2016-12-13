@@ -5,9 +5,6 @@
 .modal#callback
 	form.form__form(action="#")
 		p.modal__title Заказ звонка
-		//- .form__control
-		//- 	i.fa.fa-lg.fa-user
-		//- 	input.form__input(type="text" placeholder="ФИО" name="name" required)
 		.form__control
 			i.fa.fa-lg.fa-phone
 			input.form__input(type="tel" only-numbers placeholder="Номер телефона" name="phone" required)
@@ -23,23 +20,26 @@
 		.form__control
 			i.fa.fa-lg.fa-building
 			input.form__input(type="text" required placeholder="Из какого города Вас забрать ?" name="city-arive")
-		.form__control
-			i.fa.fa-lg.fa-calendar
-			input.form__input(type="text" datepicker required placeholder="Дата отправления" name="date")
-		.form__control
-			i.fa.fa-lg.fa-users
-			select.form__select(name="places")
-				option(value="Не выбрано") Количество мест
-				option(value="1 место") 1 место
-				option(value="2 места") 2 места
-				option(value="3 места") 3 места
-				option(value="4 места") 4 места
-				option(value="5 мест") 5 мест
-				option(value="6 мест") 6 мест
-				option(value="7 мест") 7 мест
-				option(value="8 мест") 8 мест
-				option(value="9 мест") 9 мест
-				option(value="10 мест") 10 мест
+		.row
+			.col-sm-6.col-xs-6.col-xxs-12
+				.form__control
+					i.fa.fa-lg.fa-calendar
+					input.form__input(type="text" datepicker required placeholder="Дата" name="date")
+			.col-sm-6.col-xs-6.col-xxs-12
+				.form__control
+					i.fa.fa-lg.fa-users
+					select.form__select(name="places")
+						option(value="Не выбрано") Кол-во мест
+						option(value="1 место") 1 место
+						option(value="2 места") 2 места
+						option(value="3 места") 3 места
+						option(value="4 места") 4 места
+						option(value="5 мест") 5 мест
+						option(value="6 мест") 6 мест
+						option(value="7 мест") 7 мест
+						option(value="8 мест") 8 мест
+						option(value="9 мест") 9 мест
+						option(value="10 мест") 10 мест
 		.form__control
 			i.fa.fa-lg.fa-user
 			input.form__input(type="text" placeholder="Ф.И.О." name="name" required)
@@ -48,7 +48,9 @@
 			input.form__input(type="tel" only-numbers placeholder="Номер телефона" name="phone" required)
 		.form__control
 			.text-center
-				button.form__submit.btn.modal__submit.order__submit(onclick="yaCounter36626610.reachGoal('Order'); return true;") Забронировать
+				button.form__submit.btn.modal__submit.order__submit(onclick="yaCounter36626610.reachGoal('Order'); return true;")
+					i.fa.fa-check 
+					|  Забронировать
 				input(type="hidden" name="citys")
 				input(type="hidden" name="place-from" place-from)
 				input(type="hidden" name="place-to" place-to)

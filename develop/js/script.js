@@ -5,7 +5,7 @@ $(function() {
 
 	// выбор даты
 	$('[datepicker]').datepicker({
-		format: 'dd.mm.yyyy',
+		format: 'dd MM',
 		startDate: '0d',
 		maxViewMode: 0,
 		language: "ru",
