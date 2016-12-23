@@ -1,5 +1,5 @@
 <?php
-$sendto       = "extra0@mail.ru";
+$sendto   = "extra12319@gmail.com";
 $date 	      = $_POST['date'];
 $time 	      = $_POST['time'];
 $cityDep 	  = $_POST['city-departure'];

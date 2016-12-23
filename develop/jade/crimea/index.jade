@@ -26,9 +26,10 @@ block content
 				h1.main__title.service__main-title Автобусы в Крым
 		.row
 			.col-sm-12.col-xs-12.text-center
-				a.btn(style="margin: 5px" href="#don-anchor" anchor-trigger) Автобус Донецк-Крым-Донецк
-				a.btn(style="margin: 5px" href="#lug-anchor" anchor-trigger) Автобус Луганск-Крым-Луганск
-				a.btn(style="margin: 5px" href="#kiev-anchor" anchor-trigger) Автобус Киев-Крым-Киев
+				a.btn(style="margin: 5px" href="#don-anchor" anchor-trigger) Донецк-Крым-Донецк
+				a.btn(style="margin: 5px" href="#lug-anchor" anchor-trigger) Луганск-Крым-Луганск
+				a.btn(style="margin: 5px" href="#kiev-anchor" anchor-trigger) Киев-Крым-Киев
+				a.btn(style="margin: 5px" href="#dnepr-anchor" anchor-trigger) Днепр-Крым-Днепр
 		br
 		br
 		.row
@@ -270,6 +271,43 @@ block content
 							img.service__img(src="/img/crimea/alushta.jpg", alt="Автобус Киев - Алушта - Киев")
 						.service__block-bottom
 							p.service__subtitle Киев - Алушта - Киев
+		br
+		br
+		br
+		.row
+			.col-sm-12.col-xs-12
+				.main__title.service__main-title.text-left#dnepr-anchor Днепропетровское направление
+		.row
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-dnepropetrovsk-sevastopol")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{dneprSevastopol}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/sevastopol.jpg", alt="Автобус Днепр - Севастополь - Днепр")
+						.service__block-bottom
+							p.service__subtitle Днепр - Севастополь - Днепр
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-dnepropetrovsk-evpatoria")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{dneprEvpat}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/evpatoria.jpg", alt="Автобус Днепр - Евпатория - Днепр")
+						.service__block-bottom
+							p.service__subtitle Днепр - Евпатория - Днепр
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-dnepropetrovsk-simferopol")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{dneprSimferopol}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/simferopol.jpg", alt="Автобус Днепр - Симферополь - Днепр")
+						.service__block-bottom
+							p.service__subtitle Днепр - Симферополь - Днепр
 		include ../includes/modules/_share
 		//- .description
 			.container

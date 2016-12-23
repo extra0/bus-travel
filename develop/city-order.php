@@ -1,5 +1,5 @@
 <?php
-$sendto       = "extra0@mail.ru";
+$sendto   = "extra12319@gmail.com";
 $citys 	      = $_POST['citys'];
 $cityArive 	  = $_POST['city-arive'];
 $placeFrom 	  = $_POST['place-from'];
