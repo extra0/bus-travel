@@ -40,6 +40,41 @@ block content
 									p.schedule__title Отправление
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
+										span.schedule__time 08:00 
+										| Донецк, Крытый рынок
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 08:00 
+										| Гомель, Автовокзал
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Пт<br>≈ 24 часа
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong #{gomPrice}
+										i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Забронировать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
 										span.schedule__time 09:00 
 										| Донецк, Мотель
 						.col-xs-12.col-sm-4
@@ -62,7 +97,7 @@ block content
 									p.schedule__title Стоимость
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
-										strong #{gomPrice}
+										strong 3 700
 										i.fa.fa-rub
 							.row
 								.col-xs-12.col-sm-12.text-center
@@ -79,8 +114,8 @@ block content
 			.toggle-block.toggle-block__text
 				- iz = "Донецка";
 				- izN = "Гомеля";
-				- v = "Донецк";
-				- vN = "Гомель";
+				- v = "Гомель";
+				- vN = "Донецк";
 				h2.description__title <strong>Автобус #{city}</strong>
 				p.description__text Вам нужно быстро, комфортно и недорого <strong>добраться из #{iz} в #{v}</strong>? В этом случае вам подойдут автобусные пассажирские перевозки. Это самый дешевый и достаточно комфортабельный вид транспорта. Наша диспетчерская служба Vseputi предлагает забронировать билеты на <strong>автобус #{city}</strong> по низким ценам на нужное число и удобное для вас время. Новые комфортабельные автобусы и профессиональные водители сделают вашу поездку не только комфортной, но и максимально безопасной. 
 				p.description__text <strong>Маршрут #{city}</strong> проложен по скоростным трассам, что значительно сократит время пребывания в пути. Более того перевозчики предоставляющие транспортные услуги имеют все необходимые документы и разрешения, что так же сократит время прохождения границы и общее время поездки. 

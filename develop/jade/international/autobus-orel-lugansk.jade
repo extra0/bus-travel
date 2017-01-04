@@ -1,17 +1,17 @@
 extends ../_layout
 block append head
-	- var city = "Ливны - Донецк"
+	- var city = "Орел - Луганск"
 	- category = "Международные рейсы"
-	- pageImg = "http://vseputi.com.ua/img/content/city-pattern/donetsk.jpg"
+	- pageImg = "http://vseputi.com.ua/img/content/city-pattern/lugansk.jpg"
 	include ../includes/modules/_meta
 block content
-	.main._donetsk-bg
+	.main._lugansk-bg
 		.container
 			.row
 				.col-sm-12.col-xs-12
 					h1.main__title.no-margin Купить билет на автобус #{city} 
-						span от #{livniDonPrice}
-							i.fa.fa-rub
+						span от #{orelLug}
+						i.fa.fa-rub
 	.container
 		.row
 			.col-sm-12.col-xs-12
@@ -40,64 +40,29 @@ block content
 									p.schedule__title Отправление
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
-										span.schedule__time 16:00 
-										| АВ "Ливны-1"
-						.col-xs-12.col-sm-4
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title Прибытие
-								.col-xs-8.col-sm-12
-									p.schedule__text(place-to)
-										span.schedule__time 07:00 
-										| Крытый рынок 
-						.col-xs-12.col-sm-2
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title В пути
-								.col-xs-8.col-sm-12
-									p.schedule__text Вс<br>≈ 15 часов
-						.col-xs-12.col-sm-2
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title Стоимость
-								.col-xs-8.col-sm-12
-									p.schedule__price(price)
-										strong #{livniDonPrice}
-										i.fa.fa-rub
-							.row
-								.col-xs-12.col-sm-12.text-center
-									p.schedule__text
-										a.btn.schedule__btn(href="#order" fancybox) Забронировать
-					.row(place-parent)
-						.col-xs-12.col-sm-4
-							.row
-								.col-xs-4.visible-xs
-									p.schedule__title Отправление
-								.col-xs-8.col-sm-12
-									p.schedule__text(place-from)
 										span.schedule__time 18:00 
-										| АВ "Ливны-1"
+										| Орел, АВ "Центральный"
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Прибытие
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
-										span.schedule__time 09:00 
-										| АВ "Южный"
+										span.schedule__time 05:00 
+										| Луганск, Автовокзал
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Вт, Пт<br>≈ 15 часов
+									p.schedule__text Вс<br>≈ 11 часов
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Стоимость
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
-										strong 2 300
+										strong #{orelLug}
 										i.fa.fa-rub
 							.row
 								.col-xs-12.col-sm-12.text-center
@@ -105,17 +70,17 @@ block content
 										a.btn.schedule__btn(href="#order" fancybox) Забронировать
 				br
 				.text-center
-					a.back__link.btn(href="/international/autobus-donetsk-livni") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
+					a.back__link.btn(href="/international/autobus-lugansk-orel") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
 	include ../includes/modules/_share
 	include ../includes/modules/_advantages
 	include ../includes/modules/_attention
 	.description
 		.container
 			.toggle-block.toggle-block__text
-				- iz = "Ливны";
-				- izN = "Донецка";
-				- v = "Ливны";
-				- vN = "Донецк";
+				- iz = "Орла";
+				- izN = "Луганска";
+				- v = "Луганск";
+				- vN = "Орел";
 				h2.description__title <strong>Автобус #{city}</strong>
 				p.description__text Вам нужно быстро, комфортно и недорого <strong>добраться из #{iz} в #{v}</strong>? В этом случае вам подойдут автобусные пассажирские перевозки. Это самый дешевый и достаточно комфортабельный вид транспорта. Наша диспетчерская служба Vseputi предлагает забронировать билеты на <strong>автобус #{city}</strong> по низким ценам на нужное число и удобное для вас время. Новые комфортабельные автобусы и профессиональные водители сделают вашу поездку не только комфортной, но и максимально безопасной. 
 				p.description__text <strong>Маршрут #{city}</strong> проложен по скоростным трассам, что значительно сократит время пребывания в пути. Более того перевозчики предоставляющие транспортные услуги имеют все необходимые документы и разрешения, что так же сократит время прохождения границы и общее время поездки. 

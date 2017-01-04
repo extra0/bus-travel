@@ -28,7 +28,7 @@ $(function() {
 		todayHighlight: true
 	});
 
-	
+
 	// только цифры для телефонов
 	$('[only-numbers]').bind("change keyup input click", function() {
 		if (this.value.match(/[^0-9\+]/g, '')) {
@@ -200,10 +200,10 @@ $(function() {
 			quantity = $(this).parents('.form__form').find('input[name="quantity"]'),
 			nameVal = $(this).parents('.form__form').find('input[name="name"]').val().length,
 			telVal = $(this).parents('.form__form').find('input[name="phone"]').val().length;
-			dateVal = $(this).parents('.form__form').find('input[name="date"]').val().length;
-			cityDepVal = $(this).parents('.form__form').find('input[name="city-departure"]').val().length;
-			cityArrVal = $(this).parents('.form__form').find('input[name="city-arrive"]').val().length;
-			quantityVal = $(this).parents('.form__form').find('input[name="quantity"]').val().length;
+		dateVal = $(this).parents('.form__form').find('input[name="date"]').val().length;
+		cityDepVal = $(this).parents('.form__form').find('input[name="city-departure"]').val().length;
+		cityArrVal = $(this).parents('.form__form').find('input[name="city-arrive"]').val().length;
+		quantityVal = $(this).parents('.form__form').find('input[name="quantity"]').val().length;
 		if ((nameVal >= 2) && (telVal >= 10) && (dateVal >= 6) && (cityDepVal >= 5) && (cityArrVal >= 5) && (quantityVal >= 1)) {
 			$.ajax({
 				type: 'POST',
@@ -218,7 +218,7 @@ $(function() {
 				}
 			});
 		} else {
-			if (nameVal < 2) { 
+			if (nameVal < 2) {
 				name.addClass('error');
 			}
 			if (telVal < 10) {
@@ -242,15 +242,20 @@ $(function() {
 
 
 	// Up to Like
-	(function(w,doc) {
-		if (!w.__utlWdgt ) {
-		    w.__utlWdgt = true;
-		    var d = doc, s = d.createElement('script'), g = 'getElementsByTagName';
-		    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
-		    s.src = ('https:' == w.location.protocol ? 'https' : 'http')  + '://w.uptolike.com/widgets/v1/uptolike.js';
-		    var h=d[g]('body')[0];
-		    h.appendChild(s);
-		}})(window,document);
+	(function(w, doc) {
+		if (!w.__utlWdgt) {
+			w.__utlWdgt = true;
+			var d = doc,
+				s = d.createElement('script'),
+				g = 'getElementsByTagName';
+			s.type = 'text/javascript';
+			s.charset = 'UTF-8';
+			s.async = true;
+			s.src = ('https:' == w.location.protocol ? 'https' : 'http') + '://w.uptolike.com/widgets/v1/uptolike.js';
+			var h = d[g]('body')[0];
+			h.appendChild(s);
+		}
+	})(window, document);
 
 
 	$('.form__block input').keyup(function() {
@@ -264,10 +269,10 @@ $(function() {
 			wayBlock = $('.popular__block');
 
 		// проверка на ввод данных
-		$('.form__block input').each(function(){
+		$('.form__block input').each(function() {
 			if ($(this).val() == '') {
 				$(this).addClass('error');
-				return	false;
+				return false;
 			}
 		});
 
@@ -288,50 +293,59 @@ $(function() {
 	});
 
 	// показываем кнопку вверх
-    $(function () {
-        $.fn.scrollToTop = function () {
-            if ($(window).scrollTop() >= "250")
-                $(this).addClass("active")
-            var scrollDiv = $(this);
-            $(window).scroll(function () {
-                if ($(window).scrollTop() <= "250")
-                    $(scrollDiv).removeClass("active")
-                else
-                    $(scrollDiv).addClass("active")
-            });
-            $(this).click(function () {
-                $("html, body").animate({
-                    scrollTop: 0
-                }, "slow")
-            })
-        }
-    });
+	$(function() {
+		$.fn.scrollToTop = function() {
+			if ($(window).scrollTop() >= "250")
+				$(this).addClass("active")
+			var scrollDiv = $(this);
+			$(window).scroll(function() {
+				if ($(window).scrollTop() <= "250")
+					$(scrollDiv).removeClass("active")
+				else
+					$(scrollDiv).addClass("active")
+			});
+			$(this).click(function() {
+				$("html, body").animate({
+					scrollTop: 0
+				}, "slow")
+			})
+		}
+	});
 
-    // вызов функции якоря
-    $(function () {
-        $(".toTop").scrollToTop();
-    });
+	// вызов функции якоря
+	$(function() {
+		$(".toTop").scrollToTop();
+	});
 
-    // открываем моб меню
-    $('.main-menu__mob-btn').on('click', function(){
-    	$(this).toggleClass('active');
-    	$('.main-menu__list').slideToggle(200);
-    });
+	// открываем моб меню
+	$('.main-menu__mob-btn').on('click', function() {
+		$(this).toggleClass('active');
+		$('.main-menu__list').slideToggle(200);
+	});
 
-    // плавный скролл к якорю
-    $('[anchor-trigger]').bind("click", function(e) {
-    	var anchor = $(this);
-    	$('html, body').stop().animate({
-    		scrollTop: $(anchor.attr('href')).offset().top
-    	}, 1000);
-    	e.preventDefault();
-    });
+	// плавный скролл к якорю
+	$('[anchor-trigger]').bind("click", function(e) {
+		var anchor = $(this);
+		$('html, body').stop().animate({
+			scrollTop: $(anchor.attr('href')).offset().top
+		}, 1000);
+		e.preventDefault();
+	});
 
-    // collapse
-    $('[data-collapse]').on('click', function(){
-    	$(this).toggleClass('active');
-    	$('#'+ $(this).attr('data-collapse') +'').slideToggle(300);
-    	return false;
-    });
+	// collapse
+	$('[data-collapse]').on('click', function() {
+		$(this).toggleClass('active');
+		$('#' + $(this).attr('data-collapse') + '').slideToggle(300);
+		return false;
+	});
+
+	// autocomplite
+	var availableTags = [
+		"Донецк", "Минск", "Гомель", "Могилёв", "Артемовск", "Белгород", "Курск", "Орел", "Тула", "Москва", "Санкт-Петербург", "Горловка", "Алушта", "Феодосия", "Керчь", "Ростов", "Севастополь", "Симферополь", "Славянск на Кубани", "Ялта", "Адлер", "Кисловодск", "Ставрополь", "Волгоград", "Таганрог", "Туапсе", "Геленджик", "Сочи", "Краснодар", "Анапа", "Брянск", "Павловск", "Воронеж", "Ливны", "Нижний Новгород", "Великий Новгород", "Ереван", "Тбилиси", "Саратов", "Самара", "Тольятти", "Елец", "Липецк", "Тверь", "Днепропетровск", "Евпатория", "Киев", "Джубга", "Лазаревский", "Константиновка", "Краматорск", "Луганск", "Славянск", "Харьков", "Борисполь", "Димитрово", "Доброполье", "Изюм", "Красноармейск", "Красноград", "Курахово", "Лубны", "Мариуполь", "Новомосковск", "Павлоград", "Пирятин", "Полтава", "Селидово", "Волноваха", "Запорожье", "Одесса", "Бердянск"
+	];
+	$(".main__form .form__input").autocomplete({
+		source: availableTags,
+		minLength: 1
+	});
 
 });
