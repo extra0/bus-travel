@@ -271,6 +271,12 @@
   <loc>http://vseputi.com.ua/international/autobus-kramatorsk-sankt-peterburg</loc>
 </url>
 <url>
+  <loc>http://vseputi.com.ua/international/autobus-lugansk-sankt-peterburg</loc>
+</url>
+<url>
+  <loc>http://vseputi.com.ua/international/autobus-lugansk-moskva</loc>
+</url>
+<url>
   <loc>http://vseputi.com.ua/international/autobus-lugansk-kerch</loc>
 </url>
 <url>
@@ -284,6 +290,12 @@
 </url>
 <url>
   <loc>http://vseputi.com.ua/international/autobus-lugansk-sevastopol</loc>
+</url>
+<url>
+  <loc>http://vseputi.com.ua/international/autobus-lugansk-orel</loc>
+</url>
+<url>
+  <loc>http://vseputi.com.ua/international/autobus-lugansk-bryansk</loc>
 </url>
 <url>
   <loc>http://vseputi.com.ua/international/autobus-slavyansk-belgorod</loc>
@@ -499,6 +511,12 @@
   <loc>http://vseputi.com.ua/international/autobus-rostov-kiev</loc>
 </url>
 <url>
+  <loc>http://vseputi.com.ua/international/autobus-sankt-peterburg-lugansk</loc>
+</url>
+<url>
+  <loc>http://vseputi.com.ua/international/autobus-moskva-lugansk</loc>
+</url>
+<url>
   <loc>http://vseputi.com.ua/international/autobus-kerch-lugansk</loc>
 </url>
 <url>
@@ -515,6 +533,12 @@
 </url>
 <url>
   <loc>http://vseputi.com.ua/international/autobus-sevastopol-lugansk</loc>
+</url>
+<url>
+  <loc>http://vseputi.com.ua/international/autobus-orel-lugansk</loc>
+</url>
+<url>
+  <loc>http://vseputi.com.ua/international/autobus-bryansk-lugansk</loc>
 </url>
 <url>
   <loc>http://vseputi.com.ua/international/autobus-sochi-kharkov</loc>
@@ -754,6 +778,12 @@
   <loc>http://vseputi.com.ua/international/autobus-donetsk-gomel</loc>
 </url>
 <url>
+  <loc>http://vseputi.com.ua/international/autobus-lugansk-minsk</loc>
+</url>
+<url>
+  <loc>http://vseputi.com.ua/international/autobus-lugansk-gomel</loc>
+</url>
+<url>
   <loc>http://vseputi.com.ua/international/autobus-minsk-donetsk</loc>
 </url>
 <url>
@@ -761,6 +791,12 @@
 </url>
 <url>
   <loc>http://vseputi.com.ua/international/autobus-mogilev-donetsk</loc>
+</url>
+<url>
+  <loc>http://vseputi.com.ua/international/autobus-minsk-lugansk</loc>
+</url>
+<url>
+  <loc>http://vseputi.com.ua/international/autobus-gomel-lugansk</loc>
 </url>
 <url>
   <loc>http://vseputi.com.ua/services/transfer</loc>
