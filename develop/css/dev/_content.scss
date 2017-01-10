@@ -28,7 +28,7 @@
 	position: relative;
 	&:before {
 		content: '';
-		background: rgba(0,0,0, 0.45);
+		background: rgba(0,0,0, 0.2);
 		@include position(absolute, 0 null null 0);
 		width: 100%;
 		height: 100%;
@@ -271,7 +271,7 @@
 		width: 100%;
 		&:before {
 			content: '';
-			background: rgba(0,0,0, 0.2);
+			background: rgba(0,0,0, 0.4);
 			@include position(absolute, 0 null null 0);
 			width: 100%;
 			height: 100%;
@@ -284,7 +284,7 @@
 			}
 			&:before {
 				content: '';
-				background: rgba(0,0,0, 0.4);
+				background: rgba(0,0,0, 0.6);
 				@include position(absolute, 0 null null 0);
 				width: 100%;
 				height: 100%;
