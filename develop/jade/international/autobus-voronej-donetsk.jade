@@ -41,6 +41,41 @@ block content
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
 										span.schedule__time 18:00 
+										| ЖД "Воронеж 1"
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 08:00 
+										| АВ "Южный"
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Ежедневно<br>≈ 14 часов
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong #{voronejDon}
+										i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Забронировать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 18:00 
 										| Автостанция
 						.col-xs-12.col-sm-4
 							.row
@@ -62,7 +97,7 @@ block content
 									p.schedule__title Стоимость
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
-										strong #{voronejDon}
+										strong 1 500
 										i.fa.fa-rub
 							.row
 								.col-xs-12.col-sm-12.text-center
@@ -131,4 +166,4 @@ block content
 				h2.description__title  Цена билета на автобус #{city} 
 				p.description__text  Цены на автобус #{city}  вы можете найти на сайте или уточнить у наших менеджеров по указанным телефонам. Вы так же можете заказать услугу обратного звонка, после чего в максимально короткое время с вами свяжется наш оператор, у которого вы можете узнать все интересующие вас вопросы. Для более комфортного и дешевого проезда наша компания предлагает одно, а по некоторым маршрутам два бесплатных багажных места. 
 				p.description__text На все предоставляемые рейсы, в том числе и  #{city} , предоставляется уникальная дисконтная программа для детей (до 12 лет). Все подробности вы можете узнать у диспетчеров компании Vseputi.
-			a.toggle-link__text(href="javascript:void(0);") Показать все
+			

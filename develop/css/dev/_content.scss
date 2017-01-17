@@ -432,10 +432,11 @@
 	background: #f5f5f5;
 	position: relative;
 	&__text {
-		font-size: 16px;
+		font-size: 15px;
+		line-height: normal;
 	}
 	&__title {
-		font-size: 20px;
+		font-size: 18px;
 	}
 }
 // популярные маршруты
@@ -577,8 +578,6 @@
 .toggle {
 	&-block {
 		@include transition(all 0.2s ease-in-out);
-		max-height: 290px;
-		overflow: hidden;
 		position: relative;
 		&.active {
 			max-height: 5000px;
