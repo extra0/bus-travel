@@ -1,6 +1,6 @@
 extends ../_layout
 block append head
-	- var city = "Орел - Луганск"
+	- var city = "Курск-Луганск"
 	- category = "Международные рейсы"
 	- pageImg = "http://vseputi.com.ua/img/content/city-pattern/lugansk.jpg"
 	include ../includes/modules/_meta
@@ -10,7 +10,7 @@ block content
 			.row
 				.col-sm-12.col-xs-12
 					h1.main__title.no-margin Купить билет на автобус #{city} 
-						span от #{orelLug}
+						span от #{kurskLug}
 						i.fa.fa-rub
 	.container
 		.row
@@ -40,29 +40,29 @@ block content
 									p.schedule__title Отправление
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
-										span.schedule__time 17:00 
-										| ул. Автовокзальная 1
+										span.schedule__time 19:00 
+										| Привокзальная пл. 1, маг. "Евросеть"
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Прибытие
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
-										span.schedule__time 06:00 
+										span.schedule__time 05:00 
 										| Автовокзал
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Ср, Сб<br>≈ 13 часов
+									p.schedule__text Ср, Сб<br>≈ 10 часов
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Стоимость
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
-										strong #{orelLug}
+										strong #{kurskLug}
 										i.fa.fa-rub
 							.row
 								.col-xs-12.col-sm-12.text-center
@@ -70,17 +70,17 @@ block content
 										a.btn.schedule__btn(href="#order" fancybox) Забронировать
 				br
 				.text-center
-					a.back__link.btn(href="/international/autobus-lugansk-orel") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
+					a.back__link.btn(href="/international/autobus-lugansk-kursk") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
 	include ../includes/modules/_share
 	include ../includes/modules/_advantages
 	include ../includes/modules/_attention
 	.description
 		.container
 			.toggle-block__text
-				- iz = "Орла";
+				- iz = "Курска";
 				- izN = "Луганска";
 				- v = "Луганск";
-				- vN = "Орел";
+				- vN = "Курск";
 				h2.description__title  Автобус #{city} 
 				p.description__text Вам нужно быстро, комфортно и недорого  добраться из #{iz} в #{v} ? В этом случае вам подойдут автобусные пассажирские перевозки. Это самый дешевый и достаточно комфортабельный вид транспорта. Наша диспетчерская служба Vseputi предлагает забронировать билеты на  автобус #{city}  по низким ценам на нужное число и удобное для вас время. Новые комфортабельные автобусы и профессиональные водители сделают вашу поездку не только комфортной, но и максимально безопасной. 
 				p.description__text  Маршрут #{city}  проложен по скоростным трассам, что значительно сократит время пребывания в пути. Более того перевозчики предоставляющие транспортные услуги имеют все необходимые документы и разрешения, что так же сократит время прохождения границы и общее время поездки. 
