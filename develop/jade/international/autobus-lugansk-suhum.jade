@@ -1,6 +1,8 @@
 extends ../_layout
 block append head
-	- var city = "Луганск-Сухум"
+	- ot = "Луганск"
+	- to = "Сухум"
+	- city = ot +' - '+ to
 	- category = "Международные рейсы"
 	- pageImg = "http://vseputi.com.ua/img/content/main-pattern.jpg"
 	include ../includes/modules/_meta
@@ -19,20 +21,20 @@ block content
 				h2.schedule__main-title
 					i.fa.fa-table
 					| Расписание автобусов 
-					span(citys) Луганск-Сухум (через Гагра, Новый Афон)
+					span(citys) #{city} (через Гагра, Новый Афон)
 	block moskow-way
 		.schedule
 			.container
 				.schedule__section
 					.row.hidden-xs
 						.col-sm-4
-							p.schedule__title Отправление
+							p.schedule__title Отправление (#{ot})
 						.col-sm-4
-							p.schedule__title Прибытие
+							p.schedule__title Прибытие (#{to})
 						.col-sm-2
 							p.schedule__title В пути
 						.col-sm-2
-							p.schedule__title Стоимость
+							p.schedule__title Стоимость билетов
 					.row(place-parent)
 						.col-xs-12.col-sm-4
 							.row

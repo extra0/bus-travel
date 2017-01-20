@@ -1,6 +1,8 @@
 extends ../_layout
 block append head
-	- var city = "Донецк - Москва"
+	- ot = "Донецк"
+	- to = "Москва"
+	- city = ot +' - '+ to
 	- category = "Международные рейсы"
 	- pageImg = "http://vseputi.com.ua/img/content/city-pattern/moscow.jpg"
 	include ../includes/modules/_meta
@@ -28,13 +30,13 @@ block content
 				.schedule__section
 					.row.hidden-xs
 						.col-sm-4
-							p.schedule__title Отправление
+							p.schedule__title Отправление (#{ot})
 						.col-sm-4
-							p.schedule__title Прибытие
+							p.schedule__title Прибытие (#{to})
 						.col-sm-2
 							p.schedule__title В пути
 						.col-sm-2
-							p.schedule__title Стоимость
+							p.schedule__title Стоимость билетов
 					.row(place-parent)
 						.col-xs-12.col-sm-4
 							.row
@@ -43,7 +45,7 @@ block content
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
 										span.schedule__time 06:30 
-										| Донецк, АВ "Южный"
+										| район Южного АВ
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
@@ -51,7 +53,7 @@ block content
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
 										span.schedule__time 04:30 
-										| Москва, ст. м. Щелковская
+										| ст. м. Щелковская
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
@@ -184,7 +186,7 @@ block content
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
 										span.schedule__time 09:00 
-										| АВ "Южный"
+										| район Южного АВ
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
@@ -289,7 +291,7 @@ block content
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
 										span.schedule__time 13:00 
-										| АВ "Южный"
+										| район Южного АВ
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
@@ -359,7 +361,7 @@ block content
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
 										span.schedule__time 14:30 
-										| АВ "Южный"
+										| район Южного АВ
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
@@ -394,7 +396,7 @@ block content
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
 										span.schedule__time 15:30 
-										| АВ "Южный", платформа №6
+										| район Южного АВ, платформа №6
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs

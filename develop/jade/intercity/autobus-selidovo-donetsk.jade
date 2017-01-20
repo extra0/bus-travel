@@ -1,6 +1,8 @@
 extends ../_layout
 block append head
-	- var city = "Селидово - Донецк"
+	- ot = "Селидово"
+	- to = "Донецк"
+	- city = ot +' - '+ to
 	- category = "Междугородние перевозки"
 	- pageImg = "http://vseputi.com.ua/img/content/city-pattern/donetsk.jpg"
 	include ../includes/modules/_meta
@@ -26,13 +28,13 @@ block content
 				.schedule__section
 					.row.hidden-xs
 						.col-sm-4
-							p.schedule__title Отправление
+							p.schedule__title Отправление (#{ot})
 						.col-sm-4
-							p.schedule__title Прибытие
+							p.schedule__title Прибытие (#{to})
 						.col-sm-2
 							p.schedule__title В пути
 						.col-sm-2
-							p.schedule__title Стоимость
+							p.schedule__title Стоимость билетов
 					.row(place-parent)
 						.col-xs-12.col-sm-4
 							.row
@@ -49,7 +51,7 @@ block content
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
 										span.schedule__time 21:00 
-										| АВ "Южный"
+										| район Южного АВ
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs

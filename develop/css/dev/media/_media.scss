@@ -97,6 +97,10 @@
 		}
 	}
 	.schedule {
+		&__section {
+			padding: 0;
+			box-shadow: none;
+		}
 		&__main-title {
 			font-size: 18px;
 		}
