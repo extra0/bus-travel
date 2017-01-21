@@ -13,13 +13,20 @@
 				button.form__submit.btn.modal__submit.callback Перезвонить
 .modal#order
 	form.form__form(action="#")
-		p.modal__title Забронировать места
+		p.modal__title Забронировать билет
 		.form__control.xxs-height
 			p.modal__text(place-from)
 			p.modal__text(place-to)
 		.form__control
 			i.fa.fa-lg.fa-building
 			input.form__input(type="text" required placeholder="Из какого города Вас забрать ?" name="city-arive")
+		if (transfer == true)
+			.form__control
+				label.form__label--checkbox
+					input(type="checkbox" name="transfer" value="transfer")
+					|  Мне нужен 
+					a(href="/services/transfer" target="_blank" rel="noopener") трансфер
+					|  по Крыму.
 		.row
 			.col-sm-6.col-xs-6.col-xxs-12
 				.form__control

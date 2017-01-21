@@ -182,6 +182,24 @@
 		font-size: 18px;
 		font-weight: bold;
 		display: block;
+		&--checkbox {
+			cursor: pointer;
+			input {
+				width: 16px;
+				height: 16px;
+				vertical-align: top;
+				position: relative;
+				top: 2px;
+				margin-right: 3px;
+			}
+			a {
+				color: $green;
+				text-decoration: underline;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
 	}
 	&__result {
 		padding: 5px 10px 10px 10px;
@@ -380,11 +398,10 @@
 		padding: 2px 14px 3px 14px;
 		position: relative;
 		color: #fff;
-		font-size: 26px;
+		font-size: 24px;
 		background: $green;
 		display: inline-block;
 		margin: 0;
-		font-weight: bold;
 		&-wrapper {
 			@include position(absolute, null null 0 0);
 			text-align: center;
