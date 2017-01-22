@@ -1,13 +1,17 @@
-RewriteEngine on
+RewriteEngine On
 RewriteBase /
+RewriteCond %{HTTP:SSL} !=1 [NC]
+RewriteRule ^(.*) https://vseputi.com.ua/$1 [L,R=301]
+
+
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
-RewriteRule ^([^.]+)\.html$ http://vseputi.com.ua/ [R=301,L]
+RewriteRule ^([^.]+)\.html$ https://vseputi.com.ua/ [R=301,L]
 RewriteCond %{REQUEST_URI} !(\.[^./]+)$
 RewriteCond %{REQUEST_fileNAME} !-d
 RewriteCond %{REQUEST_fileNAME} !-f
 RewriteRule (.*) /$1.html [L]
 
 RewriteCond %{HTTP_HOST} ^www\.(.*)$
-RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
+RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
 
 ErrorDocument 404 /404.html

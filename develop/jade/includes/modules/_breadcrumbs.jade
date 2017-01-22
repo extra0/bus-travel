@@ -1,11 +1,14 @@
 .breadcrumbs.hidden-xs
-	ul.breadcrumbs__list(itemscope itemtype="http://data-vocabulary.org/Breadcrumb")
+	ul.breadcrumbs__list(itemscope itemtype="https://data-vocabulary.org/Breadcrumb")
 		li.breadcrumbs__item
-			a.breadcrumbs__link(href="/" itemprop="url" title="Главная") Главная
+			a.breadcrumbs__link(href="/" itemprop="url" title="Главная") 
+				span(itemprop="title") Главная
 		li.breadcrumbs__item
 			if (category == 'Международные рейсы')
-				a.breadcrumbs__link(title="#{category}" itemprop="url" href="/international/") #{category}
+				a.breadcrumbs__link(title="#{category}" itemprop="url" href="/international/")
+					span(itemprop="title") #{category}
 			else
-				a.breadcrumbs__link(title="#{category}" itemprop="url" href="/intercity/") #{category}
+				a.breadcrumbs__link(title="#{category}" itemprop="url" href="/intercity/")
+					span(itemprop="title") #{category}
 		li.breadcrumbs__item
 			span.breadcrumbs__link.current Автобус #{city}
