@@ -23,7 +23,8 @@ block content
 				.breadcrumbs.hidden-xs
 					ul.breadcrumbs__list(itemscope itemtype="https://data-vocabulary.org/Breadcrumb")
 						li.breadcrumbs__item
-							a.breadcrumbs__link(href="/" itemprop="url" title="Главная") Главная
+							a.breadcrumbs__link(href="/" itemprop="url" title="Главная")
+								span(itemprop="title") Главная
 						li.breadcrumbs__item
 							span.breadcrumbs__link.current Международные рейсы
 		.row
@@ -42,7 +43,7 @@ block content
 										i.fa.fa-lg.fa-map-o
 										input.form__input(type="text" required placeholder="Куда" cityTo)
 								.col-md-2.col-sm-4
-									button.form__submit.btn.form__submit-search.search(type="submit") 
+									button.form__submit.btn.form__submit-search.search.btn-red(type="submit") 
 										i.fa.fa-search
 										|  Найти
 					.form__result
