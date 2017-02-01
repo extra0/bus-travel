@@ -47,6 +47,24 @@
 		margin-top: 15px;
 		font-weight: normal;
 	}
+	&__hotline {
+		background: #cc0e0e;
+		padding: 3px 10px 6px 10px;
+		color: #fff;
+		font-size: 20px;
+		display: inline-block;
+		margin: 0 10px;
+		&-phone {
+			display: inline-block;
+			color: #fff;
+			font-weight: bold;
+			&:hover,
+			&:focus {
+				text-decoration: none;
+				color: #fff;
+			}
+		}
+	}
 }
 .main-menu {
 	background: #1B8C2B;
