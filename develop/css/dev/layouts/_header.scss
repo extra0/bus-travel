@@ -52,9 +52,11 @@
 		padding: 3px 10px 6px 10px;
 		color: #fff;
 		font-size: 20px;
-		display: inline-block;
-		margin: 0 10px;
-		&-phone {
+		&-text {
+			display: inline-block;
+			margin: 0 10px;
+		}
+		&-number {
 			display: inline-block;
 			color: #fff;
 			font-weight: bold;
