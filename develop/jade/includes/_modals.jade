@@ -2,15 +2,6 @@
 .toTop
 	i.fa.fa-chevron-up
 //- конец кнопки
-.modal#callback
-	form.form__form(action="#")
-		p.modal__title Заказ звонка
-		.form__control
-			i.fa.fa-lg.fa-phone
-			input.form__input(type="tel" only-numbers placeholder="Номер телефона" name="phone" required)
-		.form__control
-			.text-center
-				button.form__submit.btn.modal__submit.callback Перезвонить
 .modal#order
 	form.form__form(action="#")
 		p.modal__title Забронировать билет
@@ -20,6 +11,7 @@
 		.form__control
 			i.fa.fa-lg.fa-building
 			input.form__input(type="text" required placeholder="Из какого города Вас забрать ?" name="city-arive")
+			i.fa.fa-lg.fa-warning
 		if (transfer == true)
 			.form__control
 				label.form__label--checkbox
@@ -31,7 +23,7 @@
 			.col-sm-6.col-xs-6.col-xxs-12
 				.form__control
 					i.fa.fa-lg.fa-calendar
-					input.form__input(type="text" datepicker required placeholder="Дата" name="date")
+					input.form__input(type="text" datepicker placeholder="Дата" name="date")
 			.col-sm-6.col-xs-6.col-xxs-12
 				.form__control
 					i.fa.fa-lg.fa-users
@@ -50,9 +42,11 @@
 		.form__control
 			i.fa.fa-lg.fa-user
 			input.form__input(type="text" placeholder="Ф.И.О." name="name" required)
+			i.fa.fa-lg.fa-warning
 		.form__control
 			i.fa.fa-lg.fa-phone
 			input.form__input(type="tel" only-numbers placeholder="Номер телефона" name="phone" required)
+			i.fa.fa-lg.fa-warning
 		.form__control
 			.text-center
 				button.form__submit.btn.modal__submit.order__submit(onclick="yaCounter36626610.reachGoal('Order'); return true;")

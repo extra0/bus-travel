@@ -129,14 +129,14 @@
 		font-size: 15px;
 		padding: 0 10px 0 32px;
 		box-shadow: inset 0 4px 7px -7px rgba(0,0,0,0.5);
-		border: 2px solid #ccc;
+		border: 1px solid #ccc;
 		font-family: PT Sans;
 		@include transition(all 0.2s ease-in-out);
 		&.error {
-			border: 2px solid #f20;
+			border: 1px solid #f20;
 		}
 		&:focus {
-			border: 2px solid #1B8C2B;
+			border: 1px solid #1B8C2B;
 		}
 	}
 	&__textarea {
@@ -152,10 +152,10 @@
 		font-size: 15px;
 		font-family: PT Sans;
 		box-shadow: inset 0 4px 7px -7px rgba(0,0,0,0.5);
-		border: 2px solid #ccc;
+		border: 1px solid #ccc;
 		@include transition(all 0.2s ease-in-out);
 		&:focus {
-			border: 2px solid #1B8C2B;
+			border: 1px solid #1B8C2B;
 		}
 	}
 	&__submit {
@@ -176,6 +176,11 @@
 		& > .fa {
 			color: #444;
 			@include position(absolute, 13px null null 8px);
+		}
+		& > .fa.fa-warning {
+			color: #f20;
+			@include position(absolute, 13px 8px null auto);
+			display: none;
 		}
 	}
 	&__label {

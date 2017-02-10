@@ -323,7 +323,7 @@
 	.main-menu {
 		&__link {
 			font-size: 16px;
-			padding: 13px 6px;
+			padding: 13px 9px;
 		}
 	}
 	.service {
@@ -462,5 +462,10 @@
 	}
 	.xxs-height {
 		display: none;
+	}
+}
+@media (max-width: 991px) {
+	.container {
+		width: auto;
 	}
 }

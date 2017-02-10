@@ -57,6 +57,7 @@ $(function() {
 	// убираем класс ошибки с инпутов
 	$('.form__input').keyup(function() {
 		$(this).removeClass('error');
+		$(this).parent().find('.fa-warning').hide();
 	});
 
 	// открываем список городов
@@ -90,38 +91,6 @@ $(function() {
 	// обработка письма обратного звонка
 	$(".form__form").submit(function() {
 		return false;
-	});
-
-	// обратная связь
-	$(".callback").on("click", function() {
-		var tel = $(this).parents('.form__form').find('input[name="phone"]'),
-			// name = $(this).parents('.form__form').find('input[name="name"]'),
-			// nameVal = $(this).parents('.form__form').find('input[name="name"]').val().length,
-			telVal = $(this).parents('.form__form').find('input[name="phone"]').val().length;
-		// обратный звонок
-		// if ((nameVal >= 2) && (telVal >= 10)) {
-		if ((telVal >= 10)) {
-			$.ajax({
-				type: 'POST',
-				url: '/callback.php',
-				data: $(this).parents('.form__form').serialize(),
-				success: function(data) {
-					if (data == "true") {
-						$.fancybox.close();
-						$.fancybox($('#thanks'));
-						setTimeout("$.fancybox.close()", 12000);
-					}
-				}
-			});
-		} else {
-			// if (nameVal < 2) {
-			// 	name.addClass('error');
-			// }
-			if (telVal < 10) {
-				tel.addClass('error');
-			}
-		}
-
 	});
 
 	// форма сотрудничества
@@ -180,12 +149,15 @@ $(function() {
 		} else {
 			if (nameVal < 2) {
 				name.addClass('error');
+				name.next().show();
 			}
 			if (telVal < 10) {
 				tel.addClass('error');
+				tel.next().show();
 			}
 			if (cityAriveVal < 2) {
 				cityArive.addClass('error');
+				cityArive.next().show();
 			}
 		}
 	});
