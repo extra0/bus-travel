@@ -1,5 +1,9 @@
 User-agent: *
-Host: https://vseputi.com.ua
 Disallow: /js
-
 Sitemap: https://vseputi.com.ua/sitemap_index.xml
+
+
+User-agent: Yandex
+Disallow: /js
+Sitemap: https://vseputi.com.ua/sitemap_index.xml
+Host: https://vseputi.com.ua
