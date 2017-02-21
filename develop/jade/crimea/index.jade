@@ -27,10 +27,10 @@ block content
 				h1.main__title.service__main-title Автобусы в Крым
 		.row
 			.col-sm-12.col-xs-12.text-center
-				a.btn(style="margin: 5px" href="#don-anchor" anchor-trigger) Донецк-Крым-Донецк
-				a.btn(style="margin: 5px" href="#lug-anchor" anchor-trigger) Луганск-Крым-Луганск
-				a.btn(style="margin: 5px" href="#kiev-anchor" anchor-trigger) Киев-Крым-Киев
-				a.btn(style="margin: 5px" href="#dnepr-anchor" anchor-trigger) Днепр-Крым-Днепр
+				a.btn.btn-red(style="margin: 5px" href="#don-anchor" anchor-trigger) Донецк-Крым-Донецк
+				a.btn.btn-red(style="margin: 5px" href="#lug-anchor" anchor-trigger) Луганск-Крым-Луганск
+				a.btn.btn-red(style="margin: 5px" href="#kiev-anchor" anchor-trigger) Киев-Крым-Киев
+				a.btn.btn-red(style="margin: 5px" href="#dnepr-anchor" anchor-trigger) Днепр-Крым-Днепр
 		br
 		br
 		.row
@@ -240,7 +240,7 @@ block content
 					a(href="/international/autobus-kiev-sevastopol")
 						.service__block-top
 							.ways__price-wrapper.text-right
-								p.ways__price от #{kievKrimPrice} грн
+								p.ways__price от #{kievSevas} грн
 							img.service__img(src="/img/crimea/sevastopol.jpg", alt="Автобус Киев - Севастополь - Киев")
 						.service__block-bottom
 							p.service__subtitle Киев - Севастополь - Киев
@@ -249,7 +249,7 @@ block content
 					a(href="/international/autobus-kiev-simferopol")
 						.service__block-top
 							.ways__price-wrapper.text-right
-								p.ways__price от #{kievKrimPrice} грн
+								p.ways__price от #{kievSimf} грн
 							img.service__img(src="/img/crimea/simferopol.jpg", alt="Автобус Киев - Симферополь - Киев")
 						.service__block-bottom
 							p.service__subtitle Киев - Симферополь - Киев
@@ -258,7 +258,7 @@ block content
 					a(href="/international/autobus-kiev-yalta")
 						.service__block-top
 							.ways__price-wrapper.text-right
-								p.ways__price от #{kievKrimPrice} грн
+								p.ways__price от #{kievYalta} грн
 							img.service__img(src="/img/crimea/yalta.jpg", alt="Автобус Киев - Ялта - Киев")
 						.service__block-bottom
 							p.service__subtitle Киев - Ялта - Киев
@@ -268,10 +268,47 @@ block content
 					a(href="/international/autobus-kiev-alushta")
 						.service__block-top
 							.ways__price-wrapper.text-right
-								p.ways__price от #{kievKrimPrice} грн
+								p.ways__price от #{kievAlushta} грн
 							img.service__img(src="/img/crimea/alushta.jpg", alt="Автобус Киев - Алушта - Киев")
 						.service__block-bottom
 							p.service__subtitle Киев - Алушта - Киев
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-kiev-djankoy")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{kievDjankoy} грн
+							img.service__img(src="/img/crimea/djankoy.jpg", alt="Автобус Киев - Джанкой - Киев")
+						.service__block-bottom
+							p.service__subtitle Киев - Джанкой - Киев
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-kiev-kerch")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{kievKerch} грн
+							img.service__img(src="/img/crimea/kerch.jpg", alt="Автобус Киев - Керчь - Киев")
+						.service__block-bottom
+							p.service__subtitle Киев - Керчь - Киев
+		.row
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-kiev-feodisiya")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{kievFeod} грн
+							img.service__img(src="/img/crimea/feodisiya.jpg", alt="Автобус Киев - Феодосия - Киев")
+						.service__block-bottom
+							p.service__subtitle Киев - Феодосия - Киев
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-kiev-evpatoria")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{kievEvpat} грн
+							img.service__img(src="/img/crimea/evpatoria.jpg", alt="Автобус Киев - Евпатория - Киев")
+						.service__block-bottom
+							p.service__subtitle Киев - Евпатория - Киев
 		br
 		br
 		br

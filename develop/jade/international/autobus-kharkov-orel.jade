@@ -4,6 +4,7 @@ block append head
 	- to = "Орел"
 	- city = ot +' - '+ to
 	- category = "Международные рейсы"
+	- pageImg = "https://vseputi.com.ua/img/content/main-pattern.jpg"
 	include ../includes/modules/_meta
 block content
 	.main._orel-bg
@@ -107,7 +108,7 @@ block content
 									p.schedule__text
 										a.btn.schedule__btn(href="#order" fancybox) Забронировать
 				br
-				.text-center
+				.back__link-wrap
 					a.back__link.btn(href="/international/autobus-orel-kharkov") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
 	include ../includes/modules/_share
 	include ../includes/hotels/_orel-hotels
