@@ -320,4 +320,11 @@ $(function() {
 		minLength: 1
 	});
 
+	// клонируем ссылку обратного маршрута если большая область просмотра
+	setTimeout(function(){
+		if ($('[place-parent]').length >= 4) {
+			$(".back__link-wrap").clone().insertAfter(".schedule__main-title").attr('style', 'margin-bottom: 15px');
+		}
+	}, 100);
+
 });

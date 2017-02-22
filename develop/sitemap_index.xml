@@ -28,6 +28,12 @@
   <loc>https://vseputi.com.ua/international/autobus-donetsk-yalta</loc>
 </url>
 <url>
+  <loc>https://vseputi.com.ua/international/autobus-donetsk-mogilev</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-donetsk-moskva</loc>
+</url>
+<url>
   <loc>https://vseputi.com.ua/international/autobus-sankt-peterburg-donetsk</loc>
 </url>
 <url>
@@ -35,12 +41,6 @@
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-donetsk-minsk</loc>
-</url>
-<url>
-  <loc>https://vseputi.com.ua/international/autobus-lugansk-alushta</loc>
-</url>
-<url>
-  <loc>https://vseputi.com.ua/international/autobus-donetsk-moskva</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-donetsk-samara</loc>
@@ -55,7 +55,7 @@
   <loc>https://vseputi.com.ua/international/autobus-donetsk-orel</loc>
 </url>
 <url>
-  <loc>https://vseputi.com.ua/international/autobus-donetsk-mogilev</loc>
+  <loc>https://vseputi.com.ua/international/autobus-lugansk-alushta</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-artemovsk-belgorod</loc>
@@ -223,7 +223,19 @@
   <loc>https://vseputi.com.ua/international/autobus-kiev-yalta</loc>
 </url>
 <url>
+  <loc>https://vseputi.com.ua/international/autobus-kiev-kerch</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kiev-djankoy</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kiev-evpatoria</loc>
+</url>
+<url>
   <loc>https://vseputi.com.ua/international/autobus-kiev-alushta</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kiev-feodosiya</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-kiev-moskva</loc>
@@ -532,9 +544,6 @@
   <loc>https://vseputi.com.ua/international/autobus-moskva-gorlovka</loc>
 </url>
 <url>
-  <loc>https://vseputi.com.ua/international/autobus-alushta-kiev</loc>
-</url>
-<url>
   <loc>https://vseputi.com.ua/international/autobus-sevastopol-kiev</loc>
 </url>
 <url>
@@ -542,6 +551,21 @@
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-yalta-kiev</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kerch-kiev</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-djankoy-kiev</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-evpatoria-kiev</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-alushta-kiev</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-feodosiya-kiev</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-sochi-kiev</loc>
