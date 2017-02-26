@@ -322,7 +322,7 @@ $(function() {
 
 	// клонируем ссылку обратного маршрута если большая область просмотра
 	setTimeout(function(){
-		if ($('[place-parent]').length >= 4) {
+		if ($('[place-parent]').length >= 3) {
 			$(".back__link-wrap").clone().insertAfter(".schedule__main-title").attr('style', 'margin-bottom: 15px');
 		}
 	}, 100);
