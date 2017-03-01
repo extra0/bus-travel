@@ -1,3 +1,8 @@
+.row {
+	&-special {
+		background: rgba(255, 224, 0, 0.32)!important;
+	}
+}
 .toTop {
 	@include position(fixed, null 10px -100px null);
 	border: 1px solid #fff;
@@ -558,6 +563,18 @@
 	}
 	&__text {
 		font-size: 16px;
+	}
+	&__badge {
+		display: inline-block;
+	    color: #fff;
+	    margin-top: 10px;
+	    margin-bottom: -10px;
+	    border-bottom: none;
+	    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+	    &:active {
+	    	top: 0;
+	    	border-bottom: none;
+	    }
 	}
 }
 .advantages {

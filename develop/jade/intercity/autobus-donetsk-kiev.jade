@@ -59,7 +59,7 @@ block content
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Ежедневно<br>(рейс без пересадки на БП)<br>≈ 14 часов
+									p.schedule__text Ежедневно<br>(рейс без пересадки)<br>≈ 14 часов
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
@@ -67,6 +67,46 @@ block content
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
 										strong 2 400
+										i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Забронировать
+					.row.row-special(place-parent)
+						.col-xs-12
+							.btn.btn-sm.schedule__badge
+								i.fa.fa-star.fa-lg
+								|  Лучшее предложение
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 06:30 
+										| район Южного АВ
+										.schedule__auto Микроавтобус (до 8 мест)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 21:00 
+										| ЖД Вокзал (Макдональдс)
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Ежедневно<br>(рейс без пересадки)<br>≈ 14 часов
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong 2 000
 										i.fa.fa-rub
 							.row
 								.col-xs-12.col-sm-12.text-center
@@ -167,7 +207,7 @@ block content
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Вт, Пт<br>(рейс с пересадкой на БП)<br>≈ 16 часов
+									p.schedule__text Вт, Пт<br>(рейс с пересадкой)<br>≈ 16 часов
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs

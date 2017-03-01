@@ -74,4 +74,8 @@
 			background: lighten(#cc0e0e, 5%);
 		}
 	}
+	&-sm {
+		padding: 3px 10px;
+		font-size: 14px;
+	}
 }
