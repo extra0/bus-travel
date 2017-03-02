@@ -38,7 +38,8 @@ block content
 							p.schedule__title В пути
 						.col-sm-2
 							p.schedule__title Стоимость билетов
-					.row(place-parent)
+					.row.row-special(place-parent)
+						include ../includes/modules/_special-badge
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
@@ -406,8 +407,8 @@ block content
 									p.schedule__title Отправление
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
-										span.schedule__time 15:30 
-										| район Южного АВ
+										span.schedule__time 15:00 
+										| Дворец Бракосочетания
 										.schedule__auto Автобус (до 50 мест)
 						.col-xs-12.col-sm-4
 							.row
@@ -415,27 +416,28 @@ block content
 									p.schedule__title Прибытие
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
-										span.schedule__time 10:30 
-										| ст. м. Красногвардейское
+										span.schedule__time 13:00 
+										| ст. м. Красногвардейская
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Нечетные дни<br>≈ 20 часов
+									p.schedule__text Нечетные<br>≈ 22 часа
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Стоимость
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
-										strong #{moskowPrice}
+										strong 1 800
 										i.fa.fa-rub
 							.row
 								.col-xs-12.col-sm-12.text-center
 									p.schedule__text
 										a.btn.schedule__btn(href="#order" fancybox) Забронировать
-					.row(place-parent)
+					.row.row-special(place-parent)
+						include ../includes/modules/_special-badge
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
@@ -465,7 +467,7 @@ block content
 									p.schedule__title Стоимость
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
-										strong 1 600
+										strong #{moskowPrice}
 										i.fa.fa-rub
 							.row
 								.col-xs-12.col-sm-12.text-center
