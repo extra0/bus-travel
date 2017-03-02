@@ -27,12 +27,14 @@
 		}
 		&._viber {
 			&:before {
-			    content: "";
-				@include position(absolute, 3px null null -30px);
-				background: url(../img/viber.svg) no-repeat;
-				background-size: 100%;
-				width: 24px;
-				height: 24px;
+			    content: "\f2a0";
+				color: #7b519d;
+				@include position(absolute, 1px null null -25px);
+				font: normal normal normal 14px/1 FontAwesome;
+			    font-size: 28px;
+			    text-rendering: auto;
+			    -webkit-font-smoothing: antialiased;
+			    -moz-osx-font-smoothing: grayscale;
 			}
 		}
 		&-prefix {
