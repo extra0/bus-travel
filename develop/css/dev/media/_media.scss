@@ -1,5 +1,6 @@
 @media (max-width: 767px) {
 	.header {
+		padding: 15px 0 20px 0;
 		&__btn {
 			margin: 0 0 15px;
 		}
@@ -8,10 +9,10 @@
 		}
 	}
 	.main {
-		padding: 80px 0;
+		padding: 40px 0;
 		background-size: cover!important;
 		&__form {
-			padding: 15px 20px;
+			padding: 10px 10px;
 			margin: 0 20px;
 		}
 		&__title {
@@ -19,6 +20,7 @@
 		}
 	}
 	.main-menu {
+		margin-top: 10px;
 		&__item {
 			display: block;
 			margin: 0 -15px;
@@ -230,7 +232,8 @@
 			margin: 0;
 		}
 		&__title {
-			font-size: 24px;
+			font-size: 22px;
+			line-height: normal;
 		}
 	}
 	.title {
