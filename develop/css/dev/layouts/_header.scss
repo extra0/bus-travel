@@ -27,9 +27,9 @@
 		}
 		&._viber {
 			&:before {
-			    content: "\f2a0";
+			    content: "\f098";
 				color: #7b519d;
-				@include position(absolute, 1px null null -25px);
+				@include position(absolute, 1px null null -30px);
 				font: normal normal normal 14px/1 FontAwesome;
 			    font-size: 28px;
 			    text-rendering: auto;

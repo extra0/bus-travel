@@ -36,7 +36,9 @@
 .color-red {
 	color: #f20;
 }
-
+p:empty {
+	display: none;
+}
 .btn {
 	display: inline-block;
 	color: #fff;
