@@ -430,29 +430,29 @@
 		color: #fff;
 		text-shadow: 1px 1px 10px #333333;
 	}
-	&__link {
-		position: relative;
-		&._best-price {
-			&:before {
-				content: '';
-				background: url(../img/best-price.png) 0 0 no-repeat;
-				@include position(absolute, -20px null null -20px);
-				width: 150px;
-				height: 145px;
-				z-index: 10;
-			}
-		}
-		&._best-way {
-			&:before {
-				content: '';
-				background: url(../img/best-way.png) 0 0 no-repeat;
-				@include position(absolute, -20px null null -20px);
-				width: 110px;
-				height: 110px;
-				z-index: 10;
-			}
-		}
-	}
+	// &__link {
+	// 	position: relative;
+	// 	&._best-price {
+	// 		&:before {
+	// 			content: '';
+	// 			background: url(../img/best-price.png) 0 0 no-repeat;
+	// 			@include position(absolute, -20px null null -20px);
+	// 			width: 150px;
+	// 			height: 145px;
+	// 			z-index: 10;
+	// 		}
+	// 	}
+	// 	&._best-way {
+	// 		&:before {
+	// 			content: '';
+	// 			background: url(../img/best-way.png) 0 0 no-repeat;
+	// 			@include position(absolute, -20px null null -20px);
+	// 			width: 110px;
+	// 			height: 110px;
+	// 			z-index: 10;
+	// 		}
+	// 	}
+	// }
 }
 // seo описание
 .description {
