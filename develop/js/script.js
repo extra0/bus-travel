@@ -327,4 +327,7 @@ $(function() {
 		}
 	}, 100);
 
+	// запуск цели для яндекса
+	setTimeout('yaCounter36626610.reachGoal("Time");', 60000);
+
 });
