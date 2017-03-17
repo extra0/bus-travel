@@ -25,10 +25,7 @@
   <loc>https://vseputi.com.ua/services/</loc>
 </url>
 <url>
-  <loc>https://vseputi.com.ua/international/autobus-donetsk-yalta</loc>
-</url>
-<url>
-  <loc>https://vseputi.com.ua/international/autobus-donetsk-mogilev</loc>
+  <loc>https://vseputi.com.ua/intercity/autobus-donetsk-kiev</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-donetsk-moskva</loc>
@@ -40,22 +37,25 @@
   <loc>https://vseputi.com.ua/international/autobus-donetsk-belgorod</loc>
 </url>
 <url>
+  <loc>https://vseputi.com.ua/intercity/autobus-donetsk-kharkov</loc>
+</url>
+<url>
   <loc>https://vseputi.com.ua/international/autobus-donetsk-minsk</loc>
 </url>
 <url>
-  <loc>https://vseputi.com.ua/international/autobus-donetsk-samara</loc>
+  <loc>https://vseputi.com.ua/international/autobus-lugansk-yalta</loc>
 </url>
 <url>
-  <loc>https://vseputi.com.ua/intercity/autobus-donetsk-kiev</loc>
+  <loc>https://vseputi.com.ua/international/autobus-kiev-alushta</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-moskva-kiev</loc>
 </url>
 <url>
-  <loc>https://vseputi.com.ua/international/autobus-donetsk-orel</loc>
+  <loc>https://vseputi.com.ua/international/autobus-donetsk-kerch</loc>
 </url>
 <url>
-  <loc>https://vseputi.com.ua/international/autobus-lugansk-alushta</loc>
+  <loc>https://vseputi.com.ua/international/autobus-kiev-sevastopol</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-artemovsk-belgorod</loc>
@@ -133,9 +133,6 @@
   <loc>https://vseputi.com.ua/international/autobus-donetsk-feodosiya</loc>
 </url>
 <url>
-  <loc>https://vseputi.com.ua/international/autobus-donetsk-kerch</loc>
-</url>
-<url>
   <loc>https://vseputi.com.ua/international/autobus-donetsk-krasnodar</loc>
 </url>
 <url>
@@ -163,6 +160,9 @@
   <loc>https://vseputi.com.ua/international/autobus-donetsk-tula</loc>
 </url>
 <url>
+  <loc>https://vseputi.com.ua/international/autobus-donetsk-orel</loc>
+</url>
+<url>
   <loc>https://vseputi.com.ua/international/autobus-donetsk-voronej</loc>
 </url>
 <url>
@@ -170,6 +170,9 @@
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-donetsk-sankt-peterburg</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-donetsk-yalta</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-donetsk-livni</loc>
@@ -188,6 +191,9 @@
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-donetsk-saratov</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-donetsk-samara</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-donetsk-tolyatti</loc>
@@ -214,9 +220,6 @@
   <loc>https://vseputi.com.ua/international/autobus-dnepropetrovsk-simferopol</loc>
 </url>
 <url>
-  <loc>https://vseputi.com.ua/international/autobus-kiev-sevastopol</loc>
-</url>
-<url>
   <loc>https://vseputi.com.ua/international/autobus-kiev-simferopol</loc>
 </url>
 <url>
@@ -230,9 +233,6 @@
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-kiev-evpatoria</loc>
-</url>
-<url>
-  <loc>https://vseputi.com.ua/international/autobus-kiev-alushta</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-kiev-feodosiya</loc>
@@ -313,7 +313,7 @@
   <loc>https://vseputi.com.ua/international/autobus-lugansk-simferopol</loc>
 </url>
 <url>
-  <loc>https://vseputi.com.ua/international/autobus-lugansk-yalta</loc>
+  <loc>https://vseputi.com.ua/international/autobus-lugansk-alushta</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-lugansk-sevastopol</loc>
@@ -751,9 +751,6 @@
   <loc>https://vseputi.com.ua/intercity/autobus-donetsk-izum</loc>
 </url>
 <url>
-  <loc>https://vseputi.com.ua/intercity/autobus-donetsk-kharkov</loc>
-</url>
-<url>
   <loc>https://vseputi.com.ua/intercity/autobus-donetsk-konstantinovka</loc>
 </url>
 <url>
@@ -892,6 +889,9 @@
   <loc>https://vseputi.com.ua/intercity/autobus-kurahovo-donetsk</loc>
 </url>
 <url>
+  <loc>https://vseputi.com.ua/intercity/autobus-volnovaha-donetsk</loc>
+</url>
+<url>
   <loc>https://vseputi.com.ua/intercity/autobus-selidovo-donetsk</loc>
 </url>
 <url>
@@ -914,6 +914,9 @@
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-donetsk-gomel</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-donetsk-mogilev</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-lugansk-minsk</loc>
