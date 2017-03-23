@@ -3,11 +3,14 @@ footer.footer(itemscope itemtype="https://schema.org/Organization")
 		.row
 			.col-sm-4.col-md-3.xs-text-center
 				p.footer__copyright <i class="fa fa-copyright"></i> 2017 Все права защищены.
-				p.footer__micro
+				p.footer__micro.dib
 					span(itemprop="name") Диспетчерская служба "VSEPUTI"
+				span , 
 				p.footer__micro.dib(itemprop="address" itemscope itemtype="https://schema.org/PostalAddress")
 					span(itemprop="addressLocality") г. Донецк
-				br.hidden-xs
+				p.footer__micro
+					i.fa.fa-clock-o 
+					|  Время работы: с 09.00 до 21.00
 				a.footer__email(href="mailto:infovseputi@gmail.com") 
 					i.fa.fa-envelope-o &nbsp;
 					span(itemprop="email") infovseputi@gmail.com
@@ -25,6 +28,8 @@ footer.footer(itemscope itemtype="https://schema.org/Organization")
 							i.fa.fa-twitter.fa-lg
 						a.footer__social-link(href="https://www.instagram.com/vseputi/" rel="nofollow noopener noreferrer" target="_blank")
 							i.fa.fa-instagram.fa-lg
+						a.footer__social-link(href="https://plus.google.com/u/2/104823581810742933349" rel="nofollow noopener noreferrer" target="_blank")
+							i.fa.fa-google-plus.fa-lg
 			.col-sm-2.col-md-3.col-lg-4.text-center.hidden-sm
 				span.footer__social-text Мы принимаем:
 				.footer__pay-block

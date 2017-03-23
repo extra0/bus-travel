@@ -76,6 +76,10 @@ p:empty {
 			background: lighten(#cc0e0e, 5%);
 		}
 	}
+	&-denied {
+		background: #828282!important;
+		border-bottom: 3px solid #565656!important;
+	}
 	&-sm {
 		padding: 3px 10px;
 		font-size: 14px;
