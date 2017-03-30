@@ -291,6 +291,43 @@ block content
 								.col-xs-12.col-sm-12.text-center
 									p.schedule__text
 										a.btn.schedule__btn(href="#order" fancybox) Забронировать
+					.row.row-special(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 13:00 
+										| район Южного АВ
+										.schedule__auto Автобус (до 50 мест)
+										include ../includes/modules/_special-badge
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 11:00 
+										| ст. м. Новоясеневская
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Пн, Пт<br>≈ 22 часа
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong #{moskowPrice}
+										i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Забронировать
 					.row(place-parent)
 						.col-xs-12.col-sm-4
 							.row
@@ -399,7 +436,7 @@ block content
 								.col-xs-12.col-sm-12.text-center
 									p.schedule__text
 										a.btn.schedule__btn(href="#order" fancybox) Забронировать
-					.row.row-special(place-parent)
+					.row(place-parent)
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
@@ -409,7 +446,6 @@ block content
 										span.schedule__time 17:10 
 										| Крытый рынок, "Эльдорадо"
 										.schedule__auto Автобус (до 50 мест)
-										include ../includes/modules/_special-badge
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
@@ -430,7 +466,7 @@ block content
 									p.schedule__title Стоимость
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
-										strong #{moskowPrice}
+										strong 1 600
 										i.fa.fa-rub
 							.row
 								.col-xs-12.col-sm-12.text-center
