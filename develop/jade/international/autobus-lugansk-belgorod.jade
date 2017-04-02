@@ -22,7 +22,7 @@ block content
 				h2.schedule__main-title
 					i.fa.fa-calendar
 					| Расписание автобусов 
-					span(citys) #{city}
+					span(citys) Луганск (Россошь, Новый Оскол, Короча) - Белгород
 	block moskow-way
 		.schedule
 			.container
@@ -71,6 +71,41 @@ block content
 								.col-xs-12.col-sm-12.text-center
 									p.schedule__text
 										a.btn.schedule__btn(href="#order" fancybox) Забронировать
+				.row(place-parent)
+					.col-xs-12.col-sm-4
+						.row
+							.col-xs-4.visible-xs
+								p.schedule__title Отправление
+							.col-xs-8.col-sm-12
+								p.schedule__text(place-from)
+									span.schedule__time 19:00 
+									| Автовокзал
+					.col-xs-12.col-sm-4
+						.row
+							.col-xs-4.visible-xs
+								p.schedule__title Прибытие
+							.col-xs-8.col-sm-12
+								p.schedule__text(place-to)
+									span.schedule__time 09:00 
+									| Автовокзал
+					.col-xs-12.col-sm-2
+						.row
+							.col-xs-4.visible-xs
+								p.schedule__title В пути
+							.col-xs-8.col-sm-12
+								p.schedule__text Четные дни<br>≈ 14 часов
+					.col-xs-12.col-sm-2
+						.row
+							.col-xs-4.visible-xs
+								p.schedule__title Стоимость
+							.col-xs-8.col-sm-12
+								p.schedule__price(price)
+									strong 1 300
+									i.fa.fa-rub
+						.row
+							.col-xs-12.col-sm-12.text-center
+								p.schedule__text
+									a.btn.schedule__btn(href="#order" fancybox) Забронировать
 				br
 				.back__link-wrap
 					a.back__link.btn(href="/international/autobus-belgorod-lugansk") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
