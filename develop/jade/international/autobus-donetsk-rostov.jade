@@ -22,7 +22,7 @@ block content
 				h2.schedule__main-title
 					i.fa.fa-calendar
 					| Расписание автобусов 
-					span(citys) Донецк (через Макеевка, Харцызск) - Ростов-на-Дону
+					span(citys) Донецк (через Макеевка, Харцызск, Шахтерск) - Ростов-на-Дону
 	block moskow-way
 		.schedule
 			.container
@@ -66,6 +66,41 @@ block content
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
 										strong 650
+										i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Забронировать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 07:00 
+										| район Южного АВ
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 14:00 
+										| Центральный Автовокзал
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Ежедневно<br>≈ 7 часов
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong 600
 										i.fa.fa-rub
 							.row
 								.col-xs-12.col-sm-12.text-center

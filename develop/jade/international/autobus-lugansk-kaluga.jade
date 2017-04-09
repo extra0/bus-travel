@@ -1,19 +1,19 @@
 extends ../_layout
 block append head
 	- ot = "Луганск"
-	- to = "Тула"
+	- to = "Калуга"
 	- city = ot +' - '+ to
 	- category = "Международные рейсы"
-	- pageImg = "https://vseputi.com.ua/img/content/city-pattern/tula.jpg"
-	meta(name="twitter:title" content="Купить билет на автобус #{city} от #{lugTula}")
+	- pageImg = "https://vseputi.com.ua/img/content/main-pattern.jpg"
+	meta(name="twitter:title" content="Купить билет на автобус #{city} от #{lugKaluga}")
 	include ../includes/modules/_meta
 block content
-	.main._tula-bg
+	.main
 		.container
 			.row
 				.col-sm-12.col-xs-12
 					h1.main__title.no-margin Купить билет на автобус #{city} 
-						span от #{lugTula}
+						span от #{lugKaluga}
 							i.fa.fa-rub
 	.container
 		.row
@@ -22,7 +22,7 @@ block content
 				h2.schedule__main-title
 					i.fa.fa-calendar
 					| Расписание автобусов 
-					span(citys) Луганск (через Краснодон) - Тула
+					span(citys) Луганск (через Краснодон) - Калуга
 	block moskow-way
 		.schedule
 			.container
@@ -51,21 +51,21 @@ block content
 									p.schedule__title Прибытие
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
-										span.schedule__time 06:30 
-										| пр-т. Ленина 94
+										span.schedule__time 09:30 
+										| Автовокзал
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Вт, Пт<br>≈ 14 часов
+									p.schedule__text Вт, Пт<br>≈ 17 часов
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Стоимость
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
-										strong #{lugTula}
+										strong #{lugKaluga}
 										i.fa.fa-rub
 							.row
 								.col-xs-12.col-sm-12.text-center
@@ -73,7 +73,7 @@ block content
 										a.btn.schedule__btn(href="#order" fancybox) Забронировать
 				br
 				.back__link-wrap
-					a.back__link.btn(href="/international/autobus-tula-lugansk") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
+					a.back__link.btn(href="/international/autobus-kaluga-lugansk") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
 	include ../includes/modules/_share
 	include ../includes/modules/_advantages
 	include ../includes/modules/_attention
@@ -81,8 +81,8 @@ block content
 		.container
 			.toggle-block__text
 				- iz = "Луганска";
-				- izN = "Тулы";
-				- v = "Тула";
+				- izN = "Калуги";
+				- v = "Калуга";
 				- vN = "Луганск";
 				h2.description__title  Автобус #{city} 
 				p.description__text Вам нужно быстро, комфортно и недорого  добраться из #{iz} в #{v} ? В этом случае вам подойдут автобусные пассажирские перевозки. Это самый дешевый и достаточно комфортабельный вид транспорта. Наша диспетчерская служба Vseputi предлагает забронировать билеты на  автобус #{city}  по низким ценам на нужное число и удобное для вас время. Новые комфортабельные автобусы и профессиональные водители сделают вашу поездку не только комфортной, но и максимально безопасной. 
