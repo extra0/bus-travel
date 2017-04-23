@@ -340,6 +340,7 @@
 			}
 			.ways__img {
 				@include transform(none);
+				border-radius: 5px;
 			}
 			.ways__price {
 				font-size: 36px;
