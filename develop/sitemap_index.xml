@@ -31,7 +31,7 @@
   <loc>https://vseputi.com.ua/international/autobus-donetsk-moskva</loc>
 </url>
 <url>
-  <loc>https://vseputi.com.ua/international/autobus-sankt-peterburg-donetsk</loc>
+  <loc>https://vseputi.com.ua/international/autobus-donetsk-yalta</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-donetsk-belgorod</loc>
@@ -40,7 +40,7 @@
   <loc>https://vseputi.com.ua/intercity/autobus-donetsk-kharkov</loc>
 </url>
 <url>
-  <loc>https://vseputi.com.ua/international/autobus-donetsk-minsk</loc>
+  <loc>https://vseputi.com.ua/international/autobus-sankt-peterburg-donetsk</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-lugansk-yalta</loc>
@@ -172,9 +172,6 @@
   <loc>https://vseputi.com.ua/international/autobus-donetsk-sankt-peterburg</loc>
 </url>
 <url>
-  <loc>https://vseputi.com.ua/international/autobus-donetsk-yalta</loc>
-</url>
-<url>
   <loc>https://vseputi.com.ua/international/autobus-donetsk-livni</loc>
 </url>
 <url>
@@ -209,6 +206,9 @@
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-donetsk-stariy-oskol</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-donetsk-kazan</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-dnepropetrovsk-evpatoria</loc>
@@ -257,6 +257,15 @@
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-kiev-sochi</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kiev-kursk</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kiev-orel</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kiev-sankt-peterburg</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-konstantinovka-belgorod</loc>
@@ -377,6 +386,18 @@
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-slavyansk-sankt-peterburg</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-sumi-kursk</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-sumi-orel</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-sumi-moskva</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-sumi-sankt-peterburg</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-kharkov-belgorod</loc>
@@ -517,7 +538,13 @@
   <loc>https://vseputi.com.ua/international/autobus-tver-donetsk</loc>
 </url>
 <url>
+  <loc>https://vseputi.com.ua/international/autobus-anapa-donetsk</loc>
+</url>
+<url>
   <loc>https://vseputi.com.ua/international/autobus-stariy-oskol-donetsk</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kazan-donetsk</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-evpatoria-dnepropetrovsk</loc>
@@ -596,6 +623,15 @@
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-rostov-kiev</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kursk-kiev</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-orel-kiev</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-sankt-peterburg-kiev</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-sankt-peterburg-lugansk</loc>
@@ -728,6 +764,18 @@
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-moskva-slavyansk</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kursk-sumi</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-orel-sumi</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-moskva-sumi</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-sankt-peterburg-sumi</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-belgorod-kramatorsk</loc>
@@ -937,6 +985,9 @@
   <loc>https://vseputi.com.ua/intercity/autobus-odessa-lugansk</loc>
 </url>
 <url>
+  <loc>https://vseputi.com.ua/international/autobus-donetsk-minsk</loc>
+</url>
+<url>
   <loc>https://vseputi.com.ua/international/autobus-donetsk-gomel</loc>
 </url>
 <url>
@@ -965,9 +1016,6 @@
 </url>
 <url>
   <loc>https://vseputi.com.ua/services/transfer</loc>
-</url>
-<url>
-  <loc>https://vseputi.com.ua/international/autobus-anapa-donetsk</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/intercity/autobus-konstantinovka-donetsk</loc>
