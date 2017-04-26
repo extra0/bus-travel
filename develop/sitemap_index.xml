@@ -181,12 +181,6 @@
   <loc>https://vseputi.com.ua/international/autobus-donetsk-velikiy-novgorod</loc>
 </url>
 <url>
-  <loc>https://vseputi.com.ua/international/autobus-donetsk-erevan</loc>
-</url>
-<url>
-  <loc>https://vseputi.com.ua/international/autobus-donetsk-tbilisi</loc>
-</url>
-<url>
   <loc>https://vseputi.com.ua/international/autobus-donetsk-saratov</loc>
 </url>
 <url>
@@ -512,12 +506,6 @@
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-velikiy-novgorod-donetsk</loc>
-</url>
-<url>
-  <loc>https://vseputi.com.ua/international/autobus-erevan-donetsk</loc>
-</url>
-<url>
-  <loc>https://vseputi.com.ua/international/autobus-tbilisi-donetsk</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-voronej-donetsk</loc>
@@ -998,6 +986,66 @@
 </url>
 <url>
   <loc>https://vseputi.com.ua/intercity/autobus-odessa-lugansk</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kharkov-lublin</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kharkov-varshava</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kharkov-shecin</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kharkov-gdansk</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kharkov-gdinya</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kiev-lublin</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kiev-varshava</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kiev-shecin</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kiev-gdansk</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-kiev-gdinya</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-lublin-kharkov</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-varshava-kharkov</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-shecin-kharkov</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-gdansk-kharkov</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-gdinya-kharkov</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-lublin-kiev</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-varshava-kiev</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-shecin-kiev</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-gdansk-kiev</loc>
+</url>
+<url>
+  <loc>https://vseputi.com.ua/international/autobus-gdinya-kiev</loc>
 </url>
 <url>
   <loc>https://vseputi.com.ua/international/autobus-donetsk-minsk</loc>
