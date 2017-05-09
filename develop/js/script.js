@@ -107,8 +107,8 @@ $(function() {
 				success: function(data) {
 					if (data == "true") {
 						$.fancybox.close();
-						$.fancybox($('#thanks'));
-						setTimeout("$.fancybox.close()", 20000);
+						$.fancybox($('##partner-confirm'));
+						// setTimeout("$.fancybox.close()", 20000);
 					}
 				}
 			});
@@ -142,7 +142,7 @@ $(function() {
 					if (data == "true") {
 						$.fancybox.close();
 						$.fancybox($('#thanks'));
-						setTimeout("$.fancybox.close()", 20000);
+						setTimeout("$.fancybox.close()", 25000);
 					}
 				}
 			});

@@ -50,22 +50,16 @@ block content
 					.row
 						.col-sm-6
 							.form__control
-								label.form__label Ваш телефон:
-							.form__control
 								i.fa.fa-phone
-								input.form__input(type="tel" only-numbers required name="phone")
+								input.form__input(type="tel" only-numbers required name="phone" placeholder="Ваш телефон")
 						.col-sm-6
 							.form__control
-								label.form__label Ваш email:
-							.form__control
 								i.fa.fa-envelope-o
-								input.form__input(type="email" required name="email")
+								input.form__input(type="email" required name="email" placeholder="Ваш email")
 					.row
 						.col-sm-12
 							.form__control
-								label.form__label Напишите сообщение (при желании)
-							.form__control
-								textarea.form__textarea(rows="2" name="message")
+								textarea.form__textarea(rows="2" name="message" placeholder="Напишите сообщение (при желании)")
 					.form__control
 						button.form__submit.form__submit-partner.btn(type="submit") Отправить &nbsp;
 							i.fa.fa-paper-plane-o 

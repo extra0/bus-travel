@@ -8,6 +8,9 @@
 			font-size: 14px;
 		}
 	}
+	.toTop.active {
+		bottom: 10px;
+	}
 	.main {
 		padding: 40px 0;
 		background-size: cover!important;
@@ -411,6 +414,11 @@
 		}
 		&__work-block {
 			width: 30%;
+		}
+	}
+	.header {
+		&__time {
+			margin: 10px 0 -10px 0px;
 		}
 	}
 
