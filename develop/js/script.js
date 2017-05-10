@@ -142,6 +142,7 @@ $(function() {
 					if (data == "true") {
 						$.fancybox.close();
 						$.fancybox($('#thanks'));
+						ga('send', 'event', 'order', 'submit'); // цель для гугл аналитики 
 						setTimeout("$.fancybox.close()", 25000);
 					}
 				}
