@@ -24,7 +24,8 @@
 	}
 }
 .main {
-	padding: 140px 0;
+	// padding: 140px 0;
+	padding: 100px 0;
 	background: url(../img/content/main-pattern.jpg) no-repeat;
 	background-position: center!important;
 	background-size: cover!important;
@@ -60,6 +61,7 @@
 	}
 	&._partner-bg {    background: url(../img/content/partner.jpg) no-repeat;}
 	&._service-bg {    background: url(../img/content/service.jpg) no-repeat;}
+	&._faq-bg {        background: url(../img/content/faq.png) no-repeat;}
 	&._moscow-bg {     background: url(../img/content/city-pattern/moscow.jpg) no-repeat;}
 	&._voronej-bg {    background: url(../img/content/city-pattern/voronej.jpg) no-repeat;}
 	&._pavlovsk-bg {   background: url(../img/content/city-pattern/pavlovsk.jpg) no-repeat;}
