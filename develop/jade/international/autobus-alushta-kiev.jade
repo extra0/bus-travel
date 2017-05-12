@@ -1,19 +1,20 @@
 extends ../_layout
 block append head
-	- ot = "Донецк"
-	- to = "Саратов"
+	- transfer = true
+	- ot = "Алушта"
+	- to = "Киев"
 	- city = ot +' - '+ to
 	- category = "Международные рейсы"
-	- pageImg = "https://vseputi.com.ua/img/content/city-pattern/saratov.jpg"
-	meta(name="twitter:title" content="Купить билет на автобус #{city} от #{saratovPrice}")
+	- pageImg = "https://vseputi.com.ua/img/content/city-pattern/kiev.jpg"
+	meta(name="twitter:title" content="Купить билет на автобус #{city} от #{alushtaKiev}")
 	include ../includes/modules/_meta
 block content
-	.main._saratov-bg
+	.main._kiev-bg
 		.container
 			.row
 				.col-sm-12.col-xs-12
-					h1.main__title.no-margin Купить билет на автобус #{city} 
-						span от #{saratovPrice}
+					h1.main__title.no-margin Купить билет на автобус Алушта - Киев 
+						span от #{alushtaKiev}
 						i.fa.fa-rub
 	.container
 		.row
@@ -22,7 +23,7 @@ block content
 				h2.schedule__main-title
 					i.fa.fa-calendar
 					| Расписание автобусов 
-					span(citys) Донецк (через Макеевка, Харцызск) - Саратов
+					span(citys) Алушта - Киев
 	block moskow-way
 		.schedule
 			.container
@@ -43,30 +44,30 @@ block content
 									p.schedule__title Отправление
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
-										span.schedule__time 11:00 
-										| Мотель
+										span.schedule__time 06:15 
+										| Автовокзал
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Прибытие
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
-										span.schedule__time 07:00 
-										| Автовокзал, ул. Московская 170
+										span.schedule__time 21:15 
+										| ст. м. Теремки
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Пт<br>≈ 20 часов
+									p.schedule__text Ежедневно<br>(рейс с пересадкой)<br>≈ 15 часов
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Стоимость
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
-										strong #{saratovPrice}
-										i.fa.fa-rub
+										strong #{alushtaKiev}
+											i.fa.fa-rub
 							.row
 								.col-xs-12.col-sm-12.text-center
 									p.schedule__text
@@ -78,47 +79,118 @@ block content
 									p.schedule__title Отправление
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
-										span.schedule__time 16:00 
-										| Дворец Бракосочетания
+										span.schedule__time 08:30 
+										| Автовокзал
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Прибытие
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
-										span.schedule__time 13:00 
-										| ЖД
+										span.schedule__time 23:30 
+										| ст. м. Теремки
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Каждое 5, 10, 15, 20, 25, 30 число месяца<br>≈ 21 час
+									p.schedule__text Ежедневно<br>(рейс с пересадкой)<br>≈ 15 часов
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Стоимость
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
-										strong 3 000
-										i.fa.fa-rub
+										strong 2 300
+											i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Забронировать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 19:00 
+										| Автовокзал
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 10:00 
+										| ст. м. Теремки
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Ежедневно<br>(рейс без пересадки)<br>≈ 15 часов
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong 2 500
+											i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Забронировать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 21:00 
+										| Автовокзал
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 12:00 
+										| ст. м. Теремки
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Ежедневно<br>(рейс с пересадкой)<br>≈ 15 часов
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong 2 300
+											i.fa.fa-rub
 							.row
 								.col-xs-12.col-sm-12.text-center
 									p.schedule__text
 										a.btn.schedule__btn(href="#order" fancybox) Забронировать
 				br
 				.back__link-wrap
-					a.back__link.btn(href="/international/autobus-saratov-donetsk") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
+					a.back__link.btn(href="/international/autobus-kiev-alushta") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
+					
 	include ../includes/modules/_share
 	include ../includes/modules/_advantages
 	include ../includes/modules/_attention
 	.description
 		.container
 			.toggle-block__text
-				- iz = "Донецка";
-				- izN = "Саратова";
-				- v = "Саратов";
-				- vN = "Донецк";
+				- iz = "Алушты";
+				- izN = "Киева";
+				- v = "Киев";
+				- vN = "Алушта";
 				h2.description__title  Автобус #{city} 
 				p.description__text Вам нужно быстро, комфортно и недорого  добраться из #{iz} в #{v} ? В этом случае вам подойдут автобусные пассажирские перевозки. Это самый дешевый и достаточно комфортабельный вид транспорта. Наша диспетчерская служба Vseputi предлагает забронировать билеты на  автобус #{city}  по низким ценам на нужное число и удобное для вас время. Новые комфортабельные автобусы и профессиональные водители сделают вашу поездку не только комфортной, но и максимально безопасной. 
 				p.description__text  Маршрут #{city}  проложен по скоростным трассам, что значительно сократит время пребывания в пути. Более того перевозчики предоставляющие транспортные услуги имеют все необходимые документы и разрешения, что так же сократит время прохождения границы и общее время поездки. 
@@ -134,4 +206,3 @@ block content
 				h2.description__title  Цена билета на автобус #{city} 
 				p.description__text  Цены на автобус #{city}  вы можете найти на сайте или уточнить у наших менеджеров по указанным телефонам. Вы так же можете заказать услугу обратного звонка, после чего в максимально короткое время с вами свяжется наш оператор, у которого вы можете узнать все интересующие вас вопросы. Для более комфортного и дешевого проезда наша компания предлагает одно, а по некоторым маршрутам два бесплатных багажных места. 
 				p.description__text На все предоставляемые рейсы, в том числе и  #{city} , предоставляется уникальная дисконтная программа для детей (до 12 лет). Все подробности вы можете узнать у диспетчеров компании Vseputi.
-			
