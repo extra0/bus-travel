@@ -1,30 +1,28 @@
 extends ../_layout
 block append head
 	- ot = "Киев"
-	- to = "Москва"
+	- to = "Сочи"
 	- city = ot +' - '+ to
 	- category = "Международные рейсы"
-	- pageImg = "https://vseputi.com.ua/img/content/city-pattern/moscow.jpg"
-	meta(name="twitter:title" content="Купить билет на автобус #{city} от #{kievMskPrice}")
+	- pageImg = "https://vseputi.com.ua/img/content/city-pattern/sochi.jpg"
+	meta(name="twitter:title" content="Купить билет на автобус #{city} от #{kievSochi}")
 	include ../includes/modules/_meta
 block content
-	.main._moscow-bg
+	.main._sochi-bg
 		.container
 			.row
 				.col-sm-12.col-xs-12
-					h1.main__title.no-margin Купить билет на автобус Киев  - Москва 
-						span от #{kievMskPrice}
+					h1.main__title.no-margin Купить билет на автобус #{city} 
+						span от #{kievSochi}
 							|  грн
 	.container
 		.row
 			.col-sm-12.col-xs-12
 				include ../includes/modules/_breadcrumbs
-				- hCity = "Москвы"
-				include ../includes/hotels/_hotel-btn
 				h2.schedule__main-title
 					i.fa.fa-calendar
 					| Расписание автобусов 
-					span(citys) Киев - Москва
+					span(citys) Киев (через Борисполь, Пирятин, Полтава) - Сочи
 	block moskow-way
 		.schedule
 			.container
@@ -45,7 +43,7 @@ block content
 									p.schedule__title Отправление
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
-										span.schedule__time 21:20 
+										span.schedule__time 07:00 
 										| АС "Киев-1", ул. Петлюры 32
 						.col-xs-12.col-sm-4
 							.row
@@ -53,21 +51,21 @@ block content
 									p.schedule__title Прибытие
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
-										span.schedule__time 13:30 
-										| ст. м. Новоясеневская
+										span.schedule__time 19:00 
+										| "Моремолл", ул. Новая Заря 7
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Ср, Сб<br>≈ 16 часов
+									p.schedule__text Вт, Пт<br>≈ 35 часов
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Стоимость
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
-										strong #{kievMskPrice}
+										strong #{kievSochi}
 											|  грн
 							.row
 								.col-xs-12.col-sm-12.text-center
@@ -75,17 +73,16 @@ block content
 										a.btn.schedule__btn(href="#order" fancybox) Забронировать
 				br
 				.back__link-wrap
-					a.back__link.btn(href="/international/autobus-moskva-kiev") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
+					a.back__link.btn(href="/international/autobus-sochi-kiev") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
 	include ../includes/modules/_share
-	include ../includes/hotels/_moscow-hotels
 	include ../includes/modules/_advantages
 	include ../includes/modules/_attention
 	.description
 		.container
 			.toggle-block__text
 				- iz = "Киева";
-				- izN = "Москвы";
-				- v = "Москва";
+				- izN = "Сочи";
+				- v = "Сочи";
 				- vN = "Киев";
 				h2.description__title  Автобус #{city} 
 				p.description__text Вам нужно быстро, комфортно и недорого  добраться из #{iz} в #{v} ? В этом случае вам подойдут автобусные пассажирские перевозки. Это самый дешевый и достаточно комфортабельный вид транспорта. Наша диспетчерская служба Vseputi предлагает забронировать билеты на  автобус #{city}  по низким ценам на нужное число и удобное для вас время. Новые комфортабельные автобусы и профессиональные водители сделают вашу поездку не только комфортной, но и максимально безопасной. 
