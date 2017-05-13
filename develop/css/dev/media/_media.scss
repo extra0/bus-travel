@@ -88,10 +88,15 @@
 			margin: 20px 0;
 		}
 		&__phone {
-			margin: 0 0 10px;
+			margin: 0 0 5px;
 			display: block;
 			&-block {
 				margin: 0;
+			}
+		}
+		&__link {
+			&-block {
+				margin: 20px 0;
 			}
 		}
 	}
@@ -317,8 +322,16 @@
 			&-title {
 				font-size: 26px;	
 			}
-			&-list-item {
-				padding: 10px 0;
+			&-list {
+				&-item {
+					padding: 10px 0;
+				}
+				&-question {
+					font-size: 17px;
+				}
+				&-answer {
+					font-size: 15px;
+				}
 			}
 		}
 	}

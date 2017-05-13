@@ -10,10 +10,10 @@ header.header
 		.row
 			.col-sm-4.col-md-3.col-xs-12.m-b-xs-15.xs-text-center
 				- if (index == true) {
-					img(src="/img/logo.png" alt="Диспетчерская служба 'Всепути'")
+					img.header__logo-img(src="/img/logo.png" alt="Диспетчерская служба 'Всепути'")
 				- } else {
 					a.header__logo(href="/" title="Диспетчерская служба 'Всепути'")
-						img(src="/img/logo.png" alt="Диспетчерская служба 'Всепути'")
+						img.header__logo-img(src="/img/logo.png" alt="Диспетчерская служба 'Всепути'")
 				- }
 			.col-md-3.hidden-xs.hidden-sm
 				.text-center
