@@ -62,6 +62,7 @@
 	&._partner-bg {    background: url(../img/content/partner.jpg) no-repeat;}
 	&._service-bg {    background: url(../img/content/service.jpg) no-repeat;}
 	&._faq-bg {        background: url(../img/content/faq.png) no-repeat;}
+	&._feedback-bg {   background: url(../img/content/feedback.jpg) no-repeat;}
 	&._moscow-bg {     background: url(../img/content/city-pattern/moscow.jpg) no-repeat;}
 	&._voronej-bg {    background: url(../img/content/city-pattern/voronej.jpg) no-repeat;}
 	&._pavlovsk-bg {   background: url(../img/content/city-pattern/pavlovsk.jpg) no-repeat;}
@@ -177,6 +178,7 @@
 		width: 100%;
 		font-size: 18px;
 		padding: 5px 22px;
+		&-feedback,
 		&-partner {
 			width: auto;
 			font-weight: normal;
@@ -1250,6 +1252,63 @@
 		margin: 10px 0;
 		display: block;
 		line-height: normal;
+	}
+}
+.feedback {
+	&__block {
+		margin: 20px 0;
+		padding-bottom: 20px;
+		clear: both;
+		&:not(:last-child) {
+			border-bottom: 1px solid #ddd;
+		}
+		.feedback__block {
+			padding-left: 80px;
+			margin: 30px 0 0;
+			position: relative;
+			&:before {
+				content: "\f112";
+				@include position(absolute, 17px null null 30px);
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: inherit;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;	
+				font-size: 2em;
+				color: $green;
+			}
+		}
+		&-img {
+			max-width: 65px;
+			float: left;
+			margin-bottom: 10px;
+		}
+		&-info {
+			margin-left: 80px;
+		}
+		&-date {
+			font-size: 14px;
+			display: block;
+			margin: 0;
+		}
+		&-name {
+			font-weight: bold;
+			display: block;
+			margin: 0;
+			font-size: 18px;
+			line-height: normal;
+		}
+		&-route {
+			font-style: italic;
+			display: block;
+			margin: 0 0 10px;
+		}
+		&-text {
+			clear: both;
+			display: block;
+			margin: 15px 0 5px 0;
+			font-size: 15px;
+		}
 	}
 }
 

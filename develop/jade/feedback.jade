@@ -1,0 +1,80 @@
+extends _layout
+block append head
+	meta(description="Отзывы о работе диспетчерской службы Всепути")
+	meta(keywords="отзывы Всепути, всепути отзывы, vseputi отзывы, оставить отзыв всепути")
+	meta(name="robots" content="noodp")
+	meta(property="og:locale" content="ru_RU")
+	meta(property="og:type" content="website")
+	meta(property="og:title" content="Отзывы")
+	meta(property="og:description" content="Отзывы о работе диспетчерской службы Всепути")
+	meta(property="og:url" content="https://vseputi.com.ua/")
+	meta(property="og:site_name" content="Всепути - Купить билет на автобус онлайн, заказать автобусный билет.")
+	meta(property="og:image" content="https://vseputi.com.ua/img/content/feedback.jpg")
+	title Отзывы
+block content
+	.main._feedback-bg
+		.container
+			.row
+				.col-sm-12.col-xs-12
+					h1.main__title.no-margin Отзывы
+	.container
+		.row
+			.col-sm-12.col-xs-12
+				.breadcrumbs.hidden-xs
+					ul.breadcrumbs__list(itemscope itemtype="https://data-vocabulary.org/Breadcrumb")
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="/" itemprop="url" title="Главная")
+								span(itemprop="title") Главная
+						li.breadcrumbs__item
+							span.breadcrumbs__link.current Отзывы
+		.row
+			.col-sm-12
+				.feedback__block
+					img.feedback__block-img.img-circle(src="/img/content/no-photo.png", alt="FeedbackImg")
+					.feedback__block-info
+						span.feedback__block-date 
+							i.fa.fa-calendar
+							|  09.05.2017
+						span.feedback__block-name Шеремейко Виталий
+						span.feedback__block-route 
+							i.fa.fa-road
+							|  Маршрут: Донецк - Киев
+					.feedback__block-text В принципе могу сказать, что поездка прошла хорошо. На удивление быстро проехали все блок-посты и до полудня уже мчали в сторону Киева. Ехали на белом мерседесе, водитель нормальный - адекватный, скорость не превышал и не лихачил. Так что могу порекомендовать этих ребят по рейсу Донецк - Киев (по другим маршрутам еще не знаю как у них дела обстоят). В общем - спасибо!!
+		.row(style="margin-top: 30px;border-top: 1px solid #ddd;")
+			.col-sm-12
+				p.form__label Будем признательны за вашу обратную связь. Пожалуйста, оставьте свой отзыв заполнив форму ниже.
+			.col-sm-10.col-md-7
+				form.form__form(action="#")
+					.row
+						.col-sm-6
+							.form__control
+								i.fa.fa-user
+								input.form__input(type="text" required name="name" placeholder="Ваше ФИО")
+						.col-sm-6
+							.form__control
+								i.fa.fa-road
+								input.form__input(type="text" required name="route" placeholder="Ваш маршрут следования")
+						.col-sm-12
+							.form__control
+								i.fa.fa-envelope-o
+								input.form__input(type="email" required name="email" placeholder="Ваш email")
+					//- .row
+					//- 	.col-sm-12
+					//- 		.form__control
+					//- 			label.form__label 
+					//- 				i.fa.fa-picture-o
+					//- 				|  Ваше фото (необязательно):
+					//- 		.form__control
+					//- 			input(type="file" name="files")
+					.row
+						.col-sm-12
+							.form__control
+								textarea.form__textarea(rows="3" name="message" placeholder="Напишите ваш отзыв" required)
+					.form__control
+						button.form__submit.form__feedback.btn(type="submit") Отправить отзыв &nbsp;
+							i.fa.fa-paper-plane-o 
+		br
+		br
+		br
+	.modal#feedback-confirm
+		.modal__title <i class="fa fa-thumbs-up fa-4x color-green"></i><br>Ваш отзыв отправлен на модерацию.<br><div>Он будет опубликован после подтверждения.</div>

@@ -107,8 +107,7 @@ $(function() {
 				success: function(data) {
 					if (data == "true") {
 						$.fancybox.close();
-						$.fancybox($('##partner-confirm'));
-						// setTimeout("$.fancybox.close()", 20000);
+						$.fancybox($('#partner-confirm'));
 					}
 				}
 			});
@@ -118,6 +117,40 @@ $(function() {
 			}
 			if (telVal < 10) {
 				tel.addClass('error');
+			}
+		}
+	});
+
+
+	// форма отзывов
+	$(".form__feedback").on("click", function() {
+		var name = $(this).parents('.form__form').find('input[name="name"]'),
+			tel = $(this).parents('.form__form').find('input[name="email"]'),
+			route = $(this).parents('.form__form').find('input[name="route"]'),
+			nameVal = $(this).parents('.form__form').find('input[name="name"]').val().length,
+			emalVal = $(this).parents('.form__form').find('input[name="email"]').val().length;
+			routeVal = $(this).parents('.form__form').find('input[name="route"]').val().length;
+		if ((nameVal >= 2) && (routeVal >= 2) && (emalVal >= 7)) {
+			$.ajax({
+				type: 'POST',
+				url: 'feedback.php',
+				data: $(this).parents('.form__form').serialize(),
+				success: function(data) {
+					if (data == "true") {
+						$.fancybox.close();
+						$.fancybox($('#feedback-confirm'));
+					}
+				}
+			});
+		} else {
+			if (nameVal < 2) {
+				name.addClass('error');
+			}
+			if (routeVal < 2) {
+				route.addClass('error');
+			}
+			if (emalVal < 7) {
+				emal.addClass('error');
 			}
 		}
 	});
