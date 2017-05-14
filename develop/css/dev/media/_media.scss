@@ -337,9 +337,11 @@
 	}
 	.feedback {
 		&__block {
-			padding-left: 50px;
-			&:before {
-				left: 10px;
+			.feedback__block {
+				padding-left: 50px;
+				&:before {
+					left: 10px;
+				}	
 			}
 		}
 	}
