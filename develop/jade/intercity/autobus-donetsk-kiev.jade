@@ -204,7 +204,7 @@ block content
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Маршрут через РФ<br>Чт, Вс<br>≈ 30 часов
+									p.schedule__text Маршрут через РФ<br>Вс<br>≈ 30 часов
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
@@ -213,6 +213,42 @@ block content
 									p.schedule__price(price)
 										strong 2 500
 										i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Забронировать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 14:00 
+										| Крытый рынок, "Эльдорадо"
+										.schedule__auto Автобус (до 50 мест)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 05:00 
+										| ЖД Вокзал
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Четные дни<br>(рейс с пересадкой)<br>≈ 15 часов
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong 650
+										|  грн
 							.row
 								.col-xs-12.col-sm-12.text-center
 									p.schedule__text
