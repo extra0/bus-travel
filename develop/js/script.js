@@ -176,7 +176,6 @@ $(function() {
 						$.fancybox.close();
 						$.fancybox($('#thanks'));
 						ga('send', 'event', 'order', 'submit'); // цель для гугл аналитики 
-						setTimeout("$.fancybox.close()", 25000);
 					}
 				}
 			});
@@ -363,5 +362,8 @@ $(function() {
 
 	// запуск цели для яндекса
 	setTimeout('yaCounter36626610.reachGoal("Time");', 60000);
+
+	// генерация ссылки в модальном
+	$('.modal__link').attr('href', $('.back__link').attr('href'));
 
 });

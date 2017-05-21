@@ -286,6 +286,15 @@
 			margin: 10px 0 0 0;
 		}
 	}
+	&__link {
+		color: $green;
+		text-decoration: underline;
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			color: $green;
+		}
+	}
 	&__submit {
 		font-weight: normal;
 		display: block;
