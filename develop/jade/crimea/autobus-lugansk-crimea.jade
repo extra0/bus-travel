@@ -1,0 +1,111 @@
+extends ../_layout
+block append head
+	meta(description="Билеты на автобус Луганск-Крым. Доступные цены, скидки детым. Удобное расписание, комфортабельные автобусы.")
+	meta(keywords="автобус Луганск крым, Луганск крым, крым Луганск автобус")
+	meta(name="robots" content="noodp")
+	meta(property="og:locale" content="ru_RU")
+	meta(property="og:type" content="website")
+	meta(property="og:title" content="Автобус Луганск - Крым. Онлайн бронирование билетов, актуальное расписание, низкие цены.")
+	meta(property="og:description" content="Билеты на автобус Луганск-Крым. Доступные цены, скидки детым. Удобное расписание, комфортабельные автобусы.")
+	meta(property="og:url" content="https://vseputi.com.ua/crimea/autobus-donetsk-crimea")
+	meta(property="og:site_name" content="Всепути - Купить билет на автобус онлайн, заказать автобусный билет.")
+	meta(property="og:image" content="https://vseputi.com.ua/img/crimea/crimea.jpg")
+	meta(name="twitter:card" content="summary_large_image")
+	meta(name="twitter:site" content="@vseputi")
+	meta(name="twitter:title" content="Автобус Луганск - Крым. Онлайн бронирование билетов, актуальное расписание, низкие цены.")
+	meta(name="twitter:description" content="Билеты на автобус Луганск-Крым. Доступные цены, скидки детым. Удобное расписание, комфортабельные автобусы.")
+	meta(name="twitter:image:src" content="https://vseputi.com.ua/img/crimea/crimea.jpg")
+	title Автобус Луганск - Крым. Онлайн бронирование билетов, актуальное расписание, низкие цены.
+block content
+	.container
+		.row
+			.col-sm-12.col-xs-12
+				.breadcrumbs.hidden-xs
+					ul.breadcrumbs__list(itemscope itemtype="https://data-vocabulary.org/Breadcrumb")
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="/" itemprop="url" title="Главная")
+								span(itemprop="title") Главная
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="/crimea/" itemprop="url" title="Автобусы в Крым")
+								span(itemprop="title") Автобусы в Крым
+						li.breadcrumbs__item
+							span.breadcrumbs__link.current Автобус Луганск - Крым
+		.row
+			.col-sm-12.col-xs-12
+				h1.main__title.service__main-title Автобус Луганск - Крым
+		.row
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-lugansk-sevastopol")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{lugSev}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/sevastopol.jpg", alt="Автобус Луганск - Севастополь - Луганск")
+						.service__block-bottom
+							p.service__subtitle Луганск - Севастополь - Луганск
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-lugansk-simferopol")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{lugSimf}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/simferopol.jpg", alt="Автобус Луганск - Симферополь - Луганск")
+						.service__block-bottom
+							p.service__subtitle Луганск - Симферополь - Луганск
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-lugansk-yalta")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{lugYalta}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/yalta.jpg", alt="Автобус Луганск - Ялта - Луганск")
+						.service__block-bottom
+							p.service__subtitle Луганск - Ялта - Луганск
+		.row
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-lugansk-alushta")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{lugAlushta}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/alushta.jpg", alt="Автобус Луганск - Алушта - Луганск")
+						.service__block-bottom
+							p.service__subtitle Луганск - Алушта - Луганск
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-lugansk-feodosiya")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{lugFeodisya}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/feodosiya.jpg", alt="Автобус Луганск - Феодосия - Луганск")
+						.service__block-bottom
+							p.service__subtitle Луганск - Феодосия - Луганск
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-lugansk-kerch")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{lugKerch}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/kerch.jpg", alt="Автобус Луганск - Керчь - Луганск")
+						.service__block-bottom
+							p.service__subtitle Луганск - Керчь - Луганск
+	include ../includes/modules/_share
+	//- .description
+		.container
+			.toggle-block__text
+				h2.description__title Автобус Донецк - Крым
+				p.description__text Уже определились, куда отправиться в отпуск? Если выбор пал на побережье Крыма и возник вопрос как добраться туда из Донецка, мы готовы вам предоставить комфортабельную поездку на автобусе в любой город Автономной Республики Крым. Более того автобусные перевозки сейчас являются чуть ли не единственным способом туристических поездок на полуостров.
+				h2.description__title Расписание автобусов и цена билетов
+				p.description__text Компания «Vseputi» предлагает более 10 рейсов по направлению Донецк - Крым, что дает пассажиру выбрать более удобное время отправления автобуса, а так же подгадать нужное время прибытия. Хотим обратить ваше внимание, что автобусные перевозки в Крым осуществляются через территорию России и паромную переправу, поэтому указать точное время в пути достаточно сложно. «Всепути» сотрудничает только с проверенными транспортными компаниями и перевозчиками с разрешительными документами. А для того что бы наши пассажиры могли поехать из Донецка в Крым не только в полной безопасности, но и с максимальным комфортом, мы предоставляем технически исправные и комфортабельные марки автобусов (50 мест) и микроавтобусов (17-19 мест) (Neoplan, Yutong, Mercedes). Они оснащены всем необходимым для удобной поездки даже для пассажиров с детьми.
+				p.description__text Стоимость билета на автобус Донецк - Крым разниться от города прибытия (Симферополь, Алушта, Ялта, Севастополь), а так же времени отправления. На детский билет предоставляется скидка в размере 50%.
+				h2.description__title Бронирование билета на автобус Донецк - Крым онлайн
+				p.description__text Сезон поездок в Крым начался и поэтому мы убедительно просим наших клиентов заблаговременно бронировать билеты на автобус, так как спрос в разы превышает предложение и иногда нам приходиться сообщать клиенту, что на определенные числа билетов на автобус Донецк - Крым уже нет. Что бы этого не случилось с вами, бронируйте места хотя бы за 3-7 дней до даты отправления. Не забывайте и об обратной дороге, что бы беззаботно отдыхать и не тратить время на поиски билетов Крым - Донецк заказывайте билеты сразу в обе стороны.
+				p.description__text Что бы забронировать билет на автобус Донецк - Крым онлайн вам необходимо выбрать подходящий рейс и просто заполнить не сложную форму, указывая город, дату отправления, нужное количество мест, ваше ФИО и контактный телефон. Просим вас обратить внимание, что в форме вы должны указать не начальный город отправления (Донецк), а именно тот город, из которого вас нужно забрать (Макеевка, Харцызск, Торез). 
+				p.description__text Для того что бы заполнить и отправить форму бронирования билета у вас уйдет не более двух минут, по этому как только вы определились с датой поездки поспешите оставить заявку. После этого с вами свяжется наш диспетчер для подтверждения бронирования, а за день до отправления ожидайте звонка с уведомлением о номере автобуса и точном месте посадки. Оплата производиться при посадке в автобус непосредственно водителю.
+				p.description__text Так же вы можете заблаговременно купить билет на автобус Донецк - Крым - Донецк в офисе компании «Vseputi».
