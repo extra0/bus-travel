@@ -1,0 +1,171 @@
+extends ../_layout
+block append head
+	meta(description="Билеты на автобус Крым-Донецк. Доступные цены, скидки детым. Удобное расписание, комфортабельные автобусы.")
+	meta(keywords="автобус донецк крым, донецк крым, крым донецк автобус")
+	meta(name="robots" content="noodp")
+	meta(property="og:locale" content="ru_RU")
+	meta(property="og:type" content="website")
+	meta(property="og:title" content="Автобус Крым - Донецк. Онлайн бронирование билетов, актуальное расписание, низкие цены.")
+	meta(property="og:description" content="Билеты на автобус Крым-Донецк. Доступные цены, скидки детым. Удобное расписание, комфортабельные автобусы.")
+	meta(property="og:url" content="https://vseputi.com.ua/crimea/autobus-crimea-donetsk")
+	meta(property="og:site_name" content="Всепути - Купить билет на автобус онлайн, заказать автобусный билет.")
+	meta(property="og:image" content="https://vseputi.com.ua/img/content/city-pattern/donetsk.jpg")
+	meta(name="twitter:card" content="summary_large_image")
+	meta(name="twitter:site" content="@vseputi")
+	meta(name="twitter:title" content="Автобус Крым - Донецк. Онлайн бронирование билетов, актуальное расписание, низкие цены.")
+	meta(name="twitter:description" content="Билеты на автобус Донецк-Крым. Доступные цены, скидки детым. Удобное расписание, комфортабельные автобусы.")
+	meta(name="twitter:image:src" content="https://vseputi.com.ua/img/content/city-pattern/donetsk.jpg")
+	title Автобус Крым - Донецк. Онлайн бронирование билетов, актуальное расписание, низкие цены.
+block content
+	.container
+		.row
+			.col-sm-12.col-xs-12
+				.breadcrumbs.hidden-xs
+					ul.breadcrumbs__list(itemscope itemtype="https://data-vocabulary.org/Breadcrumb")
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="/" itemprop="url" title="Главная")
+								span(itemprop="title") Главная
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="/crimea/" itemprop="url" title="Крымское направление")
+								span(itemprop="title") Крымское направление
+						li.breadcrumbs__item
+							span.breadcrumbs__link.current Автобус Крым - Донецк
+		.row
+			.col-sm-12.col-xs-12
+				h1.main__title.service__main-title Автобус Крым - Донецк
+		.row
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-alushta-donetsk")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{alushtaDonPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/alushta.jpg", alt="Автобус Алушта - Донецк")
+						.service__block-bottom
+							p.service__subtitle Алушта - Донецк
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-feodosiya-donetsk")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{feodosiyaDonPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/feodosiya.jpg", alt="Автобус Феодосия - Донецк")
+						.service__block-bottom
+							p.service__subtitle Феодосия - Донецк
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-kerch-donetsk")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{kerchDonPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/kerch.jpg", alt="Автобус Керчь - Донецк")
+						.service__block-bottom
+							p.service__subtitle Керчь - Донецк
+		.row
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-sevastopol-donetsk")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{sevastopolDonPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/sevastopol.jpg", alt="Автобус Севастополь - Донецк")
+						.service__block-bottom
+							p.service__subtitle Севастополь - Донецк
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-simferopol-donetsk")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{simferopolDonPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/simferopol.jpg", alt="Автобус Симферополь - Донецк")
+						.service__block-bottom
+							p.service__subtitle Симферополь - Донецк
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-yalta-donetsk")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{yaltaPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/yalta.jpg", alt="Автобус Ялта - Донецк")
+						.service__block-bottom
+							p.service__subtitle Ялта - Донецк
+		.row
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-evpatoria-donetsk")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{evpatoriaDonPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/evpatoria.jpg", alt="Автобус Евпатория - Донецк")
+						.service__block-bottom
+							p.service__subtitle Евпатория - Донецк
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-simferopol-gorlovka")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{simferopolGorPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/simferopol.jpg", alt="Автобус Симферополь - Горловка")
+						.service__block-bottom
+							p.service__subtitle Симферополь - Горловка
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-yalta-gorlovka")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{yaltaGorPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/yalta.jpg", alt="Автобус Ялта - Горловка")
+						.service__block-bottom
+							p.service__subtitle Ялта - Горловка
+		.row
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-alushta-gorlovka")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{alushtaGorPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/alushta.jpg", alt="Автобус Алушта - Горловка")
+						.service__block-bottom
+							p.service__subtitle Алушта - Горловка
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-feodosiya-gorlovka")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{feodosiyaGorPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/feodosiya.jpg", alt="Автобус Феодосия - Горловка")
+						.service__block-bottom
+							p.service__subtitle Феодосия - Горловка
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-kerch-gorlovka")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{kerchGorPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/kerch.jpg", alt="Автобус Керчь - Горловка")
+						.service__block-bottom
+							p.service__subtitle Керчь - Горловка
+		.row
+			.col-sm-12.col-md-4
+				.service__block
+					a(href="/international/autobus-sevastopol-gorlovka")
+						.service__block-top
+							.ways__price-wrapper.text-right
+								p.ways__price от #{sevastopolGorPrice}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/sevastopol.jpg", alt="Автобус Севастополь - Горловка")
+						.service__block-bottom
+							p.service__subtitle Севастополь - Горловка
+	include ../includes/modules/_share

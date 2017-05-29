@@ -1,21 +1,21 @@
 extends ../_layout
 block append head
-	meta(description="Билеты на автобус Киев-Крым. Доступные цены, скидки детым. Удобное расписание, комфортабельные автобусы.")
-	meta(keywords="автобус Киев крым, Киев крым, крым Киев автобус")
+	meta(description="Билеты на автобус Крым-Днепр. Доступные цены, скидки детым. Удобное расписание, комфортабельные автобусы.")
+	meta(keywords="автобус Днепр крым, Днепр крым, крым Днепр автобус")
 	meta(name="robots" content="noodp")
 	meta(property="og:locale" content="ru_RU")
 	meta(property="og:type" content="website")
-	meta(property="og:title" content="Автобус Киев - Крым. Онлайн бронирование билетов, актуальное расписание, низкие цены.")
-	meta(property="og:description" content="Билеты на автобус Киев-Крым. Доступные цены, скидки детым. Удобное расписание, комфортабельные автобусы.")
-	meta(property="og:url" content="https://vseputi.com.ua/crimea/autobus-kiev-crimea")
+	meta(property="og:title" content="Автобус Крым - Днепр. Онлайн бронирование билетов, актуальное расписание, низкие цены.")
+	meta(property="og:description" content="Билеты на автобус Крым-Днепр. Доступные цены, скидки детым. Удобное расписание, комфортабельные автобусы.")
+	meta(property="og:url" content="https://vseputi.com.ua/crimea/autobus-crimea-dnepr")
 	meta(property="og:site_name" content="Всепути - Купить билет на автобус онлайн, заказать автобусный билет.")
-	meta(property="og:image" content="https://vseputi.com.ua/img/crimea/crimea.jpg")
+	meta(property="og:image" content="https://vseputi.com.ua/img/content/city-pattern/dnepr.jpg")
 	meta(name="twitter:card" content="summary_large_image")
 	meta(name="twitter:site" content="@vseputi")
-	meta(name="twitter:title" content="Автобус Киев - Крым. Онлайн бронирование билетов, актуальное расписание, низкие цены.")
-	meta(name="twitter:description" content="Билеты на автобус Киев-Крым. Доступные цены, скидки детым. Удобное расписание, комфортабельные автобусы.")
-	meta(name="twitter:image:src" content="https://vseputi.com.ua/img/crimea/crimea.jpg")
-	title Автобус Киев - Крым. Онлайн бронирование билетов, актуальное расписание, низкие цены.
+	meta(name="twitter:title" content="Автобус Крым - Днепр. Онлайн бронирование билетов, актуальное расписание, низкие цены.")
+	meta(name="twitter:description" content="Билеты на автобус Крым-Днепр. Доступные цены, скидки детым. Удобное расписание, комфортабельные автобусы.")
+	meta(name="twitter:image:src" content="https://vseputi.com.ua/img/content/city-pattern/dnepr.jpg")
+	title Автобус Крым - Днепр. Онлайн бронирование билетов, актуальное расписание, низкие цены.
 block content
 	.container
 		.row
@@ -29,85 +29,41 @@ block content
 							a.breadcrumbs__link(href="/crimea/" itemprop="url" title="Крымское направление")
 								span(itemprop="title") Крымское направление
 						li.breadcrumbs__item
-							span.breadcrumbs__link.current Автобус Киев - Крым
+							span.breadcrumbs__link.current Автобус Крым - Днепр
 		.row
 			.col-sm-12.col-xs-12
-				h1.main__title.service__main-title Автобус Киев - Крым
+				h1.main__title.service__main-title Автобус Крым - Днепр
 		.row
 			.col-sm-12.col-md-4
 				.service__block
-					a(href="/international/autobus-kiev-sevastopol")
+					a(href="/international/autobus-sevastopol-dnepropetrovsk")
 						.service__block-top
 							.ways__price-wrapper.text-right
-								p.ways__price от #{kievSevas} грн
-							img.service__img(src="/img/crimea/sevastopol.jpg", alt="Автобус Киев - Севастополь")
+								p.ways__price от #{sevastopolDnepr}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/sevastopol.jpg", alt="Автобус Севастополь - Днепр")
 						.service__block-bottom
-							p.service__subtitle Киев - Севастополь
+							p.service__subtitle Севастополь - Днепр
 			.col-sm-12.col-md-4
 				.service__block
-					a(href="/international/autobus-kiev-simferopol")
+					a(href="/international/autobus-evpatoria-dnepropetrovsk")
 						.service__block-top
 							.ways__price-wrapper.text-right
-								p.ways__price от #{kievSimf} грн
-							img.service__img(src="/img/crimea/simferopol.jpg", alt="Автобус Киев - Симферополь")
+								p.ways__price от #{evpatDnepr}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/evpatoria.jpg", alt="Автобус Евпатория - Днепр")
 						.service__block-bottom
-							p.service__subtitle Киев - Симферополь
+							p.service__subtitle Евпатория - Днепр
 			.col-sm-12.col-md-4
 				.service__block
-					a(href="/international/autobus-kiev-yalta")
+					a(href="/international/autobus-simferopol-dnepropetrovsk")
 						.service__block-top
 							.ways__price-wrapper.text-right
-								p.ways__price от #{kievYalta} грн
-							img.service__img(src="/img/crimea/yalta.jpg", alt="Автобус Киев - Ялта")
+								p.ways__price от #{simferopolDnepr}
+									i.fa.fa-rub
+							img.service__img(src="/img/crimea/simferopol.jpg", alt="Автобус Симферополь - Днепр")
 						.service__block-bottom
-							p.service__subtitle Киев - Ялта
-		.row
-			.col-sm-12.col-md-4
-				.service__block
-					a(href="/international/autobus-kiev-alushta")
-						.service__block-top
-							.ways__price-wrapper.text-right
-								p.ways__price от #{kievAlushta} грн
-							img.service__img(src="/img/crimea/alushta.jpg", alt="Автобус Киев - Алушта")
-						.service__block-bottom
-							p.service__subtitle Киев - Алушта
-			.col-sm-12.col-md-4
-				.service__block
-					a(href="/international/autobus-kiev-djankoy")
-						.service__block-top
-							.ways__price-wrapper.text-right
-								p.ways__price от #{kievDjankoy} грн
-							img.service__img(src="/img/crimea/djankoy.jpg", alt="Автобус Киев - Джанкой")
-						.service__block-bottom
-							p.service__subtitle Киев - Джанкой
-			.col-sm-12.col-md-4
-				.service__block
-					a(href="/international/autobus-kiev-kerch")
-						.service__block-top
-							.ways__price-wrapper.text-right
-								p.ways__price от #{kievKerch} грн
-							img.service__img(src="/img/crimea/kerch.jpg", alt="Автобус Киев - Керчь")
-						.service__block-bottom
-							p.service__subtitle Киев - Керчь
-		.row
-			.col-sm-12.col-md-4
-				.service__block
-					a(href="/international/autobus-kiev-feodosiya")
-						.service__block-top
-							.ways__price-wrapper.text-right
-								p.ways__price от #{kievFeod} грн
-							img.service__img(src="/img/crimea/feodosiya.jpg", alt="Автобус Киев - Феодосия")
-						.service__block-bottom
-							p.service__subtitle Киев - Феодосия
-			.col-sm-12.col-md-4
-				.service__block
-					a(href="/international/autobus-kiev-evpatoria")
-						.service__block-top
-							.ways__price-wrapper.text-right
-								p.ways__price от #{kievEvpat} грн
-							img.service__img(src="/img/crimea/evpatoria.jpg", alt="Автобус Киев - Евпатория")
-						.service__block-bottom
-							p.service__subtitle Киев - Евпатория
+							p.service__subtitle Симферополь - Днепр
 	include ../includes/modules/_share
 	//-.description
 		.container

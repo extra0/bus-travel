@@ -5,17 +5,17 @@ block append head
 	meta(name="robots" content="noodp")
 	meta(property="og:locale" content="ru_RU")
 	meta(property="og:type" content="website")
-	meta(property="og:title" content="Автобусы в Крым")
+	meta(property="og:title" content="Крымское направление")
 	meta(property="og:description" content="Автобус Донецк, Луганск, Киев, Днепр - Крым: расписание, маршрут, цена, время в пути, дни следования, цена. Купить билет на автобус в Крым.")
 	meta(property="og:url" content="https://vseputi.com.ua/crimea/")
 	meta(property="og:site_name" content="Всепути - Купить билет на автобус онлайн, заказать автобусный билет.")
 	meta(property="og:image" content="https://vseputi.com.ua/img/crimea/crimea.jpg")
 	meta(name="twitter:card" content="summary_large_image")
 	meta(name="twitter:site" content="@vseputi")
-	meta(name="twitter:title" content="Автобусы в Крым")
+	meta(name="twitter:title" content="Крымское направление")
 	meta(name="twitter:description" content="Автобус Донецк, Луганск, Киев, Днепр - Крым: расписание, маршрут, цена, время в пути, дни следования, цена. Купить билет на автобус в Крым.")
 	meta(name="twitter:image:src" content="https://vseputi.com.ua/img/crimea/crimea.jpg")
-	title Автобусы в Крым
+	title Крымское направление
 block content
 	.container
 		.row
@@ -26,30 +26,50 @@ block content
 							a.breadcrumbs__link(href="/" itemprop="url" title="Главная")
 								span(itemprop="title") Главная
 						li.breadcrumbs__item
-							span.breadcrumbs__link.current Автобусы в Крым
+							span.breadcrumbs__link.current Крымское направление
 		.row
 			.col-sm-12.col-xs-12
-				h1.main__title.service__main-title Автобусы в Крым
+				h1.main__title.service__main-title Крымское направление
 		.row
-			.col-sm-6.col-xs-6.col-xxs-12
+			.col-sm-6.col-xs-12
 				a.btn.btn-red.btn-large__icon.btn-block(href="/crimea/autobus-donetsk-crimea") 
 					i.fa.fa-road.hidden-xxs
-					span Донецк - Крым - Донецк
+					span Донецк - Крым
 					i.fa.fa-chevron-right
-			.col-sm-6.col-xs-6.col-xxs-12
+			.col-sm-6.col-xs-12
+				a.btn.btn-green.btn-large__icon.btn-block(href="/crimea/autobus-crimea-donetsk") 
+					i.fa.fa-reply.hidden-xxs
+					span Крым - Донецк
+					i.fa.fa-chevron-right
+			.col-sm-6.col-xs-12
 				a.btn.btn-red.btn-large__icon.btn-block(href="/crimea/autobus-lugansk-crimea") 
 					i.fa.fa-road.hidden-xxs
-					span Луганск - Крым - Луганск
+					span Луганск - Крым
 					i.fa.fa-chevron-right
-			.col-sm-6.col-xs-6.col-xxs-12
+			.col-sm-6.col-xs-12
+				a.btn.btn-green.btn-large__icon.btn-block(href="/crimea/autobus-crimea-lugansk") 
+					i.fa.fa-reply.hidden-xxs
+					span Крым - Луганск
+					i.fa.fa-chevron-right
+			.col-sm-6.col-xs-12
 				a.btn.btn-red.btn-large__icon.btn-block(href="/crimea/autobus-kiev-crimea") 
 					i.fa.fa-road.hidden-xxs
-					span Киев - Крым - Киев
+					span Киев - Крым
 					i.fa.fa-chevron-right
-			.col-sm-6.col-xs-6.col-xxs-12
+			.col-sm-6.col-xs-12
+				a.btn.btn-green.btn-large__icon.btn-block(href="/crimea/autobus-crimea-kiev") 
+					i.fa.fa-reply.hidden-xxs
+					span Крым - Киев
+					i.fa.fa-chevron-right
+			.col-sm-6.col-xs-12
 				a.btn.btn-red.btn-large__icon.btn-block(href="/crimea/autobus-dnepr-crimea") 
 					i.fa.fa-road.hidden-xxs
-					span Днепр - Крым - Днепр
+					span Днепр - Крым
+					i.fa.fa-chevron-right
+			.col-sm-6.col-xs-12
+				a.btn.btn-green.btn-large__icon.btn-block(href="/crimea/autobus-crimea-dnepr") 
+					i.fa.fa-reply.hidden-xxs
+					span Крым - Днепр
 					i.fa.fa-chevron-right
 		include ../includes/modules/_advantages
 		include ../includes/modules/_share
