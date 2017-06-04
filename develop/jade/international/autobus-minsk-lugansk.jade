@@ -43,23 +43,22 @@ block content
 									p.schedule__title Отправление
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
-										span.schedule__time 09:00 
-										| Место отправления уточняйте
-									include ../includes/modules/_denied-badge
+										span.schedule__time 05:00 
+										| Автовокзал
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Прибытие
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
-										span.schedule__time 16:00 
+										span.schedule__time 12:00 
 										| Автовокзал
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Вс<br>≈ 31 час
+									p.schedule__text Пн, Ср, Сб<br>≈ 31 час
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
@@ -71,7 +70,7 @@ block content
 							.row
 								.col-xs-12.col-sm-12.text-center
 									p.schedule__text
-										a.btn.schedule__btn.btn-denied(href="javascript:void(0);") Забронировать
+										a.btn.schedule__btn(href="#order" fancybox) Забронировать
 				br
 				.back__link-wrap
 					a.back__link.btn(href="/international/autobus-lugansk-minsk") <i class="fa fa-refresh fa-spin"></i> Посмотреть обратный маршрут
