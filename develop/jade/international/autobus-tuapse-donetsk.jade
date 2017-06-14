@@ -43,6 +43,42 @@ block content
 									p.schedule__title Отправление
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-from)
+										span.schedule__time 18:00 
+										| Автовокзал
+										.schedule__time Микроавтобус (до 17 мест)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 06:00 
+										| АВ "Южный"
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Каждое 3, 6, 8, 11, 13, 16, 18, 21, 23, 26, 28, 31(1) число месяца<br>≈ 11 часов
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong 2 000
+										i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Забронировать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
 										span.schedule__time 20:00 
 										| Центральный АВ
 						.col-xs-12.col-sm-4

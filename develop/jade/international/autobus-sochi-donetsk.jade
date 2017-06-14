@@ -58,14 +58,14 @@ block content
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text По датам<br>≈ 16 часов
+									p.schedule__text Каждое 3, 6, 8, 11, 13, 16, 18, 21, 23, 26, 28, 31(1) число месяца<br>≈ 16 часов
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Стоимость
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
-										strong 2 300
+										strong 2 400
 										i.fa.fa-rub
 							.row
 								.col-xs-12.col-sm-12.text-center
@@ -80,20 +80,21 @@ block content
 									p.schedule__text(place-from)
 										span.schedule__time 17:00 
 										| Центральный АВ
+										.schedule__auto Автобус (до 50 мест)
 						.col-xs-12.col-sm-4
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title Прибытие
 								.col-xs-8.col-sm-12
 									p.schedule__text(place-to)
-										span.schedule__time 08:00 
+										span.schedule__time 12:00 
 										| Крытый рынок
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
 									p.schedule__title В пути
 								.col-xs-8.col-sm-12
-									p.schedule__text Сб<br>≈ 16 часов
+									p.schedule__text Сб<br>≈ 20 часов
 						.col-xs-12.col-sm-2
 							.row
 								.col-xs-4.visible-xs
@@ -101,6 +102,42 @@ block content
 								.col-xs-8.col-sm-12
 									p.schedule__price(price)
 										strong #{sochiDonPrice}
+										i.fa.fa-rub
+							.row
+								.col-xs-12.col-sm-12.text-center
+									p.schedule__text
+										a.btn.schedule__btn(href="#order" fancybox) Забронировать
+					.row(place-parent)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Отправление
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-from)
+										span.schedule__time 18:00 
+										| ТРЦ "Моремолл"
+										.schedule__auto Микроавтобус (до 17 мест)
+						.col-xs-12.col-sm-4
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Прибытие
+								.col-xs-8.col-sm-12
+									p.schedule__text(place-to)
+										span.schedule__time 11:00 
+										| АВ "Южный"
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title В пути
+								.col-xs-8.col-sm-12
+									p.schedule__text Вс<br>≈ 17 часов
+						.col-xs-12.col-sm-2
+							.row
+								.col-xs-4.visible-xs
+									p.schedule__title Стоимость
+								.col-xs-8.col-sm-12
+									p.schedule__price(price)
+										strong 2 000
 										i.fa.fa-rub
 							.row
 								.col-xs-12.col-sm-12.text-center
