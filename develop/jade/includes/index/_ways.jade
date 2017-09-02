@@ -3,36 +3,27 @@
 		p.title <strong>Нам с Вами по пути:</strong>
 		.row
 			.col-sm-12.hidden-xs
-				a.ways__link(href="/intercity/autobus-donetsk-kiev")
+				a.ways__link(href="/intercity/autobus-kiev-donetsk")
 					.ways__block._promo
-						h2.ways__title Донецк - Киев
-						img.ways__img(src="img/city/kiev_large.jpg", alt="Автобус Донецк - Киев")
+						h2.ways__title Киев - Донецк
+						img.ways__img(src="img/city/kiev_large.jpg", alt="Автобус Киев - Донецк")
 						.ways__price-wrapper
-							p.ways__price._promo от #{kievPrice}
-								i.fa.fa-rub
+							p.ways__price._promo от #{kievDonPrice}
+								|  грн
+
+
+
 			.col-md-4.col-sm-6.col-xs-12
-				a.ways__link(href="/international/autobus-donetsk-yalta")
+				a.ways__link(href="/international/autobus-donetsk-belgorod")
 					.ways__block
 						.ways__block-badge
 							.ways__block-badge-item.ways__block-badge-item-orange
 								i.fa.fa-thumbs-o-up.fa-lg 
 								span Маршрут месяца
-						h2.ways__title Донецк - Ялта
-						img.ways__img(src="img/city/yalta.jpg", alt="Донецк - Ялта")
+						h2.ways__title Донецк - Белгород
+						img.ways__img(src="img/city/belgorod.jpg", alt="Автобус Донецк - Белгород")
 						.ways__price-wrapper
-							p.ways__price от #{yaltaPrice}
-								i.fa.fa-rub
-			.col-md-4.col-sm-6.col-xs-12
-				a.ways__link(href="/international/autobus-donetsk-alushta")
-					.ways__block
-						.ways__block-badge
-							.ways__block-badge-item.ways__block-badge-item-orange
-								i.fa.fa-thumbs-o-up.fa-lg 
-								span Маршрут месяца
-						h2.ways__title Донецк - Алушта
-						img.ways__img(src="img/city/alushta.jpg", alt="Донецк - Алушта")
-						.ways__price-wrapper
-							p.ways__price от #{alushtaPrice}
+							p.ways__price от #{belgorodPrice}
 								i.fa.fa-rub
 			.col-md-4.col-sm-6.col-xs-12
 				a.ways__link(href="/international/autobus-donetsk-moskva")
@@ -47,6 +38,30 @@
 							p.ways__price от #{moskowPrice}
 								i.fa.fa-rub
 			.col-md-4.col-sm-6.col-xs-12
+				a.ways__link(href="/international/autobus-donetsk-yalta")
+					.ways__block
+						.ways__block-badge
+							.ways__block-badge-item.ways__block-badge-item-orange
+								i.fa.fa-thumbs-o-up.fa-lg 
+								span Маршрут месяца
+						h2.ways__title Донецк - Ялта
+						img.ways__img(src="img/city/yalta.jpg", alt="Донецк - Ялта")
+						.ways__price-wrapper
+							p.ways__price от #{yaltaPrice}
+								i.fa.fa-rub
+			.col-md-4.col-sm-6.col-xs-12
+				a.ways__link(href="/intercity/autobus-kiev-donetsk")
+					.ways__block
+						.ways__block-badge
+							.ways__block-badge-item.ways__block-badge-item-orange
+								i.fa.fa-thumbs-o-up.fa-lg 
+								span Маршрут месяца
+						h2.ways__title Киев - Донецк
+						img.ways__img(src="img/city/kiev.jpg", alt="Киев - Донецк")
+						.ways__price-wrapper
+							p.ways__price от #{kievDonPrice}
+								i.fa.fa-rub
+			.col-md-4.col-sm-6.col-xs-12
 				a.ways__link(href="/intercity/autobus-donetsk-kharkov")
 					.ways__block
 						.ways__block-badge
@@ -59,16 +74,28 @@
 							p.ways__price от #{kharkovPrice}
 								|  грн
 			.col-md-4.col-sm-6.col-xs-12
-				a.ways__link(href="/international/autobus-lugansk-yalta")
+				a.ways__link(href="/international/autobus-kiev-alushta")
+					.ways__block
+						.ways__block-badge
+							.ways__block-badge-item.ways__block-badge-item-blue
+								i.fa.fa-road.fa-lg  
+								span Новое направление
+						h2.ways__title Киев - Алушта
+						img.ways__img(src="img/city/alushta.jpg", alt="Автобус Киев - Алушта")
+						.ways__price-wrapper
+							p.ways__price от #{kievAlushta}
+								|  грн
+			.col-md-4.col-sm-6.col-xs-12
+				a.ways__link(href="/international/autobus-orel-donetsk")
 					.ways__block
 						.ways__block-badge
 							.ways__block-badge-item.ways__block-badge-item-red
 								i.fa.fa-percent.fa-lg  
 								span Гарантия лучшей цены
-						h2.ways__title Луганск - Ялта
-						img.ways__img(src="img/city/yalta.jpg", alt="Автобус Луганск - Ялта")
+						h2.ways__title Орел - Донецк
+						img.ways__img(src="img/city/yalta.jpg", alt="Автобус Орел - Донецк")
 						.ways__price-wrapper
-							p.ways__price от #{lugYalta}
+							p.ways__price от #{orelDonPrice}
 								i.fa.fa-rub
 			.col-md-4.col-sm-6.col-xs-12
 				a.ways__link(href="/international/autobus-donetsk-kerch")
@@ -83,53 +110,17 @@
 							p.ways__price от #{kerchPrice}
 								i.fa.fa-rub
 			.col-md-4.col-sm-6.col-xs-12
-				a.ways__link(href="/international/autobus-donetsk-belgorod")
-					.ways__block
-						.ways__block-badge
-							.ways__block-badge-item.ways__block-badge-item-red
-								i.fa.fa-percent.fa-lg  
-								span Гарантия лучшей цены
-						h2.ways__title Донецк - Белгород
-						img.ways__img(src="img/city/belgorod.jpg", alt="Автобус Донецк - Белгород")
-						.ways__price-wrapper
-							p.ways__price от #{belgorodPrice}
-								i.fa.fa-rub
-			.col-md-4.col-sm-6.col-xs-12
-				a.ways__link(href="/international/autobus-kiev-alushta")
-					.ways__block
-						.ways__block-badge
-							.ways__block-badge-item.ways__block-badge-item-orange
-								i.fa.fa-thumbs-o-up.fa-lg 
-								span Маршрут месяца
-						h2.ways__title Донецк - Симферополь
-						img.ways__img(src="img/city/simferopol.jpg", alt="Автобус Киев - Симферополь")
-						.ways__price-wrapper
-							p.ways__price от #{simferopolPrice}
-								i.fa.fa-rub
-			.col-md-4.col-sm-6.col-xs-12
 				a.ways__link(href="/international/autobus-kiev-alushta")
 					.ways__block
 						.ways__block-badge
 							.ways__block-badge-item.ways__block-badge-item-blue
 								i.fa.fa-road.fa-lg  
 								span Новое направление
-						h2.ways__title Киев - Алушта
-						img.ways__img(src="img/city/alushta.jpg", alt="Автобус Киев - Алушта")
+						h2.ways__title Варшава - Харьков
+						img.ways__img(src="img/city/kharkov.jpg", alt="Автобус Варшава - Харьков")
 						.ways__price-wrapper
-							p.ways__price от #{kievAlushta}
+							p.ways__price от #{varshavaKharkov}
 								|  грн
-			//- .col-md-4.col-sm-6.col-xs-12
-			//- 	a.ways__link(href="/international/autobus-moskva-kiev")
-			//- 		.ways__block
-			//- 			.ways__block-badge
-			//- 				.ways__block-badge-item.ways__block-badge-item-red
-			//- 					i.fa.fa-percent.fa-lg  
-			//- 					span Гарантия лучшей цены
-			//- 			h2.ways__title Москва - Киев
-			//- 			img.ways__img(src="img/city/kiev.jpg", alt="Автобус Москва - Киев")
-			//- 			.ways__price-wrapper
-			//- 				p.ways__price от #{mskKievPrice}
-			//- 					i.fa.fa-rub
 			.col-md-4.col-sm-6.col-xs-12.visible-sm
 				a.ways__link(href="/international/autobus-kiev-sevastopol")
 					.ways__block
