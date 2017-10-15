@@ -13,8 +13,10 @@
 			margin: 0 8px;
 			color: #fff;
 			@include transition(all 0.2s ease-in-out);
+			&:focus,
 			&:hover {
 				color: $green;
+				text-decoration: none;
 			}
 		}
 		&-text {
@@ -65,6 +67,18 @@
 			color: #fff;
 			text-decoration: none;
 			border-bottom: 1px solid transparent;
+		}
+		&.current {
+			color: $green;
+			text-decoration: none;
+		}
+		&-block {
+			.current {
+				* {
+					color: $green;
+					text-decoration: none;
+				}
+			}
 		}
 	}
 	&__micro {
