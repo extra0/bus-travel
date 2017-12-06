@@ -20,4 +20,11 @@ a img {
 }
 button, input, textarea {
 	outline: none;
+	resize:none;
+}
+button {
+	&:active,
+	&:focus {
+		outline: none!important;
+	}
 }

@@ -1,14 +1,78 @@
 .row {
 	&-special {
+		// padding-left: 20px;
+		position: relative;
 		background: rgba(255, 224, 0, 0.32)!important;
+		// &-badge {
+		// 	position: absolute;
+		// 	top: 10px;
+		// 	left: 5px;
+		// 	z-index: 100;
+		// }
+	}
+	&-stop {
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			z-index: 1000;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.6);
+			display: block;
+		}
+		& > div {
+			opacity: 0.3;
+		}
+		&-attention {
+			opacity: 1!important;
+			position: absolute;
+			top: 0;
+			padding: 0 15px;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: -webkit-box;
+			display: -moz-box;
+			display: box;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-moz-box-align: center;
+			box-align: center;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			-ms-align-items: center;
+			-o-align-items: center;
+			align-items: center;
+			-ms-flex-align: center;
+			-webkit-box-pack: center;
+			-moz-box-pack: center;
+			box-pack: center;
+			-webkit-justify-content: center;
+			-moz-justify-content: center;
+			-ms-justify-content: center;
+			-o-justify-content: center;
+			justify-content: center;
+			-ms-flex-pack: center;
+			text-align: center;
+			z-index: 1001;
+			color: #fff;
+			font-size: 20px;
+			.fa {
+				margin-right: 5px;
+			}
+		}
 	}
 }
 .toTop {
 	@include position(fixed, null 10px -100px null);
 	border: 1px solid #fff;
 	overflow: auto;
-	padding: 12px 14px 14px;
-	font-size: 18px;
+	padding: 8px 10px 10px;
+    font-size: 14px;
 	line-height: 10px;
 	cursor: pointer;
 	background-color: #1B8C2B;
@@ -26,7 +90,7 @@
 .main {
 	// padding: 140px 0;
 	padding: 100px 0;
-	background: url(../img/content/main-pattern.jpg) no-repeat;
+	// background: url(../img/content/main-pattern.jpg) no-repeat;
 	background-position: center!important;
 	background-size: cover!important;
 	@include display(flex);
@@ -43,80 +107,24 @@
 	&__form {
 		padding: 15px 20px 1px 20px;
 		background: rgba(0,0,0, 0.7);
-		max-width: 1140px;
-		margin: 0 auto;
+		// max-width: 1140px;
+		margin: 15px auto;
 	}
 	&__title {
 		color: #fff;
 		font-weight: bold;
 		position: relative;
-		font-size: 38px;
+		font-size: 32px;
+		// font-size: 38px;
 		text-align: center;
 		text-shadow: 1px 1px 10px #333333;
-		margin-top: -20px;
+		// margin-top: -20px;
 		margin-bottom: 30px;
+		letter-spacing: 1px;
 		span {
 			display: inline-block;
 		}
 	}
-	&._partner-bg {    background: url(../img/content/partner.jpg) no-repeat;}
-	&._service-bg {    background: url(../img/content/service.jpg) no-repeat;}
-	&._faq-bg {        background: url(../img/content/faq.png) no-repeat;}
-	&._feedback-bg {   background: url(../img/content/feedback.jpg) no-repeat;}
-	&._moscow-bg {     background: url(../img/content/city-pattern/moscow.jpg) no-repeat;}
-	&._voronej-bg {    background: url(../img/content/city-pattern/voronej.jpg) no-repeat;}
-	&._pavlovsk-bg {   background: url(../img/content/city-pattern/pavlovsk.jpg) no-repeat;}
-	&._tula-bg {       background: url(../img/content/city-pattern/tula.jpg) no-repeat;}
-	&._kiev-bg {       background: url(../img/content/city-pattern/kiev.jpg) no-repeat;}
-	&._borispol-bg {   background: url(../img/content/city-pattern/borispol.jpg) no-repeat;}
-	&._piryatin-bg {   background: url(../img/content/city-pattern/piryatin.jpg) no-repeat;}
-	&._lubni-bg {      background: url(../img/content/city-pattern/lubni.jpg) no-repeat;}
-	&._poltava-bg {    background: url(../img/content/city-pattern/poltava.jpg) no-repeat;}
-	&._kharkov-bg {    background: url(../img/content/city-pattern/kharkov.jpg) no-repeat;}
-	&._dnepr-bg {      background: url(../img/content/city-pattern/dnepr.jpg) no-repeat;}
-	&._donetsk-bg {    background: url(../img/content/city-pattern/donetsk.jpg) no-repeat;}
-	&._rostov-bg {     background: url(../img/content/city-pattern/rostov.jpg) no-repeat;}
-	&._kerch-bg {      background: url(../img/content/city-pattern/kerch.jpg) no-repeat;}
-	&._feodosiya-bg {  background: url(../img/content/city-pattern/feodosiya.jpg) no-repeat;}
-	&._simferopol-bg { background: url(../img/content/city-pattern/simferopol.jpg) no-repeat;}
-	&._alushta-bg {    background: url(../img/content/city-pattern/alushta.jpg) no-repeat;}
-	&._yalta-bg {      background: url(../img/content/city-pattern/yalta.jpg) no-repeat;}
-	&._sevastopol-bg { background: url(../img/content/city-pattern/sevastopol.jpg) no-repeat;}
-	&._belgorod-bg {   background: url(../img/content/city-pattern/belgorod.jpg) no-repeat;} 
-	&._piter-bg {      background: url(../img/content/city-pattern/piter.jpg) no-repeat;} 
-	&._bryansk-bg {    background: url(../img/content/city-pattern/bryansk.jpg) no-repeat;} 
-	&._anapa-bg {      background: url(../img/content/city-pattern/anapa.jpg) no-repeat;}
-	&._adler-bg {      background: url(../img/content/city-pattern/adler.jpg) no-repeat;}
-	&._tuapse-bg {     background: url(../img/content/city-pattern/tuapse.jpg) no-repeat;}
-	&._gelendjik-bg {  background: url(../img/content/city-pattern/gelendjik.jpg) no-repeat;}
-	&._sochi-bg {      background: url(../img/content/city-pattern/sochi.jpg) no-repeat;}
-	&._kislovodsk-bg { background: url(../img/content/city-pattern/kislovodsk.jpg) no-repeat;}
-	&._index-bg {      background: url(../img/content/city-pattern/index-pattern.jpg) no-repeat;}
-	&._volgograd-bg {  background: url(../img/content/city-pattern/volgograd.jpg) no-repeat;}
-	&._international-bg {  background: url(../img/content/international.jpg) no-repeat;}
-	&._intercity-bg {  background: url(../img/content/intercity.jpg) no-repeat;}
-	&._taganrog-bg {   background: url(../img/content/city-pattern/taganrog.jpg) no-repeat;}
-	&._nn-bg {         background: url(../img/content/city-pattern/nn.jpg) no-repeat;}
-	&._vn-bg {         background: url(../img/content/city-pattern/vn.jpg) no-repeat;}
-	&._erevan-bg {     background: url(../img/content/city-pattern/erevan.jpg) no-repeat;}
-	&._tbilisi-bg {    background: url(../img/content/city-pattern/tbilisi.jpg) no-repeat;}
-	&._samara-bg {     background: url(../img/content/city-pattern/samara.jpg) no-repeat;}
-	&._saratov-bg {    background: url(../img/content/city-pattern/saratov.jpg) no-repeat;}
-	&._minsk-bg {      background: url(../img/content/city-pattern/minsk.jpg) no-repeat;}
-	&._gomel-bg {      background: url(../img/content/city-pattern/gomel.jpg) no-repeat;}
-	&._mogilev-bg {    background: url(../img/content/city-pattern/mogilev.jpg) no-repeat;}
-	&._odessa-bg {     background: url(../img/content/city-pattern/odessa.jpg) no-repeat;}
-	&._tver-bg {       background: url(../img/content/city-pattern/tver.jpg) no-repeat;}
-	&._lugansk-bg {    background: url(../img/content/city-pattern/lugansk.jpg) no-repeat;}
-	&._evpatoria-bg {  background: url(../img/content/city-pattern/evpatoria.jpg) no-repeat;}
-	&._kazan-bg {      background: url(../img/content/city-pattern/kazan.jpg) no-repeat;}
-	&._sumi-bg {       background: url(../img/content/city-pattern/sumi.jpg) no-repeat;}
-	&._kursk-bg {      background: url(../img/content/city-pattern/kursk.jpg) no-repeat;}
-	&._gdansk-bg {     background: url(../img/content/city-pattern/gdansk.jpg) no-repeat;}
-	&._gdinya-bg {     background: url(../img/content/city-pattern/gdinya.jpg) no-repeat;}
-	&._lublin-bg {     background: url(../img/content/city-pattern/lublin.jpg) no-repeat;}
-	&._shecin-bg {     background: url(../img/content/city-pattern/shecin.jpg) no-repeat;}
-	&._varshava-bg {   background: url(../img/content/city-pattern/varshava.jpg) no-repeat;}
 }
 .title {
 	font-size: 36px;
@@ -129,6 +137,7 @@
 	padding-bottom: 10px;
 	margin-bottom: 25px;
 	color: #675F5F;
+	line-height: normal;
 	font-size: 24px;
 	border-bottom: 1px solid #ddd;
 	&__img {
@@ -142,8 +151,8 @@
 	&__input {
 		width: 100%;
 		height: 40px;
-		font-size: 15px;
-		padding: 0 10px 0 32px;
+		font-size: 17px;
+		padding: 0 10px 0 38px;
 		box-shadow: inset 0 4px 7px -7px rgba(0,0,0,0.5);
 		border: 1px solid #ccc;
 		font-family: PT Sans;
@@ -236,21 +245,13 @@
 			color: #fff;
 			margin-left: 10px;
 			font-size: 20px;
-			border-bottom: 1px solid;
+			// border-bottom: 1px solid;
 		}
 		.popular__price {
 			font-size: 20px;
 			margin: 0;
 			color: #fff;
-			border-bottom: 1px solid;
-		}
-		.popular__link {
-			&:hover {
-				.popular__price,
-				.popular__name {
-					border-bottom: 1px solid transparent;
-				}
-			}
+			// border-bottom: 1px solid;
 		}
 	}
 	&__block {
@@ -259,59 +260,7 @@
 		}
 	}
 }
-// Модальные
-.modal {
-	display: none;
-	width: 400px;
-	border-radius: $radius;
-	background: #fff;
-	padding: 5px 20px;
-	&__title {
-		text-align: center;
-		font-size: 22px;
-		font-weight: bold;
-		font-family: PT Sans;
-		margin: 10px 0;
-		line-height: 27px;
-		span {
-			display: block;
-			font-size: 14px;
-			color: #555;
-			margin-top: 10px;
-		}
-		div {
-			font-size: 18px;
-			font-weight: normal;
-			line-height: normal;
-			margin: 10px 0;
-		}
-	}
-	&__link {
-		color: $green;
-		text-decoration: underline;
-		&:hover,
-		&:focus {
-			text-decoration: none;
-			color: $green;
-		}
-	}
-	&__submit {
-		font-weight: normal;
-		display: block;
-		padding: 7px 0;
-		border-bottom: 3px solid #580707;
-		background: #cc0e0e;
-		&:active,
-		&:focus,
-		&:hover {
-			background: lighten(#cc0e0e, 5%);
-		}
-	}
-	&__text {
-		margin: 5px 0;
-		line-height: normal;
-	}
-}
+
 // блоки с городами на главной
 .ways {
 	padding-bottom: 40px;
@@ -350,33 +299,33 @@
 				padding: 7px 10px 8px 20px;
 			}
 		}
-		&._promo {
-			overflow: visible;
-			border-radius: 5px;
-			&:before {
-				content: '';
-			    position: absolute;
-			    top: 0;
-			    background: url(../img/promo.png) 0 0 no-repeat;
-			    left: 0;
-			    width: 170px;
-			    height: 170px;
-			}
-			.ways__img {
-				@include transform(none);
-				border-radius: 5px;
-			}
-			.ways__price {
-				font-size: 36px;
-				background: #E52326;
-				padding: 3px 24px 4px 24px;
-				line-height: normal;
-				font-weight: bold;
-			}
-			.ways__title {
-				font-size: 38px;
-			}
-		}
+		// &._promo {
+		// 	overflow: visible;
+		// 	border-radius: 5px;
+		// 	&:before {
+		// 		content: '';
+		// 	    position: absolute;
+		// 	    top: 0;
+		// 	    background: url(../img/promo.png) 0 0 no-repeat;
+		// 	    left: 0;
+		// 	    width: 170px;
+		// 	    height: 170px;
+		// 	}
+		// 	.ways__img {
+		// 		@include transform(none);
+		// 		border-radius: 5px;
+		// 	}
+		// 	.ways__price {
+		// 		font-size: 36px;
+		// 		background: #E52326;
+		// 		padding: 3px 24px 4px 24px;
+		// 		line-height: normal;
+		// 		font-weight: bold;
+		// 	}
+		// 	.ways__title {
+		// 		font-size: 38px;
+		// 	}
+		// }
 		&-badge {
 			@include position(absolute, 15px null null 0);
 			z-index: 10;
@@ -502,30 +451,43 @@
 		margin-right: 5px;
 	}
 	&__block {
-		margin-bottom: 10px;
-	}
-	&__link {
-		&:hover {
-			color: inherit;
+		padding: 13px 10px;
+		// margin: 0 -15px;
+		display: block;
+		text-decoration: none;
+		@include transition(all 0.2s ease);
+		&:hover,
+		&:focus {
 			text-decoration: none;
-			.popular__price,
-			.popular__name {
-				border-bottom: 1px solid;
-			}
+			background: #eee;
+		}
+		&:not(:last-child) {
+			border-bottom: 1px solid #ddd;
 		}
 	}
+	// &__link {
+	// 	&:hover {
+	// 		color: inherit;
+	// 		text-decoration: none;
+	// 		.popular__price,
+	// 		.popular__name {
+	// 			border-bottom: 1px solid;
+	// 		}
+	// 	}
+	// }
 	&__name {
 		font-size: 16px;
 		margin: 0;
 		color: #000;
 		display: inline-block;
-		line-height: 16px;
+		// line-height: 16px;
 	}
 	&__price {
 		display: inline-block;
 		line-height: 16px;
-		font-size: 18px;
-		margin: 0 0 0 7px;
+		// font-size: 18px;
+		font-size: 20px;
+		margin: 3px 0 0 7px;
 		color: $green;
 		font-weight: bold;
 		float: right;
@@ -533,10 +495,13 @@
 }
 // график отправлений
 .schedule {
+	margin: 0 -15px;
+	p {
+		margin: 1em 0;
+	}
 	&__main-title {
 		font-weight: normal;
-		margin: 20px 0 10px 0;
-		// font-size: 24px;
+		margin: 10px 0;
 		font-size: 21px;
 		.fa {
 			margin-right: 10px;
@@ -579,19 +544,19 @@
 		}
 	}
 	&__time {
-		font-size: 17px;
+		font-size: 20px;
 		font-weight: bold;
-		display: inline-block;
-		margin: 0 10px 0 0;
+		margin:  10px 0 5px 0;
 	}
 	&__price {
-		margin-bottom: 0;
+		margin: 10px 0 0 0;
 		& > * {
-			font-size: 22px!important;
+			font-size: 24px!important;
 		}
 	}
 	&__text {
 		font-size: 16px;
+		margin-bottom: 5px;
 	}
 	&__badge {
 		display: inline-block;
@@ -605,9 +570,13 @@
 	    	border-bottom: none;
 	    }
 	}
+	.share {
+		margin: -10px 0 0 0;
+		// text-align: right;
+	}
 }
 .advantages {
-	margin: 40px 0 0px 0;
+	margin: 70px 0 0px 0;
 	.fa {
 		color: $green;
 		font-size: 4em;
@@ -626,6 +595,7 @@
 		float: none;
 		display: inline-block;
 		vertical-align: top;
+		margin-left: -4px;
 		margin-bottom: 40px;
 	}
 	&__main-title {
@@ -638,14 +608,54 @@
 	&__text {
 		vertical-align: top;
 		display: inline-block;
-		margin: 12px 10px 10px 10px;
+		margin: 15px 5px 10px 5px;
 		font-size: 20px;
 		font-weight: bold;
 	}
-	.fa {
+	.fa-bullhorn {
 		vertical-align: top;
-		margin-top: 13px;
-		color: $green;
+		margin-top: 16px;
+		// color: $green;
+	}
+	&__block {
+		display: inline-block;
+		margin-top: 10px;
+		&-link {
+			@include display(inline-flex);
+			@include align-items(center);
+			@include justify-content(center);
+			vertical-align: top;
+			width: 40px;
+			height: 40px;
+			border: 2px solid #000;
+			@include transition(all 0.2s ease);
+			border-radius: 5px;
+			margin-right: 4px;
+			&:hover,
+			&:focus {
+				text-decoration: none;
+				&.vk {
+					border-color: #3d5771;
+					background: #3d5771;
+					color: #fff
+				}
+				&.ok {
+					border-color: #ee8208;
+					background: #ee8208;
+					color: #fff
+				}
+				&.fb {
+					border-color: #4e6183;
+					background: #4e6183;
+					color: #fff
+				}
+				&.tw {
+					border-color: #4b95c3;
+					background: #4b95c3;
+					color: #fff
+				}
+			}
+		}
 	}
 }
 .uptolike-buttons {
@@ -830,7 +840,7 @@
 	}
 	&__main-title {
 		text-shadow: none;
-		color: #333;
+		color: #000;
 	}
 	&__text {
 		padding: 0 10px;
@@ -840,7 +850,7 @@
 		@include transition(all 0.2s ease-in-out);
 	}
 	&__main {
-		background: url(../img/content/service.jpg) 0 0 no-repeat;
+		// background: url(../img/content/service.jpg) 0 0 no-repeat;
 		background-position: 50% 0;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
@@ -1000,7 +1010,7 @@
 		}
 	}
 	&__work {
-		background: #191F26 url(../img/service/work.png) bottom center no-repeat;
+		// background: #191F26 url(../img/service/work.png) bottom center no-repeat;
 		padding: 50px 0 30px;
 		&-title {
 			text-transform: uppercase;
@@ -1048,7 +1058,7 @@
 		&-step-title {
 			text-transform: uppercase;
 			font-weight: bold;
-			margin-bottom: -10px;
+			margin-bottom: 0;
 			font-size: 24px;
 		}
 		&-text {
@@ -1250,7 +1260,7 @@
 	}
 }
 .index-advantages {
-	background: url(../img/index-road.jpg) center no-repeat;
+	background: url(/local/templates/vseputi/assets/img/pages/index-road.jpg) center no-repeat;
 	text-align: center;
 	color: #fff;
 	padding: 80px 0px 40px;
@@ -1352,10 +1362,61 @@
 	}
 }
 
+.guide {
+	&__block {
+		position: relative;
+		border-radius: 5px;
+		border: 1px solid #ddd;
+		background-size: 100% auto;
+		padding: 10px;
+		font-size: 16px;
+		max-width:360px;
+		margin: 70px auto 40px auto;
+		&-title {
+			text-align: center;
+			font-size: 20px;
+			span {
+				font-weight: bold;
+				font-size: 24px;
+			}
+		}
+		&-img {
+			margin-bottom: 15px;
+		}
+		ul {
+			margin: 10px 0 20px 6px;
+		}
+	}
+}
 
 
+.modal {
+	.form-group {
+		.fa {
+			@include position(absolute, 12px null null 10px);
+		}
+		input.form-control {
+			padding-left: 30px;
+			color: #000;
+		}
+	}	
+}
 
+.form-control {
+	height: 38px;
+	font-size: 16px;
+	&:focus {
+		border-color: $green;
+	    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(27, 140, 43, 0.56);
+	}
+}
+.content {
+	min-height: calc(100vh - 378px);
+}
 
+.close {
+	font-size: 32px;
+}
 
 
 // стилизация пуш окна

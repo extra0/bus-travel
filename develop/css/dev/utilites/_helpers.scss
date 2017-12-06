@@ -7,8 +7,11 @@
 .text-right {
 	text-align: right!important;
 }
-.text-center {
-	text-align: center;
+.text-underline {
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+	}
 }
 .no-padding {padding: 0 !important;}
 .no-margin {
@@ -18,11 +21,6 @@
 .margin-bottom-30 {margin-bottom: 30px;}
 .margin-bottom-50 {
 	margin-bottom: 50px;
-}
-.fa.fa-rub {
-	font-size: 85%;
-	margin: 0 0 0 5px!important;
-	top: 0!important;
 }
 .strong {
 	font-weight: bold;
@@ -37,8 +35,14 @@
 .color-red {
 	color: #f20;
 }
+.color-black {
+	color: #000;
+}
 p:empty {
 	display: none;
+}
+.relative {
+	position: relative;
 }
 .btn {
 	display: inline-block;
@@ -105,4 +109,41 @@ p:empty {
 			}
 		}
 	}
+}
+.thanks-text {
+	padding: 60px 0;
+}
+a {
+	color: $green;
+	&:hover {
+		color: $green;
+	}
+}
+
+.panel {
+	border-radius: 0;
+	&-heading {
+		font-size: 24px;
+	}
+	&-default {
+		& > .panel-heading {
+			color: #fff;
+			background: $green;
+			border-radius: 0;
+			border-color: $green;
+		}
+	}
+	&-danger {
+		& > .panel-heading {
+			color: #fff;
+			background: $red;
+			border-radius: 0;
+			border-color: $red;
+		}
+	}
+	// &-body {
+	// 	.popular__block {
+	// 		margin: 0 -15px;
+	// 	}
+	// }
 }

@@ -14,11 +14,11 @@ gulp.task('sass', function(){ // sass компилятор
 });
 
 
-gulp.task('jade', function(){ // jade компилятор
-	return gulp.src('develop/jade/**/[^_]*.jade', {since: gulp.lastRun('jade')})
-		.pipe(jade())
-		.pipe(gulp.dest('production'));
-});
+// gulp.task('jade', function(){ // jade компилятор
+// 	return gulp.src('develop/jade/**/[^_]*.jade', {since: gulp.lastRun('jade')})
+// 		.pipe(jade())
+// 		.pipe(gulp.dest('production'));
+// });
 
 
 gulp.task('clean', function(){ // удаляем папку из проекта
@@ -34,13 +34,14 @@ gulp.task('assets', function(){ // копируем все вложенные ф
 
 gulp.task('build', gulp.series( // билд удаления и сборки + копирование файлов
 	'clean',
-	gulp.parallel('sass', 'jade', 'assets'))
+	// gulp.parallel('sass', 'jade', 'assets'))
+	gulp.parallel('sass', 'assets'))
 );
 
 
 gulp.task('watch', function(){ // фиксируем изменения файлов
 	gulp.watch('develop/css/**/*.*', gulp.series('sass'));
-	gulp.watch('develop/jade/**/*.jade', gulp.series('jade'));
+	// gulp.watch('develop/jade/**/*.jade', gulp.series('jade'));
 	gulp.watch('develop/**/*.*', gulp.series('assets'));
 });
 

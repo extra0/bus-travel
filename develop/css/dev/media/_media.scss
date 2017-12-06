@@ -8,6 +8,9 @@
 			font-size: 14px;
 		}
 	}
+	.no-padding-xs {
+		padding: 0;
+	}
 	.toTop.active {
 		bottom: 10px;
 	}
@@ -24,6 +27,7 @@
 	}
 	.main-menu {
 		margin-top: 10px;
+		text-align: left;
 		&__item {
 			display: block;
 			margin: 0 -15px;
@@ -38,11 +42,32 @@
 		}
 		&__list {
 			display: none;
+			clear: both;
 		}
 		&__link {
 			font-size: 17px;
 			&-sticker {
 				right: -4px;
+			}
+		}
+		&__search-link {
+			color: #fff;
+			position: relative;
+			z-index: 100;
+			margin-top: 10px;
+			display: inline-block;
+			&:hover,
+			&:focus {
+				color: #fff;
+			}
+		}
+		&__dropdown-list {
+			position: relative;
+			top: 0;
+			width: 100%;
+			background: #087317;
+			.main-menu__item:not(:last-child) {
+				border-bottom: none;
 			}
 		}
 	}
@@ -102,8 +127,8 @@
 	}
 	.advantages  {
 		&__block {
-			max-width: 400px;
-			margin: 0 auto 40px auto;
+			margin-bottom: 40px;
+			text-align: center;
 		}
 		.fa {
 			font-size: 5em;
@@ -116,9 +141,14 @@
 		}
 		&__main-title {
 			font-size: 18px;
+			line-height: 22px;
 		}
 		&__btn {
 			font-size: 20px;
+		}
+		.share {
+			margin: 20px 0 0;
+			text-align: left;
 		}
 	}
 	.form {
@@ -134,10 +164,14 @@
 		&__price,
 		&__name {
 			font-size: 14px;
-			border-bottom: 1px solid;
+			border-bottom: none;
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
 		}
 		&__price {
-			margin: 2px 0 0 7px;
+			// margin: 2px 0 0 7px;
 			font-size: 16px;
 		}
 		&__link {
@@ -150,6 +184,8 @@
 		}
 	}
 	.attention {
+		margin: 0 -15px 0px -15px;
+		padding-bottom: 0;
 		&__block {
 			padding: 15px;
 			&-text {
@@ -216,8 +252,20 @@
 			float: none;
 		}
 	}
+	.xs-text-center {
+		text-align: center;
+	}
 	.xs-text-left {
 		text-align: left;
+	}
+	.guide {
+		&__block {
+			margin: 0 auto 30px auto;
+			ul {
+				padding-left: 20px;
+				margin-left: 0;
+			}
+		}
 	}
 }
 @media (max-width: 500px) {
@@ -250,10 +298,6 @@
 	.title {
 		font-size: 24px;
 		margin: 40px 0 20px;
-	}
-	.modal {
-		width: 280px;
-		padding: 5px 10px;
 	}
 	.form {
 		&__result {
@@ -355,6 +399,55 @@
 			}
 		}
 	}
+	body.modal-open {
+		position: fixed;
+		width: 100%;
+	}
+	.col-xxs-1, .col-xxs-2, .col-xxs-3, .col-xxs-4, .col-xxs-5, .col-xxs-6, .col-xxs-7, .col-xxs-8, .col-xxs-9, .col-xxs-10, .col-xxs-11, .col-xxs-12 {
+		float: left
+	}
+	.col-xxs-12 {
+		width: 100%
+	}
+	.col-xxs-11 {
+		width: 91.66666667%
+	}
+	.col-xxs-10 {
+		width: 83.33333333%
+	}
+	.col-xxs-9 {
+		width: 75%
+	}
+	.col-xxs-8 {
+		width: 66.66666667%
+	}
+	.col-xxs-7 {
+		width: 58.33333333%
+	}
+	.col-xxs-6 {
+		width: 50%
+	}
+	.col-xxs-5 {
+		width: 41.66666667%
+	}
+	.col-xxs-4 {
+		width: 33.33333333%
+	}
+	.col-xxs-3 {
+		width: 25%
+	}
+	.col-xxs-2 {
+		width: 16.66666667%
+	}
+	.col-xxs-1 {
+		width: 8.33333333%
+	}
+	.hidden-xxs {
+		display: none !important;
+	}
+	.xxs-text-center {text-align: center!important;}
+	.xxs-text-left {text-align: left!important;}
+	.xxs-text-right {text-align: right!important;}
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.main {
@@ -366,9 +459,18 @@
 	}
 	.main-menu {
 		&__link {
-			font-size: 16px;
-			padding: 13px 9px;
+			font-size: 15px;
+			padding: 13px 8px;
+			.fa {
+				display: none;
+			}
 		}
+		&__dropdown-list {
+			top: 48px;
+		}
+	}
+	.title {
+		font-size: 30px;
 	}
 	.service {
 		&__form {
@@ -433,10 +535,22 @@
 			}
 		}
 	}
+	.guide {
+		&__block {
+			&-text {
+				padding-left: 0;
+			}
+			ul {
+				padding-left: 20px;
+				margin-left: 0;
+			}
+		}
+	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	.ways {
 		&__block {
+			max-height: 220px;
 			&-badge {
 				top: 10px;
 				&-item {
@@ -469,6 +583,10 @@
 			}
 		}
 	}
+	.main-menu__link {
+		font-size: 16px;
+		padding: 13px 15px;
+	}
 }
 @media (min-width: 768px) {
 	.main-menu {
@@ -486,6 +604,9 @@
 	.header__btn {
 		margin-left: 50px;
 	}
+	.ways__block {
+		max-height: 272px;
+	}
 }
 @media (min-width: 1600px) {
 	.container {
@@ -499,6 +620,7 @@
 			font-size: 38px;
 		}
 		&__block {
+			max-height: 355px;
 			&._promo .ways__title {
 				font-size: 50px;
 			}
@@ -529,5 +651,30 @@
 @media (max-width: 991px) {
 	.container {
 		width: auto;
+	}
+}
+
+@media print {
+	a[href]:after {
+ 	   content: none !important;
+	}
+	.schedule__section>.row.row-special {
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+		margin: -1px -15px;
+	}
+	.schedule__section>.row:nth-child(odd) {
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+	}
+	.schedule__section>.row:first-child .schedule__title {
+		color: #fff!important;
+	}
+	.schedule__main-title {
+		margin-bottom: 20px;
+	}
+	@page {
+		size:letter;
+		transform:scale(0.7)
 	}
 }
