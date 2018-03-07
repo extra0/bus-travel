@@ -76,11 +76,6 @@
 			display: block;
 			max-width: 500px;
 			margin: 0 auto 30px auto;
-			&:hover {
-				.ways__img {
-					@include transform(scale(1) rotate(0deg));	
-				}
-			}
 			&-badge {
 				top: 10px;
 				&-item {
@@ -88,9 +83,6 @@
 					margin: 0 0 5px;
 				}
 			}
-		}
-		&__title {
-			font-size: 38px;
 		}
 		&__price {
 			font-size: 28px;
@@ -318,9 +310,6 @@
 	}
 	
 	.ways {
-		&__title {
-			font-size: 28px;
-		}
 		&__price {
 			font-size: 24px;
 		}
@@ -550,7 +539,6 @@
 @media (min-width: 992px) and (max-width: 1199px) {
 	.ways {
 		&__block {
-			max-height: 220px;
 			&-badge {
 				top: 10px;
 				&-item {
@@ -609,9 +597,6 @@
 	.header__btn {
 		margin-left: 50px;
 	}
-	.ways__block {
-		max-height: 272px;
-	}
 }
 @media (min-width: 1600px) {
 	.container {
@@ -621,15 +606,6 @@
 		font-size: 50px;
 	}
 	.ways {
-		&__title {
-			font-size: 38px;
-		}
-		&__block {
-			max-height: 355px;
-			&._promo .ways__title {
-				font-size: 50px;
-			}
-		}
 		&__price {
 			font-size: 30px;
 		}

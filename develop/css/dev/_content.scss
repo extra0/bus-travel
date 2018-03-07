@@ -276,64 +276,16 @@
 	&__block {
 		margin-bottom: 30px;
 		position: relative;
-		@include display(flex);
-		@include align-items(center);
-		overflow: hidden;
-		border-radius: 5px;
-		width: 100%;
-		&:before {
-			content: '';
-			background: rgba(0,0,0, 0.4);
-			@include position(absolute, 0 null null 0);
-			width: 100%;
-			height: 100%;
-			z-index: 1;
-			@include transition(all 0.2s ease-in-out);
-		}
+		@include transition(all 0.2s ease-in-out);
 		&:hover {
+			box-shadow: 0px 0px 20px rgba(27,140,43,0.65);
 			.ways__img {
 				@include transform(scale(1.15) rotate(-7deg));
-			}
-			&:before {
-				content: '';
-				background: rgba(0,0,0, 0.6);
-				@include position(absolute, 0 null null 0);
-				width: 100%;
-				height: 100%;
-				z-index: 1;
-				@include transition(all 0.2s ease-in-out);
 			}
 			.ways__block-badge-item {
 				padding: 7px 10px 8px 20px;
 			}
 		}
-		// &._promo {
-		// 	overflow: visible;
-		// 	border-radius: 5px;
-		// 	&:before {
-		// 		content: '';
-		// 	    position: absolute;
-		// 	    top: 0;
-		// 	    background: url(../img/promo.png) 0 0 no-repeat;
-		// 	    left: 0;
-		// 	    width: 170px;
-		// 	    height: 170px;
-		// 	}
-		// 	.ways__img {
-		// 		@include transform(none);
-		// 		border-radius: 5px;
-		// 	}
-		// 	.ways__price {
-		// 		font-size: 36px;
-		// 		background: #E52326;
-		// 		padding: 3px 24px 4px 24px;
-		// 		line-height: normal;
-		// 		font-weight: bold;
-		// 	}
-		// 	.ways__title {
-		// 		font-size: 38px;
-		// 	}
-		// }
 		&-badge {
 			@include position(absolute, 15px null null 0);
 			z-index: 10;
@@ -384,11 +336,17 @@
 				}
 			}
 		}
+		&-title {
+			margin-top:10px;
+		}
+		&-price {
+			margin: 13px 0 15px 0;
+		}
 	}
 	&__img {
 		width: 100%;
-		@include transition(all 0.2s ease-in-out);
 	}
+	// используется для блоков в КРЫМУ
 	&__price {
 		z-index: 2;
 		padding: 2px 14px 3px 14px;
@@ -404,40 +362,6 @@
 			width: 100%;
 		}
 	}
-	&__title {
-		z-index: 2;
-		@include position(absolute, 40% 0 null 0);
-		margin: 0;
-		width: 100%;
-		color: #fff;
-		text-align: center;
-		font-size: 28px;
-		color: #fff;
-		text-shadow: 1px 1px 10px #333333;
-	}
-	// &__link {
-	// 	position: relative;
-	// 	&._best-price {
-	// 		&:before {
-	// 			content: '';
-	// 			background: url(../img/best-price.png) 0 0 no-repeat;
-	// 			@include position(absolute, -20px null null -20px);
-	// 			width: 150px;
-	// 			height: 145px;
-	// 			z-index: 10;
-	// 		}
-	// 	}
-	// 	&._best-way {
-	// 		&:before {
-	// 			content: '';
-	// 			background: url(../img/best-way.png) 0 0 no-repeat;
-	// 			@include position(absolute, -20px null null -20px);
-	// 			width: 110px;
-	// 			height: 110px;
-	// 			z-index: 10;
-	// 		}
-	// 	}
-	// }
 }
 // seo описание
 .description {

@@ -147,3 +147,16 @@ a {
 	// 	}
 	// }
 }
+
+td.day:not(.disabled) {
+	background: $green;
+    color: #fff;
+}
+.datepicker-days table {
+	border-spacing: 1px;
+    border-collapse: inherit;
+}
+.datepicker table tr td.active.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled.disabled, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover.active, .datepicker table tr td.active.disabled:hover.disabled, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active.disabled:hover[disabled], .datepicker table tr td.active.disabled[disabled], .datepicker table tr td.active:active, .datepicker table tr td.active:hover, .datepicker table tr td.active:hover.active, .datepicker table tr td.active:hover.disabled, .datepicker table tr td.active:hover:active, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active:hover[disabled], .datepicker table tr td.active[disabled],
+.datepicker table tr td.day.focused:not(.disabled), .datepicker table tr td.day:not(.disabled):hover {
+	background: $red;
+}
