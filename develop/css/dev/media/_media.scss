@@ -245,7 +245,7 @@
 		}
 	}
 	.xs-text-center {
-		text-align: center;
+		text-align: center!important;
 	}
 	.xs-text-left {
 		text-align: left;
@@ -391,6 +391,14 @@
 	body.modal-open {
 		position: fixed;
 		width: 100%;
+	}
+	.modal {
+		&-header {
+			padding: 10px 15px;
+		}
+		&-title {
+			margin-bottom: 0 !important;
+		}
 	}
 	.col-xxs-1, .col-xxs-2, .col-xxs-3, .col-xxs-4, .col-xxs-5, .col-xxs-6, .col-xxs-7, .col-xxs-8, .col-xxs-9, .col-xxs-10, .col-xxs-11, .col-xxs-12 {
 		float: left
@@ -560,6 +568,10 @@
 		}
 	}
 	.header {
+		&__logo-img {
+			max-width: 232px;
+			margin-top: 4px;
+		}
 		&__time {
 			margin: 10px 0 -10px 0px;
 		}
