@@ -618,8 +618,10 @@
 		font-size: 50px;
 	}
 	.ways {
-		&__price {
-			font-size: 30px;
+		.row {
+			.col-md-4.col-sm-6.col-xs-12 {
+				width: 25%;
+			}
 		}
 	}
 	.hotels {
