@@ -182,11 +182,6 @@ a {
 			border-color: $red;
 		}
 	}
-	// &-body {
-	// 	.popular__block {
-	// 		margin: 0 -15px;
-	// 	}
-	// }
 }
 
 td.day:not(.disabled) {
@@ -200,11 +195,4 @@ td.day:not(.disabled) {
 .datepicker table tr td.active.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled.disabled, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover.active, .datepicker table tr td.active.disabled:hover.disabled, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active.disabled:hover[disabled], .datepicker table tr td.active.disabled[disabled], .datepicker table tr td.active:active, .datepicker table tr td.active:hover, .datepicker table tr td.active:hover.active, .datepicker table tr td.active:hover.disabled, .datepicker table tr td.active:hover:active, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active:hover[disabled], .datepicker table tr td.active[disabled],
 .datepicker table tr td.day.focused:not(.disabled), .datepicker table tr td.day:not(.disabled):hover {
 	background: $red;
-	// transition: all 0.3s ease;
-}
-.ui-menu .ui-menu-item-wrapper {
-	padding: 7px 10px;
-    border: 1px solid #ddd;
-	margin: -1px;
-	font-size: 16px
 }
