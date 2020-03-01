@@ -13,17 +13,47 @@
 		text-decoration: none;
 	}
 }
+.text-dashed {
+	border-bottom: 1px dashed;
+	&:hover {
+		border-color: transparent;
+	}
+}
 .no-padding {padding: 0 !important;}
-.no-margin {
-	margin: 0!important;
+.no-margin {margin: 0!important;}
+
+.p-5 {
+	padding: 5px;
 }
-.margin-top-30 {margin-top: 30px;}
-.margin-bottom-30 {margin-bottom: 30px;}
-.margin-bottom-50 {
-	margin-bottom: 50px;
-}
+
+.margin-top-10 {margin-top: 10px}
+.margin-top-15 {margin-top: 15px!important}
+.margin-top-20 {margin-top: 20px}
+.margin-top-30 {margin-top: 30px}
+.margin-top-40 {margin-top: 40px}
+.margin-top-50 {margin-top: 50px}
+.margin-left-5 {margin-left: 5px}
+.margin-left-10 {margin-left: 10px}
+.margin-left-15 {margin-left: 15px}
+.margin-left-20 {margin-left: 20px}
+.margin-left-25 {margin-left: 25px}
+.margin-right-5 {margin-right: 5px}
+.margin-right-10 {margin-right: 10px}
+.margin-right-15 {margin-right: 15px}
+.margin-right-20 {margin-right: 20px}
+.margin-right-25 {margin-right: 25px}
+.margin-bottom-10 {margin-bottom: 10px}
+.margin-bottom-15 {margin-bottom: 15px!important}
+.margin-bottom-20 {margin-bottom: 20px}
+.margin-bottom-30 {margin-bottom: 30px}
+.margin-bottom-40 {margin-bottom: 40px}
+.margin-bottom-50 {margin-bottom: 50px}
+
 .strong {
 	font-weight: bold;
+}
+.line-height-normal {
+	line-height: normal
 }
 .uppercase {
 	text-transform: uppercase;
@@ -79,6 +109,17 @@ p:empty {
 		&:focus,
 		&:hover {
 			background: lighten(#cc0e0e, 5%);
+		}
+	}
+	&-green {
+		background: $green!important;
+		border-bottom: 3px solid #075813!important;
+		&:active,
+		&:focus,
+		&:hover {
+			color: #fff;
+			text-decoration: none;
+			background: lighten($green, 5%)!important;
 		}
 	}
 	&-block {
@@ -159,6 +200,7 @@ td.day:not(.disabled) {
 .datepicker table tr td.active.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled.disabled, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover.active, .datepicker table tr td.active.disabled:hover.disabled, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active.disabled:hover[disabled], .datepicker table tr td.active.disabled[disabled], .datepicker table tr td.active:active, .datepicker table tr td.active:hover, .datepicker table tr td.active:hover.active, .datepicker table tr td.active:hover.disabled, .datepicker table tr td.active:hover:active, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active:hover[disabled], .datepicker table tr td.active[disabled],
 .datepicker table tr td.day.focused:not(.disabled), .datepicker table tr td.day:not(.disabled):hover {
 	background: $red;
+	// transition: all 0.3s ease;
 }
 .ui-menu .ui-menu-item-wrapper {
 	padding: 7px 10px;

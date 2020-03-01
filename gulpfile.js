@@ -2,7 +2,7 @@
 
 const gulp = require('gulp'); // Gulp
 const sass = require('gulp-sass'); // sass
-const jade = require('gulp-jade'); // jade
+// const jade = require('gulp-jade'); // jade
 const del = require('del'); // удаляем ненужное
 const newer = require('gulp-newer'); // фиксирует есть ли новые файлы (обеспечивает скорейшую сборку)
 

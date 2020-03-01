@@ -1,11 +1,25 @@
 {
-  "name": "bus_test",
+  "name": "bus",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/extra0/bus-travel.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/extra0/bus-travel/issues"
+  },
+  "homepage": "https://github.com/extra0/bus-travel#readme",
+  "dependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^4.0.2"
+  }
 }

@@ -76,13 +76,6 @@
 			display: block;
 			max-width: 500px;
 			margin: 0 auto 30px auto;
-			&-badge {
-				top: 10px;
-				&-item {
-					font-size: 16px;
-					margin: 0 0 5px;
-				}
-			}
 		}
 		&__price {
 			font-size: 28px;
@@ -220,30 +213,30 @@
 	.m-b-xs-15 {
 		margin-bottom: 15px;
 	}
-	.hotels {
-		&__block {
-			&-description {
-				right: 4px;
-				width: auto;
-				&-list {
-					.fa {
-						font-size: 18px;
-						margin-right: 6px;
-					}
-				}
-				&-name {
-					font-size: 14px;
-				}
-			}
-		}
-		&__btn-trigger {
-			display: block;
-			margin: 10px auto -10px auto;
-			display: block;
-			text-align: center;
-			float: none;
-		}
-	}
+	// .hotels {
+	// 	&__block {
+	// 		&-description {
+	// 			right: 4px;
+	// 			width: auto;
+	// 			&-list {
+	// 				.fa {
+	// 					font-size: 18px;
+	// 					margin-right: 6px;
+	// 				}
+	// 			}
+	// 			&-name {
+	// 				font-size: 14px;
+	// 			}
+	// 		}
+	// 	}
+	// 	&__btn-trigger {
+	// 		display: block;
+	// 		margin: 10px auto -10px auto;
+	// 		display: block;
+	// 		text-align: center;
+	// 		float: none;
+	// 	}
+	// }
 	.xs-text-center {
 		text-align: center!important;
 	}
@@ -307,18 +300,31 @@
 	}
 	.share {
 		margin: 20px 0;
+		&__text {
+			margin-left: 0;
+		}
+		&__block {
+			&-link {
+				width: 34px;
+				height: 34px;
+				.fa {
+					font-size: 20px;
+				}
+			}
+		}
 	}
 	
 	.ways {
+		&__block-description-title {
+			font-size: 22px
+		}
 		&__price {
 			font-size: 24px;
 		}
 	}
 	.back__link {
 		font-size: 16px;
-		.fa {
-			display: none;
-		}
+		margin-bottom: 15px;
 	}
 	.service {
 		&__form {
@@ -388,10 +394,10 @@
 			}
 		}
 	}
-	body.modal-open {
-		position: fixed;
-		width: 100%;
-	}
+	// body.modal-open {
+	// 	position: fixed;
+	// 	width: 100%;
+	// }
 	.modal {
 		&-header {
 			padding: 10px 15px;
@@ -507,24 +513,24 @@
 			margin-right: -8px;
 		}
 	}
-	.hotels {
-		&__block {
-			min-height: 350px;
-			&-description {
-				right: 4px;
-				width: auto;
-				&-list {
-					.fa {
-						font-size: 18px;
-						margin-right: 6px;
-					}
-				}
-				&-name {
-					font-size: 14px;
-				}
-			}
-		}
-	}
+	// .hotels {
+	// 	&__block {
+	// 		min-height: 350px;
+	// 		&-description {
+	// 			right: 4px;
+	// 			width: auto;
+	// 			&-list {
+	// 				.fa {
+	// 					font-size: 18px;
+	// 					margin-right: 6px;
+	// 				}
+	// 			}
+	// 			&-name {
+	// 				font-size: 14px;
+	// 			}
+	// 		}
+	// 	}
+	// }
 	.btn {
 		&-large {
 			&__icon {
@@ -545,17 +551,6 @@
 	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-	.ways {
-		&__block {
-			&-badge {
-				top: 10px;
-				&-item {
-					font-size: 16px;
-					margin: 0 0 5px;
-				}
-			}
-		}
-	}
 	.service {
 		&__form-quantity {
 			width: 102px;
@@ -563,9 +558,9 @@
 		&__line-title {
 			font-size: 28px;
 		}
-		&__work-block {
-			width: 30%;
-		}
+		// &__work-block {
+		// 	width: 30%;
+		// }
 	}
 	.header {
 		&__logo-img {
@@ -615,25 +610,18 @@
 		width: 1500px;
 	}
 	.title {
-		font-size: 50px;
+		font-size: 36px;
 	}
-	.ways {
-		.row {
-			.col-md-4.col-sm-6.col-xs-12 {
-				width: 25%;
-			}
-		}
-	}
-	.hotels {
-		&__block {
-			&-description {
-				right: 4px;
-				&-name {
-					font-size: 13px;
-				}
-			}
-		}
-	}
+	// .hotels {
+	// 	&__block {
+	// 		&-description {
+	// 			right: 4px;
+	// 			&-name {
+	// 				font-size: 13px;
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
 @media (max-height: 420px) {
 	.modal__title {
